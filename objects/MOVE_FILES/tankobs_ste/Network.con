@@ -1,0 +1,2 @@
+NetworkableInfo.createNewInfo tankobs_ste_body
+NetworkableInfo.setPredictionMode PMLinear

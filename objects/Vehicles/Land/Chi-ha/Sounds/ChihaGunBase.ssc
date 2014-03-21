@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ChihaGunBase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ChihaGunBase.ssc
+	
+#templateLevel LOW
+
+	#include Low/ChihaGunBase.ssc

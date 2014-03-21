@@ -1,0 +1,87 @@
+renderer.beginGlobalCluster Willy
+GeometryTemplate.create StandardMesh Willy_Hull_M1
+GeometryTemplate.file snowmobile_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Snowmobile_ski
+GeometryTemplate.file Snowmobile_ski
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Snowmobile_prop
+GeometryTemplate.file snowmobile_prob
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Willy_WheelR_M1
+GeometryTemplate.file Willy_WheR_M1
+GeometryTemplate.scale 0.0000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Willy_WheelL_M1
+GeometryTemplate.file Willy_WheL_M1
+GeometryTemplate.scale 0.0000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Willy_Steering_M1
+GeometryTemplate.scale 0.0000001
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_Willy_Hul_M1
+GeometryTemplate.file snowmobile_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 1P_Willy_str_M1
+rem GeometryTemplate.file 1P_Willy_str_M1
+GeometryTemplate.cullFactor 2
+
+GeometryTemplate.create StandardMesh snowmobile_propblur_m1
+GeometryTemplate.alphaLodDistance 750
+GeometryTemplate.file zero_propblur_m1
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Willy_Hull_L1
+GeometryTemplate.file snowmobile_hull
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_Willy_M1
+GeometryTemplate.file snowmobile_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+

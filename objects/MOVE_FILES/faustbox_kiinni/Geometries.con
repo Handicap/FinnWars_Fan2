@@ -1,0 +1,4 @@
+GeometryTemplate.create StandardMesh faustbox_kiinni
+GeometryTemplate.file faustbox_kiinni
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 40

@@ -1,0 +1,33 @@
+ObjectTemplate.create Kit Flamethrower_fin
+ObjectTemplate.setType Scout
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry radio
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate German_Helmet
+ObjectTemplate.addTemplate radio
+rem ObjectTemplate.addTemplate german_HipPack
+rem ObjectTemplate.addTemplate huppu
+ObjectTemplate.addTemplate NoParachute
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_scout_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_scout_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_alliesKnife.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_canister.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+
+ObjectTemplate.setKitIcon 0 "kits/fin_mosinnagant_sniper.dds"
+ObjectTemplate.setKitName 0 ""
+ObjectTemplate.setKitActiveName 0 "In use/limit"
+
+ObjectTemplate.addTemplate m40
+rem ObjectTemplate.addTemplate L35Pistol
+ObjectTemplate.addTemplate KnifeAllies
+rem ObjectTemplate.addTemplate GrenadeAxis
+rem ObjectTemplate.addTemplate Binoculars
+
+
+
+ObjectTemplate.aiTemplate  Scout

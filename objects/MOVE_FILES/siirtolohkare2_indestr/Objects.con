@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject siirtolohkare2_indestr
+ObjectTemplate.geometry siirtolohkare2
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.cullRadiusScale 2.5

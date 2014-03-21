@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject Lentopommi
+ObjectTemplate.geometry Lentopommi
+ObjectTemplate.setHasCollisionPhysics 1
+
+

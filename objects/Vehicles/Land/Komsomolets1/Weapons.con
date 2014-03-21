@@ -1,0 +1,8 @@
+
+rem *** Komsomoletscannon ***
+ObjectTemplate.create rotationalbundle Komsomoletscannon
+ObjectTemplate.setNetworkableInfo KomsomoletsGunInfo
+ObjectTemplate.loadSoundScript Sounds/T26-M37Cannon.ssc
+ObjectTemplate.geometry Komsomolets_Cannon_M1
+ObjectTemplate.addTemplate coaxial_DP
+ObjectTemplate.setPosition 0/0/0.2

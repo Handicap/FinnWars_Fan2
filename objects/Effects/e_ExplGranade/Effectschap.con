@@ -1,0 +1,56 @@
+rem *** e_ExplGranade ***
+ObjectTemplate.create EffectBundle e_ExplGranade
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/ExplGranade.ssc
+
+ObjectTemplate.addTemplate Em_ExplGranade
+ObjectTemplate.addTemplate Em_ExplGranadexap_Dirt
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+
+rem *** Em_ExplGranade ***
+ObjectTemplate.create Emitter Em_ExplGranade
+ObjectTemplate.template Fx_ExplGranade
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExplGranade ***
+ObjectTemplate.create SpriteParticle Fx_ExplGranade
+ObjectTemplate.timeToLive CRD_NONE/1/1/0
+ObjectTemplate.size CRD_UNIFORM/0.8/0.8/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.03/0/0
+ObjectTemplate.sizeOverTime 0/0.560045|3/1.80319|100/2
+ObjectTemplate.texture  e_explani06
+ObjectTemplate.initRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/30/1
+ObjectTemplate.rotationSpeedOverTime 0/0.209998|100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/0|46/255/255/255/120|65/255/255/255/59|100/0/0/0/0
+ObjectTemplate.numAnimationFrames 16
+ObjectTemplate.initAnimationFrame CRD_NONE/8/0/0
+ObjectTemplate.animationSpeed CRD_NONE/70/0/0
+
+rem *** Em_ExplGranadexap_Dirt ***
+ObjectTemplate.create Emitter Em_ExplGranadexap_Dirt
+ObjectTemplate.template Fx_ExplGranadexap_Dirt
+ObjectTemplate.timeToLive CRD_NONE/0.5/0/0
+ObjectTemplate.intensity CRD_UNIFORM/40/41/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/7/7/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/1
+ObjectTemplate.startRotation CRD_UNIFORM/1/1/0
+rem *** Fx_ExplGranadexap_Dirt ***
+ObjectTemplate.create SpriteParticle Fx_ExplGranadexap_Dirt
+ObjectTemplate.timeToLive CRD_NONE/3/3/0
+ObjectTemplate.size CRD_UNIFORM/4/5/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/1/0/0
+ObjectTemplate.sizeOverTime 0/0|12/1.03998|100/2
+ObjectTemplate.texture e_DirtAni03
+ObjectTemplate.initRotation CRD_UNIFORM/1/2/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/153|82/255/255/255/27|100/255/255/255/0

@@ -1,0 +1,116 @@
+ObjectTemplate.create HandFireArms Savukranu
+ObjectTemplate.itemIndex 4
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.projectileTemplate Savukranaatti
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.ForceOnExplosion 0
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.geometry savis
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+rem ObjectTemplate.altFireOnce 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.material 60
+ObjectTemplate.hitpoints 10000
+ObjectTemplate.maxhitpoints 10000
+ObjectTemplate.AmmoType	16
+
+ObjectTemplate.autoReload 1
+ObjectTemplate.GUIIndex 13
+ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
+ObjectTemplate.setAmmoIcon "Ammo/Icon_grenadeaxis_64x32.tga"
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setHasMag 0
+
+ObjectTemplate.rotationalSpeed 0/0/0
+rem ObjectTemplate.velocity 25
+ObjectTemplate.velocity 20
+
+ObjectTemplate.minDeviation 0
+ObjectTemplate.maxDeviation 0.08
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.4
+ObjectTemplate.fireDelay 0.7
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.velocityDependentOnHeat 1
+ObjectTemplate.heatAddWhenFire 0.03
+rem ObjectTemplate.coolDownPerSec 0.05
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+
+
+
+
+
+ObjectTemplate.createSkeleton animations/Grenadeaxis.ske
+rem ObjectTemplate.geometry savis
+ObjectTemplate.useSkeletonPartAsMain Base
+ObjectTemplate.addTemplate savupahisLod_rus
+
+
+ObjectTemplate.create SimpleObject savupahisMSSH_rus
+rem ObjectTemplate.geometry savis
+ObjectTemplate.create SimpleObject savupahisJousi_rus
+rem ObjectTemplate.geometry savis
+ObjectTemplate.create SimpleObject savupahisSimple_rus
+rem ObjectTemplate.geometry savis
+
+
+ObjectTemplate.create AnimatedBundle savupahis_rusComplex
+ObjectTemplate.createSkeleton animations/Grenadeaxis.ske
+rem ObjectTemplate.geometry savis
+ObjectTemplate.addTemplate savupahisJousi_rus
+ObjectTemplate.bindToSkeletonPart Jousi
+ObjectTemplate.addTemplate savupahisMSSH_rus
+ObjectTemplate.bindToSkeletonPart MSSH
+
+ObjectTemplate.create LodObject savupahisLod_rus
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate savupahis_rusComplex
+ObjectTemplate.addTemplate savupahisSimple_rus
+
+
+
+
+
+
+
+
+
+
+
+ObjectTemplate.create Projectile Savukranaatti
+ObjectTemplate.networkableInfo ProjectileInfo
+ObjectTemplate.geometry savis_thrown
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitPoints 9999
+ObjectTemplate.maxHitPoints 9999
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.timeToLive CRD_NONE/20/0/0
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.radius 0.0
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.material 100
+ObjectTemplate.material2 100
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.useMMOnEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.startEffectTemplate e_savukranunew
+ObjectTemplate.noFFSound 1
+ObjectTemplate.mass 10
+
+

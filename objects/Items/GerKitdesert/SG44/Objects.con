@@ -1,0 +1,32 @@
+ObjectTemplate.create Kit German_SG44_Desert
+ObjectTemplate.setType AT
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry Kit_SG44
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate Germ_DesertHelmet
+ObjectTemplate.addTemplate German_hippack
+ObjectTemplate.addTemplate NoParachute
+ObjectTemplate.addTemplate pistoolikotelo
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_at_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_at_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_alliesKnife.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_walter.tga"
+ObjectTemplate.addWeaponIcon "weapon/Icon_sg44.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_grenadeaxis.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_ammopack.tga"
+
+ObjectTemplate.setKitIcon 3 "kits/ger_support.dds"
+ObjectTemplate.setKitName 3 ""
+ObjectTemplate.setKitActiveName 3 "In use/limit"
+
+ObjectTemplate.addTemplate Sg44
+ObjectTemplate.addTemplate WalterP38
+ObjectTemplate.addTemplate KnifeAllies
+ObjectTemplate.addTemplate savukranu
+
+
+ObjectTemplate.addTemplate AmmoPack
+ObjectTemplate.aiTemplate  AT

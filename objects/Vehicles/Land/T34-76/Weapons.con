@@ -1,0 +1,141 @@
+
+
+rem *** T34GunBarrel ***
+ObjectTemplate.create FireArms T34-76GunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript /Sounds/T34-76Cannon.ssc
+ObjectTemplate.geometry T34-76_pipe
+ObjectTemplate.aiTemplate T34-76MainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_Muzzpriest
+ObjectTemplate.setPosition 0/0/3
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate T34-76Projectile
+rem ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.magSize 77
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 250
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.35
+ObjectTemplate.roundOfFire 0.135
+ObjectTemplate.fireingForce 10
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 1
+
+
+rem *** T34Projectile ***
+ObjectTemplate.create Projectile T34-76Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry projectile_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 0.7
+ObjectTemplate.damageType 1
+ObjectTemplate.material 238
+ObjectTemplate.material2 207
+ObjectTemplate.hasCollisionEffect 1
+
+
+
+
+rem *** ot-130cannon ***
+ObjectTemplate.create firearms ot34_flame1
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/OT-130Cannon.ssc
+ObjectTemplate.aiTemplate wespeMainGun
+ObjectTemplate.projectileTemplate ot34_flame1_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 930
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 70
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.0
+ObjectTemplate.roundOfFire 100
+ObjectTemplate.fireingForce 0
+ObjectTemplate.recoilSpeed 0
+ObjectTemplate.recoilSize 0
+ObjectTemplate.setMinDev 0.75
+rem ObjectTemplate.addTemplate e_muzzpriest
+rem ObjectTemplate.setPosition 0.0/0.0/0.791574
+rem ObjectTemplate.setRotation -179.999/0.0/0.0
+
+
+rem *** t26_projectile ***
+ObjectTemplate.create projectile ot34_flame1_Projectile
+ObjectTemplate.geometry flame_projectile
+ObjectTemplate.timeToLive CRD_NONE/0.8/0/0
+ObjectTemplate.endEffectTemplate e_willyfire
+rem -
+ObjectTemplate.timeOnEndEffect 0.5
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.setHasPointPhysics 1
+ObjectTemplate.gravityModifier 0.9
+rem ObjectTemplate.hasStartEffect 0
+ObjectTemplate.hasCollisionEffect 1
+rem ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.dieAfterColl 1
+rem ObjectTemplate.stopAtEndEffect 1
+rem ObjectTemplate.invisible 0
+ObjectTemplate.material 210
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 40
+ObjectTemplate.distToMinDamage 80
+ObjectTemplate.addTemplate e_Liekinheitin
+ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
+
+
+rem *** ot-130cannon ***
+ObjectTemplate.create firearms ot34_flame2
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/OT-130Cannon.ssc
+ObjectTemplate.aiTemplate wespeMainGun
+ObjectTemplate.projectileTemplate ot34_flame2_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 186
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 50
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 15
+ObjectTemplate.roundOfFire 7
+ObjectTemplate.fireingForce 0
+ObjectTemplate.recoilSpeed 0
+ObjectTemplate.recoilSize 0
+rem ObjectTemplate.addTemplate e_muzzpriest
+rem ObjectTemplate.setPosition 0.0/0.0/0.791574
+rem ObjectTemplate.setRotation -179.999/0.0/0.0
+
+
+rem *** t26_projectile ***
+ObjectTemplate.create projectile ot34_flame2_Projectile
+ObjectTemplate.geometry flame_projectile
+ObjectTemplate.timeToLive CRD_NONE/0.8/0/0
+Rem ObjectTemplate.endEffectTemplate e_RichoSand
+rem -
+ObjectTemplate.timeOnEndEffect 0.5
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.setHasPointPhysics 1
+ObjectTemplate.gravityModifier 0.9
+rem ObjectTemplate.hasStartEffect 0
+ObjectTemplate.hasCollisionEffect 1
+rem ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+rem ObjectTemplate.stopAtEndEffect 1
+rem ObjectTemplate.invisible 0
+ObjectTemplate.material 312
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 40
+ObjectTemplate.distToMinDamage 80
+ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc

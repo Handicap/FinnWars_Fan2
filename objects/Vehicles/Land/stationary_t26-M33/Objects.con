@@ -1,0 +1,135 @@
+rem *** stationary_t26-M33 ***
+ObjectTemplate.create PlayerControlObject stationary_t26-M33
+ObjectTemplate.NameTagOffset 0/-0.5/0
+ObjectTemplate.setNetworkableInfo T26-M33BodyInfo
+ObjectTemplate.geometry T26-M33_Hull_M1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 113
+ObjectTemplate.maxhitpoints 113
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 50
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1/-1.7
+ObjectTemplate.addArmorEffect 20 e_PanzFire 0/0.8/-1.6
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate stationary_t26-M33
+ObjectTemplate.setSoldierExitLocation -0/1.5/0 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/icon_gunner.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate lodstationary_t26-M33
+ObjectTemplate.setPosition 0.0970691/0.0/-0.158272
+
+rem *** lodstationary_t26-M33 ***
+ObjectTemplate.create LodObject lodstationary_t26-M33
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.lodSelector stationary_t26-M33lodselector
+ObjectTemplate.addTemplate stationary_t26-M33complex
+ObjectTemplate.addTemplate stationary_t26-M33simple
+ObjectTemplate.addTemplate stationary_t26-M33wreck
+
+rem *** stationary_t26-M33complex ***
+ObjectTemplate.create Bundle stationary_t26-M33complex
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.loadSoundScript Sounds/WespeTrack.ssc
+ObjectTemplate.addTemplate stationary_t26-M33entry
+ObjectTemplate.setPosition -0.299/0.0/1.2
+ObjectTemplate.addTemplate stationary_t26-M33entry
+ObjectTemplate.setPosition -0.299/0.0/-1.199
+ObjectTemplate.addTemplate t26-m33door
+ObjectTemplate.setPosition -0.172/0.605/0.715
+ObjectTemplate.addTemplate stationary_t26-M33tower
+ObjectTemplate.setPosition -0.1692556/1.3661085/0.323706
+
+rem *** stationary_t26-M33entry ***
+ObjectTemplate.create EntryPoint stationary_t26-M33entry
+ObjectTemplate.setEntryRadius 2.5
+
+rem *** stationary_t26-M33tower ***
+ObjectTemplate.create rotationalbundle stationary_t26-M33tower
+ObjectTemplate.setNetworkableInfo RenaultFTTurretInfo
+ObjectTemplate.loadSoundScript Sounds/renaultftTurret.ssc
+ObjectTemplate.geometry stationary_T26-M33_Tower_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMaxSpeed 20/20/0
+ObjectTemplate.setAcceleration 100/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate stationary_t26-M33gunbase
+ObjectTemplate.setPosition 0.0/-0.094339/0.62439
+
+rem *** stationary_t26-M33gunbase ***
+ObjectTemplate.create rotationalbundle stationary_t26-M33gunbase
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo RenaultFTGunInfo
+ObjectTemplate.loadSoundScript Sounds/renaultftgunbase.ssc
+ObjectTemplate.setMinRotation 0/-22/0
+ObjectTemplate.setMaxRotation 0/6/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+ObjectTemplate.addTemplate t26-m33cannon
+ObjectTemplate.setPosition -0.0218231/-0.00212097/0.0489088
+ObjectTemplate.addTemplate coaxial_DP
+ObjectTemplate.setPosition 0.148202/-0.10209494/0.0423546
+ObjectTemplate.addTemplate stationary_t26-M33gunnercamera
+ObjectTemplate.setPosition -0.480608/-0.00109491/0.0558218
+ObjectTemplate.addTemplate lod45gunnerCockpit
+ObjectTemplate.setPosition 0.597/0.0/0.15
+
+rem *** stationary_t26-M33gunnercamera ***
+ObjectTemplate.create Camera stationary_t26-M33gunnercamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+ObjectTemplate.OutsideHudOffset 0.26/0.606/-0.184
+
+rem *** stationary_t26-M33simple ***
+ObjectTemplate.create SimpleObject stationary_t26-M33simple
+ObjectTemplate.geometry T26-M33_Hull_L1
+
+rem *** stationary_t26-M33wreck ***
+ObjectTemplate.create SimpleObject stationary_t26-M33wreck
+ObjectTemplate.geometry Wreck_T26-M33_m1
+
+
+rem *** t26-m33lodselector ***
+LodSelectorTemplate.create distcompareselector2 stationary_t26-M33lodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200

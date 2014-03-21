@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo KomsomoletsTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo KomsomoletsGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo KomsomoletsEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo KomsomoletsBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

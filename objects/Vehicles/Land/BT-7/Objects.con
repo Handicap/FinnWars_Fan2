@@ -1,0 +1,286 @@
+rem *** BT-7 ***
+ObjectTemplate.create PlayerControlObject BT-7
+ObjectTemplate.NameTagOffset 0/-0.5/0
+ObjectTemplate.setNetworkableInfo bt-7BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 10
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.hitpoints 135
+ObjectTemplate.maxhitpoints 135
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 55
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 20
+ObjectTemplate.hpLostWhileDamageFromDeepWater 20
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.addArmorEffect 55 e_PanzDamage 0/1/-1.7
+ObjectTemplate.addArmorEffect 20 e_PanzFire 0/0.8/-1.6
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+rem testing-testing
+ObjectTemplate.TimeToLiveAfterDeath 40
+ObjectTemplate.FadeAtTimeToLiveAfterDeath 1
+ObjectTemplate.TimeToStartFadeAfterDeath 38
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.damageFromDeepWater 1
+ObjectTemplate.aiTemplate BT-7
+ObjectTemplate.setSoldierExitLocation -0/0.7/-1.2 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_panzeriv.tga"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate lodBT-7
+ObjectTemplate.setPosition 0.0970691/0.0/-0.158272
+
+rem *** lodBT-7 ***
+ObjectTemplate.create LodObject lodBT-7
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodSelector bt-7LodSelector
+ObjectTemplate.addTemplate BT-7complex
+ObjectTemplate.addTemplate BT-7simple
+ObjectTemplate.addTemplate BT-7wreck
+
+rem *** BT-7complex ***
+ObjectTemplate.create Bundle BT-7complex
+ObjectTemplate.loadSoundScript Sounds/T26-M37Track.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate lodBT-7cockpit
+ObjectTemplate.addTemplate BT-7entry
+ObjectTemplate.setPosition -0.299/0.0/1.2
+ObjectTemplate.addTemplate BT-7entry
+ObjectTemplate.setPosition -0.299/0.0/-1.199
+ObjectTemplate.addTemplate BT-7engine_l
+ObjectTemplate.setPosition 0.0/0.1/0.0
+ObjectTemplate.addTemplate BT-7engine_r
+ObjectTemplate.setPosition 0.0/0.1/0.0
+ObjectTemplate.addTemplate BT-7camera
+ObjectTemplate.setPosition 0/0.29/0.955
+ObjectTemplate.addTemplate BT-7_gunner_pco1
+ObjectTemplate.setPosition -0.0945622/0.9/0.140706
+ObjectTemplate.addTemplate e_TankinPakokaasu
+ObjectTemplate.setPosition -0.4/0.1/-2.5
+ObjectTemplate.addTemplate BT-7seat
+ObjectTemplate.setPosition 0/0.1/2.5
+ObjectTemplate.addTemplate bt-7_tuuletus
+
+
+
+ObjectTemplate.create SimpleObject bt-7_tuuletus
+ObjectTemplate.geometry bt-7_tuuletus
+ObjectTemplate.hasCollisionPhysics 1
+
+
+rem *** lodBT-7cockpit ***
+ObjectTemplate.create LodObject lodBT-7cockpit
+ObjectTemplate.lodSelector bt-7CockpitSelector
+ObjectTemplate.addTemplate BT-7cockpitexternal
+ObjectTemplate.addTemplate BT-7cockpitinternal
+ObjectTemplate.setPosition 0.169/-0.992/-0.399
+
+rem *** BT-7cockpitexternal ***
+ObjectTemplate.create SimpleObject BT-7cockpitexternal
+ObjectTemplate.geometry bt-7_Hull_M1
+
+rem *** BT-7cockpitinternal ***
+ObjectTemplate.create SimpleObject BT-7cockpitinternal
+ObjectTemplate.geometry 1P_bt-5_Driver_M1
+
+rem *** BT-7entry ***
+ObjectTemplate.create EntryPoint BT-7entry
+ObjectTemplate.setEntryRadius 2.5
+
+rem *** BT-7trackl ***
+ObjectTemplate.create AnimatedBundle BT-7trackl
+ObjectTemplate.geometry bt-5_Track_L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/bt-5_track_l.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.008/0
+ObjectTemplate.addTemplate BT-7_etu_l
+ObjectTemplate.setPosition -0.9996/-0.3527/2.3357
+ObjectTemplate.addTemplate BT-7_keski_l
+ObjectTemplate.setPosition -0.9998/-0.7/1.5033
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+ObjectTemplate.addTemplate BT-7_keski_l
+ObjectTemplate.setPosition -0.9998/-0.7/0.4821
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+ObjectTemplate.addTemplate BT-7_keski_l
+ObjectTemplate.setPosition -0.9998/-0.7/-0.657
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+ObjectTemplate.addTemplate BT-7_keski_l
+ObjectTemplate.setPosition -0.9998/-0.7/-1.5645
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+ObjectTemplate.addTemplate BT-7_taka_l
+ObjectTemplate.setPosition -1.0004/-0.431/-2.3643
+
+rem *** BT-7trackr ***
+ObjectTemplate.create AnimatedBundle BT-7trackr
+ObjectTemplate.geometry bt-5_Track_R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/bt-5_track_r.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.008/0
+ObjectTemplate.addTemplate BT-7_etu_r
+ObjectTemplate.setPosition 0.9998/-0.3588/2.3362
+ObjectTemplate.addTemplate BT-7_keski_r
+ObjectTemplate.setPosition 0.9998/-0.7/1.4933
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+ObjectTemplate.addTemplate BT-7_keski_r
+ObjectTemplate.setPosition 0.9998/-0.7/0.4628
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+ObjectTemplate.addTemplate BT-7_keski_r
+ObjectTemplate.setPosition 0.9998/-0.7/-0.6677
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+ObjectTemplate.addTemplate BT-7_keski_r
+ObjectTemplate.setPosition 0.9998/-0.7/-1.5839
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+ObjectTemplate.addTemplate BT-7_taka_r
+ObjectTemplate.setPosition 1.0055/-0.431/-2.3643
+
+rem *** BT-7camera ***
+ObjectTemplate.create Camera BT-7camera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+rem *** BT-7_gunner_pco1 ***
+ObjectTemplate.create PlayerControlObject BT-7_gunner_pco1
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo bt-7BodyInfo
+ObjectTemplate.aiTemplate BT-7Cannon
+ObjectTemplate.setSoldierExitLocation -0/0.7/-1.2 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/icon_gunner.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.DirBarXScale 20
+ObjectTemplate.DirBarYScaleAbove 40
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate BT-7entry
+ObjectTemplate.setPosition 0.4/0.0/0.5
+ObjectTemplate.addTemplate BT-7tower
+ObjectTemplate.setPosition 0.10/-0.1/0.35782382
+
+rem *** BT-7tower ***
+ObjectTemplate.create rotationalbundle BT-7tower
+ObjectTemplate.setNetworkableInfo bt-7TurretInfo
+ObjectTemplate.loadSoundScript Sounds/T26-M37Turret.ssc
+ObjectTemplate.geometry bt-7_Tower_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMaxSpeed 20/20/0
+ObjectTemplate.setAcceleration 100/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate BT-7gunbase
+ObjectTemplate.setPosition 0.0/0.0183/0.6458
+
+rem *** BT-7gunbase ***
+ObjectTemplate.create rotationalbundle BT-7gunbase
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo bt-7GunInfo
+ObjectTemplate.geometry bt-7_gunbase_M1
+ObjectTemplate.loadSoundScript Sounds/T26-M37gunbase.ssc
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate BT-7cannon
+ObjectTemplate.setPosition 00.0/0/0.0
+ObjectTemplate.addTemplate BT-7gunnercamera
+ObjectTemplate.setPosition -0.380608/-0.00109491/0.2558218
+ObjectTemplate.addTemplate lod45gunnerCockpit
+ObjectTemplate.setPosition 0.697/0.0/0.35
+ObjectTemplate.addTemplate coaxial_DP
+ObjectTemplate.setPosition 0.148202/-0.04209494/0.1423546
+
+rem *** BT-7gunnercamera ***
+ObjectTemplate.create Camera BT-7gunnercamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+ObjectTemplate.OutsideHudOffset 0.26/0.606/-0.184
+
+rem *** BT-7seat ***
+ObjectTemplate.create seatobject BT-7seat
+ObjectTemplate.seatFlags c_SeatShowHeadOfSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** BT-7simple ***
+ObjectTemplate.create SimpleObject BT-7simple
+ObjectTemplate.geometry bt-7_Hull_L1
+
+rem *** BT-7wreck ***
+ObjectTemplate.create SimpleObject BT-7wreck
+ObjectTemplate.geometry Wreck_bt-7_m1
+
+
+
+
+rem ***  Komsomoletscockpitselector ***
+LodSelectorTemplate.create distcompareselector  bt-7cockpitselector
+LodSelectorTemplate.addLodDistance 1.2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem ***  Komsomoletslodselector ***
+LodSelectorTemplate.create distcompareselector2  bt-7lodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+

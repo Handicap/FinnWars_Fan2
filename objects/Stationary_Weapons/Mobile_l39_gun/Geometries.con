@@ -1,0 +1,9 @@
+GeometryTemplate.create StandardMesh l39_main_nocol
+GeometryTemplate.file l39_main_nocol
+geometryTemplate.cullFactor 0.45
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 1
+GeometryTemplate.setLodDistance 2 2
+GeometryTemplate.setLodDistance 3 4
+GeometryTemplate.setLodDistance 4 5
+GeometryTemplate.setLodDistance 5 100

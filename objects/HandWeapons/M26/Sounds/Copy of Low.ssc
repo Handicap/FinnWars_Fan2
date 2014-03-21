@@ -1,0 +1,83 @@
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+stereo
+volume 0
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/Saloranta_L1.wav
+minDistance 2
+loop
+stop FinishSample
+dopplerOff
+priority 10
+stereo
+volume 10
+
+randomStartPitch 0 / 0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 1
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/Saloranta_L2.wav
+minDistance 1
+loop
+stop FinishSample
+dopplerOff
+priority 8
+randomStartPitch 0 / 0
+volume 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1500
+	param 1
+	param -1
+endEffect
+
+

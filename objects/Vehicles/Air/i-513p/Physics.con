@@ -1,0 +1,188 @@
+
+
+rem *** I-153AirbreakLeft ***
+ObjectTemplate.create Wing I-153pAirbreakLeft
+ObjectTemplate.setNetworkableInfo I-153p_wing_info
+rem ObjectTemplate.geometry I-153_airbreak_left_m1
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 1.539/-0.05/0.883
+ObjectTemplate.setFlapLift 2
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+
+rem *** I-153AirbreakRight ***
+ObjectTemplate.create Wing I-153pAirbreakRight
+ObjectTemplate.setNetworkableInfo I-153p_wing_info
+rem ObjectTemplate.geometry I-153_airbreak_right_m1
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -1.539/-0.05/0.883
+ObjectTemplate.setFlapLift 2
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+
+rem *** I-153RudderBackVertical ***
+ObjectTemplate.create Wing I-153pRudderBackVertical
+ObjectTemplate.setNetworkableInfo I-153p_wing_info
+ObjectTemplate.geometry I-153_rodder_m1p
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/60/60
+ObjectTemplate.setAcceleration 0/60/60
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1.5
+
+
+rem *** I-153BodyWingVertical ***
+ObjectTemplate.create Wing I-153pBodyWingVertical
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/-0.6
+ObjectTemplate.setWingLift 2.1
+ObjectTemplate.setFlapLift 0
+
+
+rem *** I-153RudderBackLeft ***
+ObjectTemplate.create Wing I-153pRudderBackLeft
+ObjectTemplate.setNetworkableInfo I-153p_wing_info
+ObjectTemplate.geometry I-153_tailflap_left_m1p
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.4
+
+
+rem *** I-153RudderBackRight ***
+ObjectTemplate.create Wing I-153pRudderBackRight
+ObjectTemplate.setNetworkableInfo I-153p_wing_info
+ObjectTemplate.geometry I-153_tailflap_right_m1p
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.4
+
+
+rem *** I-153RudderFrontLeft ***
+ObjectTemplate.create Wing I-153pRudderFrontLeft
+ObjectTemplate.setNetworkableInfo I-153p_wing_info
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
+rem ObjectTemplate.geometry I-153_wingflap_left_m1p
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/120/0
+ObjectTemplate.setAcceleration 0/-120/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0.5/0/0.41
+ObjectTemplate.setWingLift 2.4
+ObjectTemplate.setFlapLift 2.0
+
+
+rem *** I-153RudderFrontRight ***
+ObjectTemplate.create Wing I-153pRudderFrontRight
+ObjectTemplate.setNetworkableInfo I-153p_wing_info
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
+rem ObjectTemplate.geometry I-153_wingflap_right_m1
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/120/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -0.5/0/0.41
+ObjectTemplate.setWingLift 2.4
+ObjectTemplate.setFlapLift 2.0
+
+
+rem *** I-153Engine ***
+ObjectTemplate.create Engine I-153pEngine
+ObjectTemplate.setNetworkableInfo I-153p_engine_info
+ObjectTemplate.loadSoundScript Sounds/I-153Engine.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodI-153pPropeller
+ObjectTemplate.setPosition 0/0.1285/-2.474
+ObjectTemplate.addTemplate I-153pLandingGearL
+ObjectTemplate.setPosition -0.645/-0.3/-3.543
+ObjectTemplate.addTemplate I-153pLandingGearR
+ObjectTemplate.setPosition 0.646/-0.3/-3.543
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-3000
+ObjectTemplate.setMaxRotation 0.3/0/4500
+ObjectTemplate.setMaxSpeed 1000/0/500
+ObjectTemplate.setAcceleration 350/0/550
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 14
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 70
+
+
+rem *** I-153Wheel3 ***
+ObjectTemplate.create Spring I-153pWheel3
+ObjectTemplate.geometry I-153_wheel_left_m1p
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** I-153Wheel2 ***
+ObjectTemplate.create Spring I-153pWheel2
+ObjectTemplate.geometry I-153_wheel_right_m1p
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** I-153Wheel1 ***
+ObjectTemplate.create Spring I-153pWheel1
+ObjectTemplate.geometry I-153_wheel_tail_m1p
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12

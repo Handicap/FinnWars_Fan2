@@ -1,0 +1,115 @@
+rem *** KubelMobile ***
+aiTemplatePlugIn.create Mobile KubelMobile
+aiTemplatePlugIn.vehicleNumber 0
+aiTemplatePlugIn.maxSpeed 20.0
+aiTemplatePlugIn.turnRadius 25.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+aiTemplatePlugIn.lodHeight 0.65
+
+rem *** KubelPhysical ***
+aiTemplatePlugIn.create Physical KubelPhysical
+aiTemplatePlugIn.setStrType LightArmour
+
+rem *** KubelCover ***
+aiTemplatePlugIn.create Cover KubelCover
+aiTemplatePlugIn.coverValue 2.0
+
+rem *** KubelCtrl ***
+aiTemplatePlugIn.create ControlInfo KubelCtrl
+aiTemplatePlugIn.driveTurnControl PIYaw
+aiTemplatePlugIn.driveThrottleControl PIThrottle
+aiTemplatePlugIn.aimHorizontalControl PINone
+aiTemplatePlugIn.aimVerticalControl PINone
+aiTemplatePlugIn.lookHorizontalControl PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity -1.0
+aiTemplatePlugIn.pitchSensitivity 0.21817
+aiTemplatePlugIn.rollSensitivity -0.21817
+aiTemplatePlugIn.yawSensitivity -2.5
+aiTemplatePlugIn.lookVerticalSensitivity 0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead 1.0
+aiTemplatePlugIn.pitchLookAhead 1.0
+aiTemplatePlugIn.rollLookAhead 1.0
+aiTemplatePlugIn.yawLookAhead 1.0
+aiTemplatePlugIn.lookVerticalLookAhead 1.0
+aiTemplatePlugIn.lookHorizontalLookAhead 1.0
+aiTemplatePlugIn.throttleScale 1.0
+aiTemplatePlugIn.pitchScale 1.0
+aiTemplatePlugIn.rollScale 1.0
+aiTemplatePlugIn.yawScale 0.0020
+aiTemplatePlugIn.lookVerticalScale 1.0
+aiTemplatePlugIn.lookHorizontalScale 1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -110/-40/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 110/10/0
+
+rem *** KubelUnit ***
+aiTemplatePlugIn.create Unit KubelUnit
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 0
+aiTemplatePlugIn.equipmentType 5
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+rem *** KubelPassengerUnit ***
+aiTemplatePlugIn.create Unit KubelPassengerUnit
+aiTemplatePlugIn.equipmentType 8
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 0
+aiTemplatePlugIn.setSelectKey PIMenuSelect2
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+rem *** KubelPassengerCtrl ***
+aiTemplatePlugIn.create ControlInfo KubelPassengerCtrl
+aiTemplatePlugIn.driveTurnControl PIYaw
+aiTemplatePlugIn.driveThrottleControl PIThrottle
+aiTemplatePlugIn.aimHorizontalControl PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity -1.0
+aiTemplatePlugIn.pitchSensitivity 0.21817
+aiTemplatePlugIn.rollSensitivity -0.21817
+aiTemplatePlugIn.yawSensitivity -2.5
+aiTemplatePlugIn.lookVerticalSensitivity 0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead 1.0
+aiTemplatePlugIn.pitchLookAhead 1.0
+aiTemplatePlugIn.rollLookAhead 1.0
+aiTemplatePlugIn.yawLookAhead 1.0
+aiTemplatePlugIn.lookVerticalLookAhead 1.0
+aiTemplatePlugIn.lookHorizontalLookAhead 1.0
+aiTemplatePlugIn.throttleScale 1.0
+aiTemplatePlugIn.pitchScale 5.0
+aiTemplatePlugIn.rollScale 5.0
+aiTemplatePlugIn.yawScale 0.0020
+aiTemplatePlugIn.lookVerticalScale 1.0
+aiTemplatePlugIn.lookHorizontalScale 1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -110/-40/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 110/10/0
+
+aiTemplate.create Kubel
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.addType ITMobile
+aiTemplate.degeneration 10
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 6
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn KubelMobile
+aiTemplate.addPlugIn KubelPhysical
+aiTemplate.addPlugIn KubelCover
+aiTemplate.addPlugIn KubelCtrl
+aiTemplate.addPlugIn KubelUnit
+
+aiTemplate.create KubelPassenger
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.degeneration 10
+aiTemplate.allowedTimeDiff 1
+aiTemplate.basicTemp 6
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn KubelPassengerUnit
+aiTemplate.addPlugIn KubelPassengerCtrl
+

@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject talo
+ObjectTemplate.geometry talo
+ObjectTemplate.setHasCollisionPhysics 1

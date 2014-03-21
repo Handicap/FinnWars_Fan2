@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject paklaatikko
+ObjectTemplate.geometry paklaatikko
+ObjectTemplate.setHasCollisionPhysics 1
+
+

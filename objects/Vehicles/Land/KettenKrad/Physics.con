@@ -1,0 +1,189 @@
+
+
+rem *** KettenKradEngine ***
+ObjectTemplate.create Engine KettenKradEngine
+ObjectTemplate.setNetworkableInfo TigerEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/KettenKradEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKradFrontWheel
+ObjectTemplate.setPosition 0/-0.245/1.09
+
+beginrem
+ObjectTemplate.addTemplate KettenKradFrontWheelL
+ObjectTemplate.setPosition -0.6/0.925/1.13
+ObjectTemplate.addTemplate KettenKradFrontWheelR
+ObjectTemplate.setPosition 0.6/0.925/1.13
+endrem
+
+
+ObjectTemplate.addTemplate KettenKradBackSpringL
+ObjectTemplate.setPosition -1.0/-0.953/-0.998
+ObjectTemplate.addTemplate KettenKradBackSpringR
+ObjectTemplate.setPosition 1.0/-0.953/-0.998
+
+ObjectTemplate.addTemplate KettenKrad_TrackL
+ObjectTemplate.setPosition -0.099/-1.148/0.0
+ObjectTemplate.addTemplate KettenKrad_TrackR
+ObjectTemplate.setPosition 0.1/-1.148/0.0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/55000
+ObjectTemplate.setAcceleration 0/0/55000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 15.5
+ObjectTemplate.setDifferential 7
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+
+
+rem *** KettenKrad_LLargeWheel_Dummy ***
+ObjectTemplate.create Spring KettenKrad_LLargeWheel_Dummy
+ObjectTemplate.geometry KettenKrad_LLargeWheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** KettenKrad_RLargeWheel_Dummy ***
+ObjectTemplate.create Spring KettenKrad_RLargeWheel_Dummy
+ObjectTemplate.geometry KettenKrad_RLargeWheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** KettenKrad_LLargeWheel_Smokin ***
+ObjectTemplate.create Spring KettenKrad_LLargeWheel_WithSmoke
+ObjectTemplate.geometry KettenKrad_LLargeWheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** KettenKrad_RLargeWheel_Smokin ***
+ObjectTemplate.create Spring KettenKrad_RLargeWheel_WithSmoke
+ObjectTemplate.geometry KettenKrad_RLargeWheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** KettenKrad_LMediumWheel ***
+ObjectTemplate.create Spring KettenKrad_LMediumWheel
+ObjectTemplate.geometry KettenKrad_LMediumWheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** KettenKrad_RMediumWheel ***
+ObjectTemplate.create Spring KettenKrad_RMediumWheel
+ObjectTemplate.geometry KettenKrad_RMediumWheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** KettenKradWheelFrontSpring ***
+ObjectTemplate.create Spring KettenKradFrontSpring
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry KettenKrad_fronttire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+rem ObjectTemplate.Grip c_PGFRollGrip
+rem ObjectTemplate.setStrength 0
+rem ObjectTemplate.setDamping 0
+
+
+
+rem ****************************************
+rem      Invisible Wheels Used to Drive
+rem ****************************************
+
+rem *** KettenKradFrontSpringR ***
+ObjectTemplate.create Spring KettenKradFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+rem ObjectTemplate.createInvisible 1
+
+rem *** KettenKradFrontSpringL ***
+ObjectTemplate.create Spring KettenKradFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+rem ObjectTemplate.createInvisible 1
+
+
+rem *** KettenKradBackLSpring ***
+ObjectTemplate.create Spring KettenKradBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1
+
+rem *** KettenKradBackRSpring ***
+ObjectTemplate.create Spring KettenKradBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1
+

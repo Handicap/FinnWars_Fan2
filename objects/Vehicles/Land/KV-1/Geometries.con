@@ -1,0 +1,189 @@
+
+GeometryTemplate.create StandardMesh 1p_KVGunner
+GeometryTemplate.file 1p_KVgunner
+
+GeometryTemplate.create StandardMesh 1p_KV1_Gunner_m1
+GeometryTemplate.file 1p_Tiger_Gunner_m1
+
+GeometryTemplate.create StandardMesh KV1_Hull_L1
+GeometryTemplate.file kv-1_hull_2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_KV1_M1
+GeometryTemplate.file kv-1_hull_2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+
+renderer.beginGlobalCluster KV1
+
+GeometryTemplate.create StandardMesh KV1_Canon1_M1
+GeometryTemplate.file kv-1_cannon
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh KV1_Canon2_M1
+GeometryTemplate.file kv-1_cannon
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh KV1_Hull_M1
+GeometryTemplate.file kv-1_hull_2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create AnimatedMesh KV1_TrackL_M1
+GeometryTemplate.file T-34_TrackL_M1
+GeometryTemplate.setSkin animations/T-34_TrackL_M1.skn
+
+GeometryTemplate.create AnimatedMesh KV1_TrackR_M1
+GeometryTemplate.file T-34_TrackR_M1
+GeometryTemplate.setSkin animations/T-34_TrackR_M1.skn
+
+
+GeometryTemplate.create AnimatedMesh KV1_TrackL_M2
+GeometryTemplate.file Sherman_TrackL_M1
+GeometryTemplate.setSkin animations/Sherman_TrackL_M1.skn
+
+GeometryTemplate.create AnimatedMesh KV1_TrackR_M2
+GeometryTemplate.file Sherman_TrackR_M1
+GeometryTemplate.setSkin animations/Sherman_TrackR_M1.skn
+
+GeometryTemplate.create StandardMesh KV1_whe1R_M1
+GeometryTemplate.file T-34_whe1R_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KV1_whe1L_M1
+GeometryTemplate.file T-34_whe1L_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KV1_whe2R_M1
+GeometryTemplate.file T-34_whe2R_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KV1_whe2L_M1
+GeometryTemplate.file T-34_whe2L_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KV1_whe3L_M1
+GeometryTemplate.file T-34_whe3L_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KV1_whe3R_M1
+GeometryTemplate.file T-34_whe3R_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KV1_Hull_Hatch_M1
+GeometryTemplate.file T-34_Hull_Hatch_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KV1_Tower_M1
+GeometryTemplate.file kv-1_tower_2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh KV1_Tower_Hatch1_M1
+beginrem
+GeometryTemplate.file T-34_Tower_Hatch1_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+endrem
+
+GeometryTemplate.create StandardMesh KV1_Tower_Hatch2_M1
+beginrem
+GeometryTemplate.file T-34_Tower_Hatch2_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+endrem
+
+
+GeometryTemplate.create StandardMesh KV1_smallwheelL
+GeometryTemplate.file kv-1_smallwheelL
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh KV1_smallwheelR
+GeometryTemplate.file kv-1_smallwheelR
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+
+
+GeometryTemplate.create StandardMesh KV1_bigwheelL
+GeometryTemplate.file kv-1_bigwheelL
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KV1_bigwheelR
+GeometryTemplate.file kv-1_bigwheelR
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh KV1_towergun
+GeometryTemplate.file kv-1_tower_mg_2
+
+
+GeometryTemplate.create StandardMesh KV1_hullgun
+GeometryTemplate.file kv-1_hull_mg
+
+
+renderer.endGlobalCluster
+
+

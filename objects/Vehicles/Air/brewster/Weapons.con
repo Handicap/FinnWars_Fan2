@@ -1,0 +1,52 @@
+
+
+rem *** BrewsterGunBarrel ***
+ObjectTemplate.create FireArms BrewsterGuns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/Brewsterfire.ssc
+ObjectTemplate.aiTemplate BrewsterMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate BrewsterProjectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/3/0/0
+ObjectTemplate.magSize 900
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 400
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.addFireArmsPosition 2.2/-0.01/1.8 -1.3/0/0
+ObjectTemplate.addFireArmsPosition -2.2/-0.01/1.8 1.3/0/0
+ObjectTemplate.AmmoType	10
+
+
+rem *** BrewsterProjectile ***
+ObjectTemplate.create Projectile BrewsterProjectile
+ObjectTemplate.createNotInGrid 1
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/1.5/0/0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.material 213
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.ammotype 10
+
+
+rem *** BrewsterBombDummy ***
+ObjectTemplate.create FireArms BrewsterBombDummy
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate BrewsterBombs
+ObjectTemplate.projectileTemplate FighterBomb
+ObjectTemplate.projectilePosition 0/-0.45/0
+ObjectTemplate.magSize 15
+ObjectTemplate.numOfMag 1
+ObjectTemplate.AutoReload 1
+ObjectTemplate.velocity 0
+ObjectTemplate.roundOfFire 0.2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.AmmoType	9
+

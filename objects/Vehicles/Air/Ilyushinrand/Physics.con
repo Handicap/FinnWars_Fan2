@@ -1,0 +1,197 @@
+rem *** IlyushinEngine ***
+ObjectTemplate.create Engine IlyushinEngine
+ObjectTemplate.setNetworkableInfo IlyushinEngineInfo
+ObjectTemplate.loadSoundScript Sounds/IlyushinEngine.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodIlyushinPropeller
+ObjectTemplate.setPosition 0/-0.149/1.5
+ObjectTemplate.addTemplate IlyushinGear1
+ObjectTemplate.setPosition 1.59/-0.928/-0.446
+ObjectTemplate.addTemplate IlyushinGear2
+ObjectTemplate.setPosition -1.59/-0.928/-0.446
+ObjectTemplate.addTemplate IlyushinLandingGearHatchBundle
+ObjectTemplate.setPosition 1.599/-1.053/-1.012
+ObjectTemplate.setRotation 1.488/-6.619/0.388
+ObjectTemplate.addTemplate IlyushinLandingGearHatchBundle
+ObjectTemplate.setPosition -1.589/-1.053/-1.012
+ObjectTemplate.setRotation 1.488/-6.619/0.388
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-3000
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 1000/0/500
+ObjectTemplate.setAcceleration 500/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 14.25
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 70
+
+
+ObjectTemplate.create Wing IlyushinAirbreak
+ObjectTemplate.setNetworkableInfo IlyushinWingInfo
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 4
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+
+ObjectTemplate.create RotationalBundle IlyushinFlapR
+ObjectTemplate.geometry ILyushin_RFlap_M1
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/110/0
+ObjectTemplate.setAcceleration 0/110/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.create Wing IlyushinRightWing
+ObjectTemplate.networkableInfo IlyushinWingInfo
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/110/0
+ObjectTemplate.setAcceleration 0/110/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -1.5/0/0.104
+ObjectTemplate.setWingLift 3
+ObjectTemplate.setFlapLift 2
+
+ObjectTemplate.create RotationalBundle IlyushinFlapL
+ObjectTemplate.geometry ILyushin_LFlap_M1
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/125/0
+ObjectTemplate.setAcceleration 0/-110/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+ObjectTemplate.create Wing IlyushinLeftWing
+ObjectTemplate.networkableInfo IlyushinWingInfo
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/110/0
+ObjectTemplate.setAcceleration 0/-110/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 1.5/0/0.104
+ObjectTemplate.setWingLift 3
+ObjectTemplate.setFlapLift 2
+
+
+
+rem *** IlyushinRudderRL ***
+ObjectTemplate.create Wing IlyushinRudderRL
+ObjectTemplate.setNetworkableInfo IlyushinWingInfo
+ObjectTemplate.geometry ILyushin_RearLFlap
+ObjectTemplate.setMinRotation 0/-7.5/0
+ObjectTemplate.setMaxRotation 0/13.5/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/-30/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 2.0
+
+
+rem *** IlyushinRudderRR ***
+ObjectTemplate.create Wing IlyushinRudderRR
+ObjectTemplate.setNetworkableInfo IlyushinWingInfo
+ObjectTemplate.geometry ILyushin_RearRFlap
+ObjectTemplate.setMinRotation 0/-7.5/0
+ObjectTemplate.setMaxRotation 0/13.5/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/-30/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 2.0
+
+
+rem *** IlyushinRudderRC ***
+ObjectTemplate.create RotationalBundle IlyushinRudderRC
+ObjectTemplate.geometry ILyushin_VRudder_M1
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/75/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** IlyushinVerticalRudder ***
+ObjectTemplate.create Wing IlyushinVerticalRudder
+ObjectTemplate.setNetworkableInfo IlyushinWingInfo
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/75/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1.5
+
+rem *** IlyushinBackWheel ***
+ObjectTemplate.create Spring IlyushinBackWheel
+ObjectTemplate.geometry Ilyushin_backwheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** IlyushinWheel1 ***
+ObjectTemplate.create Spring IlyushinWheel1
+ObjectTemplate.geometry Ilyushin_Wheel_right_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** IlyushinWheel2 ***
+ObjectTemplate.create Spring IlyushinWheel2
+ObjectTemplate.geometry Ilyushin_Wheel_left_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** IlyushinBodyWing ***
+ObjectTemplate.create Wing IlyushinBodyWing
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/-0.1
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+

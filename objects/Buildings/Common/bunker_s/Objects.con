@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject bunker_s
+ObjectTemplate.geometry bunker_s
+ObjectTemplate.setHasCollisionPhysics 1

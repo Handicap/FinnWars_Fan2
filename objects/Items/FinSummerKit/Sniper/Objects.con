@@ -1,0 +1,36 @@
+ObjectTemplate.create Kit FinSummer_Sniper
+ObjectTemplate.setType Scout
+ObjectTemplate.setKitTeam 1
+rem ObjectTemplate.geometry radio
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate German_Helmet
+rem ObjectTemplate.addTemplate Radio
+rem ObjectTemplate.addTemplate german_HipPack
+rem ObjectTemplate.addTemplate huppu
+ObjectTemplate.addTemplate NoParachute
+ObjectTemplate.addTemplate pistoolikotelo
+ObjectTemplate.addTemplate kiikarikotelo
+ObjectTemplate.addTemplate puukon_tuppi
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_scout_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_scout_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_puukko.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_nagantrevolver.dds"
+ObjectTemplate.addWeaponIcon "kits/mosin_sniper.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_binoculars.tga"
+
+ObjectTemplate.setKitIcon 0 "kits/fin_mosinnagant_sniper.dds"
+ObjectTemplate.setKitName 0 ""
+ObjectTemplate.setKitActiveName 0 "In use/limit"
+
+ObjectTemplate.addTemplate Mosin-NagantSniper
+ObjectTemplate.addTemplate Nagant
+ObjectTemplate.addTemplate KnifeAxis
+rem ObjectTemplate.addTemplate GrenadeAxis
+ObjectTemplate.addTemplate Binoculars
+
+
+
+ObjectTemplate.aiTemplate  Scout

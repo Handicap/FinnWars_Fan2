@@ -1,0 +1,49 @@
+
+
+rem *** zis5 ***
+ObjectTemplate.create PlayerControlObject Objective_area
+ObjectTemplate.NameTagOffset -0.3/-0.2/0
+ObjectTemplate.setNetworkableInfo areaBodyInfo
+ObjectTemplate.geometry area_model
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.drag 2
+ObjectTemplate.dragOffset 0/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0
+ObjectTemplate.exitTimer 3
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 76
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 999
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+
+ObjectTemplate.AddTemplate Objective_SoldierSpawn
+ObjectTemplate.SetPosition 112/1/509
+
+ObjectTemplate.AddTemplate Objective_SoldierSpawn
+ObjectTemplate.SetPosition 14/0.8/598
+
+ObjectTemplate.create SpawnPoint Objective_SoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 70
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0

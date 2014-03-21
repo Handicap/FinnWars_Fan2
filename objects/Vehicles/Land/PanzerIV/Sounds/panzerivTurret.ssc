@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/panzerivTurret.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/panzerivTurret.ssc
+	
+#templateLevel LOW
+
+	#include Low/panzerivTurret.ssc

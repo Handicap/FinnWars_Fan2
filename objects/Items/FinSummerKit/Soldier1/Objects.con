@@ -1,0 +1,34 @@
+ObjectTemplate.create Kit FinSummer_Soldier1
+ObjectTemplate.setType Assault
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry Kit_Skp
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate finsummercap
+ObjectTemplate.addTemplate German_hippack
+ObjectTemplate.addTemplate NoParachute
+ObjectTemplate.addTemplate kiikarikotelo
+ObjectTemplate.addTemplate puukon_tuppi
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_assault_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_assault_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_puukko.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_suomikp.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_grenadeaxis.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_binoculars.tga"
+
+ObjectTemplate.setKitIcon 1 "kits/fin_m31skp.dds"
+ObjectTemplate.setKitName 1 ""
+ObjectTemplate.setKitActiveName 1 "In use/limit"
+
+rem *** The order is important, first the best weapons!
+
+ObjectTemplate.addTemplate SuomiSMG
+ObjectTemplate.addTemplate KnifeAxis
+ObjectTemplate.addTemplate GrenadeAxis
+ObjectTemplate.addTemplate Binoculars
+
+ObjectTemplate.aiTemplate  Assault
+
+

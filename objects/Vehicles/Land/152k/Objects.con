@@ -1,0 +1,143 @@
+rem *** 152k ***
+ObjectTemplate.create PlayerControlObject 152k
+ObjectTemplate.NameTagOffset 0/-0.5/0
+ObjectTemplate.setNetworkableInfo 152kBodyInfo
+ObjectTemplate.geometry tripod_temp
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 50
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate 152k
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_turret_16x16.dds"
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.vehicleFov 0.3
+ObjectTemplate.addTemplate 152kcomplex
+ObjectTemplate.addTemplate 152kseat
+ObjectTemplate.setPosition 0.356885/0.0/0.0
+
+rem *** 152kcomplex ***
+ObjectTemplate.create bundle 152kcomplex
+ObjectTemplate.loadSoundScript Sounds/152kTrack.ssc
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate 152kentry
+ObjectTemplate.setPosition -0.299/0.0/1.2
+ObjectTemplate.addTemplate 152kentry
+ObjectTemplate.setPosition -0.299/0.0/-1.199
+ObjectTemplate.addTemplate 152kcamera
+ObjectTemplate.setPosition 0.365664/0.865929/0.029
+ObjectTemplate.addTemplate 152k_gunner_pco1
+ObjectTemplate.setPosition 0.0/0.0/-0.449
+
+rem *** 152kentry ***
+ObjectTemplate.create EntryPoint 152kentry
+ObjectTemplate.setEntryRadius 2.5
+
+rem *** 152kcamera ***
+ObjectTemplate.create Camera 152kcamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** 152k_gunner_pco1 ***
+ObjectTemplate.create PlayerControlObject 152k_gunner_pco1
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo 152kBodyInfo
+ObjectTemplate.aiTemplate 152kCannon
+ObjectTemplate.setSoldierExitLocation -2/0/0 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_turret_16x16.dds"
+ObjectTemplate.artPos 1
+ObjectTemplate.hasRestrictedExit 1
+
+ObjectTemplate.DirBarXScale 180
+ObjectTemplate.DirBarYScaleAbove 25
+ObjectTemplate.DirBarYScaleBelow 0
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+
+ObjectTemplate.addTemplate 152kentry
+ObjectTemplate.setPosition 0.4/0.0/0.5
+ObjectTemplate.addTemplate 152ktower
+ObjectTemplate.setPosition 0.0/0.0/0.0
+
+rem *** 152ktower ***
+ObjectTemplate.create rotationalbundle 152ktower
+ObjectTemplate.setNetworkableInfo 152kBodyInfo
+ObjectTemplate.loadSoundScript Sounds/152kTurret.ssc
+ObjectTemplate.geometry 152k_hull
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMinRotation -180/0/0
+ObjectTemplate.setMaxRotation 180/0/0
+ObjectTemplate.setMaxSpeed 10/10/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate 152kgunbase
+ObjectTemplate.setPosition 0.0016/1.6572/0.243
+ObjectTemplate.addTemplate 152kseat
+ObjectTemplate.setPosition -0.670639/0.958221/-0.8760491
+
+rem *** 152kgunbase ***
+ObjectTemplate.create rotationalbundle 152kgunbase
+ObjectTemplate.setNetworkableInfo 152kBodyInfo
+ObjectTemplate.loadSoundScript Sounds/152kgunbase.ssc
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate 152kcannon
+ObjectTemplate.setPosition 0.0/0/0
+ObjectTemplate.addTemplate 152kgunnercamera
+ObjectTemplate.setPosition -0.299/1.306825/-0.1653183
+
+rem *** 152kgunnercamera ***
+ObjectTemplate.create Camera 152kgunnercamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMExternTrace 1
+
+rem *** 152kseat ***
+ObjectTemplate.create seatobject 152kseat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+

@@ -1,0 +1,230 @@
+renderer.beginGlobalCluster Brewster
+GeometryTemplate.create StandardMesh Brewster_whe1_M1
+GeometryTemplate.file Mustang_whe1_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Brewster_whe2_M1
+GeometryTemplate.file Mustang_whe2_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Brewster_hat6_M1
+GeometryTemplate.file Mustang_hat6_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_hat4_M1
+GeometryTemplate.file Mustang_hat4_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_hat5_M1
+GeometryTemplate.file Mustang_hat5_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_hat2_M1
+GeometryTemplate.file Mustang_hat2_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_hat3_M1
+GeometryTemplate.file Mustang_hat3_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_rud5_M1
+GeometryTemplate.file Mustang_rud5_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_hat1_M1
+GeometryTemplate.file Mustang_hat1_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_rud2_M1
+GeometryTemplate.file Mustang_rud2_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_rud3_M1
+GeometryTemplate.file Mustang_rud3_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_rud4_M1
+GeometryTemplate.file Mustang_rud4_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_fus1_M1
+GeometryTemplate.file Brewster_fus
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 1P_Brewster_M1
+GeometryTemplate.file 1P_Mustang_M1
+
+GeometryTemplate.create StandardMesh Brewster_can1_M1
+GeometryTemplate.file Mustang_can1_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_prp1
+GeometryTemplate.file Mustang_prp1_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_prp2
+GeometryTemplate.file Mustang_prp1_M2
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh Brewster_gea1_M1
+GeometryTemplate.file Mustang_gea1_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_gea2_M1
+GeometryTemplate.file Mustang_gea2_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_gea3_M1
+GeometryTemplate.file Mustang_gea3_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_flp1_M1
+GeometryTemplate.file Mustang_flp1_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_flp2_M1
+GeometryTemplate.file Mustang_flp2_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_rud1_M1
+GeometryTemplate.file Mustang_rud1_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_FrontGear_L_M1
+GeometryTemplate.file Mustang_FrontGear_L_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Brewster_FrontGear_R_M1
+GeometryTemplate.file Mustang_FrontGear_R_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Brewster_fus1_L1
+GeometryTemplate.file Mustang_fus1_L1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Wreck_Brewster1_m1
+GeometryTemplate.file Wreck_Mustang1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500

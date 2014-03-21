@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SturmGeschutzEngine.ssc
+		
+#templateLevel MEDIUM
+
+	#include Mid/SturmGeschutzEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/SturmGeschutzEngine.ssc

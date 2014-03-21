@@ -1,0 +1,162 @@
+renderer.beginGlobalCluster SB-2
+
+GeometryTemplate.create StandardMesh SB-2_Fus_M1
+GeometryTemplate.file sb-2_hull2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 40
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh SB-2_rearturret
+GeometryTemplate.file SB-2rearturret
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+
+GeometryTemplate.create StandardMesh SB-2_Cockpit_M1
+GeometryTemplate.file sb-2pilotcpit
+
+GeometryTemplate.create StandardMesh SB-2_RearCockpit_M1
+GeometryTemplate.file SB-2rearturretcpit
+
+
+GeometryTemplate.create StandardMesh SB-2_GearLeft_M1
+GeometryTemplate.file Junker_GearLeft_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh SB-2_GearRight_M1
+GeometryTemplate.file Junker_GearRight_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh SB-2_GearBack_M1
+GeometryTemplate.file Junker_GearBack_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh SB-2_FlapL
+GeometryTemplate.file sb-2flapL
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh SB-2_FlapR
+GeometryTemplate.file sb-2flapR
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+
+GeometryTemplate.create StandardMesh SB-2_FlapTailRight_M1
+GeometryTemplate.file sb-2elevatorR
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh SB-2_FlapTailLeft_M1
+GeometryTemplate.file sb-2elevatorL
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh SB-2_Rudder_M1
+GeometryTemplate.file sb-2rudder
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh SB-2_WheelBack_M1
+GeometryTemplate.file Junker_WheelBack_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh SB-2_WheelLeft_M1
+GeometryTemplate.file Junker_WheelLeft_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh SB-2_WheelRight_M1
+GeometryTemplate.file Junker_WheelRight_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh SB-2_Shad_L1
+GeometryTemplate.file sb-2_hullLOD
+
+GeometryTemplate.create StandardMesh Wreck_SB-2_1_M1
+GeometryTemplate.file sb-2hullwreck
+
+GeometryTemplate.create StandardMesh SB-2_gunmount
+GeometryTemplate.file ILyushin_RGun_Stand_M1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 20
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh SB-2_RearGunner_Gun_M1
+GeometryTemplate.file ShKAS
+geometryTemplate.cullFactor 0.15
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+
+
+GeometryTemplate.create StandardMesh Wreck_SB-2_wing_m1
+GeometryTemplate.file sb-2wingwreck
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 400
+GeometryTemplate.setLodDistance 4 600
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh SB-2_Propeller_M1
+GeometryTemplate.file SB-2prop
+GeometryTemplate.scale 0.9
+geometryTemplate.cullFactor 0.04
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 40
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+

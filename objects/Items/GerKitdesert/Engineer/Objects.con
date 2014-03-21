@@ -1,0 +1,39 @@
+ObjectTemplate.create KitPart BacpacBig_Desert_ger
+ObjectTemplate.geometry BacpacBig_Desert_ger
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+
+
+
+ObjectTemplate.create Kit German_Engineer_Desert
+ObjectTemplate.setType Engineer
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry Kit_K98
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate Germ_DesertHelmet
+ObjectTemplate.addTemplate German_hippack
+ObjectTemplate.addTemplate BacpacBig_Desert_ger
+ObjectTemplate.addTemplate NoParachute
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_engineer_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_engineer_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_shovel.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_timebomb.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_m98.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_landmine.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_geballte_ladung.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+rem ObjectTemplate.addWeaponIcon "Weapon/Icon_repairpack.tga"
+
+ObjectTemplate.setKitIcon 4 "kits/ger_engineer.dds"
+ObjectTemplate.setKitName 4 ""
+ObjectTemplate.setKitActiveName 4 "In use/limit"
+
+ObjectTemplate.addTemplate k98
+ObjectTemplate.addTemplate ExpPack
+ObjectTemplate.addTemplate shovel
+
+ObjectTemplate.addTemplate Gebalteladung
+ObjectTemplate.addTemplate Landmine
+ObjectTemplate.aiTemplate  Engineer

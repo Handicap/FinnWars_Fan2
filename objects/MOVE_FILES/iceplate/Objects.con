@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject iceplate
+ObjectTemplate.geometry iceplate
+ObjectTemplate.setHasCollisionPhysics 1

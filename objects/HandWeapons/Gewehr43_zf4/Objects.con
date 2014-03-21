@@ -1,0 +1,108 @@
+rem ----------------------------------------------------------
+rem Firearm: Gewehr43_zf4
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms Gewehr43_zf4
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 3
+ObjectTemplate.zoomFov 0.67
+ObjectTemplate.projectileTemplate k98Projectile
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 10
+ObjectTemplate.numOfMag 6
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 3
+ObjectTemplate.roundOfFire 8.5
+ObjectTemplate.FireOnce 1
+ObjectTemplate.AltFireOnce 1
+objectTemplate.GUIIndex 112
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_Rifle_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Rifle_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 20
+
+objectTemplate.aiTemplate Gewehr43_zf4AI
+rem ObjectTemplate.positionalSpeedInDof CRD_NONE/800/0/0
+ObjectTemplate.soldierZoomFov 0.9 
+ObjectTemplate.soldierZoomPosition 0/0/0
+ObjectTemplate.soldierCameraPosition 0.03/-0.05/0.1
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+ObjectTemplate.timeToNotAllowChange 0.25
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 2500
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.7/1.6/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.5/0
+
+rem ** FireDev harge large a reticule/how quickly it expands/how quickly it returns
+rem ** setDevMod(float devModStand, float devModCrouch, float devModLie)
+rem ** Mindev sets the size of the reticule/deviation of bullets **
+rem ** Turndev setTurnDev(float max, float addPitch, float addYaw, float sub)
+rem ** SpeedDev setSpeedDev(float max, float addForward, float addStrafe, float sub)
+rem ** MiscDev setMiscDev(float max, float addJump, float sub)
+
+ObjectTemplate.setFireDev 1.1 6 0.025
+ObjectTemplate.setDevMod 1.1 0.7 0.3
+ObjectTemplate.setMinDev 0.1
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 1.1 0.2 0.1 0.1
+ObjectTemplate.setMiscDev 0 0 0
+
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/k98.ssc
+
+ObjectTemplate.createSkeleton animations/Gewehr43_zf4.ske
+ObjectTemplate.useSkeletonPartAsMain Base
+ObjectTemplate.addTemplate Gewehr43_zf4SniperLod
+
+ObjectTemplate.addTemplate e_MuzzSg44
+rem ObjectTemplate.setInputId -1
+ObjectTemplate.setstartoneffects 0
+ObjectTemplate.setPosition 0/0.05/0.84
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shell792mm
+rem ObjectTemplate.setInputId -1
+ObjectTemplate.setstartoneffects 1
+ObjectTemplate.setPosition 0/0.05/0.41
+ObjectTemplate.setRotation 0/0/0
+
+
+rem *** Objects ***
+ObjectTemplate.create SimpleObject Gewehr43_zf4Trigger
+ObjectTemplate.geometry Gewehr43_zf4Trigger
+
+ObjectTemplate.create SimpleObject Gewehr43_zf4Load
+ObjectTemplate.geometry Gewehr43_zf4Load
+
+ObjectTemplate.create SimpleObject Gewehr43_zf4Clip
+ObjectTemplate.geometry Gewehr43_zf4Clip
+
+ObjectTemplate.create SimpleObject Gewehr43_zf4SniperSimple
+rem *** OBS Changed to wrong mesh ***
+rem ObjectTemplate.geometry Shad_Gewehr43_zf4
+ObjectTemplate.geometry Gewehr43_zf4
+
+ObjectTemplate.create AnimatedBundle Gewehr43_zf4SniperComplex
+ObjectTemplate.geometry Gewehr43_zf4
+ObjectTemplate.createSkeleton animations/Gewehr43_zf4.ske
+ObjectTemplate.addTemplate Gewehr43_zf4Trigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate Gewehr43_zf4Load
+ObjectTemplate.bindToSkeletonPart Reload
+ObjectTemplate.addTemplate Gewehr43_zf4Clip
+ObjectTemplate.bindToSkeletonPart Mag
+
+ObjectTemplate.create LodObject Gewehr43_zf4SniperLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate Gewehr43_zf4SniperComplex
+ObjectTemplate.addTemplate Gewehr43_zf4SniperSimple
+

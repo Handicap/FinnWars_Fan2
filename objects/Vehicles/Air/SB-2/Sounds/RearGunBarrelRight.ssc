@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include RearBarrelRightHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include RearBarrelRightMedium.ssc
+	
+#templateLevel LOW
+
+	#include RearBarrelRightLow.ssc

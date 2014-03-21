@@ -1,0 +1,43 @@
+ObjectTemplate.create KitPart German_Medic_hippack
+ObjectTemplate.geometry German_Medic_hippack
+ObjectTemplate.setBoneName hippack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart huppu
+ObjectTemplate.geometry huppu
+ObjectTemplate.setBoneName A
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create Kit  German_Support
+ObjectTemplate.setType AT
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry  Kit_saloranta
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+rem ObjectTemplate.addTemplate huppu
+ObjectTemplate.addTemplate German_Helmet
+rem ObjectTemplate.addTemplate german_Medic_hippack
+ObjectTemplate.addTemplate NoParachute
+ObjectTemplate.addTemplate pistoolikotelo
+ObjectTemplate.addTemplate puukon_tuppi
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_medic_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_medic_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_puukko.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_nagantrevolver.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_lahtilmg.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_grenadeaxis.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_ammopack.tga"
+ObjectTemplate.setMinimapIcon "Minimap/map_medic.dds"
+
+ObjectTemplate.setKitIcon 3 "kits/fin_m26lmg.dds"
+ObjectTemplate.setKitName 3 ""
+ObjectTemplate.setKitActiveName 3 "In use/limit"
+
+ObjectTemplate.addTemplate M26
+ObjectTemplate.addTemplate Nagant
+ObjectTemplate.addTemplate KnifeAxis
+ObjectTemplate.addTemplate GrenadeAxis
+ObjectTemplate.addTemplate AmmoPack
+ObjectTemplate.aiTemplate  Medic

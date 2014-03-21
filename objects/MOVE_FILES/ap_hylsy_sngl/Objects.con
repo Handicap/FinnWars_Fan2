@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject ap_hylsy_sngl
+ObjectTemplate.geometry ap_hylsy_sngl
+ObjectTemplate.setHasCollisionPhysics 1
+
+

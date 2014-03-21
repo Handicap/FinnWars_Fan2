@@ -1,0 +1,111 @@
+renderer.beginGlobalCluster HawkP75
+GeometryTemplate.create StandardMesh HawkP75_wheel_r
+GeometryTemplate.file Hawk_gear_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh HawkP75_wheel_l
+GeometryTemplate.file Hawk_gear_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh HawkP75_backwheel
+GeometryTemplate.file Hawk_backwheel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh HawkP75_gear_machine_l
+GeometryTemplate.file hawk_gear_machine_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh HawkP75_gear_machine_r
+GeometryTemplate.file hawk_gear_machine_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh hawk_cpit
+GeometryTemplate.file hawk_cpit
+rem GeometryTemplate.file 1P_bf109_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh HawkP75_hull
+GeometryTemplate.file hawk_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 40
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh HawkP75_korkeus_l
+GeometryTemplate.file hawk_korkeus_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh HawkP75_korkeus_r
+GeometryTemplate.file hawk_korkeus_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh HawkP75_rudder
+GeometryTemplate.file hawk_rudder
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh HawkP75_prop
+GeometryTemplate.file hawk_prop
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh HawkP75_prop_Blur_m1
+GeometryTemplate.file Spitfire_Propeller_m2
+GeometryTemplate.alphaLodDistance 750
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Wreck_HawkP75
+GeometryTemplate.file hawk_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500

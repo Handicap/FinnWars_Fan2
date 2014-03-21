@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject lumme3
+ObjectTemplate.geometry lumme3
+ObjectTemplate.setHasCollisionPhysics 1

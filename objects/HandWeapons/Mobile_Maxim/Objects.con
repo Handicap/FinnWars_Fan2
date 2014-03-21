@@ -1,0 +1,95 @@
+rem *** Mobile_Maxim ***
+ObjectTemplate.create HandFireArms Mobile_Maxim
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.loadSoundScript Sounds/Landmine.ssc
+ObjectTemplate.itemIndex 6
+ObjectTemplate.projectileTemplate MaximDeployProjectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.projectileVisible 0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.GUIIndex 10
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "weapon/icon_mobilemaxim_64x32.dds"
+ObjectTemplate.setHasMag 0
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.velocity 2
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.2
+ObjectTemplate.fireDelay 0.4
+ObjectTemplate.soldierCameraPosition 0/-0.05/0.3
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+ObjectTemplate.AmmoType 17
+ObjectTemplate.createSkeleton animations/Landmine.ske
+ObjectTemplate.useSkeletonPartAsMain base
+ObjectTemplate.addTemplate Mobile_MaximLod
+ObjectTemplate.setRotation 0/25/0
+
+rem *** Mobile_MaximLod ***
+ObjectTemplate.create LodObject Mobile_MaximLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate Mobile_MaximComplex
+ObjectTemplate.addTemplate Mobile_MaximSimple
+
+rem *** Mobile_MaximComplex ***
+ObjectTemplate.create AnimatedBundle Mobile_MaximComplex
+ObjectTemplate.geometry maxim_gun_carry
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Landmine.ske
+
+rem *** Mobile_MaximSimple ***
+ObjectTemplate.create SimpleObject Mobile_MaximSimple
+ObjectTemplate.geometry maxim_gun_carryLOD
+
+
+
+ObjectTemplate.create Projectile MaximDeployProjectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry mobilemaxim_thrower
+ObjectTemplate.saveInSeparateFile 1 
+ObjectTemplate.addTemplate tripod_mobmaximProj
+ObjectTemplate.setPosition 0/0.475/-0.1
+ObjectTemplate.addTemplate MaximDeploySpawner
+ObjectTemplate.setPosition 0/-0.225/0
+ObjectTemplate.timeToLive CRD_NONE/2.0/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.material 230
+ObjectTemplate.invisible 0
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+
+ObjectTemplate.create SimpleObject tripod_mobmaximProj
+ObjectTemplate.geometry tripod_mobmaxim
+
+
+
+rem ***MobileSpawneri*** 
+ObjectTemplate.create ObjectSpawner MaximDeploySpawner
+ObjectTemplate.setObjectTemplate 1 Mobile_Maxim_gun
+ObjectTemplate.setObjectTemplate 2 Mobile_Maxim_gun
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 1
+ObjectTemplate.maxSpawnDelay 1
+ObjectTemplate.TimeToLive 20
+ObjectTemplate.Distance 1 
+ObjectTemplate.spawnOffset 0/0.7/-0.1
+ObjectTemplate.team 1 
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 5

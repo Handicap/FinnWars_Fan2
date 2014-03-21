@@ -1,0 +1,185 @@
+
+
+rem *** bofors ***
+ObjectTemplate.create playercontrolobject bofors
+ObjectTemplate.NameTagOffset 0/-0.5/0
+ObjectTemplate.setNetworkableInfo boforsBodyInfo
+ObjectTemplate.geometry tripod_temp
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 50
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 2
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.addArmorEffect 12 e_WespeFire 0/0.6/1
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate bofors
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_turret_16x16.dds"
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.vehicleFov 0.3
+ObjectTemplate.addTemplate lodbofors
+ObjectTemplate.addTemplate boforsseat
+ObjectTemplate.setPosition 0.356885/0.0/0.0
+
+
+rem *** lodbofors ***
+ObjectTemplate.create lodobject lodbofors
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.lodselector boforsLodSelector
+ObjectTemplate.addTemplate boforscomplex
+ObjectTemplate.addTemplate boforssimple
+ObjectTemplate.addTemplate boforswreck
+
+
+rem *** boforscomplex ***
+ObjectTemplate.create bundle boforscomplex
+ObjectTemplate.loadSoundScript Sounds/WespeTrack.ssc
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate boforsentry
+ObjectTemplate.setPosition -0.299/0.0/1.2
+ObjectTemplate.addTemplate boforsentry
+ObjectTemplate.setPosition -0.299/0.0/-1.199
+ObjectTemplate.addTemplate boforscamera
+ObjectTemplate.setPosition 0.365664/0.865929/0.029
+ObjectTemplate.addTemplate bofors_gunner_pco1
+ObjectTemplate.setPosition 0.0/0.0/-0.449
+
+
+rem *** boforsentry ***
+ObjectTemplate.create entrypoint boforsentry
+ObjectTemplate.setEntryRadius 2.5
+
+
+rem *** boforswheel1l ***
+ObjectTemplate.create simpleobject boforswheel1l
+ObjectTemplate.geometry bofors_wheel1L_M1
+
+
+rem *** boforswheel1r ***
+ObjectTemplate.create simpleobject boforswheel1r
+ObjectTemplate.geometry bofors_wheel1R_M1
+
+
+rem *** boforscamera ***
+ObjectTemplate.create camera boforscamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** bofors_gunner_pco1 ***
+ObjectTemplate.create playercontrolobject bofors_gunner_pco1
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo boforsBodyInfo
+ObjectTemplate.aiTemplate boforsCannon
+ObjectTemplate.setSoldierExitLocation -2/0/0 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_turret_16x16.dds"
+ObjectTemplate.artPos 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate boforsentry
+ObjectTemplate.setPosition 0.4/0.0/0.5
+ObjectTemplate.addTemplate boforstower
+ObjectTemplate.setPosition 0.0/0.00683646/0.444618
+
+
+rem *** boforstower ***
+ObjectTemplate.create rotationalbundle boforstower
+ObjectTemplate.setNetworkableInfo boforsBodyInfo
+rem ObjectTemplate.loadSoundScript Sounds/boforsTurret.ssc
+ObjectTemplate.geometry bofors_hull
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMinRotation -60/0/0
+ObjectTemplate.setMaxRotation 60/0/0
+ObjectTemplate.setMaxSpeed 10/10/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate boforsgunbase
+ObjectTemplate.setPosition 0.0/0.0256307/0.745994
+ObjectTemplate.addTemplate boforswheell
+ObjectTemplate.setPosition -0.700673/-0.167653/0.820034
+ObjectTemplate.addTemplate boforswheelr
+ObjectTemplate.setPosition 0.722026/-0.167653/0.820034
+ObjectTemplate.addTemplate boforsseat
+ObjectTemplate.setPosition -0.670639/0.108221/-0.0260491
+
+
+rem *** boforsgunbase ***
+ObjectTemplate.create rotationalbundle boforsgunbase
+ObjectTemplate.setNetworkableInfo boforsBodyInfo
+rem ObjectTemplate.loadSoundScript Sounds/wespegunbase.ssc
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate boforscannon
+ObjectTemplate.setPosition 0.0/0.00599/0.00612774
+ObjectTemplate.addTemplate boforsgunnercamera
+ObjectTemplate.setPosition -0.299/0.456825/-0.1653183
+
+
+rem *** boforsgunnercamera ***
+ObjectTemplate.create camera boforsgunnercamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMExternTrace 1
+
+
+rem *** boforssimple ***
+ObjectTemplate.create simpleobject boforssimple
+ObjectTemplate.geometry bofors_Hull
+
+
+rem *** boforswreck ***
+ObjectTemplate.create simpleobject boforswreck
+ObjectTemplate.geometry Wreck_bofors_m1
+
+
+rem *** boforsseat ***
+ObjectTemplate.create seatobject boforsseat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+
+rem *** boforslodselector ***
+LodSelectorTemplate.create distcompareselector2 boforslodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 100

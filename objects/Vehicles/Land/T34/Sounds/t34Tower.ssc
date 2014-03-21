@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/t34Tower.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/t34Tower.ssc
+	
+#templateLevel LOW
+
+	#include Low/t34Tower.ssc

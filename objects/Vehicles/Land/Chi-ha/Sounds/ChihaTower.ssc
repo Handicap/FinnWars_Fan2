@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ChihaTower.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ChihaTower.ssc
+	
+#templateLevel LOW
+
+	#include Low/ChihaTower.ssc

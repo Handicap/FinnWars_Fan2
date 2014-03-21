@@ -1,0 +1,95 @@
+rem *** MG42_hand ***
+ObjectTemplate.create HandFireArms MG42_hand
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate MG42_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_UNIFORM/2/4/0
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag 3
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 4.6
+ObjectTemplate.roundOfFire 15
+ObjectTemplate.aiTemplate M26AI
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.zoomFov 0.8
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.6
+ObjectTemplate.soldierZoomPosition -0.04972/-0.0365/-0.1
+ObjectTemplate.soldierCameraPosition 0.03/-0.07/-0.07
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType 1
+ObjectTemplate.setHasMag 5
+ObjectTemplate.GUIIndex 3
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_Sg44_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Sg44_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 64
+ObjectTemplate.setAmomBarPosX 3
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setAmomBarTextPosX 8
+ObjectTemplate.setAmomBarTextPosY 4
+ObjectTemplate.setCrossHairType CHTnone
+ObjectTemplate.setSniperSight -1
+ObjectTemplate.velocity 800
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.2/0.6/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+ObjectTemplate.setFireDev 2 0.3 0.1
+ObjectTemplate.setDevMod 5 2.5 0.8
+ObjectTemplate.setMinDev 0.45
+ObjectTemplate.setTurnDev 0.9 0.4 0.4 0.9
+ObjectTemplate.setSpeedDev 1.5 0.6 0.6 0.2
+ObjectTemplate.setMiscDev 3 2 0.25
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/M26.ssc
+ObjectTemplate.createSkeleton animations/sg44.ske
+ObjectTemplate.useSkeletonPartAsMain Base
+ObjectTemplate.addTemplate MG42_handLod
+
+ObjectTemplate.addTemplate e_MuzzHeavy
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.1/0.8
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0.01/0.07/0.37
+ObjectTemplate.setRotation 0/0/0
+
+rem *** MG42_handLod ***
+ObjectTemplate.create LodObject MG42_handLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate MG42_handComplex
+ObjectTemplate.addTemplate MG42_handSimple
+
+rem *** MG42_handComplex ***
+ObjectTemplate.create AnimatedBundle MG42_handComplex
+ObjectTemplate.createSkeleton animations/sg44.ske
+ObjectTemplate.geometry MG42_hand
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.addTemplate MG42_bipod
+ObjectTemplate.addTemplate MG42_handtrigger
+ObjectTemplate.bindToSkeletonPart Trigger
+ObjectTemplate.addTemplate MG42_handMagasin
+ObjectTemplate.bindToSkeletonPart mag
+
+rem *** MG42_handtrigger ***
+ObjectTemplate.create SimpleObject MG42_handtrigger
+ObjectTemplate.geometry M26trigger
+
+rem *** MG42_handMagasin ***
+ObjectTemplate.create SimpleObject MG42_handMagasin
+ObjectTemplate.geometry MG42_handMagasin
+
+rem *** MG42_handSimple ***
+ObjectTemplate.create Simpleobject MG42_handSimple
+ObjectTemplate.geometry MG42_HandSimple
+
+ObjectTemplate.create SimpleObject MG42_bipod
+ObjectTemplate.geometry MG42_bip
+
+

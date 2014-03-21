@@ -1,0 +1,591 @@
+rem *** KV-1 ***
+ObjectTemplate.create PlayerControlObject KV-1
+ObjectTemplate.setNetworkableInfo t28BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.drag 3
+ObjectTemplate.mass 50000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 170
+ObjectTemplate.maxhitpoints 170
+ObjectTemplate.material 50
+ObjectTemplate.criticalDamage 80
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 20
+ObjectTemplate.hpLostWhileDamageFromDeepWater 20
+ObjectTemplate.addArmorEffect 80 e_PanzDamage 0/1/-1.6
+ObjectTemplate.addArmorEffect 20 e_PanzFire 0/1/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.damageFromDeepWater 1
+ObjectTemplate.aiTemplate KV-1
+ObjectTemplate.setSoldierExitLocation -0/2.5/-1.0 0/0/0
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_panzeriv.tga"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTHeavyTank
+ObjectTemplate.setToolTipType TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate lodKV-1
+ObjectTemplate.addTemplate KV-1_drivercamera
+ObjectTemplate.setPosition 0.0/0.488506/1.5
+ObjectTemplate.addTemplate lodKV-1cockpit
+ObjectTemplate.setPosition -0.0166205/0.48277/0.27758
+
+rem *** lodKV-1 ***
+ObjectTemplate.create LodObject lodKV-1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodSelector KV-1LodSelector
+ObjectTemplate.addTemplate KV-1complex
+ObjectTemplate.addTemplate KV-1simple
+ObjectTemplate.addTemplate KV-1wreck
+
+rem *** KV-1complex ***
+ObjectTemplate.create Bundle KV-1complex
+ObjectTemplate.geometry KV1_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate KV-1entry
+ObjectTemplate.setPosition 0.0/0.0/1.2
+ObjectTemplate.addTemplate KV-1entry
+ObjectTemplate.setPosition 0.0/0.0/-1.199
+ObjectTemplate.addTemplate KV-1engine
+ObjectTemplate.addTemplate KV-1engine2
+ObjectTemplate.addTemplate KV-1_gunner
+ObjectTemplate.addTemplate KV-1_hull_gunner
+ObjectTemplate.addTemplate e_tankinpakokaasu
+ObjectTemplate.setPosition 0.333228/0.434125/-2.35429
+
+
+
+ObjectTemplate.addTemplate SturmGeschutzBigWheelR
+ObjectTemplate.setPosition 1.0/-0.154/-2.626
+ObjectTemplate.addTemplate SturmGeschutzBigWheelR
+ObjectTemplate.setPosition 1.0/-0.154/2.824
+ObjectTemplate.addTemplate SturmGeschutzBigWheelL
+ObjectTemplate.setPosition -1.0/-0.154/-2.626
+ObjectTemplate.addTemplate SturmGeschutzBigWheelL
+ObjectTemplate.setPosition -1.0/-0.154/2.824
+
+ObjectTemplate.addTemplate SturmGeschutzSmallWheelR
+ObjectTemplate.setPosition 1.0/0.1/-1.793
+ObjectTemplate.addTemplate SturmGeschutzSmallWheelR
+ObjectTemplate.setPosition 1.0/0.1/0.022
+ObjectTemplate.addTemplate SturmGeschutzSmallWheelR
+ObjectTemplate.setPosition 1.0/0.1/1.763
+ObjectTemplate.addTemplate SturmGeschutzSmallWheelL
+ObjectTemplate.setPosition -1.0/0.1/-1.793
+ObjectTemplate.addTemplate SturmGeschutzSmallWheelL
+ObjectTemplate.setPosition -1.0/0.1/0.022
+ObjectTemplate.addTemplate SturmGeschutzSmallWheelL
+ObjectTemplate.setPosition -1.0/0.1/1.763
+
+
+
+
+
+
+
+
+
+rem *** KV-1entry ***
+ObjectTemplate.create EntryPoint KV-1entry
+ObjectTemplate.setEntryRadius 3.5
+
+
+
+
+rem *** T34TrackL ***
+ObjectTemplate.create AnimatedBundle KV-1TrackL
+ObjectTemplate.loadSoundScript Sounds/T34TrackL.ssc
+ObjectTemplate.geometry T-34_TrackL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/T-34_TrackL_M1.ske
+ObjectTemplate.setAnimatedTextureSpeed 0.006/0
+rem -------------------------------------
+ObjectTemplate.addTemplate T34WheelL1
+ObjectTemplate.setPosition -0.1/0.15/2.68
+ObjectTemplate.addTemplate T34WheelL2
+ObjectTemplate.setPosition -0.1/0.1/-2.649
+ObjectTemplate.addTemplate T34WheelL3
+ObjectTemplate.setPosition -0.1/-0.15/-1.919
+ObjectTemplate.useAsBone 0/-0.15/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate T34WheelL3Dummy
+ObjectTemplate.setPosition -0.1/-0.15/-0.949
+ObjectTemplate.useAsBone 0/-0.15/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate T34WheelL3DummySmoke
+ObjectTemplate.setPosition -0.1/-0.15/0
+ObjectTemplate.useAsBone 0/-0.15/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate T34WheelL3Dummy
+ObjectTemplate.setPosition -0.1/-0.15/0.95
+ObjectTemplate.useAsBone 0/-0.15/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate T34WheelL3
+ObjectTemplate.setPosition -0.1/-0.15/1.92
+ObjectTemplate.useAsBone 0/-0.15/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+rem -------------------------------------
+
+rem *** KV-1smallwheelL ***
+ObjectTemplate.create SimpleObject KV-1smallwheelL
+ObjectTemplate.geometry KV1_smallwheelL
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** KV-1smallwheelL ***
+ObjectTemplate.create SimpleObject KV-1bigwheelL
+ObjectTemplate.geometry KV1_bigwheelL
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** T34WheelL1 ***
+ObjectTemplate.create SimpleObject KV-1WheelL1
+ObjectTemplate.geometry KV-1_whe1L_M1
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem *** T34WheelL2 ***
+ObjectTemplate.create SimpleObject KV-1WheelL2
+ObjectTemplate.geometry KV-1_whe2L_M1
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem *** T34TrackR ***
+ObjectTemplate.create AnimatedBundle KV-1TrackR
+ObjectTemplate.loadSoundScript Sounds/T34TrackR.ssc
+ObjectTemplate.geometry T-34_TrackR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/T-34_TrackR_M1.ske
+ObjectTemplate.setAnimatedTextureSpeed 0.006/0
+rem -------------------------------------
+ObjectTemplate.addTemplate T34WheelR1
+ObjectTemplate.setPosition 0.1/0.15/2.68
+ObjectTemplate.addTemplate T34WheelR2
+ObjectTemplate.setPosition 0.1/0.1/-2.649
+ObjectTemplate.addTemplate T34WheelR3
+ObjectTemplate.setPosition 0.1/-0.15/-1.919
+ObjectTemplate.useAsBone 0/-0.15/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate T34WheelR3Dummy
+ObjectTemplate.setPosition 0.1/-0.15/-0.949
+ObjectTemplate.useAsBone 0/-0.15/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate T34WheelR3DummySmoke
+ObjectTemplate.setPosition 0.1/-0.15/0
+ObjectTemplate.useAsBone 0/-0.15/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate T34WheelR3Dummy
+ObjectTemplate.setPosition 0.1/-0.15/0.95
+ObjectTemplate.useAsBone 0/-0.15/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate T34WheelR3
+ObjectTemplate.setPosition 0.1/-0.15/1.92
+ObjectTemplate.useAsBone 0/-0.15/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+rem -------------------------------------
+
+
+rem *** KV-1smallwheelL ***
+ObjectTemplate.create SimpleObject KV-1smallwheelR
+ObjectTemplate.geometry KV1_smallwheelR
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** KV-1smallwheelL ***
+ObjectTemplate.create SimpleObject KV-1bigwheelR
+ObjectTemplate.geometry KV1_bigwheelR
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem *** T34WheelR1 ***
+ObjectTemplate.create SimpleObject KV-1WheelR1
+ObjectTemplate.geometry KV-1_whe1R_M1
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem *** T34WheelR2 ***
+ObjectTemplate.create SimpleObject KV-1WheelR2
+ObjectTemplate.geometry KV-1_whe2R_M1
+ObjectTemplate.hasResponsePhysics 1
+
+
+
+
+
+
+rem *** KV-1_gunner ***
+ObjectTemplate.create PlayerControlObject KV-1_gunner
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo t28BodyInfo
+ObjectTemplate.aiTemplate t26-m31Cannon_KV-10
+ObjectTemplate.setSoldierExitLocation -0/1.5/0 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/icon_gunner.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.DirBarXScale 20
+ObjectTemplate.DirBarYScaleAbove 40
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate KV-1entry
+ObjectTemplate.addTemplate KV-1tower
+ObjectTemplate.setPosition 0/0.720005/0.545461
+
+rem *** KV-1tower ***
+ObjectTemplate.create rotationalbundle KV-1tower
+ObjectTemplate.setNetworkableInfo t28TurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/tigertower.ssc
+ObjectTemplate.geometry KV1_Tower_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMaxSpeed 12/12/0
+ObjectTemplate.setAcceleration 50/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate KV-1gunbase
+ObjectTemplate.setPosition 0/0.45/0.65638
+ObjectTemplate.addTemplate KV-1_back_gunner
+ObjectTemplate.setRotation 180/0/0
+
+rem *** KV-1gunbase ***
+ObjectTemplate.create rotationalbundle KV-1gunbase
+ObjectTemplate.setNetworkableInfo t28GunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/tigerGunBase.ssc
+ObjectTemplate.setMinRotation 0/-24.5/0
+ObjectTemplate.setMaxRotation 0/4/0
+ObjectTemplate.setMaxSpeed 15/15/0
+ObjectTemplate.setAcceleration 0/200/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate KV-1gunbarrel
+ObjectTemplate.setPosition 0.005/0/0
+ObjectTemplate.addTemplate Coaxial_DP
+ObjectTemplate.setPosition -0.21/-0.05/-0.00785894
+ObjectTemplate.addTemplate KV-1camera
+ObjectTemplate.setPosition -0.189/0.1866112/0.3
+ObjectTemplate.addTemplate lodKVgunnerCockpit
+ObjectTemplate.setPosition 0.897/0.20/0.4
+
+
+
+rem *** lodT34-76Cockpit ***
+ObjectTemplate.create LodObject lodKVgunnerCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate KVgunnerCockpitExternal
+ObjectTemplate.addTemplate KVgunnerCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector KVgunnercockpitSelector
+
+
+rem *** T34-76CockpitExternal ***
+ObjectTemplate.create SimpleObject KVgunnerCockpitExternal
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** T34-76CockpitInternal ***
+ObjectTemplate.create SimpleObject KVgunnerCockpitInternal
+ObjectTemplate.geometry 1p_KVGunner
+
+
+rem *** T34-76cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector KVgunnercockpitSelector
+LodSelectorTemplate.addLodDistance 1
+LodSelectorTemplate.addLodComparison 0.5
+
+
+
+rem *** KV-1camera ***
+ObjectTemplate.create Camera KV-1camera
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+ObjectTemplate.OutsideHudOffset -0.205/0.646/-0.446
+
+
+
+
+
+
+
+
+
+rem *** KV-1_back_gunner ***
+ObjectTemplate.create PlayerControlObject KV-1_back_gunner
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo t28BodyInfo
+ObjectTemplate.aiTemplate T26-M33Cannon_KV-13
+ObjectTemplate.setSoldierExitLocation -0/1/0 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/120
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate KV-1_back_base
+ObjectTemplate.setPosition 0/0.565/1.6
+ObjectTemplate.addTemplate KV-1entry
+
+beginrem
+ObjectTemplate.addTemplate Coaxial_DP_KV-17
+ObjectTemplate.setPosition 0/0.45/1.5
+ObjectTemplate.addTemplate KV-1Camera_back_gunner
+ObjectTemplate.setPosition 0.1/0.6/1.5
+endrem
+
+
+
+rem *** IlyushinBrowningBase ***
+ObjectTemplate.create RotationalBundle KV-1_back_base
+ObjectTemplate.setNetworkableInfo t28TurretInfo
+ObjectTemplate.setAttachToListener 1
+rem ObjectTemplate.loadSoundScript Sounds/IlyushinBrowningBase.ssc
+rem ObjectTemplate.geometry tracklight_m1pysty
+rem -------------------------------------
+ObjectTemplate.addTemplate KV-1_back_Rotation
+ObjectTemplate.setPosition 0/-0.000/-0.0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setMaxSpeed 60/0/0
+ObjectTemplate.setAcceleration 800/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+
+rem *** IlyushinBrowningRotation ***
+ObjectTemplate.create RotationalBundle KV-1_back_Rotation
+ObjectTemplate.setNetworkableInfo t28TurretInfo
+ObjectTemplate.setAttachToListener 1
+rem ObjectTemplate.loadSoundScript Sounds/IlyushinBrowningRotation.ssc
+rem ObjectTemplate.geometry KV1_towergun
+rem -------------------------------------
+ObjectTemplate.addTemplate KV-1_back_gundummy
+ObjectTemplate.setPosition 0/-0.00/0.0
+ObjectTemplate.addTemplate Coaxial_DP
+ObjectTemplate.setPosition 0/-0.00/0.22
+ObjectTemplate.addTemplate KV-1Camera_back_gunner
+ObjectTemplate.setPosition -0.02/0.05/0.1
+ObjectTemplate.addTemplate lodNwGCockpit
+ObjectTemplate.setPosition 1.097/0.075/0.2
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/800/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** KV-1_gunnersight ***
+ObjectTemplate.create SimpleObject KV-1_back_gundummy
+ObjectTemplate.geometry KV1_towergun
+
+
+rem *** KV-1Camera_back_gunner ***
+ObjectTemplate.create Camera KV-1Camera_back_gunner
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+
+
+
+
+
+
+
+rem *** KV-1_front_gunner ***
+ObjectTemplate.create PlayerControlObject KV-1_hull_gunner
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo t28BodyInfo
+ObjectTemplate.aiTemplate T26-M33Cannon_KV-13
+ObjectTemplate.setSoldierExitLocation -0/2/0 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/100
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate KV-1_hull_base
+ObjectTemplate.setPosition -0.6052/0.5112/2.2286
+ObjectTemplate.addTemplate KV-1entry
+
+beginrem
+ObjectTemplate.addTemplate Coaxial_DP_KV-17
+ObjectTemplate.setPosition 0/0.45/1.5
+ObjectTemplate.addTemplate KV-1Camera_back_gunner
+ObjectTemplate.setPosition 0.1/0.6/1.5
+endrem
+
+
+
+rem *** IlyushinBrowningBase ***
+ObjectTemplate.create RotationalBundle KV-1_hull_base
+ObjectTemplate.setNetworkableInfo t28TurretInfo
+ObjectTemplate.setAttachToListener 1
+rem ObjectTemplate.loadSoundScript Sounds/IlyushinBrowningBase.ssc
+rem ObjectTemplate.geometry tracklight_m1pysty
+rem -------------------------------------
+ObjectTemplate.addTemplate KV-1_hull_Rotation
+ObjectTemplate.setPosition 0/-0.000/-0.0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -37/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 60/0/0
+ObjectTemplate.setAcceleration 800/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+
+rem *** IlyushinBrowningRotation ***
+ObjectTemplate.create RotationalBundle KV-1_hull_Rotation
+ObjectTemplate.setNetworkableInfo t28TurretInfo
+ObjectTemplate.setAttachToListener 1
+rem ObjectTemplate.loadSoundScript Sounds/IlyushinBrowningRotation.ssc
+rem ObjectTemplate.geometry KV1_towergun
+rem -------------------------------------
+ObjectTemplate.addTemplate KV-1_hull_gundummy
+ObjectTemplate.setPosition 0/-0.00/0.05
+ObjectTemplate.addTemplate Coaxial_DP
+ObjectTemplate.setPosition 0/-0.00/0.27
+ObjectTemplate.addTemplate KV-1Camera_hull_gunner
+ObjectTemplate.setPosition -0.02/0.05/0.1
+ObjectTemplate.addTemplate lodNwGCockpit
+ObjectTemplate.setPosition 1.097/0.075/0.20
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/6/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/800/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** KV-1_gunnersight ***
+ObjectTemplate.create SimpleObject KV-1_hull_gundummy
+ObjectTemplate.geometry KV1_hullgun
+
+
+rem *** KV-1Camera_back_gunner ***
+ObjectTemplate.create Camera KV-1Camera_hull_gunner
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+
+
+
+
+
+rem *** KV-1simple ***
+ObjectTemplate.create SimpleObject KV-1simple
+ObjectTemplate.geometry KV1_Hull_L1
+
+rem *** KV-1wreck ***
+ObjectTemplate.create SimpleObject KV-1wreck
+ObjectTemplate.geometry Wreck_KV1_M1
+
+rem *** KV-1_drivercamera ***
+ObjectTemplate.create Camera KV-1_drivercamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+rem *** lodKV-1cockpit ***
+ObjectTemplate.create LodObject lodKV-1cockpit
+ObjectTemplate.lodSelector t28cockpitSelector
+ObjectTemplate.addTemplate KV-1cockpitexternal
+ObjectTemplate.setPosition -0.631158/-1.4/-0.22
+ObjectTemplate.addTemplate KV-1cockpitinternal
+ObjectTemplate.setPosition 0.20/-1.27/-0.1
+
+rem *** KV-1cockpitexternal ***
+ObjectTemplate.create SimpleObject KV-1cockpitexternal
+
+rem *** KV-1cockpitinternal ***
+ObjectTemplate.create SimpleObject KV-1cockpitinternal
+ObjectTemplate.geometry 1P_t28_Driver_M1
+
+
+rem *** t28lodselector ***
+LodSelectorTemplate.create distcompareselector2 KV-1lodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 400

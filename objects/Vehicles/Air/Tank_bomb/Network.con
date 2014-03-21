@@ -1,0 +1,5 @@
+NetworkableInfo.createNewInfo Tank_bomb_body_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Tank_bomb_engine_info
+NetworkableInfo.setPredictionMode PMLinear

@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh bunk_u
+GeometryTemplate.file bunk_u
+ObjectTemplate.material 84
+GeometryTemplate.textureFadeMaxDist 70
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40

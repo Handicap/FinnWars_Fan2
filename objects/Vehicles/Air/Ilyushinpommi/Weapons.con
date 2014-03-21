@@ -1,0 +1,28 @@
+
+
+
+
+
+rem *** SpitfireBombDummy ***
+ObjectTemplate.create FireArms IlyushinBombDummy
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate HawkP75Bombs
+ObjectTemplate.visibleDummyProjectileTemplate VITTUSAATANAPERKELE
+ObjectTemplate.projectileTemplate FighterBomb
+ObjectTemplate.projectilePosition 0/-0.5/0
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.addFireArmsPosition -3.7/0/0 	0/-10/0
+ObjectTemplate.addFireArmsPosition 3.7/0/0 	0/-10/0
+ObjectTemplate.addFireArmsPosition -3.2/-0.03/0 0/-10/0
+ObjectTemplate.addFireArmsPosition 3.2/-0.03/0 	0/-10/0
+ObjectTemplate.addFireArmsPosition -4.2/0.03/0 	0/-10/0
+ObjectTemplate.addFireArmsPosition 4.2/0.03/0 	0/-10/0
+ObjectTemplate.AmmoType 7
+ObjectTemplate.magSize 6
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.roundOfFire 4
+ObjectTemplate.setInputFire c_PIAltFire
+
+ObjectTemplate.create SimpleObject VITTUSAATANAPERKELE
+ObjectTemplate.geometry Big_Bomb_M1

@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo RenaultFTTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo RenaultFTGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo RenaultFTEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo RenaultFTBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

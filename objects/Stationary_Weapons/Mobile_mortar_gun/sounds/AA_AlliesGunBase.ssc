@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/AA_AlliesGunBase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/AA_AlliesGunBase.ssc
+	
+#templateLevel LOW
+
+	#include Low/AA_AlliesGunBase.ssc

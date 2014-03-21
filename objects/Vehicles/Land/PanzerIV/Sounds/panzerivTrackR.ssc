@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/panzerivTrackR.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/panzerivTrackR.ssc
+	
+#templateLevel LOW
+
+	#include Low/panzerivTrackR.ssc

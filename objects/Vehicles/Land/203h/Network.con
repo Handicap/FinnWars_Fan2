@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo 203hTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo 203hGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo 203hEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo 203hBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

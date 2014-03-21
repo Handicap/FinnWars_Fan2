@@ -1,0 +1,79 @@
+renderer.beginGlobalCluster zis5_cover
+GeometryTemplate.create StandardMesh zis5_cover_Hull_M1
+GeometryTemplate.file zis5_base
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 150
+GeometryTemplate.setLodDistance 5 200
+
+GeometryTemplate.create StandardMesh zis5_cover_M1
+GeometryTemplate.file zis5_cover
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh zis5_cover_WheelR_M1
+GeometryTemplate.file zis5_rf_wheel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh zis5_cover_WheelL_M1
+GeometryTemplate.file zis5_lf_wheel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh zis5_cover_WheelR_M2
+GeometryTemplate.file zis5_rb_wheel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh zis5_cover_WheelL_M2
+GeometryTemplate.file zis5_lb_wheel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_zis5_cover_Hul_M1
+GeometryTemplate.file 1P_Willy_Hul_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh zis5_cover_Hull_L1
+GeometryTemplate.file zis5_base
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 150
+GeometryTemplate.setLodDistance 5 200
+
+GeometryTemplate.create StandardMesh Wreck_zis5_cover_M1
+GeometryTemplate.file zis5_base
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 150
+GeometryTemplate.setLodDistance 5 200
+

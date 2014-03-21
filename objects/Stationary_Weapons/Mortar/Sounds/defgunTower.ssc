@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/defgunTower.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/defgunTower.ssc
+	
+#templateLevel LOW
+
+	#include Low/defgunTower.ssc

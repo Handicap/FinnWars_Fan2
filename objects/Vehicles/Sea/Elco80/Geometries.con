@@ -1,0 +1,108 @@
+
+GeometryTemplate.create StandardMesh Elco80_Hull_M1
+GeometryTemplate.file Pt_Elco_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+GeometryTemplate.create StandardMesh PT_Elco_l1
+GeometryTemplate.file PT_Elco_l1
+
+GeometryTemplate.create StandardMesh 1p_Elco80_hull_m1
+GeometryTemplate.file 1P_Pt_Elco_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+
+GeometryTemplate.create StandardMesh Elco80_SideGunner_Base_M1
+GeometryTemplate.file PT_SidePod_M1
+GeometryTemplate.cullFactor 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+GeometryTemplate.create StandardMesh Elco80_SideGunner_Support_M1
+GeometryTemplate.file PT_SideGunner_Support_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+GeometryTemplate.create StandardMesh Elco80_SideGunner_Gun_M1
+GeometryTemplate.file PT_SideGunner_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+
+GeometryTemplate.create StandardMesh Elco80Ladder_M1
+GeometryTemplate.file Pt_Boat_Ladder_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 60
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh Elco80_Steering_M1
+GeometryTemplate.file Pt_Elco_Str_M1
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_Elco80_str_M1
+GeometryTemplate.file 1P_PT_Elco_Str_M1
+GeometryTemplate.cullFactor 2
+
+GeometryTemplate.create StandardMesh PT_ElcoLL_M1
+GeometryTemplate.file PT_ElcoLL_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh 1PPT_ElcoLL_M1
+GeometryTemplate.file 1PPT_ElcoLL_M1
+GeometryTemplate.cullFactor 2
+
+GeometryTemplate.create StandardMesh PTLadder_M1
+GeometryTemplate.file Pt_Boat_Ladder_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 60
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh PT_Steering_M1
+GeometryTemplate.file Pt_Elco_Str_M1
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_PT_Str_M1
+GeometryTemplate.file 1P_PT_Elco_Str_M1
+GeometryTemplate.cullFactor 2

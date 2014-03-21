@@ -1,0 +1,216 @@
+renderer.beginGlobalCluster Gloster_Gladiator
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Fus_m1
+GeometryTemplate.file gloster_fuse
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Flap_left_inner_M1
+GeometryTemplate.file BF109_Flap_left_inner_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Flap_left_outer_M1
+GeometryTemplate.file BF109_Flap_left_outer_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Flap_right_inner_M1
+GeometryTemplate.file BF109_Flap_right_inner_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Flap_right_outer_M1
+GeometryTemplate.file BF109_Flap_right_outer_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+
+
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Airbreak_left_lower_M1
+GeometryTemplate.file BF109_Airbreak_left_lower_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Airbreak_left_upper_M1
+GeometryTemplate.file BF109_Airbreak_left_upper_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Airbreak_right_lower_M1
+GeometryTemplate.file BF109_Airbreak_right_lower_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Airbreak_right_upper_M1
+GeometryTemplate.file BF109_Airbreak_right_upper_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Landinggear_left_M1
+GeometryTemplate.file BF109_Landinggear_left_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Landinggear_right_M1
+GeometryTemplate.file BF109_Landinggear_right_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Wheel_left_M1
+GeometryTemplate.file BF109_Wheel_left_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Wheel_Right_M1
+GeometryTemplate.file BF109_Wheel_Right_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_rodder_M1
+GeometryTemplate.file BF109_rodder_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Propellerm_M1
+GeometryTemplate.file BF109_Propellerm_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_tailflap_Left_M1
+GeometryTemplate.file BF109_tailflap_Left_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_tailflap_Right_M1
+GeometryTemplate.file BF109_tailflap_Right_M1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 1P_Gloster_Gladiator_M1
+GeometryTemplate.file gladiator_cpit
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Wheel_back_m1
+GeometryTemplate.file bf109_Wheel_back_m1
+GeometryTemplate.scale 0.000001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_prp1
+rem GeometryTemplate.file bf109_Propeller_m1
+GeometryTemplate.file SB-2prop
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.scale 0.6
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_prp2
+GeometryTemplate.file bf109_blurprp_m1
+GeometryTemplate.alphaLodDistance 750
+GeometryTemplate.scale 0.7
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Gloster_Gladiator_Fus_l1
+GeometryTemplate.file gloster_fuse
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Wreck_Gloster_Gladiator_m1
+GeometryTemplate.file gloster_fuse
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500

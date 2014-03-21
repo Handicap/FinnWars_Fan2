@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo MortarTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo MortarGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo MortarBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

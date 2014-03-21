@@ -1,0 +1,113 @@
+renderer.beginGlobalCluster t38
+
+GeometryTemplate.create StandardMesh t38_Cannon_M1
+GeometryTemplate.file t38_cannon
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh t38_Hull_M1
+GeometryTemplate.file t38_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create AnimatedMesh t38_Track_L_M1
+GeometryTemplate.file t38_track_L
+GeometryTemplate.setSkin animations/t38_track_l.skn
+
+GeometryTemplate.create AnimatedMesh t38_Track_R_M1
+GeometryTemplate.file t38_track_R
+GeometryTemplate.setSkin animations/t38_track_r.skn
+
+GeometryTemplate.create StandardMesh t38_smallwheel_l_g
+GeometryTemplate.file t38_smallwheel_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t38_smallwheel_dummy_l_g
+GeometryTemplate.file t38_smallwheel_dummy_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t38_smallwheel_r_g
+GeometryTemplate.file t38_smallwheel_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t38_smallwheel_dummy_r_g
+GeometryTemplate.file t38_smallwheel_dummy_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t38_frontwheel_r_g
+GeometryTemplate.file t38_frontwheel_r
+geometryTemplate.cullFactor 0.01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t38_frontwheel_l_g
+GeometryTemplate.file t38_frontwheel_l
+geometryTemplate.cullFactor 0.01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t38_backwheel_l_g
+GeometryTemplate.file t38_backwheel_l
+geometryTemplate.cullFactor 0.01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t38_backwheel_r_g
+GeometryTemplate.file t38_backwheel_r
+geometryTemplate.cullFactor 0.01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t38_Tower_M1
+GeometryTemplate.file t38_turret
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_t38_Driver_M1
+GeometryTemplate.file 1P_Wespe_Driver_M1
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh t38_Hull_L1
+GeometryTemplate.file t38_hull
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_t38_M1
+GeometryTemplate.file t38_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500

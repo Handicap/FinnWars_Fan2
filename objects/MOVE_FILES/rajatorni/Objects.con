@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject rajatorni
+ObjectTemplate.geometry rajatorni
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.cullRadiusScale 1.5

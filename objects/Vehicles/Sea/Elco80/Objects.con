@@ -1,0 +1,534 @@
+rem *** Elco80 ***
+ObjectTemplate.create PlayerControlObject Elco80
+ObjectTemplate.NameTagOffset -1/4/0
+ObjectTemplate.setNetworkableInfo Elco80BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 0.6
+ObjectTemplate.dragOffset 0/0/-1
+ObjectTemplate.mass 40000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 250
+ObjectTemplate.maxhitpoints 250
+ObjectTemplate.material 44
+ObjectTemplate.speedMod 0.7
+ObjectTemplate.criticalDamage 50
+ObjectTemplate.explosionRadius 5
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.explosionForceMod 5
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.addArmorEffect 50 em_LcvpDamage 0/1.4/-0.5
+ObjectTemplate.addArmorEffect 50 e_waterBoatSinkSmall 0/2/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_Willy 0/1.4/-0.5
+ObjectTemplate.addArmorEffect -1 e_PTBoatWreck 2/1.4/2.4
+ObjectTemplate.addArmorEffect -1 e_PTBoatWreck 0/1.4/12.4
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodElco80
+
+ObjectTemplate.addTemplate Elco80_Floater
+ObjectTemplate.setPosition 2.5/2.9/-5.5
+ObjectTemplate.addTemplate Elco80_Floater
+ObjectTemplate.setPosition -2.5/2.9/-5.5
+ObjectTemplate.addTemplate Elco80_Floater
+ObjectTemplate.setPosition 3/2.75/5
+ObjectTemplate.addTemplate Elco80_Floater
+ObjectTemplate.setPosition -3/2.75/5
+ObjectTemplate.addTemplate Elco80_MiddleFloater
+ObjectTemplate.setPosition 0/2.2/5
+ObjectTemplate.addTemplate Elco80_MiddleFloater
+ObjectTemplate.setPosition 0/2.35/-5.5
+
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.addPcoPosId 1
+ObjectTemplate.addPcoPosId 2
+ObjectTemplate.addPcoPosId 3
+ObjectTemplate.addPcoPosId 4
+ObjectTemplate.setSoldierExitLocation -0.694/4.36/-1.133 0/0/0
+ObjectTemplate.GUIIndex 42
+ObjectTemplate.setMiniMapIcon "Minimap/minimap_icon_PT_Boat.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Elco.tga"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_torpedo.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTPTBoat
+
+
+rem *** lodElco80 ***
+ObjectTemplate.create LodObject lodElco80
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Elco80Complex
+ObjectTemplate.addTemplate Elco80Simple
+rem -------------------------------------
+ObjectTemplate.lodSelector Elco80LodSelector
+
+rem *** Elco80Complex ***
+ObjectTemplate.create Bundle Elco80Complex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodElco80Cockpit
+ObjectTemplate.addTemplate Elco80_Engine
+ObjectTemplate.setPosition 0/.75/-3.7
+ObjectTemplate.addTemplate PT_FrontLandEngine
+ObjectTemplate.addTemplate PT_BackLandEngine
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate Elco80_Driver_Entry
+ObjectTemplate.setPosition -2.899/3/1
+ObjectTemplate.addTemplate Elco80_Driver_Entry
+ObjectTemplate.setPosition 2.9/3/1
+ObjectTemplate.addTemplate Elco80_Driver_Entry
+ObjectTemplate.setPosition -2.899/3/-3.999
+ObjectTemplate.addTemplate Elco80_Driver_Entry
+ObjectTemplate.setPosition 2.9/3/-3.999
+
+ObjectTemplate.addTemplate Elco80PassengerSeat
+ObjectTemplate.setPosition -0.694/4.36/0.133
+ObjectTemplate.addTemplate Elco80_Driver_Camera
+ObjectTemplate.setPosition -0.746/5.10/0
+ObjectTemplate.addTemplate Elco80_Rudder_Stern
+ObjectTemplate.setPosition 0/1.4/3.3
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Elco80_Rudder_Aft
+ObjectTemplate.setPosition 0/1.4/-4.3
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate Elco80_FrontGunner_PCO1
+ObjectTemplate.setPosition 2/3.5/1.3
+
+ObjectTemplate.addTemplate Elco_AABattery_PCO2
+ObjectTemplate.setPosition 0.00/3.23/-7.52
+ObjectTemplate.setRotation 180.00/0.00/0.00
+
+ObjectTemplate.addTemplate Mortar
+ObjectTemplate.setPosition 0.00/3.38/5.26
+
+ObjectTemplate.addTemplate Elco_Passanger_PCO4
+ObjectTemplate.setPosition 0.65/4.35/0.20
+
+ObjectTemplate.addTemplate Elco80_Torpedos
+
+ObjectTemplate.addTemplate PT_SteeringDummy
+ObjectTemplate.setPosition -0.697/4.66/0.74
+ObjectTemplate.addTemplate PT_Ladder
+ObjectTemplate.setPosition -1.425/2.53/-9.138
+
+ObjectTemplate.addTemplate Elco_ThrottleLDummy
+ObjectTemplate.setPosition -1.055/4.73/0.84
+ObjectTemplate.addTemplate Elco_ThrottleLDummy
+ObjectTemplate.setPosition -1.015/4.73/0.84
+ObjectTemplate.addTemplate Elco_ThrottleRDummy
+ObjectTemplate.setPosition -0.966/4.73/0.84
+ObjectTemplate.setRotation 0/30/0
+
+ObjectTemplate.addTemplate PTPropellerRudderBundle
+ObjectTemplate.setPosition -1.004/1.13/-7.659
+ObjectTemplate.addTemplate PTPropellerRudderBundle
+ObjectTemplate.setPosition 1.004/1.13/-7.659
+
+ObjectTemplate.addTemplate AnimatedUsFlag
+ObjectTemplate.setPosition -0.019/7.3/-1.978
+ObjectTemplate.setRotation 90/-0.919/-8.085
+
+ObjectTemplate.addTemplate e_WaterFrontPTBoat
+ObjectTemplate.setPosition 0/0.4/7.4
+ObjectTemplate.addTemplate e_WaterBackMedium
+ObjectTemplate.setPosition 0/0.801/-8.596
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition 1.83/3.12/5.72
+ObjectTemplate.setRotation 77.30/0.00/0.00
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition 0.99/3.20/7.63
+ObjectTemplate.setRotation 53.10/0.00/0.00
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition -0.99/3.20/7.63
+ObjectTemplate.setRotation -53.10/0.00/0.00
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition -1.83/3.19/5.72
+ObjectTemplate.setRotation -77.30/0.00/0.00
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition 2.09/3.15/3.65
+ObjectTemplate.setRotation 90.00/0.00/0.00
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition -2.09/3.16/3.65
+ObjectTemplate.setRotation 90.00/0.00/0.00
+
+ObjectTemplate.addTemplate steplank1_m1
+ObjectTemplate.setPosition 0.41/3.96/8.38
+ObjectTemplate.setRotation 46.16/0.00/0.00
+
+ObjectTemplate.addTemplate steplank1_m1
+ObjectTemplate.setPosition -0.44/3.95/8.33
+ObjectTemplate.setRotation -46.16/0.00/0.00
+
+
+rem ====== Elco80Simple ======
+ObjectTemplate.create SimpleObject Elco80Simple
+ObjectTemplate.geometry PT_Elco_l1
+
+
+rem ====== Elco80LodSelector ======
+LodSelectorTemplate.create DistCompareSelector2 Elco80LodSelector
+LodSelectorTemplate.addLodDistance 100
+
+
+rem ************************
+rem *** lodElco80Cockpit ***
+rem ************************
+ObjectTemplate.create LodObject lodElco80Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate Elco80CockpitExternal
+ObjectTemplate.addTemplate Elco80CockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector Elco80cockpitSelector
+
+rem *** Elco80CockpitExternal ***
+ObjectTemplate.create SimpleObject Elco80CockpitExternal
+ObjectTemplate.geometry Elco80_Hull_M1
+
+rem *** Elco80CockpitInternal ***
+ObjectTemplate.create Bundle Elco80CockpitInternal
+ObjectTemplate.geometry 1p_Elco80_hull_m1
+
+rem *** Elco80cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector Elco80cockpitSelector
+LodSelectorTemplate.addLodDistance 35
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** Elco80_Driver_Entry ***
+ObjectTemplate.create EntryPoint Elco80_Driver_Entry
+ObjectTemplate.setEntryRadius 4
+
+rem *** Elco80_Driver_Camera ***
+ObjectTemplate.create Camera Elco80_Driver_Camera
+ObjectTemplate.setMinRotation -120/-30/0
+ObjectTemplate.setMaxRotation 120/10/0
+ObjectTemplate.setMaxSpeed 200/200/0
+ObjectTemplate.setAcceleration 100000/100000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem ************************************************
+rem ** Elco80 Front Gunner PCO and Parts
+rem ************************************************
+
+rem *** Elco80_FrontGunner_PCO1 ***
+ObjectTemplate.create PlayerControlObject Elco80_FrontGunner_PCO1
+ObjectTemplate.setNetworkableInfo Elco80BodyInfo
+ObjectTemplate.aiTemplate Elco80MG
+rem -------------------------------------
+ObjectTemplate.addTemplate Elco80_SideGunner_Base
+ObjectTemplate.addTemplate Elco80_SideGunnerBase
+ObjectTemplate.addTemplate Elco80_Entry2
+ObjectTemplate.setPosition -4.898/-0.499/-0.299
+ObjectTemplate.addTemplate Elco80_Entry2
+ObjectTemplate.setPosition 0.9/-0.499/-0.299
+ObjectTemplate.addTemplate Elco80_Entry2
+ObjectTemplate.setPosition -4.898/-0.499/-5.298
+ObjectTemplate.addTemplate Elco80_Entry2
+ObjectTemplate.setPosition 0.9/-0.499/-5.298
+rem -------------------------------------
+ObjectTemplate.setPcoId 1
+ObjectTemplate.addPcoPosId 0
+ObjectTemplate.addPcoPosId 2
+ObjectTemplate.addPcoPosId 3
+ObjectTemplate.addPcoPosId 4
+ObjectTemplate.setSoldierExitLocation -0.5/1/-3.999 0/0/0
+ObjectTemplate.GUIIndex 103
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Elco.tga"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTPTBoat
+
+rem *** Elco80_SideGunner_Base ***
+ObjectTemplate.create SimpleObject Elco80_SideGunner_Base
+ObjectTemplate.geometry Elco80_SideGunner_Base_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** Elco80_SideGunnerBase ***
+ObjectTemplate.create RotationalBundle Elco80_SideGunnerBase
+ObjectTemplate.setNetworkableInfo Elco80TurretInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Elco80_SideGunner_Support
+ObjectTemplate.setPosition 0/0.801/0.43
+ObjectTemplate.addTemplate Elco80_SideGunnerRotation
+ObjectTemplate.setPosition 0/1.57/0.412
+ObjectTemplate.addTemplate Elco80SideGunnerSeat
+ObjectTemplate.setPosition 0/1.131/-0.267
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Elco80_SideGunner_Support ***
+ObjectTemplate.create SimpleObject Elco80_SideGunner_Support
+ObjectTemplate.geometry Elco80_SideGunner_Support_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** Elco80_SideGunnerRotation ***
+ObjectTemplate.create RotationalBundle Elco80_SideGunnerRotation
+ObjectTemplate.setNetworkableInfo Elco80TurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/SBDBrowningRotation.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Elco80_Camera_For_PCO1
+ObjectTemplate.setPosition 0.001/0.28/-0.718
+ObjectTemplate.addTemplate Elco80_SideGunner
+ObjectTemplate.setPosition 0/0.005/0.026
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-40/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Elco80_Camera_For_PCO1 ***
+ObjectTemplate.create Camera Elco80_Camera_For_PCO1
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem ************************************************
+rem ** Elco_ThrottleLDummy
+rem ************************************************
+
+rem *** Elco_ThrottleLDummy ***
+ObjectTemplate.create AnimatedBundle Elco_ThrottleLDummy
+rem -------------------------------------
+ObjectTemplate.addTemplate Elco_ThrottleL
+
+rem *** Elco_ThrottleL ***
+ObjectTemplate.create RotationalBundle Elco_ThrottleL
+rem -------------------------------------
+ObjectTemplate.addTemplate lodElco_Throttle
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/60/0
+ObjectTemplate.setMaxRotation 0/60/0
+ObjectTemplate.setMaxSpeed 0/360/0
+ObjectTemplate.setAcceleration 0/360/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+
+rem ************************************************
+rem ** Elco_ThrottleRDummy
+rem ************************************************
+
+rem *** Elco_ThrottleRDummy ***
+ObjectTemplate.create AnimatedBundle Elco_ThrottleRDummy
+rem -------------------------------------
+ObjectTemplate.addTemplate Elco_ThrottleR
+
+rem *** Elco_ThrottleR ***
+ObjectTemplate.create RotationalBundle Elco_ThrottleR
+rem -------------------------------------
+ObjectTemplate.addTemplate lodElco_Throttle
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/60/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+rem ************************************************
+rem ** lodElco_Throttle
+rem ************************************************
+
+rem *** lodElco_Throttle ***
+ObjectTemplate.create LodObject lodElco_Throttle
+rem -------------------------------------
+ObjectTemplate.addTemplate Elco_HighThrottle
+ObjectTemplate.addTemplate Elco_LowThrottle
+rem -------------------------------------
+ObjectTemplate.lodSelector Elco_ThrottleSelector
+
+rem *** Elco_HighThrottle ***
+ObjectTemplate.create SimpleObject Elco_HighThrottle
+ObjectTemplate.geometry 1PPT_ElcoLL_M1
+
+rem *** Elco_LowThrottle ***
+ObjectTemplate.create SimpleObject Elco_LowThrottle
+ObjectTemplate.geometry PT_ElcoLL_M1
+
+rem *** Elco_ThrottleSelector ***
+LodSelectorTemplate.create DistanceSelector Elco_ThrottleSelector
+LodSelectorTemplate.addLodDistance 1
+
+rem ************************************************
+rem ** Elco80 Misc Parts
+rem ************************************************
+
+rem *** Elco80PassengerSeat ***
+ObjectTemplate.create SeatObject Elco80PassengerSeat
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+
+rem *** Elco80SideGunnerSeat ***
+ObjectTemplate.create SeatObject Elco80SideGunnerSeat
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatFlags c_SeatHalfBodySoldier
+
+rem *** Elco80RearGunnerSeat ***
+ObjectTemplate.create SeatObject Elco80RearGunnerSeat
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** Elco80_Entry2 ***
+ObjectTemplate.create EntryPoint Elco80_Entry2
+ObjectTemplate.setEntryRadius 4
+
+rem ************************************************
+rem ** Common PTBoat Parts
+rem ************************************************
+
+rem ************************************************
+rem ** PT_SteeringDummy
+rem ************************************************
+
+rem *** PT_SteeringDummy ***
+ObjectTemplate.create AnimatedBundle PT_SteeringDummy
+rem -------------------------------------
+ObjectTemplate.addTemplate PT_Steering
+
+rem *** PT_Steering ***
+ObjectTemplate.create RotationalBundle PT_Steering
+rem -------------------------------------
+ObjectTemplate.addTemplate lodPT_Steering
+
+ObjectTemplate.addTemplate Attach_R_Hand
+ObjectTemplate.setPosition 0.24/0.1/-0.107
+ObjectTemplate.setRotation -28.129/57.594/62.804
+ObjectTemplate.addTemplate Attach_L_Hand
+ObjectTemplate.setPosition -0.238/0.1/-0.098
+ObjectTemplate.setRotation -85.962/-74.896/41.369
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-60
+ObjectTemplate.setMaxRotation 0/0/60
+ObjectTemplate.setMaxSpeed 0/0/180
+ObjectTemplate.setAcceleration 0/0/-180
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** lodPT_Steering ***
+ObjectTemplate.create LodObject lodPT_Steering
+rem -------------------------------------
+ObjectTemplate.addTemplate PT_HighRSteering
+ObjectTemplate.addTemplate PT_LowSteering
+rem -------------------------------------
+ObjectTemplate.lodSelector PT_SteeringSelector
+
+rem *** PT_HighRSteering ***
+ObjectTemplate.create SimpleObject PT_HighRSteering
+ObjectTemplate.geometry 1P_PT_Str_M1
+
+rem *** PT_LowSteering ***
+ObjectTemplate.create AnimatedBundle PT_LowSteering
+ObjectTemplate.geometry PT_Steering_M1
+
+rem *** PT_SteeringSelector ***
+LodSelectorTemplate.create DistanceSelector PT_SteeringSelector
+LodSelectorTemplate.addLodDistance 1
+
+
+rem ************************************************
+rem ** PT Misc Parts
+rem ************************************************
+
+rem *** PTPropellerRudderBundle ***
+ObjectTemplate.create Bundle PTPropellerRudderBundle
+ObjectTemplate.addTemplate LcvpPropeller
+ObjectTemplate.setPosition 0.0/0.3/1.4
+ObjectTemplate.setRotation -0.051/-6.935/0.94
+ObjectTemplate.addTemplate LcvpRudder
+
+rem *** PT_Ladder ***
+ObjectTemplate.create SimpleObject PT_Ladder
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+ObjectTemplate.geometry PTLadder_M1
+
+rem *** Elco_AABattery_PCO2 ***
+ObjectTemplate.create PlayerControlObject Elco_AABattery_PCO2
+ObjectTemplate.aiTemplate EnterpriseAA2
+ObjectTemplate.setNetworkableInfo Elco80BoforssiInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Carrier_AA_Base
+rem -------------------------------------
+ObjectTemplate.setPcoId 2
+ObjectTemplate.addPcoPosId 0
+ObjectTemplate.addPcoPosId 1
+ObjectTemplate.addPcoPosId 3
+ObjectTemplate.addPcoPosId 4
+ObjectTemplate.setSoldierExitLocation 0/100/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Elco.tga"
+ObjectTemplate.setVehicleIconPos 10/100
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTPTBoat
+ObjectTemplate.setMiniMapIcon "Minimap/minimap_icon_PT_Boat.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+rem *** Passanger ***
+ObjectTemplate.create PlayerControlObject Elco_Passanger_PCO4
+ObjectTemplate.aiTemplate LcvpPassanger4
+ObjectTemplate.setNetworkableInfo Elco80PassengeriInfo
+ObjectTemplate.setPcoId 4
+ObjectTemplate.addPcoPosId 0
+ObjectTemplate.addPcoPosId 1
+ObjectTemplate.addPcoPosId 2
+ObjectTemplate.addPcoPosId 3
+ObjectTemplate.setSoldierExitLocation 0.65/3.20/0.20
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Elco.tga"
+ObjectTemplate.setVehicleIconPos 10/120
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory Sea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTLcvp
+rem -------------------------------------
+ObjectTemplate.addTemplate LcvpPassangerEntry
+ObjectTemplate.setPosition 0/0.0/1
+ObjectTemplate.addTemplate LcvpPassangerCamera
+ObjectTemplate.setPosition 0/0.7/0
+ObjectTemplate.addTemplate LcvpPassengerSeat
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate LcvpHandDummy
+ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.addTemplate usSoldier
+
+
+

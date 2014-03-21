@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KettenKradTurret.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KettenKradTurret.ssc
+	
+#templateLevel LOW
+
+	#include Low/KettenKradTurret.ssc

@@ -1,0 +1,43 @@
+
+
+rem *** browning ***
+ObjectTemplate.create firearms browning
+ObjectTemplate.setNetworkableInfo Vehicle_Browning_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry l39_main
+ObjectTemplate.aiTemplate Browning
+ObjectTemplate.projectileTemplate Browning_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 10
+ObjectTemplate.numOfMag -1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 2
+ObjectTemplate.recoilSpeed 20.0
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.addDevFire 0
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.velocity 1000
+ObjectTemplate.setFireDev 0.7 0.3 0.048
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.heatAddWhenFire 0
+ObjectTemplate.coolDownPerSec 0.4
+ObjectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.04/-0.03/-0.07 0/80/90
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.09/0.10/-0.18 0/-160/-20
+ObjectTemplate.loadSoundScript Sounds/Browning.ssc
+ObjectTemplate.addTemplate e_muzzl39
+ObjectTemplate.setPosition 0.0/0.1/1.8
+ObjectTemplate.startoneffects 1
+ObjectTemplate.addTemplate e_shell1250mm
+ObjectTemplate.setPosition 0.0/0.12/0.16
+ObjectTemplate.startoneffects 1
+ObjectTemplate.addTemplate l39_mag
+ObjectTemplate.setPosition -0.0023222/0.264021/0.128929
+
+
+rem *** l39_mag ***
+ObjectTemplate.create simpleobject l39_mag
+ObjectTemplate.geometry l39_mag

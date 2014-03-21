@@ -1,0 +1,14 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Cover Bunker2Cover
+aiTemplatePlugIn.coverValue 100.0
+
+rem *** AITemplate ***
+aiTemplate.create Bunker2_m1
+aiTemplate.addType ITCover
+aiTemplate.addType ITStructure
+aiTemplate.addType ITNoTemperature
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 5
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn Bunker2Cover

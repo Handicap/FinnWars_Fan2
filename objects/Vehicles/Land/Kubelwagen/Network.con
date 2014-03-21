@@ -1,0 +1,24 @@
+NetworkableInfo.createNewInfo KubelwagenEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo KubelwagenBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo KubelwagenSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo KubelwagenTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Suksi_GunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo TankFireArmInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo TankFireArmInfo2
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo TankFireArmInfo3
+NetworkableInfo.setPredictionMode PMLinear

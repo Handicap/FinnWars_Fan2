@@ -1,0 +1,73 @@
+
+
+rem *** Yak9GunBarrel ***
+ObjectTemplate.create FireArms Yak9Guns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/yak9MG.ssc
+ObjectTemplate.aiTemplate Yak9MachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_Muzzleko
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Yak9Projectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/3/0/0
+ObjectTemplate.magSize 340
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 814
+ObjectTemplate.roundOfFire 15
+ObjectTemplate.setMinDev 1.2
+ObjectTemplate.addFireArmsPosition 0.25/0.39/1.9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.25/0.39/1.9 -0/0/0
+ObjectTemplate.AmmoType	10
+
+
+rem *** Yak9Projectile ***
+ObjectTemplate.create Projectile Yak9Projectile
+ObjectTemplate.createNotInGrid 1
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/1.5/0/0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.material 213
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+
+
+ObjectTemplate.create FireArms StukaGuns1
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/konetykki.ssc
+ObjectTemplate.aiTemplate StukaMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_Muzzleko
+rem ObjectTemplate.addTemplate em_ShellAir
+rem ObjectTemplate.setPosition 0/-0.299/-0.299
+rem -------------------------------------
+ObjectTemplate.projectileTemplate KoneTykkiProjectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate KT_Tracer_Projectile CRD_NONE/3/0/0
+ObjectTemplate.magSize 120
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 750
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.roundOfFire 15
+ObjectTemplate.setMinDev 1.2
+ObjectTemplate.addFireArmsPosition 0/0.03/2.9 0.3/0/0
+ObjectTemplate.AmmoType	8
+
+rem *** Yak9Projectile ***
+ObjectTemplate.create Projectile Yak9Projectile
+ObjectTemplate.createNotInGrid 1
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.material 213
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+

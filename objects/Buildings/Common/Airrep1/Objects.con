@@ -1,0 +1,47 @@
+ObjectTemplate.create Bundle airrep1_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate airrep1_m1
+ObjectTemplate.addTemplate lodairrep1
+
+LodSelectorTemplate.create DistanceSelector airrep1Selector
+LodSelectorTemplate.addLodDistance 300
+ObjectTemplate.create LodObject lodairrep1
+ObjectTemplate.lodselector airrep1Selector
+ObjectTemplate.addTemplate airrep1Interior
+ObjectTemplate.addTemplate airrep1Exterior
+
+ObjectTemplate.create Bundle airrep1Interior
+ObjectTemplate.geometry airrep1_m1
+
+rem----------------------------------------------------
+
+
+ObjectTemplate.addTemplate militable_m1
+ObjectTemplate.setPosition 0.2/0.92/-4.299
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.addTemplate mililocker_m1
+ObjectTemplate.setPosition 2.6/0.92/-4.898
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.addTemplate planeeng_M1
+ObjectTemplate.setPosition 0/1.84/-4.298
+ObjectTemplate.setRotation 170/0/0
+
+ObjectTemplate.addTemplate stecrate1_M1
+ObjectTemplate.setPosition 4.43/0.92/2.898
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.addTemplate stecrate2_M1
+ObjectTemplate.setPosition -2.069/0.92/-4.101
+ObjectTemplate.setRotation 13/0/0
+
+
+rem---------------------------------------------------
+
+
+ObjectTemplate.create SimpleObject airrep1Exterior
+ObjectTemplate.geometry airrep1_m2

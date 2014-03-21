@@ -1,0 +1,6 @@
+NetworkableInfo.createNewInfo Mobile_Maxim_gun_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Mobile_Maxim_gun_TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+

@@ -1,0 +1,23 @@
+GeometryTemplate.create StandardMesh German_Helmet
+GeometryTemplate.file Germ_Helmet_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 100
+
+GeometryTemplate.create StandardMesh German_hippack
+GeometryTemplate.file German_hippack_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 100
+
+GeometryTemplate.create StandardMesh Karvalakki_fin
+GeometryTemplate.file Karvalakki_fin
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 100
+
+GeometryTemplate.create StandardMesh finofficerhat
+GeometryTemplate.file finofficerhat
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 100

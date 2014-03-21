@@ -1,0 +1,110 @@
+rem *** Maxim_aa_single ***
+ObjectTemplate.create PlayerControlObject Maxim_aa_single
+ObjectTemplate.networkableInfo Maxim_BodyInfo_Maxim_aa_single0
+ObjectTemplate.setSoldierExitLocation -0.5/0/-1 0/0/0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.aiTemplate Maxim_aa_single
+ObjectTemplate.geometry it_tripod_m1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 45
+ObjectTemplate.maxhitpoints 45
+ObjectTemplate.material 45
+ObjectTemplate.GUIIndex 81
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTStationaryMG
+ObjectTemplate.setToolTipType TTStationaryMG
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_stationaryAAmg_16x16.dds"
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.vehicleFov 1.10
+ObjectTemplate.addTemplate Point_Maxim_aa_single1
+ObjectTemplate.setPosition 0/0.06/-0.08
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Entry_Maxim_aa_single10
+ObjectTemplate.setPosition 0/-0.15/-0.2
+ObjectTemplate.setRotation 0/0/0
+
+rem *** Point_Maxim_aa_single1 ***
+ObjectTemplate.create rotationalbundle Point_Maxim_aa_single1
+ObjectTemplate.networkableInfo Maxim_TurretInfo_Maxim_aa_single1
+ObjectTemplate.addTemplate PointRotation_Maxim_aa_single3
+ObjectTemplate.addTemplate PointRotation_Maxim_aa_single4
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 70/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw 4
+ObjectTemplate.setInputToRoll c_PINone
+
+rem *** PointRotation_Maxim_aa_single3 ***
+ObjectTemplate.create rotationalbundle PointRotation_Maxim_aa_single3
+ObjectTemplate.networkableInfo Maxim_BodyInfo_Maxim_aa_single2
+ObjectTemplate.addTemplate Holder_Maxim_aa_single5
+ObjectTemplate.setPosition 0/-0/0.085
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate maxim_gun_Maxim_aa_single3
+ObjectTemplate.setPosition -0.0/0.10/0.12
+ObjectTemplate.setRotation 0.0/0/0
+ObjectTemplate.addTemplate Camera_Maxim_aa_single8
+ObjectTemplate.setPosition 0/0.406/-0.23
+ObjectTemplate.setRotation 0/1.8/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMinRotation 0/-70/0
+ObjectTemplate.setMaxRotation 0/6/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/70/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToPitch 5
+ObjectTemplate.setInputToRoll c_PINone
+
+rem *** Holder_Maxim_aa_single5 ***
+ObjectTemplate.create SimpleObject Holder_Maxim_aa_single5
+ObjectTemplate.geometry it_single_tripod_holder_m1
+
+rem *** Camera_Maxim_aa_single8 ***
+ObjectTemplate.create Camera Camera_Maxim_aa_single8
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw c_PINone
+ObjectTemplate.setInputToPitch c_PINone
+ObjectTemplate.setInputToRoll c_PINone
+ObjectTemplate.setHasTarget 0
+
+rem *** PointRotation_Maxim_aa_single4 ***
+ObjectTemplate.create rotationalbundle PointRotation_Maxim_aa_single4
+ObjectTemplate.networkableInfo Maxim_BodyInfo_Maxim_aa_single5
+ObjectTemplate.addTemplate Seat_Maxim_aa_single9
+ObjectTemplate.setPosition 0/-0.15/-0.6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMinRotation 0/-1/0
+ObjectTemplate.setMaxRotation 0/1/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/35/0
+ObjectTemplate.setAcceleration 0/2500/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToPitch 5
+ObjectTemplate.setInputToRoll c_PINone
+
+rem *** Seat_Maxim_aa_single9 ***
+ObjectTemplate.create seatobject Seat_Maxim_aa_single9
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** Entry_Maxim_aa_single10 ***
+ObjectTemplate.create EntryPoint Entry_Maxim_aa_single10
+ObjectTemplate.setEntryRadius 1
+

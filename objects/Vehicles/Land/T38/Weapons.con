@@ -1,0 +1,7 @@
+
+
+rem *** t38cannon ***
+ObjectTemplate.create bundle t38cannon
+ObjectTemplate.geometry t38_Cannon_M1
+ObjectTemplate.addTemplate Coaxial_DP
+ObjectTemplate.setPosition 0/0/0.1

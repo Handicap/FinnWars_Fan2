@@ -1,0 +1,323 @@
+
+
+rem *** fai ***
+ObjectTemplate.create playercontrolobject fai
+ObjectTemplate.setNetworkableInfo faiBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.drag 2
+ObjectTemplate.dragOffset 0/0/0
+ObjectTemplate.mass 2000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.vehicleFov 0.85
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 80
+ObjectTemplate.maxhitpoints 80
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 36
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 0
+ObjectTemplate.hpLostWhileDamageFromDeepWater 20
+ObjectTemplate.addArmorEffect 36 e_KatyushaDamage 0/0.5/1.2
+ObjectTemplate.addArmorEffect 10 e_KatyushaFire 0/0.65/1.2
+ObjectTemplate.addArmorEffect 10 e_KatyushaDamage 0/0.5/1.2
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/-1/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/-1/5
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/-1/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.damageFromDeepWater 1
+ObjectTemplate.aiTemplate fai
+ObjectTemplate.setSoldierExitLocation -2.5/0/0 0/0/0
+ObjectTemplate.GUIIndex 20
+ObjectTemplate.setVehicleIcon "Vehicle/icon_FAIdriver.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_fai_16x16.dds"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate lodfai
+
+
+rem *** lodfai ***
+ObjectTemplate.create lodobject lodfai
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodselector faiLodSelector
+ObjectTemplate.addTemplate faicomplex
+ObjectTemplate.addTemplate faisimple
+ObjectTemplate.addTemplate faiwreck
+
+
+rem *** faicomplex ***
+ObjectTemplate.create bundle faicomplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate lodfaicockpit
+ObjectTemplate.addTemplate faiseat
+ObjectTemplate.setPosition -0.20/0.23/0.0
+ObjectTemplate.addTemplate fai_camera
+ObjectTemplate.setPosition -0.273092/0.83/-0.05
+ObjectTemplate.addTemplate fai_hatch
+ObjectTemplate.setPosition -0.2666/0.942/0.207
+ObjectTemplate.addTemplate fai_entry
+ObjectTemplate.setPosition 0.0/0.6/1.7
+ObjectTemplate.addTemplate fai_entry
+ObjectTemplate.setPosition 0.0/0.6/-0.199
+ObjectTemplate.addTemplate fai_wheel_frontl
+ObjectTemplate.setPosition -0.986578/-0.50/1.76142
+ObjectTemplate.addTemplate fai_wheel_frontr
+ObjectTemplate.setPosition 1.09/-0.50/1.76142
+ObjectTemplate.addTemplate fai_pco1
+ObjectTemplate.setPosition 0.0/0.344553/-0.769676
+ObjectTemplate.addTemplate fai_engine
+ObjectTemplate.setPosition 0.0/0.0/2.0
+ObjectTemplate.addTemplate faiinteriorsteerdummy
+ObjectTemplate.setPosition -0.315/0.1/2.14
+ObjectTemplate.setRotation 0.0/-30.0/0.0
+
+
+rem *** lodfaicockpit ***
+ObjectTemplate.create lodobject lodfaicockpit
+ObjectTemplate.lodselector faiCockpitSelector
+ObjectTemplate.addTemplate faiexterior
+ObjectTemplate.addTemplate faiinterior
+ObjectTemplate.setPosition 0.0/0.00041094/-0.0015758
+
+
+rem *** faiexterior ***
+ObjectTemplate.create simpleobject faiexterior
+ObjectTemplate.geometry fai_Main_M1
+
+
+rem *** faiinterior ***
+ObjectTemplate.create bundle faiinterior
+ObjectTemplate.geometry fai_Main_M1
+
+
+rem *** faiinteriorsteerdummy ***
+ObjectTemplate.create animatedbundle faiinteriorsteerdummy
+ObjectTemplate.addTemplate faiInteriorSteer
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.24/-2.9/0.0 -80/60/50
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.26/-2.9/-0.0 -80/-60/50
+
+
+rem *** faiinteriorsteer ***
+ObjectTemplate.create rotationalbundle faiinteriorsteer
+ObjectTemplate.setNetworkableInfo faiBodyInfo
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 80/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.addTemplate lodfaisteering
+
+
+rem *** lodfaisteering ***
+ObjectTemplate.create lodobject lodfaisteering
+ObjectTemplate.lodselector faiSteeringSelector
+ObjectTemplate.addTemplate faihighrsteering
+ObjectTemplate.setPosition 0.0/0.811485/-2.06616
+ObjectTemplate.addTemplate failowsteering
+
+
+rem *** faihighrsteering ***
+ObjectTemplate.create simpleobject faihighrsteering
+
+
+rem *** failowsteering ***
+ObjectTemplate.create simpleobject failowsteering
+
+
+rem *** faiseat ***
+ObjectTemplate.create seatobject faiseat
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+
+
+rem *** Lcvp_Ramp ***
+ObjectTemplate.create RotationalBundle fai_hatch
+ObjectTemplate.setNetworkableInfo faiWingInfo
+ObjectTemplate.geometry fai_hatch
+ObjectTemplate.setMaxRotation 0/107/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/200/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setInputToPitch c_PIPitch
+
+
+
+
+rem *** fai_camera ***
+ObjectTemplate.create camera fai_camera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+
+rem *** fai_entry ***
+ObjectTemplate.create entrypoint fai_entry
+ObjectTemplate.setEntryRadius 4
+
+
+rem *** fai_wheel_frontl ***
+ObjectTemplate.create rotationalbundle fai_wheel_frontl
+ObjectTemplate.setNetworkableInfo faiBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 80/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.addTemplate fai_spring_frontl
+ObjectTemplate.setPosition 0.0716019/-0.00668335/-0.0624752
+ObjectTemplate.setRotation -179.999/0.0/0.0
+
+
+rem *** fai_wheel_frontr ***
+ObjectTemplate.create rotationalbundle fai_wheel_frontr
+ObjectTemplate.setNetworkableInfo faiBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 80/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.addTemplate fai_spring_frontr
+ObjectTemplate.setPosition -0.0869721/-0.00668335/-0.0624752
+
+
+rem *** fai_pco1 ***
+ObjectTemplate.create playercontrolobject fai_pco1
+ObjectTemplate.setNetworkableInfo faiBodyInfo
+ObjectTemplate.aiTemplate faiCannon
+ObjectTemplate.setSoldierExitLocation -1.5/0/0 0/0/0
+ObjectTemplate.GUIIndex 21
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate fai_turret
+ObjectTemplate.setPosition 0.0/0.672713/-0.139151
+ObjectTemplate.addTemplate fai_entry
+ObjectTemplate.setPosition 0.0/0.0/-0.199
+
+
+rem *** fai_turret ***
+ObjectTemplate.create rotationalbundle fai_turret
+ObjectTemplate.setNetworkableInfo faiTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/faiRampRot.ssc
+ObjectTemplate.geometry fai_turret
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.material 45
+rem ObjectTemplate.setMinRotation 0/0/0
+rem ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 1000/0/1000
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate fai_kk
+ObjectTemplate.setPosition 0.0/0.253711/0.633798
+ObjectTemplate.addTemplate fairampseat
+ObjectTemplate.setPosition 0.0/-0.383711/-0.1
+
+
+rem *** fairampseat ***
+ObjectTemplate.create seatobject fairampseat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+
+rem *** fai_camera_pcoid1 ***
+ObjectTemplate.create camera fai_camera_pcoid1
+ObjectTemplate.setPivotPosition 0/0.25/0.0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+
+rem *** faisimple ***
+ObjectTemplate.create simpleobject faisimple
+ObjectTemplate.geometry fai_Main_L1
+
+
+rem *** faiwreck ***
+ObjectTemplate.create simpleobject faiwreck
+ObjectTemplate.geometry Wreck_fai_m1
+
+
+rem *** fai_kk ***
+ObjectTemplate.create rotationalbundle fai_kk
+ObjectTemplate.geometry fai_kk
+ObjectTemplate.setNetworkableInfo faiTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/faiRampRot.ssc
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/20/0
+ObjectTemplate.setAcceleration 1000/1000/1000
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate coaxial_DP_FAI
+ObjectTemplate.setPosition 0.0/0.0/0.1
+ObjectTemplate.addTemplate fai_camera_pcoid1
+ObjectTemplate.setPosition 0.0/0.1/0.1
+ObjectTemplate.addTemplate lodNwGCockpit
+ObjectTemplate.setPosition 1.086/0.325/0.20
+
+
+rem *** faisteeringselector ***
+LodSelectorTemplate.create distanceselector faisteeringselector
+LodSelectorTemplate.addLodDistance 2
+
+
+rem *** faicockpitselector ***
+LodSelectorTemplate.create distcompareselector faicockpitselector
+LodSelectorTemplate.addLodDistance 15
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** failodselector ***
+LodSelectorTemplate.create distcompareselector2 failodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200

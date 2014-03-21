@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Explmolotov_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include Explmolotov_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include Explmolotov_MedLow.ssc

@@ -1,0 +1,179 @@
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create Bundle Carrier_AA_Base
+ObjectTemplate.saveInSeparateFile 1
+beginrem
+	ObjectTemplate.HasArmor 1
+	ObjectTemplate.HitPoints 15
+	ObjectTemplate.MaxHitPoints 15
+	ObjectTemplate.Material 45
+endrem
+rem ---------------------------------------------------
+ObjectTemplate.addTemplate Carrier_AA_Entry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Carrier_AA_Carriage
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+rem ---------------------------------------------------
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create Camera Carrier_AA_Camera
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setInputToRoll c_PINone
+ObjectTemplate.setHasTarget 0
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create EntryPoint Carrier_AA_Entry
+ObjectTemplate.setEntryRadius 3.2
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create RotationalBundle Carrier_AA_Carriage
+ObjectTemplate.networkableInfo Carrier_AA_TurretInfo
+ObjectTemplate.geometry Carrier_AA_carriage_m1
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+rem ---------------------------------------------------
+ObjectTemplate.addTemplate Carrier_AASeat
+ObjectTemplate.setPosition 0.7/0.7/-0.2
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Carrier_AA_Cannon
+ObjectTemplate.setPosition 0/0.987/-0.171
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Carrier_AA_Roll
+ObjectTemplate.setPosition 0/0.529/0.187
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Carrier_AA_Crank
+ObjectTemplate.setPosition 0.48/0.76/0.113
+ObjectTemplate.setRotation 0/0/0
+rem ---------------------------------------------------
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/Carrier_AA_Carriage.ssc
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create RotationalBundle Carrier_AA_Roll
+ObjectTemplate.networkableInfo Carrier_AA_GunInfo
+ObjectTemplate.geometry Carrier_AA_roll_m1
+ObjectTemplate.setPosition 0/0/15.5
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/200/0
+ObjectTemplate.setAcceleration 0/450/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw c_PINone
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setInputToRoll c_PINone
+
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/Carrier_AAGunBase.ssc
+
+rem ***
+rem *** Carrier_AA Cockpit
+rem ***
+LodSelectorTemplate.create DistCompareSelector Carrier_AA_cockpitSelector
+LodSelectorTemplate.addLodComparison 0.5
+LodSelectorTemplate.addLodDistance 10
+
+ObjectTemplate.create LodObject lod_Carrier_AA_Cockpit
+ObjectTemplate.addTemplate Carrier_AA_CockpitExternal
+ObjectTemplate.addTemplate Carrier_AA_CockpitInternal
+ObjectTemplate.lodselector Carrier_AA_cockpitSelector
+
+ObjectTemplate.create SimpleObject Carrier_AA_CockpitExternal
+ObjectTemplate.geometry Carrier_AA_cannon_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+ObjectTemplate.create SimpleObject Carrier_AA_CockpitInternal
+ObjectTemplate.geometry 1P_Bofors
+
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create RotationalBundle Carrier_AA_Cannon
+ObjectTemplate.networkableInfo Carrier_AA_GunInfo
+ObjectTemplate.addTemplate lod_Carrier_AA_Cockpit
+rem ObjectTemplate.geometry Carrier_AA_cannon_m1
+ObjectTemplate.setMinRotation 0/-80/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/Carrier_AA_Cannon.ssc
+rem ----------------------------------------------------------
+ObjectTemplate.addTemplate Carrier_AA_Camera
+ObjectTemplate.setPosition 0.736/0.318/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Carrier_AA_Pipe
+ObjectTemplate.setPosition 0/0.026/1.017
+ObjectTemplate.setRotation 0/0/0
+rem ----------------------------------------------------------
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create Bundle Carrier_AA_Pipe
+rem ObjectTemplate.geometry Carrier_AA_pipe_m1
+rem ----------------------------------------------------------
+ObjectTemplate.addTemplate Carrier_AA_GunBarrel
+rem ObjectTemplate.setPosition 0/-0.03/2.3
+rem ObjectTemplate.setRotation 0/0/0
+rem ----------------------------------------------------------
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create AnimatedBundle Carrier_AA_Crank
+ObjectTemplate.addTemplate Carrier_AA_RotatingCrank
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.5/0.15/-0.05 -90/180/0
+ObjectTemplate.addSkeletonIK Bip01_L_Hand 0.2/-0.1/-0.05 -90/180/0
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create RotationalBundle Carrier_AA_RotatingCrank
+ObjectTemplate.geometry Carrier_AA_crank_m1
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/500/0
+ObjectTemplate.setAcceleration 0/10000/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToPitch 4
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create SeatObject Carrier_AASeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+
+

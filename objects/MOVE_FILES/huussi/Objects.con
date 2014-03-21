@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject Huussi
+ObjectTemplate.geometry Huussi
+ObjectTemplate.setHasCollisionPhysics 1
+
+

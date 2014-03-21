@@ -1,0 +1,203 @@
+renderer.beginGlobalCluster BF109
+GeometryTemplate.create StandardMesh BF109_Fus_m1
+GeometryTemplate.file BF109_Fus_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_Flap_left_inner_M1
+GeometryTemplate.file BF109_Flap_left_inner_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_Flap_left_outer_M1
+GeometryTemplate.file BF109_Flap_left_outer_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_Flap_right_inner_M1
+GeometryTemplate.file BF109_Flap_right_inner_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_Flap_right_outer_M1
+GeometryTemplate.file BF109_Flap_right_outer_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+
+
+
+GeometryTemplate.create StandardMesh BF109_Airbreak_left_lower_M1
+GeometryTemplate.file BF109_Airbreak_left_lower_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_Airbreak_left_upper_M1
+GeometryTemplate.file BF109_Airbreak_left_upper_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_Airbreak_right_lower_M1
+GeometryTemplate.file BF109_Airbreak_right_lower_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_Airbreak_right_upper_M1
+GeometryTemplate.file BF109_Airbreak_right_upper_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_Landinggear_left_M1
+GeometryTemplate.file BF109_Landinggear_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_Landinggear_right_M1
+GeometryTemplate.file BF109_Landinggear_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_Wheel_left_M1
+GeometryTemplate.file BF109_Wheel_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh BF109_Wheel_Right_M1
+GeometryTemplate.file BF109_Wheel_Right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh BF109_rodder_M1
+GeometryTemplate.file BF109_rodder_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh BF109_Propellerm_M1
+GeometryTemplate.file BF109_Propellerm_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_tailflap_Left_M1
+GeometryTemplate.file BF109_tailflap_Left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh BF109_tailflap_Right_M1
+GeometryTemplate.file BF109_tailflap_Right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 1P_bf109_M1
+GeometryTemplate.file 1P_bf109_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh bf109_Wheel_back_m1
+GeometryTemplate.file bf109_Wheel_back_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh bf109_prp1
+GeometryTemplate.file bf109_Propeller_m1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh bf109_prp2
+GeometryTemplate.file bf109_blurprp_m1
+GeometryTemplate.alphaLodDistance 750
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh BF109_Fus_l1
+GeometryTemplate.file BF109_Fus_l1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Wreck_BF109_m1
+GeometryTemplate.file Wreck_BF109_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500

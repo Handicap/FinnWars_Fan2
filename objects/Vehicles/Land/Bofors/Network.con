@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo boforsTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo boforsGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo boforsBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

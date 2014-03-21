@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject risti1
+ObjectTemplate.geometry risti1
+ObjectTemplate.setHasCollisionPhysics 1

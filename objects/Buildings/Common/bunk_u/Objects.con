@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject bunk_u
+ObjectTemplate.material 84
+ObjectTemplate.geometry bunk_u
+ObjectTemplate.setHasCollisionPhysics 1

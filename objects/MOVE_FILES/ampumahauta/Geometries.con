@@ -1,0 +1,9 @@
+GeometryTemplate.create StandardMesh ampumahauta
+GeometryTemplate.file ampumahauta
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 150
+GeometryTemplate.setLodDistance 5 200
+

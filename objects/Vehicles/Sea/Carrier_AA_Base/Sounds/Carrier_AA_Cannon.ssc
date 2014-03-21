@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Carrier_AA_Cannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Carrier_AA_Cannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/Carrier_AA_Cannon.ssc

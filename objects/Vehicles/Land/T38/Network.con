@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo t38TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo t38GunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo t38EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo t38BodyInfo
+NetworkableInfo.setPredictionMode PMLinear

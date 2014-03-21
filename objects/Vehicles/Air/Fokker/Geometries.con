@@ -1,0 +1,166 @@
+renderer.beginGlobalCluster Fokker
+GeometryTemplate.create StandardMesh Fokker_fus_m1
+GeometryTemplate.file fokker_hullfix
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 40
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 70
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_landinggear_back_m1
+GeometryTemplate.file zero_landinggear_back_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_landinggear_left_m1
+GeometryTemplate.file zero_landinggear_left_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_landinggear_right_m1
+GeometryTemplate.file zero_landinggear_right_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_canopy_m1
+GeometryTemplate.file zero_canopy_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_flap_left_lo_m1
+GeometryTemplate.file zero_flap_left_lo_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_flap_left_up_m1
+GeometryTemplate.file zero_flap_left_up_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_flap_right_lo_m1
+GeometryTemplate.file zero_flap_right_lo_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_flap_right_up_m1
+GeometryTemplate.file zero_flap_right_up_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_tail_mid_m1
+GeometryTemplate.file fokker_rudder
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_tailflap_left_m1
+GeometryTemplate.file fokker_korkeus_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_tailflap_right_m1
+GeometryTemplate.file fokker_korkeus_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_wheel_back_m1
+GeometryTemplate.file fokker_wheel_tail
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Fokker_wheel_left_m1
+GeometryTemplate.file fokker_wheel_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Fokker_wheel_right_m1
+GeometryTemplate.file fokker_wheel_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Fokker_prop_m1
+GeometryTemplate.file fokker_propel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fokker_propblur_m1
+GeometryTemplate.alphaLodDistance 750
+GeometryTemplate.file Spitfire_Propeller_m2
+
+GeometryTemplate.create StandardMesh 1P_Fokker_M1
+GeometryTemplate.file fokker_cpit
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Fokker_fus_L1
+GeometryTemplate.file fokker_hullfix
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Wreck_Fokker_m1
+GeometryTemplate.file fokker_hullfix
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500

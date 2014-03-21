@@ -1,0 +1,139 @@
+ObjectTemplate.create HandFireArms Savukranu_rus
+ObjectTemplate.itemIndex 4
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.projectileTemplate savukranu_rusi
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.projectilerotation 90/0/0
+ObjectTemplate.ForceOnExplosion 0
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.geometry poruskimeshSAATANA
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+rem ObjectTemplate.altFireOnce 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.material 60
+ObjectTemplate.hitpoints 10000
+ObjectTemplate.maxhitpoints 10000
+ObjectTemplate.AmmoType 16
+
+ObjectTemplate.autoReload 1
+ObjectTemplate.GUIIndex 13
+ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
+ObjectTemplate.setAmmoIcon "weapon/icon_savukranu_rus_64x32.tga"
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setHasMag 0
+
+ObjectTemplate.rotationalSpeed 0/0/0
+rem ObjectTemplate.velocity 25
+ObjectTemplate.velocity 20
+
+ObjectTemplate.minDeviation 0
+ObjectTemplate.maxDeviation 0.08
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.4
+ObjectTemplate.fireDelay 1
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.velocityDependentOnHeat 1
+ObjectTemplate.heatAddWhenFire 0.03
+rem ObjectTemplate.coolDownPerSec 0.05
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+
+ObjectTemplate.autoReload 1
+ObjectTemplate.GUIIndex 13
+ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
+ObjectTemplate.setAmmoIcon  "weapon/icon_savukranu_rus_64x32.tga"
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setHasMag 0
+
+ObjectTemplate.rotationalSpeed 0/0/0
+ObjectTemplate.velocity 23
+
+ObjectTemplate.minDeviation 0
+ObjectTemplate.maxDeviation 0.08
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.4
+ObjectTemplate.fireDelay 1
+objectTemplate.aiTemplate GrenadeAlliesAI
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.velocityDependentOnHeat 1
+ObjectTemplate.heatAddWhenFire 0.03
+rem ObjectTemplate.coolDownPerSec 0.05
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+
+
+
+
+
+ObjectTemplate.createSkeleton animations/Grenadeallies.ske
+rem ObjectTemplate.geometry poruskimeshSAATANA
+ObjectTemplate.useSkeletonPartAsMain Base
+ObjectTemplate.addTemplate SmokeGrenadeLod_rus
+
+ObjectTemplate.create SimpleObject SmokeGrenadeMSSH_rus
+rem ObjectTemplate.geometry poruskimeshSAATANA
+ObjectTemplate.create SimpleObject SmokeGrenadeJousi_rus
+rem ObjectTemplate.geometry poruskimeshSAATANA
+ObjectTemplate.create SimpleObject SmokeGrenadeSimple_rus
+rem ObjectTemplate.geometry poruskimeshSAATANA
+
+
+ObjectTemplate.create AnimatedBundle SmokeGrenade_rusComplex
+ObjectTemplate.createSkeleton animations/Grenadeallies.ske
+rem ObjectTemplate.geometry poruskimeshSAATANA
+ObjectTemplate.addTemplate SmokeGrenadeJousi_rus
+ObjectTemplate.bindToSkeletonPart Jousi
+ObjectTemplate.addTemplate SmokeGrenadeMSSH_rus
+ObjectTemplate.bindToSkeletonPart MSSH
+
+ObjectTemplate.create LodObject SmokeGrenadeLod_rus
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate SmokeGrenade_rusComplex
+ObjectTemplate.addTemplate SmokeGrenadeSimple_rus
+
+
+
+
+
+
+
+
+ObjectTemplate.create Projectile savukranu_rusi
+ObjectTemplate.networkableInfo ProjectileInfo
+ObjectTemplate.geometry poruskimeshSAATANA
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitPoints 9999
+ObjectTemplate.maxHitPoints 9999
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.timeToLive CRD_NONE/500/0/0
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.radius 0.0
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.material 100
+ObjectTemplate.material2 100
+ObjectTemplate.useMMOnEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.startEffectTemplate e_savukranunew
+ObjectTemplate.noFFSound 1
+ObjectTemplate.mass 10
+
+
+

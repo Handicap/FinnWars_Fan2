@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject faustbox_kiinni
+ObjectTemplate.geometry faustbox_kiinni
+ObjectTemplate.setHasCollisionPhysics 1
+
+

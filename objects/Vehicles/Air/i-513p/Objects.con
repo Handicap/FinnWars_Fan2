@@ -1,0 +1,250 @@
+
+
+rem *** I-153 ***
+ObjectTemplate.create PlayerControlObject I-153p
+ObjectTemplate.setNetworkableInfo I-153p_body_info
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.142
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 0.85/0.833/0.84
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 60
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 50 em_Bf109Damage 0/-0.084/1.9
+ObjectTemplate.addArmorEffect 20 e_Bf109Fire 0/0.3/1.7
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/-0.3/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_Plane 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate I-153
+rem -------------------------------------
+ObjectTemplate.addTemplate lodI-153p
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.5/0/-3 0/0/0
+ObjectTemplate.GUIIndex 108
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bomb.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setToolTipType  TTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_i-153_64x64.tga"
+
+
+rem *** lodI-153 ***
+ObjectTemplate.create LodObject lodI-153p
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate I-153pComplex
+ObjectTemplate.addTemplate I-153pSimple
+ObjectTemplate.addTemplate I-153pWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector I-153pLodSelector
+
+
+rem *** I-153Complex ***
+ObjectTemplate.create Bundle I-153pComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodI-153pCockpit
+ObjectTemplate.addTemplate I-153pCamera
+ObjectTemplate.setPosition 0.003/1.3/-1.0
+ObjectTemplate.addTemplate I-153pEntry
+ObjectTemplate.setPosition 0/0/-0.999
+ObjectTemplate.addTemplate I-153pAirbreakLeft
+ObjectTemplate.setPosition -1.538/0.05/-0.882
+ObjectTemplate.setRotation 6.973/-0.612/-5.036
+ObjectTemplate.addTemplate I-153pAirbreakRight
+ObjectTemplate.setPosition 1.539/0.05/-0.882
+ObjectTemplate.setRotation -6.972/-0.612/5.037
+ObjectTemplate.addTemplate I-153pRudderBackVertical
+ObjectTemplate.setPosition 0/1.1265/-2.9601	
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate I-153pBodyWingVertical
+ObjectTemplate.setPosition 0/0/0.3
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate I-153pRudderBackLeft
+ObjectTemplate.setPosition -0.6855/1.0609/-2.8584
+ObjectTemplate.addTemplate I-153pRudderBackRight
+ObjectTemplate.setPosition 0.6974/1.0609/-2.8626
+ObjectTemplate.addTemplate I-153pRudderFrontLeft
+ObjectTemplate.setPosition -3.814/0.275/-0.371
+ObjectTemplate.setRotation 9/-0.862/-5.499
+ObjectTemplate.addTemplate I-153pRudderFrontRight
+ObjectTemplate.setPosition 3.815/0.275/-0.371
+ObjectTemplate.setRotation -8.999/-0.862/5.5
+ObjectTemplate.addTemplate I-153pSeat
+ObjectTemplate.setPosition 0/0.8/-0.799
+ObjectTemplate.addTemplate I-153pEngine
+ObjectTemplate.setPosition 0/0.5/4
+ObjectTemplate.addTemplate I-153pGuns
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate I-153pBomb
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate I-153pWheel1Dummy
+ObjectTemplate.setPosition 0/0.0/-2.85
+rem -------------------------------------
+
+
+rem *** lodI-153Cockpit ***
+ObjectTemplate.create LodObject lodI-153pCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate I-153pCockpitExternal
+ObjectTemplate.addTemplate I-153pCpockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector I-153pcockpitSelector
+
+
+rem *** I-153CockpitExternal ***
+ObjectTemplate.create Bundle I-153pCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry I-153_Fus_M1p
+
+
+rem *** I-153CockpitInternal ***
+ObjectTemplate.create SimpleObject I-153pCpockpitInternal
+ObjectTemplate.geometry 1p_I-153_m1p
+
+
+rem *** I-153cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector I-153pcockpitSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** I-153Camera ***
+ObjectTemplate.create Camera I-153pCamera
+ObjectTemplate.setMinRotation -70/-60/0
+ObjectTemplate.setMaxRotation 70/1/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/-5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/0/3.5
+
+
+rem *** I-153Entry ***
+ObjectTemplate.create EntryPoint I-153pEntry
+ObjectTemplate.setEntryRadius 5.5
+
+
+rem *** I-153Seat ***
+ObjectTemplate.create SeatObject I-153pSeat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+
+rem *** lodI-153Propeller ***
+ObjectTemplate.create LodObject lodI-153pPropeller
+rem -------------------------------------
+ObjectTemplate.addTemplate I-153pPropellerStatic
+ObjectTemplate.addTemplate I-153pPropellerBlurred
+rem -------------------------------------
+ObjectTemplate.lodSelector I-153pPropSelector
+
+
+rem *** I-153PropellerStatic ***
+ObjectTemplate.create SimpleObject I-153pPropellerStatic
+ObjectTemplate.geometry I-153_Propeller_m1p
+
+
+rem *** I-153PropellerBlurred ***
+ObjectTemplate.create SimpleObject I-153pPropellerBlurred
+ObjectTemplate.geometry I-153_Propeller_Blur_m1p
+LodSelectorTemplate.create CompareSelector I-153pPropSelector
+LodSelectorTemplate.addLodComparison 0.08
+
+
+rem *** I-153LandingGearL ***
+ObjectTemplate.create LandingGear I-153pLandingGearL
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry I-153_gear_left_m1p
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate I-153pWheel3
+ObjectTemplate.setPosition -0.259/-1.0/-0.1
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/0/-79
+ObjectTemplate.setMaxSpeed 10/0/32
+ObjectTemplate.setAcceleration -5/0/-85
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearDownEngineInput 0.55
+ObjectTemplate.setGearUpEngineInput 0.8
+
+
+rem *** I-153LandingGearR ***
+ObjectTemplate.create LandingGear I-153pLandingGearR
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry I-153_gear_right_m1p
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate I-153pWheel2
+ObjectTemplate.setPosition 0.26/-1.0/-0.1
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 20/0/79
+ObjectTemplate.setMaxSpeed 10/0/32
+ObjectTemplate.setAcceleration 5/0/80
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearDownEngineInput 0.55
+ObjectTemplate.setGearUpEngineInput 0.8
+
+
+rem *** I-153Wheel1Dummy ***
+ObjectTemplate.create RotationalBundle I-153pWheel1Dummy
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate I-153pWheel1
+ObjectTemplate.setPosition 0/0.0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setMaxSpeed 150/0/0
+ObjectTemplate.setAcceleration -150/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** I-153Simple ***
+ObjectTemplate.create SimpleObject I-153pSimple
+ObjectTemplate.geometry I-153_Fus_M1p
+
+
+rem *** I-153Wreck ***
+ObjectTemplate.create SimpleObject I-153pWreck
+ObjectTemplate.geometry Wreck_I-153_1_m1p
+
+
+rem *** I-153LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 I-153pLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200

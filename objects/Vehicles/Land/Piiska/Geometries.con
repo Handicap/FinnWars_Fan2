@@ -1,0 +1,36 @@
+renderer.beginGlobalCluster Piiska
+GeometryTemplate.create StandardMesh Piiska_Pipe
+GeometryTemplate.file Piiskatykki_gun
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Piiska_hull
+GeometryTemplate.file Piiskatykki
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 20
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 70
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Piiska_wheel_l
+GeometryTemplate.file Bofors_wheel_l
+GeometryTemplate.scale 0.9
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Piiska_wheel_r
+GeometryTemplate.file Bofors_wheel_r
+GeometryTemplate.scale 0.9
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+renderer.endGlobalCluster

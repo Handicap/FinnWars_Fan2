@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject taulu2
+ObjectTemplate.geometry taulu2
+ObjectTemplate.setHasCollisionPhysics 1
+
+

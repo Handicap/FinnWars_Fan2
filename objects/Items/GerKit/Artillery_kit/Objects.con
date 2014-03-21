@@ -1,0 +1,45 @@
+ObjectTemplate.create KitPart German_Scout_Helm
+ObjectTemplate.geometry ger_Scout_helm
+ObjectTemplate.setBoneName A
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart Radioreppu
+ObjectTemplate.geometry radioreppu
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+
+
+ObjectTemplate.create Kit Artillery_Kit
+ObjectTemplate.setType Scout
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry binoculars
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate German_Helmet
+ObjectTemplate.addTemplate Radioreppu
+rem ObjectTemplate.addTemplate german_HipPack
+ObjectTemplate.addTemplate NoParachute
+ObjectTemplate.addTemplate kiikarikotelo
+ObjectTemplate.addTemplate pistoolikotelo
+ObjectTemplate.addTemplate puukon_tuppi
+
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_scout_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_scout_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_axisKnife.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_lahti.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_artillery.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_binoculars.tga"
+
+ObjectTemplate.setKitIcon 0 "kits/Icon_scout_axis_selected.tga"
+ObjectTemplate.setKitName 0 "Sniper"
+ObjectTemplate.setKitActiveName 0 "In use/limit"
+
+
+ObjectTemplate.addTemplate L35Pistol
+ObjectTemplate.addTemplate KnifeAxis
+ObjectTemplate.addTemplate Binoculars
+ObjectTemplate.addTemplate Artillery
+rem ObjectTemplate.addTemplate GrenadeAxis
+ObjectTemplate.aiTemplate  Scout

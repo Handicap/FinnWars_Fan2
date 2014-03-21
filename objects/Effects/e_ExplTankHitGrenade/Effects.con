@@ -1,0 +1,63 @@
+ObjectTemplate.create EffectBundle e_ExplTankHitGrenade
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/Explgranade.ssc
+rem -------------------------------------
+
+ObjectTemplate.addTemplate Em_ExplTankHitGrenade_Sparks
+ObjectTemplate.addTemplate Em_ExplTankHitGrenade_Smoke
+ObjectTemplate.addTemplate e_RichoCascadesMetal
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+rem -------------------------------------
+
+
+rem *** Em_ExplTankHitGrenade_Sparks ***
+ObjectTemplate.create Emitter Em_ExplTankHitGrenade_Sparks
+ObjectTemplate.template Fx_ExplTankHitGrenade_Sparks
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/25/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/1/3/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/1/3/1
+
+rem *** Fx_ExplTankHitGrenade_Sparks ***
+ObjectTemplate.create SpriteParticle Fx_ExplTankHitGrenade_Sparks
+ObjectTemplate.timeToLive CRD_UNIFORM/0.1/0.3/0
+ObjectTemplate.size CRD_NONE/1/0/0
+ObjectTemplate.sizeOverTime 0/1|100/1.2
+ObjectTemplate.texture e_dirtAni03
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/50/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/128/0|10/255/242/115/255|74/255/161/33/140|100/255/128/0/0
+
+
+
+
+
+rem *** Em_ExplTankHitGrenade_Smoke ***
+ObjectTemplate.create Emitter Em_ExplTankHitGrenade_Smoke
+ObjectTemplate.template Fx_ExplTankHitGrenade_Smoke
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.lodDistance 900
+ObjectTemplate.delay CRD_UNIFORM/0.2/0.3/0
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+
+rem *** Fx_ExplTankHitGrenade_Smoke ***
+ObjectTemplate.create SpriteParticle Fx_ExplTankHitGrenade_Smoke
+ObjectTemplate.timeToLive CRD_UNIFORM/2/2/0
+ObjectTemplate.size CRD_UNIFORM/2/2/0
+ObjectTemplate.drag 2/3/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/0/-0.3/0
+ObjectTemplate.sizeOverTime 0/2.4|100/2.4
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.initRotation CRD_EXPONENTIAL/0/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/50/1
+ObjectTemplate.rotationSpeedOverTime 0/0|100/1
+ObjectTemplate.colorRGBAOverTime 0/44/41/39/0|12/41/38/36/133|44/36/33/30/114|100/26/23/19/0
+

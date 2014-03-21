@@ -1,0 +1,125 @@
+
+
+rem *** SturmGeschutzEngine ***
+ObjectTemplate.create Engine SturmGeschutzEngine
+ObjectTemplate.setNetworkableInfo SturmGeschutzEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/SturmGeschutzEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate SturmGeschutzTrackL
+ObjectTemplate.setPosition -1.561/-0.22/0.081
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 4
+ObjectTemplate.setDifferential 3
+ObjectTemplate.setNumberOfGears 2.5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+rem *** SturmGeschutzEngine ***
+ObjectTemplate.create Engine SturmGeschutzEngine2
+ObjectTemplate.setNetworkableInfo SturmGeschutzEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/SturmGeschutzEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate SturmGeschutzTrackR
+ObjectTemplate.setPosition 1.561/-0.22/0.081
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 4
+ObjectTemplate.setDifferential 3
+ObjectTemplate.setNumberOfGears 2.5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+
+rem *** SturmGeschutzWheelL2DummySmoke ***
+ObjectTemplate.create Spring SturmGeschutzMediumWheelLDummySmoke
+ObjectTemplate.geometry StuGIII_MWheel_Left_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** SturmGeschutzWheelL2Dummy ***
+ObjectTemplate.create Spring SturmGeschutzMediumWheelLDummy
+ObjectTemplate.geometry StuGIII_MWheel_Left_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** SturmGeschutzWheelL2 ***
+ObjectTemplate.create Spring SturmGeschutzMediumWheelL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry StuGIII_MWheel_Left_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 28
+ObjectTemplate.setDamping 8
+
+
+rem *** SturmGeschutzWheelR2DummySmoke ***
+ObjectTemplate.create Spring SturmGeschutzMediumWheelRDummySmoke
+ObjectTemplate.geometry StuGIII_MWheel_Right_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** SturmGeschutzWheelR2Dummy ***
+ObjectTemplate.create Spring SturmGeschutzMediumWheelRDummy
+ObjectTemplate.geometry StuGIII_MWheel_Right_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** SturmGeschutzWheelR2 ***
+ObjectTemplate.create Spring SturmGeschutzMediumWheelR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry StuGIII_MWheel_Right_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 28
+ObjectTemplate.setDamping 8

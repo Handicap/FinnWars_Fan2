@@ -1,0 +1,140 @@
+ObjectTemplate.create HandFireArms Molotov
+ObjectTemplate.itemIndex 5
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate MolotovProjectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+rem ObjectTemplate.altFireOnce 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.material 70
+ObjectTemplate.hitpoints 10000
+ObjectTemplate.maxhitpoints 10000
+ObjectTemplate.AmmoType	2
+ObjectTemplate.autoReload 0
+
+ObjectTemplate.GUIIndex 12
+ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
+ObjectTemplate.setAmmoIcon "Weapon/icon_molotov_64x32.tga"
+ObjectTemplate.setCrossHairType CHTIcon
+
+ObjectTemplate.setHasMag 0
+ObjectTemplate.rotationalSpeed 8/0/0
+ObjectTemplate.velocity 17
+rem !D! ObjectTemplate.minDeviation 0
+rem !D! ObjectTemplate.maxDeviation 0.08
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.4
+ObjectTemplate.fireDelay 0.7
+objectTemplate.aiTemplate MolotovAI
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.velocityDependentOnHeat 1
+ObjectTemplate.heatAddWhenFire 0.03
+rem ObjectTemplate.coolDownPerSec 0.05
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.createSkeleton animations/Molotov.ske
+ObjectTemplate.useSkeletonPartAsMain base
+ObjectTemplate.addTemplate MolotovLod
+
+ObjectTemplate.loadSoundScript Sounds/molomatch.ssc
+
+
+rem
+rem Objects
+rem
+ObjectTemplate.create Bundle MolotovComplex
+rem ObjectTemplate.createSkeleton animations/Molotov.ske
+ObjectTemplate.geometry molotov
+
+ObjectTemplate.create SimpleObject MolotovSimple
+ObjectTemplate.geometry molotov
+
+ObjectTemplate.create LodObject MolotovLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate MolotovComplex
+ObjectTemplate.addTemplate MolotovSimple
+
+
+ObjectTemplate.create ObjectSpawner MolotovPCO_ObjectSpawner
+ObjectTemplate.setObjectTemplate 1 MolotovPCO
+ObjectTemplate.setObjectTemplate 2 MolotovPCO
+ObjectTemplate.minSpawnDelay 1
+ObjectTemplate.maxSpawnDelay 1
+ObjectTemplate.TimeToLive 1
+ObjectTemplate.Distance 1
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.holdObject 1
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+rem ObjectTemplate.nrOfObjectToSpawn 1
+ObjectTemplate.damagewhenlost 500
+
+
+ObjectTemplate.create PlayerControlObject MolotovPCO
+ObjectTemplate.setNetworkableInfo MolotovBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasDynamicShadow 0
+rem ObjectTemplate.geometry Willy_Hull_M1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.drag 1.5
+ObjectTemplate.mass 2500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 11
+ObjectTemplate.maxhitpoints 11
+ObjectTemplate.material 45
+ObjectTemplate.inertiaModifier 0/0/0
+ObjectTemplate.criticalDamage 0.5
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.addArmorEffect 0 e_molotov 0/0/0
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4/0.243/-2 0/0/0
+ObjectTemplate.GUIIndex 28
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_willy.tga"
+ObjectTemplate.setVehicleIconPos 40/79
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_invis"
+ObjectTemplate.timeToLiveAfterDeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.timeToStartFadeAfterDeath 0
+
+
+rem
+rem Projectile
+rem 
+ObjectTemplate.create Projectile MolotovProjectile 
+ObjectTemplate.geometry molotov
+ObjectTemplate.timeToLive CRD_NONE/99/0/0
+Rem  ObjectTemplate.endEffectTemplate e_ExplDirt
+ObjectTemplate.timeOnEndEffect 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.7
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.material 301
+ObjectTemplate.material2 227
+ObjectTemplate.radius 0
+ObjectTemplate.ForceOnExplosion 0
+rem ObjectTemplate.addTemplate MolotovPCO_ObjectSpawner

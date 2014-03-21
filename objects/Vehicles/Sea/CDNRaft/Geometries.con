@@ -1,0 +1,32 @@
+renderer.beginGlobalCluster CDNRaft
+
+GeometryTemplate.create StandardMesh vene_hull
+GeometryTemplate.file vene_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh vene_motor
+GeometryTemplate.file vene_motor
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh vene_L1
+GeometryTemplate.file vene_hull
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_vene
+GeometryTemplate.file vene_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/faiRampRot.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/faiRampRot.ssc
+	
+#templateLevel LOW
+
+	#include Low/faiRampRot.ssc

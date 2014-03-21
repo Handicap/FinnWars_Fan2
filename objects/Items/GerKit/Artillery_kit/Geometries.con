@@ -1,0 +1,11 @@
+GeometryTemplate.create StandardMesh ger_Scout_helm
+GeometryTemplate.file germ_Scouthelm_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 100
+
+GeometryTemplate.create StandardMesh Radioreppu
+GeometryTemplate.file Radioreppu
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 100

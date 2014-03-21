@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Flak38GunBarrel.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Flak38GunBarrel.ssc
+	
+#templateLevel LOW
+
+	#include Low/Flak38GunBarrel.ssc

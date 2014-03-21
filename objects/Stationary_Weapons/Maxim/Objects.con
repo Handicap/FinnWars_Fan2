@@ -1,0 +1,116 @@
+rem
+rem *** Maxim ***
+rem
+ObjectTemplate.create PlayerControlObject Maxim
+ObjectTemplate.networkableInfo Maxim_BodyInfo
+ObjectTemplate.setSoldierExitLocation -0.5/0/-0.8 0/0/0
+ObjectTemplate.aiTemplate Maxim
+ObjectTemplate.geometry tripod_stick_mg42_m1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setPcoId 0
+ObjectTemplate.HasArmor 1
+ObjectTemplate.HitPoints 45
+ObjectTemplate.MaxHitPoints 45
+ObjectTemplate.Material 45
+Objecttemplate.GUIIndex 81
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setNumberOfWeaponIcons 1
+rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTStationaryMG
+ObjectTemplate.vehicleFov 0.95
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationarymg_16x16.dds"
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate MaximPoint
+rem ObjectTemplate.setPosition 0/0.15/-0.08 
+ObjectTemplate.setPosition 0/0.06/-0.08 
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate MaximSeat
+ObjectTemplate.setPosition 0.04/-0.25/-0.75
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate MaximEntry
+ObjectTemplate.setPosition 0/-0.15/-0.92
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+
+rem
+rem *** Maximpoint ***
+rem
+ObjectTemplate.create RotationalBundle MaximPoint
+ObjectTemplate.networkableInfo Maxim_TurretInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate MaximPointRotation
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -70/0/0
+ObjectTemplate.setMaxRotation 70/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 70/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw 4
+ObjectTemplate.setInputToRoll c_PINone
+
+ObjectTemplate.create SimpleObject MaximHolder
+ObjectTemplate.geometry tripod_stick_2_m1
+rem
+rem *** StationaryMG42point ***
+rem
+ObjectTemplate.create RotationalBundle MaximPointRotation
+ObjectTemplate.networkableInfo Maxim_TurretInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate MaximHolder
+rem ObjectTemplate.setPosition 0/-0.12/0.2
+ObjectTemplate.setPosition 0/-0/0.085
+ObjectTemplate.addTemplate Maxim_unlimited
+ObjectTemplate.setPosition 0/0.09/0.2
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate MaximCamera
+ObjectTemplate.setPosition -0.006/0.266/-0.185
+ObjectTemplate.setRotation -0.5/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-70/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/70/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToPitch 5
+ObjectTemplate.setInputToRoll c_PINone
+
+rem
+rem *** MaximCamera ***
+rem
+ObjectTemplate.create Camera MaximCamera
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0.01/0.01
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw c_PINone
+ObjectTemplate.setInputToPitch c_PINone
+ObjectTemplate.setInputToRoll c_PINone
+ObjectTemplate.setHasTarget 0
+rem
+rem *** MaximEntry ***
+rem
+ObjectTemplate.create EntryPoint MaximEntry
+ObjectTemplate.setEntryRadius 1.1
+
+rem
+rem *** MaximSeat ***
+rem
+ObjectTemplate.create SeatObject MaximSeat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+rem ObjectTemplate.seatAnimationLowerBody Lb_kk_asento
+ObjectTemplate.seatAnimationUpperBody Ub_kk_asento

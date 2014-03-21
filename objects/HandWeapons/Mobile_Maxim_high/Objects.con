@@ -1,0 +1,70 @@
+rem *** Mobile_Maxim_high ***
+rem BUGITTAA. EI AIKAA KORJATA. T:Handi
+ObjectTemplate.create HandFireArms Mobile_Maxim_high
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.loadSoundScript Sounds/Landmine.ssc
+ObjectTemplate.itemIndex 5
+ObjectTemplate.projectileTemplate Maxim_h_DeployProjectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.projectileVisible 0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.GUIIndex 10
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "weapon/icon_mobilemaxim_64x32.dds"
+ObjectTemplate.setHasMag 0
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.velocity 2
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.2
+ObjectTemplate.fireDelay 0.4
+ObjectTemplate.soldierCameraPosition 0/-0.05/0.3
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+ObjectTemplate.AmmoType 16
+ObjectTemplate.createSkeleton animations/Landmine.ske
+ObjectTemplate.useSkeletonPartAsMain base
+ObjectTemplate.addTemplate Mobile_Maxim_highLod
+ObjectTemplate.setRotation 0/25/0
+ObjectTemplate.setWeaponLink 6
+
+rem *** Mobile_Maxim_highLod ***
+ObjectTemplate.create LodObject Mobile_Maxim_highLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate Mobile_Maxim_highComplex
+ObjectTemplate.addTemplate Mobile_Maxim_highSimple
+
+rem *** Mobile_Maxim_highComplex ***
+ObjectTemplate.create AnimatedBundle Mobile_Maxim_highComplex
+ObjectTemplate.geometry maxim_gun_carry
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Landmine.ske
+
+rem *** Mobile_Maxim_highSimple ***
+ObjectTemplate.create SimpleObject Mobile_Maxim_highSimple
+ObjectTemplate.geometry maxim_gun_carryLOD
+
+
+
+
+
+rem ****** 
+ObjectTemplate.create ObjectSpawner Maxim_h_DeploySpawner
+ObjectTemplate.setObjectTemplate 1 Mobile_Maxim_h_gun
+ObjectTemplate.setObjectTemplate 2 Mobile_Maxim_h_gun
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 1
+ObjectTemplate.maxSpawnDelay 1
+ObjectTemplate.TimeToLive 5
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/1.7/-0.1
+ObjectTemplate.team 1 
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 2

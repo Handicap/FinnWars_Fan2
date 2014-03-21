@@ -1,0 +1,32 @@
+
+
+rem *** Sb-2_autoflyengine ***
+ObjectTemplate.create engine Sb-2_autoflyengine
+ObjectTemplate.setNetworkableInfo Sb-2_autofly_engine_info
+ObjectTemplate.loadSoundScript Sounds/Sb-2_autoflyEngine.ssc
+ObjectTemplate.addTemplate Sb-2_autoflypropellerblurred
+ObjectTemplate.setPosition 2.67764/0.166111/-0.396992
+ObjectTemplate.addTemplate Sb-2_autoflypropellerblurred
+ObjectTemplate.setPosition -2.67764/0.166111/-0.396992
+ObjectTemplate.setMinRotation -0.3/0/-3
+ObjectTemplate.setMaxRotation 0.3/0/5
+ObjectTemplate.setMaxSpeed 100/0/100
+ObjectTemplate.setAcceleration 100/0/100
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETRocket
+ObjectTemplate.setTorque 80
+ObjectTemplate.setDifferential 70
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 70
+
+rem *** Sb-2_autoflyflapleftmiddle ***
+ObjectTemplate.create wing sb-2Middle_Wing
+ObjectTemplate.setNetworkableInfo Sb-2_autofly_wing_info
+ObjectTemplate.automaticPitchStabilization 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setFlapLift 100
+ObjectTemplate.setRegulateToLift 10
+ObjectTemplate.setWingToRegulatorRatio 1

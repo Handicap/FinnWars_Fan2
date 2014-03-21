@@ -1,0 +1,22 @@
+
+
+rem *** e_richoPHeavy ***
+ObjectTemplate.create EffectBundle e_richoITK
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/Richokonetykki.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_richoPHeavy
+ObjectTemplate.addTemplate Em_richoPHeavy_smoke
+ObjectTemplate.addTemplate Em_richoPHeavy_Base
+ObjectTemplate.setRotation 45/0/0.02
+ObjectTemplate.setStartOnEffects 1
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.addTemplate Em_Richokonetykki
+ObjectTemplate.addTemplate Em_Richokonetykki_smoke
+ObjectTemplate.setRotation 45/0/0.02
+ObjectTemplate.setStartOnEffects 1
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.addTemplate Em_Richokonetykki_Sparks
+ObjectTemplate.addTemplate Em_Richokonetykki_flash
+rem -------------------------------------
+

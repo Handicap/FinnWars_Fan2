@@ -1,0 +1,81 @@
+
+
+rem *** ot-130engine_r ***
+ObjectTemplate.create engine ot-130engine_r
+ObjectTemplate.setNetworkableInfo OT-130EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/OT-130Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.5
+ObjectTemplate.setDifferential 2.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate ot-130trackr
+ObjectTemplate.setPosition 0.04/-0.520976/0.678303
+
+
+rem *** ot-130engine_l ***
+ObjectTemplate.create engine ot-130engine_l
+ObjectTemplate.setNetworkableInfo OT-130Engine2Info
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/OT-130Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.5
+ObjectTemplate.setDifferential 2.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate ot-130trackl
+ObjectTemplate.setPosition -0.04/-0.520976/0.678303
+
+
+
+rem *** ot-130_smallwheel ***
+ObjectTemplate.create spring ot-130_smallwheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry OT-130_smallwheel_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 17.5
+ObjectTemplate.setDamping 2.2
+
+
+rem *** ot-130_bigwheel ***
+ObjectTemplate.create spring ot-130_bigwheel
+ObjectTemplate.geometry OT-130_bigwheel_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** ot-130_smallwheel_dummy ***
+ObjectTemplate.create spring ot-130_smallwheel_dummy
+ObjectTemplate.geometry OT-130_smallwheel_dummy_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0

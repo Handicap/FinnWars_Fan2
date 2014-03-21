@@ -1,0 +1,140 @@
+newPatch
+
+load @ROOT/Sound/@RTD/10sek_1.wav
+minDistance 999999
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 999999
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/5sek_1.wav
+minDistance 999999
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 999999
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/5sek_2.wav
+minDistance 999999
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 999999
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/5sek_3.wav
+minDistance 999999
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 999999
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/5sek_4.wav
+minDistance 999999
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 999999
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/5sek_5.wav
+minDistance 999999
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 999999
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/5sek_6.wav
+minDistance 999999
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 999999
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/5sek_7.wav
+minDistance 999999
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 999999
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/5sek_8.wav
+minDistance 999999
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 999999
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

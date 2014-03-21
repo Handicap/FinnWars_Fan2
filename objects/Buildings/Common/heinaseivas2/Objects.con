@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject heinaseivas2
+ObjectTemplate.geometry heinaseivas2
+ObjectTemplate.setHasCollisionPhysics 1

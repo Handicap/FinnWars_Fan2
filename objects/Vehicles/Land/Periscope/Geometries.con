@@ -1,0 +1,12 @@
+renderer.beginGlobalCluster Defgun
+
+GeometryTemplate.create StandardMesh Periscope
+GeometryTemplate.file Periscope
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster

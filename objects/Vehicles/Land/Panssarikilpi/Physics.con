@@ -1,0 +1,74 @@
+rem *** PanssarikilpiEngine ***
+ObjectTemplate.create Engine PanssarikilpiEngine
+ObjectTemplate.setNetworkableInfo panssarikilpiEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate PanssarikilpiFrontWheelL
+ObjectTemplate.setPosition -1/-0.007/1.2
+ObjectTemplate.addTemplate PanssarikilpiFrontWheelR
+ObjectTemplate.setPosition 1/-0.007/1.2
+ObjectTemplate.addTemplate PanssarikilpiBackSpringR
+ObjectTemplate.setPosition 1/-0.423/-1.23
+ObjectTemplate.addTemplate PanssarikilpiBackSpringL
+ObjectTemplate.setPosition -1/-0.423/-1.23
+ObjectTemplate.addTemplate HandWheel_Panssarikilpi0
+ObjectTemplate.setPosition 0/0.6/0.4
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 30/0/30
+ObjectTemplate.setAcceleration 20/0/20
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 0.10
+ObjectTemplate.setDifferential 1
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+ObjectTemplate.setGearChangeTime 0.05
+
+rem *** PanssarikilpiFrontSpringL ***
+ObjectTemplate.create Spring PanssarikilpiFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubelwagen_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+rem *** PanssarikilpiFrontSpringR ***
+ObjectTemplate.create Spring PanssarikilpiFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubelwagen_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+rem *** PanssarikilpiBackSpringR ***
+ObjectTemplate.create Spring PanssarikilpiBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubelwagen_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+rem *** PanssarikilpiBackSpringL ***
+ObjectTemplate.create Spring PanssarikilpiBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubelwagen_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+

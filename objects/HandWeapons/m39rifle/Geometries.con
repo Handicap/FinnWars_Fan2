@@ -1,0 +1,62 @@
+GeometryTemplate.create StandardMesh M39Rifle
+GeometryTemplate.file M39_base1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Shad_M39Rifle
+GeometryTemplate.file M39_base1
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+GeometryTemplate.create StandardMesh Shad_M39Rifle_Scope
+GeometryTemplate.file mosin_scope
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+GeometryTemplate.create StandardMesh M39RifleLoad
+rem GeometryTemplate.file M39Rifle_load_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh M39RifleTrigger
+rem GeometryTemplate.file M39Rifle_trigger_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh M39RifleScope
+GeometryTemplate.file mosin_scope
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh M39RifleClip
+rem GeometryTemplate.file riflebulletclip_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+
+
+
+

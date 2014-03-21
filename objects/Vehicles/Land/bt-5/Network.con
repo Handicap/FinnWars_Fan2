@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo bt-5TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo bt-5GunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo bt-5EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo bt-5BodyInfo
+NetworkableInfo.setPredictionMode PMLinear

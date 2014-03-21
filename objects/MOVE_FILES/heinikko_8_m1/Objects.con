@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject heinikko_8_M1
+ObjectTemplate.geometry heinikko_8_M1
+ObjectTemplate.setHasCollisionPhysics 0
+ObjectTemplate.cullRadiusScale 1

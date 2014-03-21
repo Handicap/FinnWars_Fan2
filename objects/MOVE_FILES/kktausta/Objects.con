@@ -1,0 +1,13 @@
+rem
+rem *** hotell ***
+rem
+ObjectTemplate.create PlayerControlObject kktausta
+ObjectTemplate.setNetworkableInfo kktaustaBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript kktausta.ssc
+ObjectTemplate.hitpoints 0
+ObjectTemplate.maxhitpoints 0
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 1000
+rem -------------------------------------
+rem -------------------------------------

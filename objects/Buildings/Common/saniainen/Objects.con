@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject saniainen
+ObjectTemplate.geometry saniainen
+ObjectTemplate.setHasCollisionPhysics 1

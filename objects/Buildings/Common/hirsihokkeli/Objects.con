@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject hirsitalo
+ObjectTemplate.geometry hirsitalo
+ObjectTemplate.setHasCollisionPhysics 1

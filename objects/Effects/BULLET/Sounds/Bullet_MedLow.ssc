@@ -1,0 +1,89 @@
+newPatch
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/bulletpast1.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume 10
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 130
+	param 1
+	param -1
+endEffect
+
+
+###############
+### SOUND 2 ###
+###############
+load @ROOT/Sound/@RTD/bulletpast2.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume 10
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 130
+	param 1
+	param -1
+endEffect
+
+
+###############
+### SOUND 3 ###
+###############
+load @ROOT/Sound/@RTD/bulletpast3.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume 10
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 130
+	param 1
+	param -1
+endEffect
+
+
+
+###############
+### SOUND 4 ###
+###############
+load @ROOT/Sound/@RTD/bulletpast4.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume 10
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 130
+	param 1
+	param -1
+endEffect
+
+#################
+### RANDOMIZE ###
+#################
+randomPlay 1

@@ -1,0 +1,179 @@
+renderer.beginGlobalCluster Ilyushin
+
+GeometryTemplate.create StandardMesh ILyushin_Hull_M1
+GeometryTemplate.file ILyushin_Hull_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 20
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 1p_Ilyushin_cockpit_m1
+GeometryTemplate.file ILyushin_Cockpit_M1
+
+GeometryTemplate.create StandardMesh Ilyushin_propellar_M1
+GeometryTemplate.file ILyshin_Propellar_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Ilyushin_propellar_M2
+GeometryTemplate.file bf109_blurprp_m1
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh ILyushin_RearLFlap
+GeometryTemplate.file ILyushin_RearLFlap_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh Ilyushin_gunmount_m1
+GeometryTemplate.file ILyushin_RGun_Stand_M1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 20
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Ilyushin_Rearguns_M1
+GeometryTemplate.file ILyushin_RGun_M1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 20
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ILyushin_RFlap_M1
+GeometryTemplate.file ILyushin_RFlap_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh ILyushin_LFlap_M1
+GeometryTemplate.file ILyushin_LFlap_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh ILyushin_VRudder_M1
+GeometryTemplate.file ILyushin_RearMFlap_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ILyushin_Lcover_Right_M1
+GeometryTemplate.file ILyushin_Lcover_Right_M1
+geometryTemplate.cullFactor 0.1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ILyushin_Lcover_Left_M1
+GeometryTemplate.file ILyushin_Lcover_Left_M1
+geometryTemplate.cullFactor 0.1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Ilyushin_Wheel_right_M1
+GeometryTemplate.file ILyushin_wheelR_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Ilyushin_backwheel_M1
+GeometryTemplate.file ILyushin_wheelB_M1
+geometryTemplate.cullFactor 0.04
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Ilyushin_Wheel_left_M1
+GeometryTemplate.file ILyushin_wheelL_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh ILyushin_RearRFlap
+GeometryTemplate.file ILyushin_RearRFlap_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh Ilyushin_Gear_Support_m1
+GeometryTemplate.file ILyshin_gear_Left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Ilyushin_Gear_Back_m1
+GeometryTemplate.file ILyshin_gear_Back_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Ilyushin_Hull_L1
+GeometryTemplate.file ILyushin_Hull_L1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Wreck_Ilyushin_m1
+GeometryTemplate.file ILyushin_Wreck_Hull_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh ILyushin_Wreck_Wing_M1
+GeometryTemplate.file ILyushin_Wreck_Wing_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 400
+GeometryTemplate.setLodDistance 4 600
+GeometryTemplate.setLodDistance 5 800
+
+
+renderer.endGlobalCluster

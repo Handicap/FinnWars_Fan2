@@ -1,0 +1,199 @@
+
+
+rem *** Pak40 ***
+ObjectTemplate.create PlayerControlObject Pak40
+ObjectTemplate.setNetworkableInfo Pak40BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 50
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.material 45
+ObjectTemplate.addArmorEffect 35 e_AA-GunDamage 0/0.3/0
+ObjectTemplate.addArmorEffect 0 e_ScrapPAK40 0/1.2/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal 0/1.2/0
+ObjectTemplate.aiTemplate Pak40
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.geometry pak40_carriage_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate Pak40Entry
+ObjectTemplate.addTemplate Pak40Mount
+
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_pak40.tga"
+ObjectTemplate.setVehicleIconPos 75/75
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTATGun
+ObjectTemplate.setToolTipType TTATGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+
+rem *** Pak40Seat ***
+ObjectTemplate.create SeatObject Pak40Seat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+
+rem *** Pak40Entry ***
+ObjectTemplate.create EntryPoint Pak40Entry
+ObjectTemplate.setEntryRadius 3.2
+
+
+rem *** Pak40Mount ***
+ObjectTemplate.create RotationalBundle Pak40Mount
+ObjectTemplate.geometry pak40_mount_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo Pak40BodyInfo
+ObjectTemplate.loadSoundScript Sounds/PAK40Carriage.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Pak40Slider
+ObjectTemplate.setPosition 0/0.495/-0.25
+rem ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Pak40Seat
+ObjectTemplate.setPosition -0.6/0.36/-1
+ObjectTemplate.addTemplate Pak40Wheel1
+ObjectTemplate.setPosition -0.736/0.391/-0.442
+ObjectTemplate.setRotation 90/-57.538/-90
+ObjectTemplate.addTemplate Pak40Wheel2
+ObjectTemplate.setPosition -0.491/0.513/-0.472
+ObjectTemplate.setRotation 0/0/180
+rem -------------------------------------
+ObjectTemplate.setMinRotation -26/0/0
+ObjectTemplate.setMaxRotation 26/0/0
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** Flak38CockpitExternal ***
+ObjectTemplate.create SimpleObject Pak40CockpitExternal
+ObjectTemplate.geometry pak40_slider_M1
+ObjectTemplate.hasCollisionPhysics 1
+
+
+rem *** Flak38CockpitInternal ***
+ObjectTemplate.create SimpleObject Pak40CockpitInternal
+ObjectTemplate.geometry Pak40_1P
+
+
+rem *** flak38CockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector Pak40CockpitSelector
+LodSelectorTemplate.addLodDistance 2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** lodFlak38Cockpit ***
+ObjectTemplate.create LodObject lodPak40Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate Pak40CockpitExternal
+ObjectTemplate.addTemplate Pak40CockpitInternal
+ObjectTemplate.setPosition -0.11/-0.742/0.34
+ObjectTemplate.setRotation 32/0/0
+rem -------------------------------------
+ObjectTemplate.lodSelector Pak40CockpitSelector
+
+
+
+rem *** Pak40Slider ***
+ObjectTemplate.create RotationalBundle Pak40Slider
+rem ObjectTemplate.geometry pak40_slider_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo Pak40BodyInfo
+ObjectTemplate.loadSoundScript Sounds/PAK40GunBase.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodPak40Cockpit
+ObjectTemplate.addTemplate Pak40Gun
+rem ObjectTemplate.setPosition 0/0.065/-0.754
+ObjectTemplate.addTemplate Pak40Camera
+ObjectTemplate.setPosition -0.365/0.285/0.462
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/20/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** Pak40_Entry ***
+ObjectTemplate.create RotationalBundle Pak40Wheel1
+ObjectTemplate.geometry PAK40_wheel1_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo AT25BodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Pak40HandleGrip1
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/800/0
+ObjectTemplate.setAcceleration 0/3000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookX
+
+
+
+rem *** Pak40_Entry ***
+ObjectTemplate.create RotationalBundle Pak40Wheel2
+ObjectTemplate.geometry PAK40_wheel2_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo AT25BodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Pak40HandleGrip2
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/0/800
+ObjectTemplate.setAcceleration 0/0/-3000
+ObjectTemplate.setInputToRoll c_PIMouseLookY
+
+
+rem *** Pak40_Camera ***
+ObjectTemplate.create Camera Pak40Camera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+
+
+rem *** Pak40HandleGrip1 ***
+ObjectTemplate.create AnimatedBundle Pak40HandleGrip1
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.08/0/0.06 90/0/-90
+
+
+rem *** Pak40HandleGrip2 ***
+ObjectTemplate.create AnimatedBundle Pak40HandleGrip2
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.0/0.1/-0.1 -90/180/0
+
+rem - Tosses from Explosions.
+
+rem *** PAK40_Cannon_Toss ***
+ObjectTemplate.create SimpleObject PAK40_Cannon_Toss
+ObjectTemplate.geometry pak40_barrel_M1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.sinkInToLandAfterDeathSpeed 10
+
+rem *** PAK40_Mount_Toss ***
+ObjectTemplate.create SimpleObject PAK40_Mount_Toss
+ObjectTemplate.geometry pak40_mount_M1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.sinkInToLandAfterDeathSpeed 10
+
+rem *** PAK40_Slider_Toss ***
+ObjectTemplate.create SimpleObject PAK40_Slider_Toss
+ObjectTemplate.geometry pak40_slider_M1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.sinkInToLandAfterDeathSpeed 10
+
+rem *** PAK40_Carriage_Toss ***
+ObjectTemplate.create SimpleObject PAK40_Carriage_Toss
+ObjectTemplate.geometry pak40_carriage_M1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.sinkInToLandAfterDeathSpeed 10
+

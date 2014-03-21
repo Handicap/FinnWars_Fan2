@@ -1,0 +1,95 @@
+
+
+rem *** zis5engine ***
+ObjectTemplate.create engine zis5engine
+ObjectTemplate.setNetworkableInfo zis5EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/zis5Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/0/-1
+ObjectTemplate.setMaxRotation 0/0/1
+ObjectTemplate.setMaxSpeed 0/0/10
+ObjectTemplate.setAcceleration 0/0/10
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 8
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setNumberOfGears 4
+ObjectTemplate.setGearUp 0.85
+ObjectTemplate.setGearDown 0.4
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate zis5frontwheell
+ObjectTemplate.setPosition 0.9/-0.8/2.34247
+ObjectTemplate.addTemplate zis5frontwheelr
+ObjectTemplate.setPosition -0.9/-0.8/2.34247
+ObjectTemplate.addTemplate zis5backspringl
+ObjectTemplate.setPosition 0.915057/-0.75/-1.84439
+ObjectTemplate.addTemplate zis5backspringr
+ObjectTemplate.setPosition -0.960338/-0.75/-1.84439
+
+
+rem *** zis5frontspringr ***
+ObjectTemplate.create spring zis5frontspringr
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry zis5_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 15
+ObjectTemplate.addTemplate e_wdustwheelfl
+ObjectTemplate.setPosition 0.253664/-0.217848/-0.00436001
+ObjectTemplate.addTemplate e_wdustwheelf
+ObjectTemplate.setPosition 0.253664/-0.19484/-0.23159
+
+
+rem *** zis5frontspringl ***
+ObjectTemplate.create spring zis5frontspringl
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry zis5_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 15
+ObjectTemplate.addTemplate e_wdustwheelfl
+ObjectTemplate.setPosition -0.221639/-0.204869/-0.00506001
+ObjectTemplate.addTemplate e_wdustwheelf
+ObjectTemplate.setPosition -0.221639/-0.11857/-0.21245
+
+
+rem *** zis5backspringr ***
+ObjectTemplate.create spring zis5backspringr
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry zis5_WheelR_M2
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 10
+ObjectTemplate.addTemplate e_wdustwheelfl
+ObjectTemplate.setPosition 0.253663/0.039119/-0.0584801
+ObjectTemplate.addTemplate e_wdustwheelf
+ObjectTemplate.setPosition 0.253663/0.0/0.0
+
+
+rem *** zis5backspringl ***
+ObjectTemplate.create spring zis5backspringl
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry zis5_WheelL_M2
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 10
+ObjectTemplate.addTemplate e_wdustwheelfl
+ObjectTemplate.setPosition -0.22164/-0.041895/-0.59135
+ObjectTemplate.addTemplate e_wdustwheelf
+ObjectTemplate.setPosition -0.22164/0.028969/-0.05207

@@ -1,0 +1,11 @@
+NetworkableInfo.createNewInfo t28TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo t28GunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo t28EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo t28BodyInfo
+NetworkableInfo.setPredictionMode PMLinear

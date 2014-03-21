@@ -1,0 +1,97 @@
+rem *** Mobile_l39_gun ***
+ObjectTemplate.create PlayerControlObject Mobile_l39_gun
+ObjectTemplate.networkableInfo Mobile_l39_gun_BodyInfo
+ObjectTemplate.setSoldierExitLocation -0.5/0/-0.8 0/0/0
+ObjectTemplate.aiTemplate Mobile_l39_gun
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry tripod_temp
+ObjectTemplate.setPcoId 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 5
+ObjectTemplate.maxhitpoints 5
+ObjectTemplate.destroyOnExit 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.criticalDamage 4
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.material 45
+ObjectTemplate.GUIIndex 80
+ObjectTemplate.setVehicleIconPos 0/0
+ObjectTemplate.setVehicleIcon "Vehicle/icon_mobiletip.dds"
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_l39.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTStationaryMG
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationaryl-39_16x16.dds"
+
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.vehicleFov 0.80
+ObjectTemplate.addTemplate Mobile_l39_gunpoint
+ObjectTemplate.setPosition 0.0/0.1/0.0
+ObjectTemplate.addTemplate Mobile_l39_gunentry
+ObjectTemplate.setPosition 0.0/-0.1/-0.5
+
+rem *** Mobile_l39_gunpoint ***
+ObjectTemplate.create RotationalBundle Mobile_l39_gunpoint
+ObjectTemplate.networkableInfo Mobile_l39_gun_TurretInfo
+ObjectTemplate.setMinRotation -37/0/0
+ObjectTemplate.setMaxRotation 37/0/0
+ObjectTemplate.setMaxSpeed 10/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw 4
+ObjectTemplate.setInputToPitch 5
+ObjectTemplate.addTemplate Mobile_l39_gunrotation
+ObjectTemplate.addTemplate Mobile_l39_gunseat
+ObjectTemplate.setPosition -0.1/0.88/-1.4
+ObjectTemplate.addTemplate Mobile_harpatin
+ObjectTemplate.setPosition 0/0/-6.50
+
+rem *** Mobile_l39_gunrotation ***
+ObjectTemplate.create RotationalBundle Mobile_l39_gunrotation
+ObjectTemplate.networkableInfo Mobile_l39_gun_TurretInfo
+ObjectTemplate.setMinRotation 0/-9/0
+ObjectTemplate.setMaxRotation 0/7/0
+ObjectTemplate.setMaxSpeed 0/10/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToYaw 4
+ObjectTemplate.setInputToPitch 5
+ObjectTemplate.addTemplate browning
+ObjectTemplate.setPosition 0.0/0.0/-0.332266
+ObjectTemplate.addTemplate Mobile_l39_guncamera
+ObjectTemplate.setPosition -0.06/0.230/-0.72
+ObjectTemplate.setRotation 0/2.2/0
+
+rem *** Mobile_l39_gun_mag ***
+ObjectTemplate.create SimpleObject Mobile_l39_gun_mag
+ObjectTemplate.geometry l39_mag
+
+rem *** Mobile_l39_guncamera ***
+ObjectTemplate.create Camera Mobile_l39_guncamera
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw c_PINone
+ObjectTemplate.setInputToPitch c_PINone
+ObjectTemplate.setInputToRoll c_PINone
+ObjectTemplate.setHasTarget 0
+
+rem *** Mobile_l39_gunseat ***
+ObjectTemplate.create seatobject Mobile_l39_gunseat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+rem ObjectTemplate.seatAnimationLowerBody Lb_LieDownL39
+ObjectTemplate.seatAnimationUpperBody Ub_LieDownMobL39
+ObjectTemplate.seatAnimationLowerBody Lb_LieDownMobL39
+ObjectTemplate.addTemplate e_muzzpriest
+ObjectTemplate.setPosition 0.0/0.1/1.8
+ObjectTemplate.startoneffects 1
+
+rem *** Mobile_l39_gunentry ***
+ObjectTemplate.create EntryPoint Mobile_l39_gunentry
+ObjectTemplate.setEntryRadius 1.5
+

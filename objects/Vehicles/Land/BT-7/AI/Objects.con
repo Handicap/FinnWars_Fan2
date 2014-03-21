@@ -1,0 +1,121 @@
+rem *** BT-7Mobile ***
+aiTemplatePlugIn.create Mobile BT-7Mobile
+aiTemplatePlugIn.vehicleNumber 0
+aiTemplatePlugIn.maxSpeed 12.0
+aiTemplatePlugIn.turnRadius 5.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+aiTemplatePlugIn.lodHeight 0.9
+aiTemplatePlugIn.isTurnable 1
+
+rem *** BT-7Physical ***
+aiTemplatePlugIn.create Physical BT-7Physical
+aiTemplatePlugIn.setStrType HeavyArmour
+
+rem *** BT-7Cover ***
+aiTemplatePlugIn.create Cover BT-7Cover
+aiTemplatePlugIn.coverValue 4.0
+
+rem *** BT-7Unit ***
+aiTemplatePlugIn.create Unit BT-7Unit
+aiTemplatePlugIn.equipmentType 14
+aiTemplatePlugIn.setStrategicStrength 0 2
+aiTemplatePlugIn.setStrategicStrength 1 2
+
+rem *** BT-7Ctrl ***
+aiTemplatePlugIn.create ControlInfo BT-7Ctrl
+aiTemplatePlugIn.driveTurnControl PIYaw
+aiTemplatePlugIn.driveThrottleControl PIThrottle
+aiTemplatePlugIn.aimHorizontalControl PIYaw
+aiTemplatePlugIn.aimVerticalControl PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl PIYaw
+aiTemplatePlugIn.lookVerticalControl PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity -1.0
+aiTemplatePlugIn.pitchSensitivity 0.21817
+aiTemplatePlugIn.rollSensitivity -0.21817
+aiTemplatePlugIn.yawSensitivity -2.5
+aiTemplatePlugIn.lookVerticalSensitivity 0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead 1.0
+aiTemplatePlugIn.pitchLookAhead 1.0
+aiTemplatePlugIn.rollLookAhead 1.0
+aiTemplatePlugIn.yawLookAhead 1.0
+aiTemplatePlugIn.lookVerticalLookAhead 1.0
+aiTemplatePlugIn.lookHorizontalLookAhead 1.0
+aiTemplatePlugIn.throttleScale 1.0
+aiTemplatePlugIn.pitchScale 1.0
+aiTemplatePlugIn.rollScale 1.0
+aiTemplatePlugIn.yawScale 0.0020
+aiTemplatePlugIn.lookVerticalScale 1.0
+aiTemplatePlugIn.lookHorizontalScale 1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg 0/0/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 0/0/0
+
+rem *** BT-7CannonArms ***
+aiTemplatePlugIn.create Armament BT-7CannonArms
+
+rem *** BT-7CannonUnit ***
+aiTemplatePlugIn.create Unit BT-7CannonUnit
+aiTemplatePlugIn.equipmentType 13
+aiTemplatePlugIn.setStrategicStrength 0 5
+aiTemplatePlugIn.setStrategicStrength 1 5
+aiTemplatePlugIn.setSelectKey PIMenuSelect2
+
+rem *** BT-7CannonCtrl ***
+aiTemplatePlugIn.create ControlInfo BT-7CannonCtrl
+aiTemplatePlugIn.driveTurnControl PIYaw
+aiTemplatePlugIn.driveThrottleControl PIThrottle
+aiTemplatePlugIn.aimHorizontalControl PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity -1.0
+aiTemplatePlugIn.pitchSensitivity 0.21817
+aiTemplatePlugIn.rollSensitivity -0.21817
+aiTemplatePlugIn.yawSensitivity -2.5
+aiTemplatePlugIn.lookVerticalSensitivity 0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead 1.0
+aiTemplatePlugIn.pitchLookAhead 1.0
+aiTemplatePlugIn.rollLookAhead 1.0
+aiTemplatePlugIn.yawLookAhead 1.0
+aiTemplatePlugIn.lookVerticalLookAhead 1.0
+aiTemplatePlugIn.lookHorizontalLookAhead 1.0
+aiTemplatePlugIn.throttleScale 1.0
+aiTemplatePlugIn.pitchScale 5.0
+aiTemplatePlugIn.rollScale 5.0
+aiTemplatePlugIn.yawScale 0.0020
+aiTemplatePlugIn.lookVerticalScale 1.0
+aiTemplatePlugIn.lookHorizontalScale 1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -20/-40/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 20/5/0
+
+aiTemplate.create BT-7
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.addType ITMobile
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 15
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 10
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn BT-7Mobile
+aiTemplate.addPlugIn BT-7Physical
+aiTemplate.addPlugIn BT-7Cover
+aiTemplate.addPlugIn BT-7Unit
+aiTemplate.addPlugIn BT-7Ctrl
+
+aiTemplate.create BT-7Cannon
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 15
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 20
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn BT-7CannonArms
+aiTemplate.addPlugIn BT-7CannonUnit
+aiTemplate.addPlugIn BT-7CannonCtrl
+

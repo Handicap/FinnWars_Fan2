@@ -1,0 +1,317 @@
+
+
+rem *** 203h ***
+ObjectTemplate.create playercontrolobject 203h
+ObjectTemplate.NameTagOffset 0/-0.5/0
+ObjectTemplate.setNetworkableInfo 203hBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 50
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.speedMod 2
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate 203h
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_203h_32x32"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate lod203h
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 20
+ObjectTemplate.DirBarYScaleAbove 40
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+
+
+rem *** lod203h ***
+ObjectTemplate.create lodobject lod203h
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodselector 203hLodSelector
+ObjectTemplate.addTemplate 203hcomplex
+ObjectTemplate.addTemplate 203hsimple
+ObjectTemplate.addTemplate 203hwreck
+
+
+rem *** 203hcomplex ***
+ObjectTemplate.create bundle 203hcomplex
+ObjectTemplate.loadSoundScript Sounds/203hTrack.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate lod203hcockpit
+ObjectTemplate.addTemplate 203hentry
+ObjectTemplate.setPosition -0.299/0.0/1.2
+ObjectTemplate.addTemplate 203hentry
+ObjectTemplate.setPosition -0.299/0.0/-1.199
+ObjectTemplate.addTemplate 203hengine
+ObjectTemplate.setPosition 0.0/0.0/-0.449
+ObjectTemplate.addTemplate 203hdoor
+ObjectTemplate.setPosition -0.172/0.605/0.715
+ObjectTemplate.addTemplate 203hentry
+ObjectTemplate.setPosition 0.4/0.0/0
+ObjectTemplate.addTemplate 203htower
+ObjectTemplate.setPosition 0.0/0.585/-0.6
+ObjectTemplate.addTemplate 203hseat
+ObjectTemplate.setPosition -1/0.4/0.2
+ObjectTemplate.setRotation 180/0/0
+
+
+
+rem *** lod203hcockpit ***
+ObjectTemplate.create lodobject lod203hcockpit
+ObjectTemplate.lodselector 203hCockpitSelector
+ObjectTemplate.addTemplate 203hcockpitexternal
+ObjectTemplate.addTemplate 203hcockpitinternal
+ObjectTemplate.setPosition 0.0/-0.792/-0.399
+
+
+rem *** 203hcockpitexternal ***
+ObjectTemplate.create simpleobject 203hcockpitexternal
+ObjectTemplate.geometry 203h_Hull_M1
+
+
+rem *** 203hcockpitinternal ***
+ObjectTemplate.create simpleobject 203hcockpitinternal
+rem ObjectTemplate.geometry 1P_203h_Driver_M1
+
+
+rem *** 203hentry ***
+ObjectTemplate.create entrypoint 203hentry
+ObjectTemplate.setEntryRadius 2.5
+
+
+rem *** 203htrackl ***
+ObjectTemplate.create animatedbundle 203htrackl
+ObjectTemplate.geometry 203h_Track_L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/wespe_Track_L_M1.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.008/0
+ObjectTemplate.addTemplate 203hWheel1L
+ObjectTemplate.setPosition -0.869/-0.225/2.242
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel2L
+ObjectTemplate.setPosition -0.893/-0.799/1.482
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel2LDummy
+ObjectTemplate.setPosition -0.893/-0.784/0.858
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel2LSmoke
+ObjectTemplate.setPosition -0.893/-0.769/0.234
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel2LDummy
+ObjectTemplate.setPosition -0.893/-0.754/-0.347
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel2L
+ObjectTemplate.setPosition -0.893/-0.739/-0.971
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel3L
+ObjectTemplate.setPosition -0.869/0.039/1.365
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel3L
+ObjectTemplate.setPosition -0.869/0.039/0.351
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel3L
+ObjectTemplate.setPosition -0.869/0.039/-0.698
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel4L
+ObjectTemplate.setPosition -0.869/-0.23/-1.556
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+
+rem *** 203hwheel1l ***
+ObjectTemplate.create simpleobject 203hwheel1l
+ObjectTemplate.geometry 203h_wheel1L_M1
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem *** 203hwheel3l ***
+ObjectTemplate.create simpleobject 203hwheel3l
+ObjectTemplate.geometry 203h_wheel3R_M1
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem *** 203hwheel4l ***
+ObjectTemplate.create simpleobject 203hwheel4l
+ObjectTemplate.geometry 203h_wheel4L_M1
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem *** 203htrackr ***
+ObjectTemplate.create animatedbundle 203htrackr
+ObjectTemplate.geometry 203h_Track_R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/Wespe_Track_R_M1.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.008/0
+ObjectTemplate.addTemplate 203hWheel1R
+ObjectTemplate.setPosition 0.873/-0.225/2.242
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel2R
+ObjectTemplate.setPosition 0.897/-0.799/1.482
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel2RDummy
+ObjectTemplate.setPosition 0.897/-0.784/0.858
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel2RSmoke
+ObjectTemplate.setPosition 0.897/-0.769/0.234
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel2RDummy
+ObjectTemplate.setPosition 0.897/-0.754/-0.347
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel2R
+ObjectTemplate.setPosition 0.897/-0.739/-0.971
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel3R
+ObjectTemplate.setPosition 0.873/0.039/1.365
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel3R
+ObjectTemplate.setPosition 0.873/0.039/0.351
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel3R
+ObjectTemplate.setPosition 0.873/0.039/-0.698
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate 203hWheel4R
+ObjectTemplate.setPosition 0.873/-0.23/-1.556
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+beginrem
+ObjectTemplate.addTemplate 203h_spring_frontr
+ObjectTemplate.setPosition 0/-0.6057/-5.6634
+endrem
+
+
+rem *** 203hwheel1r ***
+ObjectTemplate.create simpleobject 203hwheel1r
+ObjectTemplate.geometry 203h_wheel1R_M1
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem *** 203hwheel3r ***
+ObjectTemplate.create simpleobject 203hwheel3r
+ObjectTemplate.geometry 203h_wheel3L_M1
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem *** 203hwheel4r ***
+ObjectTemplate.create simpleobject 203hwheel4r
+ObjectTemplate.geometry 203h_wheel4R_M1
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem *** 203hdoor ***
+ObjectTemplate.create simpleobject 203hdoor
+ObjectTemplate.geometry 203h_Door_M1
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem *** 203hcamera ***
+ObjectTemplate.create camera 203hcamera
+ObjectTemplate.CVMExternTrace 1
+
+rem *** 203htower ***
+ObjectTemplate.create rotationalbundle 203htower
+ObjectTemplate.setNetworkableInfo 203hTurretInfo
+ObjectTemplate.loadSoundScript Sounds/203hTurret.ssc
+ObjectTemplate.geometry 203h_Tower_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate 203hgunbase
+ObjectTemplate.setPosition 0.0/0.351/0.0
+
+
+rem *** 203hgunbase ***
+ObjectTemplate.create rotationalbundle 203hgunbase
+ObjectTemplate.setNetworkableInfo 203hGunInfo
+ObjectTemplate.loadSoundScript Sounds/203hgunbase.ssc
+ObjectTemplate.setMinRotation 0/-40/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/7/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate 203hcannon
+ObjectTemplate.setPosition 0.0/-0.691873/0.0
+ObjectTemplate.addTemplate 203hcamera
+ObjectTemplate.setPosition -0.25/0.8/0.955
+
+rem *** 203hsimple ***
+ObjectTemplate.create simpleobject 203hsimple
+ObjectTemplate.geometry 203h_Hull_L1
+
+
+rem *** 203hwreck ***
+ObjectTemplate.create simpleobject 203hwreck
+ObjectTemplate.geometry Wreck_203h_m1
+
+
+rem *** 203hseat ***
+ObjectTemplate.create seatobject 203hseat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatAnimationUpperBody Ub_PassengerInWilly
+ObjectTemplate.seatAnimationLowerBody Lb_PassengerInWilly
+
+
+
+rem *** 203hcockpitselector ***
+LodSelectorTemplate.create distcompareselector 203hcockpitselector
+LodSelectorTemplate.addLodDistance 1.2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** 203hlodselector ***
+LodSelectorTemplate.create distcompareselector2 203hlodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 100

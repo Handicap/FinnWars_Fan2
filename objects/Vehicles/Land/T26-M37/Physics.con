@@ -1,0 +1,80 @@
+
+
+rem *** T26-M37engine_r ***
+ObjectTemplate.create engine T26-M37engine_r
+ObjectTemplate.setNetworkableInfo T26-M37EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/T26-M37Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.5
+ObjectTemplate.setDifferential 2.3
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate T26-M37trackr
+ObjectTemplate.setPosition 0.04/-0.520976/0.678303
+
+
+rem *** T26-M37engine_l ***
+ObjectTemplate.create engine T26-M37engine_l
+ObjectTemplate.setNetworkableInfo T26-M37EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/T26-M37Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.5
+ObjectTemplate.setDifferential 2.3
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate T26-M37trackl
+ObjectTemplate.setPosition -0.04/-0.520976/0.678303
+
+
+rem *** T26-M37_smallwheel ***
+ObjectTemplate.create spring T26-M37_smallwheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry T26-M37_smallwheel_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 17.5
+ObjectTemplate.setDamping 2.2
+
+
+rem *** T26-M37_bigwheel ***
+ObjectTemplate.create spring T26-M37_bigwheel
+ObjectTemplate.geometry T26-M37_bigwheel_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** T26-M37_smallwheel_dummy ***
+ObjectTemplate.create spring T26-M37_smallwheel_dummy
+ObjectTemplate.geometry T26-M37_smallwheel_dummy_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0

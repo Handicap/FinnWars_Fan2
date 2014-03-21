@@ -1,0 +1,67 @@
+renderer.beginGlobalCluster Pak40
+
+GeometryTemplate.create StandardMesh pak40_1P
+GeometryTemplate.file pak40_1P
+
+GeometryTemplate.create StandardMesh pak40_Cannon_M1
+GeometryTemplate.file pak40_barrel_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh pak40_mount_M1
+GeometryTemplate.file pak40_mount_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh pak40_slider_M1
+GeometryTemplate.file pak40_slider_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh pak40_carriage_M1
+GeometryTemplate.file pak40_carriage_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh PAK40_wheel2_m1
+GeometryTemplate.file PAK40_wheel2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh PAK40_wheel1_m1
+GeometryTemplate.file PAK40_wheel1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+renderer.endGlobalCluster
+

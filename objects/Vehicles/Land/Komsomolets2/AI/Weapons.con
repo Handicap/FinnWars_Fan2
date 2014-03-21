@@ -1,0 +1,28 @@
+weaponTemplate.create wespeMainGun_Komsomolets0
+weaponTemplate.burst 
+weaponTemplate.indirect 
+weaponTemplate.minRange 
+weaponTemplate.maxRange 
+weaponTemplate.weaponActivate 
+weaponTemplate.weaponFire 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+
+weaponTemplate.create Coaxial_MG42AI_Komsomolets2
+weaponTemplate.burst 
+weaponTemplate.indirect 
+weaponTemplate.minRange 
+weaponTemplate.maxRange 
+weaponTemplate.weaponActivate 
+weaponTemplate.weaponFire 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+

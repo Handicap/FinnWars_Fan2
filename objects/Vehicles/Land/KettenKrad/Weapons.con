@@ -1,0 +1,14 @@
+
+rem *** KettenkradHorn ***
+ObjectTemplate.create FireArms KettenkradHorn
+ObjectTemplate.setNetworkableInfo KettenKradSteeringInfo
+ObjectTemplate.loadSoundScript Sounds/KettenkradHorn.ssc
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.fireOnce 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	6
+ObjectTemplate.velocity 0

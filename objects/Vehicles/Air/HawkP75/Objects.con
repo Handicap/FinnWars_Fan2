@@ -1,0 +1,237 @@
+rem *** HawkP75 ***
+ObjectTemplate.create PlayerControlObject HawkP75
+ObjectTemplate.setNetworkableInfo HawkP75_body_info
+ObjectTemplate.geometry HawkP75_hull
+objectTemplate.cullRadiusScale 3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.058
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 0.775/0.825/0.825
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 55
+ObjectTemplate.maxhitpoints 55
+ObjectTemplate.material 60
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 35 em_Bf109Damage 0/-0.084/2.9
+ObjectTemplate.addArmorEffect 20 e_Bf109Fire 0/1/2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/-0.3/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_Plane 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate HawkP75
+ObjectTemplate.addTemplate lodHawkP75
+ObjectTemplate.setSoldierExitLocation -1.5/0/-1 0/0/0
+ObjectTemplate.GUIIndex 32
+ObjectTemplate.setVehicleIcon "Vehicle/empty.tga"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bomb.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType VTFighter
+ObjectTemplate.setToolTipType TTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_hawk_64x64.tga"
+
+rem *** lodHawkP75 ***
+ObjectTemplate.create LodObject lodHawkP75
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate HawkP75Complex
+ObjectTemplate.addTemplate HawkP75Simple
+ObjectTemplate.addTemplate HawkP75Wreck
+ObjectTemplate.lodselector HawkP75LodSelector
+
+rem *** HawkP75Complex ***
+ObjectTemplate.create bundle HawkP75Complex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.addTemplate HawkP75Hull
+ObjectTemplate.addTemplate lodHawkP75Cockpit
+ObjectTemplate.addTemplate HawkP75Camera
+ObjectTemplate.setPosition 0.0022/1.4808/-0.7459
+ObjectTemplate.addTemplate HawkP75Entry
+ObjectTemplate.setPosition 0/0/-0.499
+ObjectTemplate.addTemplate HawkP75Seat
+ObjectTemplate.setPosition 0/0.88/-0.449
+ObjectTemplate.addTemplate HawkP75Flap_r
+ObjectTemplate.setPosition 4.4972/0.4762/-0.2
+ObjectTemplate.setRotation 5.859/0/-4.437
+ObjectTemplate.addTemplate HawkP75Flap_l
+ObjectTemplate.setPosition -4.4961/0.4794/-0.2
+ObjectTemplate.setRotation -5.858/0/4.438
+ObjectTemplate.addTemplate HawkP75RudderBackVertical
+ObjectTemplate.setPosition 0/1.4857/-5.2
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate HawkP75BodyWingVertical
+ObjectTemplate.setPosition 0/0/0.3
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate HawkP75RudderBackLeft
+ObjectTemplate.setPosition -1.0842/1.1423/-5.2
+ObjectTemplate.addTemplate HawkP75RudderBackRight
+ObjectTemplate.setPosition 0.8748/1.1441/-5.2
+ObjectTemplate.addTemplate HawkP75RudderFrontLeft
+ObjectTemplate.setPosition -4.29/0.195/0.32
+ObjectTemplate.setRotation 6.652/0/-4.412
+ObjectTemplate.addTemplate HawkP75RudderFrontRight
+ObjectTemplate.setPosition 4.291/0.195/0.32
+ObjectTemplate.setRotation -6.651/0/4.413
+ObjectTemplate.addTemplate HawkP75Engine
+ObjectTemplate.setPosition 0/0.5/1.5
+ObjectTemplate.addTemplate HawkP75Guns
+ObjectTemplate.setPosition 0/0/0.3
+ObjectTemplate.addTemplate HawkP75BombDummy
+ObjectTemplate.setPosition 0/0/0
+
+
+
+rem *** lodbf109Cockpit ***
+ObjectTemplate.create LodObject lodHawkP75Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate HawkP75CockpitStatic
+ObjectTemplate.addTemplate HawkP75CockpitBlurred
+rem -------------------------------------
+ObjectTemplate.lodSelector HawkP75cockpitSelector
+
+
+rem *** bf109CockpitStatic ***
+ObjectTemplate.create SimpleObject HawkP75CockpitStatic
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry HawkP75_hull
+
+
+rem *** bf109CockpitBlurred ***
+ObjectTemplate.create SimpleObject HawkP75CockpitBlurred
+ObjectTemplate.geometry hawk_cpit
+
+
+rem *** bf109cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector HawkP75cockpitSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+
+
+rem *** HawkP75PropellerStatic ***
+ObjectTemplate.create SimpleObject HawkP75Hull
+ObjectTemplate.geometry HawkP75_hull
+
+rem *** HawkP75Camera ***
+ObjectTemplate.create Camera HawkP75Camera
+ObjectTemplate.setMinRotation -65/-40/0
+ObjectTemplate.setMaxRotation 65/10/0
+ObjectTemplate.setMaxSpeed 90/-90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/-0.7/5
+
+rem *** HawkP75Entry ***
+ObjectTemplate.create EntryPoint HawkP75Entry
+ObjectTemplate.setEntryRadius 5.5
+
+rem *** HawkP75Seat ***
+ObjectTemplate.create seatobject HawkP75Seat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+rem *** lodHawkP75Propeller ***
+ObjectTemplate.create LodObject lodHawkP75Propeller
+rem ObjectTemplate.create SimpleObject lodHawkP75Propeller
+ObjectTemplate.addTemplate HawkP75PropellerStatic
+ObjectTemplate.addTemplate HawkP75PropellerBlurred
+ObjectTemplate.lodselector HawkP75PropSelector
+
+LodSelectorTemplate.create CompareSelector HawkP75PropSelector
+LodSelectorTemplate.addLodComparison 0.07
+
+rem *** HawkP75PropellerStatic ***
+ObjectTemplate.create SimpleObject HawkP75PropellerStatic
+ObjectTemplate.geometry HawkP75_prop
+
+rem *** HawkP75PropellerBlurred ***
+ObjectTemplate.create SimpleObject HawkP75PropellerBlurred
+ObjectTemplate.geometry HawkP75_prop_Blur_m1
+
+rem *** HawkP75LandingGearL ***
+ObjectTemplate.create LandingGear HawkP75LandingGearL
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry HawkP75_gear_machine_l
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate HawkP75Wheel_l
+ObjectTemplate.setPosition 0/-1.2/0.2
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/0/94
+ObjectTemplate.setMaxSpeed 0/5/32
+ObjectTemplate.setAcceleration 0/-5/85
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearDownEngineInput 0.55
+ObjectTemplate.setGearUpEngineInput 0.8
+
+rem *** HawkP75LandingGearR ***
+ObjectTemplate.create LandingGear HawkP75LandingGearR
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry HawkP75_gear_machine_r
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate HawkP75Wheel_r
+ObjectTemplate.setPosition 0/-1.2/0.2
+ObjectTemplate.setMinRotation 0/-2/-94
+ObjectTemplate.setMaxSpeed 0/5/32
+ObjectTemplate.setAcceleration 0/-5/-70
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearDownEngineInput 0.55
+ObjectTemplate.setGearUpEngineInput 0.8
+
+
+rem *** FokkerWheelBack ***
+ObjectTemplate.create RotationalBundle HawkP75BackGear
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HawkP75Wheel_back
+ObjectTemplate.setPosition 0/-0.299/-0.3
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration -110/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** HawkP75Simple ***
+ObjectTemplate.create SimpleObject HawkP75Simple
+ObjectTemplate.geometry HawkP75_hull
+
+rem *** HawkP75Wreck ***
+ObjectTemplate.create SimpleObject HawkP75Wreck
+ObjectTemplate.geometry Wreck_HawkP75
+ObjectTemplate.addTemplate 
+ObjectTemplate.startoneffects 1
+
+rem *** HawkP75LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 HawkP75LodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+
+

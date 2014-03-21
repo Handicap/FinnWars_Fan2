@@ -1,0 +1,66 @@
+ObjectTemplate.create PlayerControlObject AA_Allies
+ObjectTemplate.setSoldierExitLocation 1/0/-1.5 0/0/0
+ObjectTemplate.networkableInfo AA_Base_BodyInfo
+rem ObjectTemplate.geometry aa_Allies_base_M1
+ObjectTemplate.setPcoId 0
+ObjectTemplate.HasArmor 1
+ObjectTemplate.HitPoints 100
+ObjectTemplate.MaxHitPoints 100
+ObjectTemplate.Material 45
+Objecttemplate.GUIIndex 79
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory Land
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_bofors_16x16.dds"
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+objectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.addArmorEffect 0 e_ScrapAABase 0/1.2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+ObjectTemplate.aiTemplate AA_Allies
+ObjectTemplate.timetoliveafterdeath 0
+
+ObjectTemplate.addTemplate AA_Allies_Base
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+rem - Tosses from Explosions.
+
+rem *** AABase_crank_Toss ***
+ObjectTemplate.create Bundle AABase_crank_Toss
+ObjectTemplate.geometry AA_Allies_crank_m1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.sinkInToLandAfterDeathSpeed 5
+
+rem *** AABase_roll_Toss ***
+ObjectTemplate.create SimpleObject AABase_roll_Toss
+ObjectTemplate.geometry AA_Allies_roll_m1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.sinkInToLandAfterDeathSpeed 5
+
+rem *** AABase_cannon_Toss ***
+ObjectTemplate.create SimpleObject AABase_cannon_Toss
+ObjectTemplate.geometry AA_Allies_cannon_m1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.sinkInToLandAfterDeathSpeed 5
+
+rem *** AABase_carriage_Toss ***
+ObjectTemplate.create SimpleObject AABase_carriage_Toss
+ObjectTemplate.geometry AA_Allies_carriage_m1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.sinkInToLandAfterDeathSpeed 5

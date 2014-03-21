@@ -1,0 +1,78 @@
+rem *** Komsomolets ***
+ObjectTemplate.create PlayerControlObject Komsomoletsrand
+ObjectTemplate.NameTagOffset 0/0.5/0
+ObjectTemplate.setNetworkableInfo KomsomoletsBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 10
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.hitpoints 70
+ObjectTemplate.maxhitpoints 70
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 40
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 20
+ObjectTemplate.hpLostWhileDamageFromDeepWater 20
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/1/-1.7
+ObjectTemplate.addArmorEffect 15 e_PanzFire 0/0.8/-1.6
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.damageFromDeepWater 1
+ObjectTemplate.aiTemplate Komsomolets
+ObjectTemplate.setSoldierExitLocation -0.7/1.5/0.8 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_panzeriv.tga"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_komso_16x16.dds"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate lodKomsomolets
+ObjectTemplate.setPosition 0.0970691/0.0/-0.158272
+
+
+rem *** lodKomsomolets1 ***
+ObjectTemplate.create LodObject lodKomsomolets
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodselector KomsomoletsLodSelector
+ObjectTemplate.addTemplate Komsomoletscomplex
+ObjectTemplate.addTemplate Komsomoletssimple
+ObjectTemplate.addTemplate Komsomoletswreck
+
+
+
+beginrem
+rem *** lodKomsomolets2***
+ObjectTemplate.create LodObject lodKomsomolets2
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodselector KomsomoletsLodSelector
+ObjectTemplate.addTemplate Komsomolets2complex
+ObjectTemplate.addTemplate Komsomoletssimple
+ObjectTemplate.addTemplate Komsomoletswreck
+endrem
+
+
+
+rem random-script by KeiMummy (EI TOIMI KÄYTÄNNÖSSÄ KUN SERVU-CLIENTTI -YHTEYS BUGAA T: HANDI)

@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject tynnyri
+ObjectTemplate.geometry tynnyri
+ObjectTemplate.setHasCollisionPhysics 1
+
+

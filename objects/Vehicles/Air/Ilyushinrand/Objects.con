@@ -1,0 +1,92 @@
+rem *** Ilyushin ***
+ObjectTemplate.create PlayerControlObject Ilyushinrand
+rem EI TOIMI PERKELE KHLÖLÖÖ KRRLLÄÄÄ GLÖGLÖG PIEEEEEE TUKS PANNNGGG-KHIUUU
+ObjectTemplate.setNetworkableInfo IlyushinBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.091
+ObjectTemplate.mass 3000
+ObjectTemplate.inertiaModifier 0.95/0.943/0.968
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 370
+ObjectTemplate.maxhitpoints 370
+ObjectTemplate.material 60
+ObjectTemplate.criticalDamage 40
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 30
+ObjectTemplate.addArmorEffect 170 em_Bf109Damage 0/-0.084/4.9
+ObjectTemplate.addArmorEffect 40 e_Bf109Fire 0/0/5.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_Plane 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Ilyushin
+rem -------------------------------------
+ObjectTemplate.addTemplate lodIlyushinRand
+ObjectTemplate.setRandomGeometries 3
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-2.5 0/0/0
+ObjectTemplate.GUIIndex 33
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_konetykki.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_rocketbomb.tga"
+rem ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTDiveBomber
+ObjectTemplate.setToolTipType  TTDiveBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_il-2_64x64.tga"
+
+
+rem *** lodIlyushin ***
+ObjectTemplate.create LodObject lodIlyushinRand1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ilyushin1Complex
+ObjectTemplate.addTemplate IlyushinSimple
+ObjectTemplate.addTemplate IlyushinWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Ilyushin1LodSelector
+
+
+
+rem *** lodIlyushin ***
+ObjectTemplate.create LodObject lodIlyushinRand2
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ilyushin2Complex
+ObjectTemplate.addTemplate IlyushinSimple
+ObjectTemplate.addTemplate IlyushinWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Ilyushin2LodSelector
+
+
+
+rem *** lodIlyushin ***
+ObjectTemplate.create LodObject lodIlyushinRand3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ilyushin3Complex
+ObjectTemplate.addTemplate IlyushinSimple
+ObjectTemplate.addTemplate IlyushinWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Ilyushin3LodSelector

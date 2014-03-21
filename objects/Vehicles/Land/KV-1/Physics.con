@@ -1,0 +1,133 @@
+rem *** KV-1engine ***
+ObjectTemplate.create Engine KV-1engine
+ObjectTemplate.setNetworkableInfo t28EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TigerEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 2/0/5
+ObjectTemplate.setInputToRoll c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.5
+ObjectTemplate.setDifferential 2.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+rem ObjectTemplate.addTemplate KV-1trackr
+rem ObjectTemplate.setPosition 1.092/-0.383/0.053
+
+ObjectTemplate.addTemplate SturmGeschutzTrackR
+ObjectTemplate.setPosition 1.141/-0.39/0.081
+
+
+rem *** KV-1engine2 ***
+ObjectTemplate.create Engine KV-1engine2
+ObjectTemplate.setNetworkableInfo t28EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TigerEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 2/0/5
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.5
+ObjectTemplate.setDifferential 2.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+rem ObjectTemplate.addTemplate KV-1trackl
+rem ObjectTemplate.setPosition -1.091/-0.383/0.053
+
+ObjectTemplate.addTemplate SturmGeschutzTrackL
+ObjectTemplate.setPosition -1.141/-0.39/0.081
+
+
+
+
+
+rem *** T34WheelL3Dummy ***
+ObjectTemplate.create Spring KV1WheelL3Dummy
+ObjectTemplate.geometry T34_whe2R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** T34WheelL3 ***
+ObjectTemplate.create Spring KV1WheelL3
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry T34_whe2R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+
+rem *** T34WheelL3DummySmoke ***
+ObjectTemplate.create Spring KV1WheelL3DummySmoke
+ObjectTemplate.geometry T34_whe2R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** T34WheelR3Dummy ***
+ObjectTemplate.create Spring KV1WheelR3Dummy
+ObjectTemplate.geometry T34_whe2L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** T34WheelR3 ***
+ObjectTemplate.create Spring KV1WheelR3
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry T34_whe2L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+
+rem *** T34WheelR3DummySmoke ***
+ObjectTemplate.create Spring KV1WheelR3DummySmoke
+ObjectTemplate.geometry T34_whe2L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+
+

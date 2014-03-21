@@ -1,0 +1,66 @@
+GeometryTemplate.create StandardMesh Small_Bomb_M1
+GeometryTemplate.file Small_Bomb_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Big_Bomb_M1
+GeometryTemplate.file Big_Bomb_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Big_Bomb_Stuka
+GeometryTemplate.file Big_Bomb_M1
+GeometryTemplate.Scale 2/2/2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Torpedo_Hull_M1
+GeometryTemplate.file Torpedo_Hull_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Torpedo_Sml_M1
+GeometryTemplate.file Torpedo_Sml_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh 1P_PanzerIV_Gunner_M1
+GeometryTemplate.file 1P_PanzerIV_Gunner_M1
+
+GeometryTemplate.create StandardMesh 1P_narrowgunner_M1
+GeometryTemplate.file 1P_narrowgunner_M1
+
+GeometryTemplate.create StandardMesh 45_sight
+GeometryTemplate.file sight_45
+
+GeometryTemplate.create StandardMesh 76_sight
+GeometryTemplate.file sight_76
+
+GeometryTemplate.create StandardMesh 85_sight
+GeometryTemplate.file sight_85
+
+GeometryTemplate.create StandardMesh KV_sight
+GeometryTemplate.file sight_KV
+
+GeometryTemplate.create StandardMesh stug_sight
+GeometryTemplate.file sight_stug

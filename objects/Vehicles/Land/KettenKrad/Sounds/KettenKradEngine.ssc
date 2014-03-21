@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KettenKradEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KettenKradEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/KettenKradEngine.ssc

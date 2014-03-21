@@ -1,0 +1,2 @@
+NetworkableInfo.createNewInfo Radio_StandBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

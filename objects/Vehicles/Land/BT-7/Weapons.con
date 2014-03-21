@@ -1,0 +1,50 @@
+rem *** BT-7cannon ***
+ObjectTemplate.create firearms BT-7cannon
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/T26-M37Cannon.ssc
+ObjectTemplate.geometry bt-7_Cannon_M1
+ObjectTemplate.aiTemplate wespeMainGun_BT-70
+ObjectTemplate.projectileTemplate t26_projectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 90
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 250
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 0.2
+ObjectTemplate.fireingForce 5
+ObjectTemplate.recoilSpeed 7
+ObjectTemplate.recoilSize 7
+ObjectTemplate.addTemplate e_muzzpriest
+ObjectTemplate.setPosition 0.0/0.0/1.8
+ObjectTemplate.setRotation -179.999/0.0/0.0
+
+rem *** coaxial_DP_BT-70 ***
+ObjectTemplate.create firearms coaxial_DP_BT-70
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.setNetworkableInfo Coaxial_DP_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.projectileTemplate DP_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/0.2
+ObjectTemplate.magSize 60
+ObjectTemplate.numOfMag 15
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 5
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.autoReload 1
+ObjectTemplate.aiTemplate Coaxial_DPAI_BT-71
+ObjectTemplate.velocity 1000
+ObjectTemplate.setFireDev 1.9 0.26 0.05
+ObjectTemplate.setMinDev 0.75
+ObjectTemplate.heatAddWhenFire 0.001
+ObjectTemplate.coolDownPerSec 0.3
+ObjectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.loadSoundScript Sounds/DP.ssc
+ObjectTemplate.addTemplate e_muzzb17
+ObjectTemplate.setPosition 0.0/0.0/0.262433
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_stationarymg_16x16.dds"
+

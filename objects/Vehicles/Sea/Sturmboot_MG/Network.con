@@ -1,0 +1,16 @@
+NetworkableInfo.createNewInfo Sturmboot_MGWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sturmboot_MGEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sturmboot_MGBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sturmboot_MGPassengerInfo
+NetworkableInfo.setPredictionMode PMNone
+NetworkableInfo.setBasePriority 0
+
+
+ObjectTemplate.networkableInfo Sturmboot_MGTurretInfo
+NetworkableInfo.setPredictionMode PMLinear

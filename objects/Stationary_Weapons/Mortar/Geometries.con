@@ -1,0 +1,22 @@
+renderer.beginGlobalCluster Mortar
+
+GeometryTemplate.create StandardMesh Mortar_pipe
+GeometryTemplate.file Mortar_pipe
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Mortar_stand
+GeometryTemplate.file Mortar_stand
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster
+

@@ -1,0 +1,43 @@
+rem
+rem *** Ammobox_nofaust ***
+rem
+ObjectTemplate.create Bundle Ammobox_nofaust
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry Ammobox_m1
+ObjectTemplate.aiTemplate Ammobox_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+objectTemplate.cullRadiusScale 3.0
+rem -------------------------------------
+ObjectTemplate.addTemplate Ammobox_nofaustSupplyDepot
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Ammobox_nofaustVehicleSupplyDepot
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.create SupplyDepot Ammobox_nofaustSupplyDepot
+ObjectTemplate.radius 3
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 1 -1 5 0
+ObjectTemplate.addAmmoType 2 -1 0.3 0
+ObjectTemplate.addAmmoType 3 10 1.2 0
+rem mobimaxim, mobimortar
+ObjectTemplate.addAmmoType 17 -1 0.08 0
+ObjectTemplate.addAmmoType 18 -1 0.05 0
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
+
+rem *** Ammobox_nofaustVehicleSupplyDepot ***
+ObjectTemplate.create SupplyDepot Ammobox_nofaustVehicleSupplyDepot
+ObjectTemplate.radius 15
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 0 -1 5 0
+rem 5=mobile mortar
+ObjectTemplate.addAmmoType 5 -1 0.5 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc

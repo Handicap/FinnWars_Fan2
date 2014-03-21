@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject pirtti
+ObjectTemplate.geometry pirtti
+ObjectTemplate.setHasCollisionPhysics 1
+
+

@@ -1,0 +1,87 @@
+rem *** KubelEngine ***
+ObjectTemplate.create Engine KubelEngine
+ObjectTemplate.setNetworkableInfo KubelEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/KubelwagenEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate KubelFrontWheelL
+ObjectTemplate.setPosition -0.627/-0.007/1.2
+ObjectTemplate.addTemplate KubelFrontWheelR
+ObjectTemplate.setPosition 0.628/-0.007/1.2
+ObjectTemplate.addTemplate KubelBackSpringR
+ObjectTemplate.setPosition 0.628/-0.423/-1.230
+ObjectTemplate.addTemplate KubelBackSpringL
+ObjectTemplate.setPosition -0.627/-0.423/-1.230
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 10/0/10
+ObjectTemplate.setAcceleration 10/0/10
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 10.5
+ObjectTemplate.setDifferential 7
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+ObjectTemplate.setGearChangeTime 0.05
+
+rem *** KubelFrontSpringL ***
+ObjectTemplate.create Spring KubelFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubel_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+ObjectTemplate.addTemplate e_wdirtWheel
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+rem *** KubelFrontSpringR ***
+ObjectTemplate.create Spring KubelFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubel_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+ObjectTemplate.addTemplate e_wdirtWheel
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+rem *** KubelBackSpringR ***
+ObjectTemplate.create Spring KubelBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubel_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+ObjectTemplate.addTemplate e_wdirtWheel
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+rem *** KubelBackSpringL ***
+ObjectTemplate.create Spring KubelBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubel_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+ObjectTemplate.addTemplate e_wdirtWheel
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+

@@ -1,0 +1,6 @@
+NetworkableInfo.createNewInfo l39_crouch_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo l39_crouch_TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+

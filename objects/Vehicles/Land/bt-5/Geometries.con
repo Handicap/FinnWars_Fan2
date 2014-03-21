@@ -1,0 +1,104 @@
+renderer.beginGlobalCluster bt-5
+
+GeometryTemplate.create StandardMesh 1p_45Gunner
+GeometryTemplate.file 1p_45gunner
+
+GeometryTemplate.create StandardMesh bt-5_Cannon_M1
+GeometryTemplate.file bt-5_pipe
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh bt-5_Hull_M1
+GeometryTemplate.file bt-5_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh bt-5_tuuletus
+GeometryTemplate.file bt-tuuletus
+
+GeometryTemplate.create AnimatedMesh bt-5_Track_L_M1
+GeometryTemplate.file bt-5_track_L
+GeometryTemplate.setSkin animations/bt-5_track_l.skn
+
+GeometryTemplate.create AnimatedMesh bt-5_Track_R_M1
+GeometryTemplate.file bt-5_track_R
+GeometryTemplate.setSkin animations/bt-5_track_r.skn
+
+GeometryTemplate.create StandardMesh bt-5_keski_r_g
+GeometryTemplate.file bt-5_keski_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh bt-5_keski_l_g
+GeometryTemplate.file bt-5_keski_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh bt-5_etu_l_g
+GeometryTemplate.file bt-5_etu_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh bt-5_etu_r_g
+GeometryTemplate.file bt-5_etu_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh bt-5_taka_r_g
+GeometryTemplate.file bt-5_taka_r
+geometryTemplate.cullFactor 0.01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh bt-5_taka_l_g
+GeometryTemplate.file bt-5_taka_l
+geometryTemplate.cullFactor 0.01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh bt-5_Tower_M1
+GeometryTemplate.file bt-5_tower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_bt-5_Driver_M1
+GeometryTemplate.file 1P_Wespe_Driver_M1
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh bt-5_Hull_L1
+GeometryTemplate.file bt-5_hull
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_bt-5_M1
+GeometryTemplate.file bt-5_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500

@@ -1,0 +1,102 @@
+rem *** Mobile_Sokolov ***
+ObjectTemplate.create HandFireArms Mobile_Sokolov
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.loadSoundScript Sounds/Landmine.ssc
+ObjectTemplate.itemIndex 6
+ObjectTemplate.projectileTemplate SokolovDeployProjectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.projectileVisible 0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.GUIIndex 10
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "weapon/icon_mobilemaxim_64x32.dds"
+ObjectTemplate.setHasMag 0
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.velocity 2
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.2
+ObjectTemplate.fireDelay 0.4
+ObjectTemplate.soldierCameraPosition 0/-0.05/0.3
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+ObjectTemplate.AmmoType 17
+ObjectTemplate.createSkeleton animations/Landmine.ske
+ObjectTemplate.useSkeletonPartAsMain base
+ObjectTemplate.addTemplate Mobile_SokolovLod
+ObjectTemplate.setRotation 0/25/0
+
+rem *** Mobile_SokolovLod ***
+ObjectTemplate.create LodObject Mobile_SokolovLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate Mobile_SokolovComplex
+ObjectTemplate.addTemplate Mobile_SokolovSimple
+
+rem *** Mobile_SokolovComplex ***
+ObjectTemplate.create AnimatedBundle Mobile_SokolovComplex
+ObjectTemplate.geometry mobile_sokolov_carry
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Landmine.ske
+
+rem *** Mobile_SokolovSimple ***
+ObjectTemplate.create SimpleObject Mobile_SokolovSimple
+ObjectTemplate.geometry mobile_sokolov_carryLOD
+
+
+
+
+
+
+
+
+
+ObjectTemplate.create Projectile SokolovDeployProjectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry mobilemaxim_thrower
+ObjectTemplate.saveInSeparateFile 1 
+ObjectTemplate.addTemplate tripod_mobsokProj
+ObjectTemplate.setPosition 0/0.0/-0.1
+ObjectTemplate.addTemplate SokolovDeploySpawner
+ObjectTemplate.setPosition 0/-0.225/0
+ObjectTemplate.timeToLive CRD_NONE/2.0/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.material 230
+ObjectTemplate.invisible 0
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+
+ObjectTemplate.create SimpleObject tripod_mobsokProj
+ObjectTemplate.geometry Mobile_Sokolov_stand
+
+
+
+rem ***MobileSpawneri*** 
+ObjectTemplate.create ObjectSpawner SokolovDeploySpawner
+ObjectTemplate.setObjectTemplate 1 Mobile_Sokolov_gun
+ObjectTemplate.setObjectTemplate 2 Mobile_Sokolov_gun
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 1
+ObjectTemplate.maxSpawnDelay 1
+ObjectTemplate.TimeToLive 20
+ObjectTemplate.Distance 1 
+ObjectTemplate.spawnOffset 0/0.18/-0.1
+ObjectTemplate.team 1 
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 5
+

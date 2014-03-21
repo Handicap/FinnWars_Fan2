@@ -1,0 +1,109 @@
+renderer.beginGlobalCluster Komsomolets
+
+GeometryTemplate.create StandardMesh Komsomolets_Cannon_M1
+GeometryTemplate.file komso_kk
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Komsomolets_Hull_M1
+GeometryTemplate.file komso_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Komsomolets_Pressu
+GeometryTemplate.file komso_pressu
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create AnimatedMesh Komsomolets_Track_L_M1
+GeometryTemplate.file komso_track_l
+GeometryTemplate.setSkin animations/komso_l.skn
+
+GeometryTemplate.create AnimatedMesh Komsomolets_Track_R_M1
+GeometryTemplate.file komso_track_r
+GeometryTemplate.setSkin animations/komso_r.skn
+
+GeometryTemplate.create StandardMesh Komsomolets_smallwheel_g
+GeometryTemplate.file komso_keski
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Komsomolets_front_l
+GeometryTemplate.file komso_etu_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Komsomolets_front_r
+GeometryTemplate.file komso_etu_r
+geometryTemplate.cullFactor 0.01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Komsomolets_rear_l
+GeometryTemplate.file komso_taka_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Komsomolets_rear_r
+GeometryTemplate.file komso_taka_r
+geometryTemplate.cullFactor 0.01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Komsomolets_Tower_M1
+GeometryTemplate.file m37tower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_Komsomolets_Driver_M1
+GeometryTemplate.file 1P_Wespe_Driver_M1
+
+GeometryTemplate.create StandardMesh Komsomolets_tread_mc
+GeometryTemplate.file komso_treadmachine
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Komsomolets_Hull_L1
+GeometryTemplate.file komso_hull
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_Komsomolets_M1
+GeometryTemplate.file komso_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500

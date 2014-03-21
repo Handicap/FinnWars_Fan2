@@ -1,0 +1,14 @@
+GeometryTemplate.create StandardMesh Gebalteladung
+GeometryTemplate.file Gebalteladung
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 5
+GeometryTemplate.setLodDistance 2 60
+
+
+GeometryTemplate.create StandardMesh shad_Gebalteladung
+GeometryTemplate.file Gebalteladung
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+

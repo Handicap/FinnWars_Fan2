@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include koneFireLowFireHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include koneFireLowFireMedium.ssc
+	
+#templateLevel LOW
+
+	#include koneFireLowFireLow.ssc

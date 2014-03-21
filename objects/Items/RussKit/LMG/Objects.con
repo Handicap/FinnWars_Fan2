@@ -1,0 +1,33 @@
+ObjectTemplate.create Kit  Rus_LMG
+ObjectTemplate.setType AT
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry  Kit_DP
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate Russ_Helmet
+ObjectTemplate.addTemplate Russian_Medic_hippack
+ObjectTemplate.addTemplate NoParachute
+ObjectTemplate.addTemplate kiikarikotelo
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_medic_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_medic_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_alliesknife.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_empty.dds"
+ObjectTemplate.addWeaponIcon "kits/dp_kit.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_rgd33.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_binoculars.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_ammopack.tga"
+
+ObjectTemplate.setKitIcon 3 "kits/rus_dp.dds"
+ObjectTemplate.setKitName 3 ""
+ObjectTemplate.setKitActiveName 3 "In use/limit"
+
+ObjectTemplate.addTemplate DP
+ObjectTemplate.addTemplate grenadeAllies
+ObjectTemplate.addTemplate KnifeAllies
+ObjectTemplate.addTemplate AmmoPack
+ObjectTemplate.addTemplate Binoculars
+
+rem ObjectTemplate.addTemplate GrenadeAllies
+ObjectTemplate.aitemplate Medic
+

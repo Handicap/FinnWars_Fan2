@@ -1,0 +1,318 @@
+
+
+rem *** Stuka ***
+ObjectTemplate.create PlayerControlObject Stuka
+ObjectTemplate.setNetworkableInfo Stuka_body_info
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.07
+ObjectTemplate.mass 3000
+ObjectTemplate.inertiaModifier 0.95/0.943/0.968
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 170
+ObjectTemplate.maxhitpoints 170
+ObjectTemplate.material 60
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 50 em_Bf109Damage 0/0.102/2.11
+ObjectTemplate.addArmorEffect 20 e_Bf109Fire 0/0/3.7
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_Plane 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Stuka
+rem -------------------------------------
+ObjectTemplate.addTemplate lodStuka
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -3/0.1/-2.8 0/0/0
+ObjectTemplate.GUIIndex 69
+ObjectTemplate.setVehicleIcon "Vehicle/empty.tga"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_konetykki.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bomb.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTDiveBomber
+ObjectTemplate.setToolTipType  TTDiveBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stuka_64x64.tga"
+
+rem *** lodStuka ***
+ObjectTemplate.create LodObject lodStuka
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate StukaComplex
+ObjectTemplate.addTemplate StukaSimple
+ObjectTemplate.addTemplate StukaWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector StukaLodSelector
+
+
+rem *** StukaComplex ***
+ObjectTemplate.create Bundle StukaComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodStukaCockpit
+ObjectTemplate.addTemplate StukaCamera
+ObjectTemplate.setPosition 0/1.078/-0.153
+ObjectTemplate.addTemplate StukaEntry
+ObjectTemplate.setPosition 0/0/-0.499
+ObjectTemplate.addTemplate StukaSeat
+ObjectTemplate.setPosition 0/0.55/0.15
+ObjectTemplate.addTemplate StukaEngine
+ObjectTemplate.setPosition 0/0.259/3.579
+ObjectTemplate.addTemplate StukaFlapLeftInner
+ObjectTemplate.setPosition -0.945/-0.32/-1.141
+ObjectTemplate.setRotation 15.5/0/12.5
+ObjectTemplate.addTemplate StukaFlapLeftMiddle
+ObjectTemplate.setPosition -2.736/-0.216/-0.699
+ObjectTemplate.setRotation 13/0/-9.498
+ObjectTemplate.addTemplate StukaFlapLeftOuter
+ObjectTemplate.setPosition -5.357/0.243/0.048
+ObjectTemplate.setRotation 18.4/0/-8.999
+ObjectTemplate.addTemplate StukaFlapRightInner
+ObjectTemplate.setPosition 0.95/-0.32/-1.141
+ObjectTemplate.setRotation -15.498/0/-12.498
+ObjectTemplate.addTemplate StukaFlapRightMiddle
+ObjectTemplate.setPosition 2.741/-0.216/-0.699
+ObjectTemplate.setRotation -12.998/0/9
+ObjectTemplate.addTemplate StukaFlapRightOuter
+ObjectTemplate.setPosition 5.362/0.244/0.048
+ObjectTemplate.setRotation -18.399/0/9.5
+ObjectTemplate.addTemplate StukaFlapTailLeft
+ObjectTemplate.setPosition -1.263/0.8/-5.877
+ObjectTemplate.addTemplate StukaFlapTailRight
+ObjectTemplate.setPosition 1.266/0.8/-5.877
+ObjectTemplate.addTemplate StukaRudder
+ObjectTemplate.setPosition 0/1.088/-6.067
+ObjectTemplate.setRotation 0/0/-89.998
+ObjectTemplate.addTemplate StukaWheelLeft
+ObjectTemplate.setPosition 1.462/-1.892/1.379
+ObjectTemplate.addTemplate StukaWheelRight
+ObjectTemplate.setPosition -1.461/-1.892/1.379
+ObjectTemplate.addTemplate StukaWheelBack
+ObjectTemplate.setPosition 0/0.37/-5.879
+ObjectTemplate.addTemplate StukaGuns
+ObjectTemplate.addTemplate StukaBombDummy
+ObjectTemplate.addTemplate StukaRearGunControl
+ObjectTemplate.setPosition 0/0.191/-1.169
+ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.addTemplate StukaBodyWingVertical
+ObjectTemplate.setRotation 0/0/-89.999
+rem -------------------------------------
+
+
+rem *** lodStukaCockpit ***
+ObjectTemplate.create LodObject lodStukaCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate StukaCockpitExternal
+ObjectTemplate.addTemplate StukaCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector StukaCockpitSelector
+
+
+rem *** StukaCockpitExternal ***
+ObjectTemplate.create SimpleObject StukaCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry Stuka_Fuselage_M1
+
+
+rem *** StukaCockpitInternal ***
+ObjectTemplate.create SimpleObject StukaCockpitInternal
+ObjectTemplate.geometry 1P_Stuka_Driver_M1
+
+
+rem *** StukaCockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector StukaCockpitSelector
+LodSelectorTemplate.addLodDistance 20
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** StukaCamera ***
+ObjectTemplate.create Camera StukaCamera
+ObjectTemplate.setMinRotation -60/-40/0
+ObjectTemplate.setMaxRotation 60/10/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/-5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/-0.7/3.7
+
+
+rem *** StukaEntry ***
+ObjectTemplate.create EntryPoint StukaEntry
+ObjectTemplate.setEntryRadius 6.6
+
+
+rem *** StukaSeat ***
+ObjectTemplate.create SeatObject StukaSeat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+
+rem *** lodStukaPropeller ***
+ObjectTemplate.create LodObject lodStukaPropeller
+rem -------------------------------------
+ObjectTemplate.addTemplate StukaPropellerStatic
+ObjectTemplate.addTemplate StukaPropellerBlurred
+rem -------------------------------------
+ObjectTemplate.lodSelector StukaPropSelector
+
+
+rem *** StukaPropellerStatic ***
+ObjectTemplate.create SimpleObject StukaPropellerStatic
+ObjectTemplate.geometry Stuka_prp1
+
+
+rem *** StukaPropellerBlurred ***
+ObjectTemplate.create SimpleObject StukaPropellerBlurred
+ObjectTemplate.geometry Stuka_prp2
+LodSelectorTemplate.create CompareSelector StukaPropSelector
+LodSelectorTemplate.addLodComparison 0.07
+
+
+rem *** StukaFlapLeftInner ***
+ObjectTemplate.create RotationalBundle StukaFlapLeftInner
+ObjectTemplate.setNetworkableInfo Stuka_wing_info
+ObjectTemplate.geometry Stuka_Flap_Left_Inner_M1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/50/0
+ObjectTemplate.setAcceleration 0/-50/0
+ObjectTemplate.setInputToYaw 
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setInputToRoll 
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** StukaFlapRightInner ***
+ObjectTemplate.create RotationalBundle StukaFlapRightInner
+ObjectTemplate.setNetworkableInfo Stuka_wing_info
+ObjectTemplate.geometry Stuka_Flap_Right_Inner_M1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/50/0
+ObjectTemplate.setAcceleration 0/50/0
+ObjectTemplate.setInputToYaw 
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setInputToRoll 
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** StukaWheelBack ***
+ObjectTemplate.create RotationalBundle StukaWheelBack
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate StukaWheelBackSpring
+ObjectTemplate.setPosition 0/-0.899/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration -110/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** StukaRearGunControl ***
+ObjectTemplate.create PlayerControlObject StukaRearGunControl
+ObjectTemplate.setNetworkableInfo Stuka_body_info
+ObjectTemplate.aiTemplate StukaMGAI
+rem -------------------------------------
+ObjectTemplate.addTemplate StukaRearBrowningBase
+ObjectTemplate.setPosition 0/0.6/0.4
+ObjectTemplate.addTemplate StukaEntry
+ObjectTemplate.setPosition 0/-0.191/-0.67
+ObjectTemplate.addTemplate StukaRearSeat
+ObjectTemplate.setPosition 0/0.35/-0.199
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -3/-0.05/1 0/0/0
+ObjectTemplate.GUIIndex 70
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTDiveBomber
+ObjectTemplate.setToolTipType  TTDiveBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+
+
+rem *** StukaRearBrowningBase ***
+ObjectTemplate.create RotationalBundle StukaRearBrowningBase
+ObjectTemplate.setNetworkableInfo Stuka_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate StukaBrowningRotation
+rem -------------------------------------
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setAutomaticYawStabilization 1
+
+
+rem *** StukaBrowningRotation ***
+ObjectTemplate.create RotationalBundle StukaBrowningRotation
+ObjectTemplate.setNetworkableInfo Stuka_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate StukaRearCamera
+ObjectTemplate.setPosition 0/0.267/0
+ObjectTemplate.addTemplate MG42_Air
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-34/0
+ObjectTemplate.setMaxRotation 0/1/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setAutomaticPitchStabilization 1
+
+
+rem *** StukaRearCamera ***
+ObjectTemplate.create Camera StukaRearCamera
+ObjectTemplate.setMinRotation -180/-60/0
+ObjectTemplate.setMaxRotation 180/20/0
+ObjectTemplate.setMaxSpeed 200/200/0
+ObjectTemplate.setAcceleration 1000/1000/0
+
+
+rem *** StukaRearSeat ***
+ObjectTemplate.create SeatObject StukaRearSeat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+
+rem *** StukaSimple ***
+ObjectTemplate.create SimpleObject StukaSimple
+ObjectTemplate.geometry Stuka_Fuselage_L1
+
+
+rem *** StukaWreck ***
+ObjectTemplate.create SimpleObject StukaWreck
+ObjectTemplate.geometry Wreck_Stuka_M1
+
+
+rem *** StukaLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 StukaLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200

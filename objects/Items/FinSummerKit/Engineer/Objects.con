@@ -1,0 +1,38 @@
+ObjectTemplate.create KitPart Bacpac_Big_ger
+ObjectTemplate.geometry Bacpac_Big_ger
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create Kit FinSummer_Engineer
+ObjectTemplate.setType Engineer
+ObjectTemplate.setKitTeam 1
+objectTemplate.geometry Kit_mosin
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate German_Helmet
+ObjectTemplate.addTemplate German_hippack
+ObjectTemplate.addTemplate Bacpac_Big_ger
+ObjectTemplate.addTemplate NoParachute
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_engineer_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_engineer_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_shovel.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_timebomb.dds"
+ObjectTemplate.addWeaponIcon "kits/mosinnagant_kit.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_landmine.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_kasapanos.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_repairpack.tga"
+
+ObjectTemplate.setKitIcon 4 "../../bf1942/levels/ilomantsi/texture/fin_m28-30_eng.dds"
+ObjectTemplate.setKitName 4 ""
+ObjectTemplate.setKitActiveName 4 "In use/limit"
+
+ObjectTemplate.addTemplate mosin-nagant_carbine
+ObjectTemplate.addTemplate Exppack
+ObjectTemplate.addTemplate shovel
+
+ObjectTemplate.addTemplate RepairPack
+ObjectTemplate.addTemplate Kasapanos
+ObjectTemplate.addTemplate Landmine
+rem ObjectTemplate.addTemplate GrenadeAxis
+ObjectTemplate.aiTemplate  Engineer

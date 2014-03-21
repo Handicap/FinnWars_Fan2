@@ -1,0 +1,388 @@
+rem *** e_ExplSmall2 ***
+ObjectTemplate.create EffectBundle e_ExplSmall2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.loadSoundScript Sounds/ExplAni01.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_ExplSmall2
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate Em_ExplSmall2_flash
+ObjectTemplate.addTemplate Em_Ground
+ObjectTemplate.addTemplate Em_ExplSmall2_Cloud
+rem ObjectTemplate.addTemplate Em_ExplSmall2_Smoke
+rem ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+rem ObjectTemplate.addTemplate Em_ExplSmall2xap_Dirt
+rem ObjectTemplate.addTemplate Em_ExplSmall2xap_Dirt
+ObjectTemplate.setPosition 0/1/0 
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.addTemplate Em_Small2_Sparks
+ObjectTemplate.setPosition 1/0/0 
+ObjectTemplate.addTemplate Em_Small2_Sparks
+ObjectTemplate.setPosition -1/0/0 
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.addTemplate Em_Small2BlackSmoke3
+ObjectTemplate.addTemplate em_mutsis
+ObjectTemplate.addTemplate em_muzzSmall2_kagga
+ObjectTemplate.addTemplate em_muzzSmall2_smoke
+ObjectTemplate.addTemplate em_muzzSmall2_wsmoke
+ObjectTemplate.addTemplate em_muzzSmall2_blackSmoke
+ObjectTemplate.addTemplate Em_ExplSmall2_ShockW
+rem -------------------------------------
+
+
+rem *** Em_ExplSmall2 ***
+ObjectTemplate.create Emitter Em_ExplSmall2
+ObjectTemplate.template Fx_ExplSmall2
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.timeToLive CRD_NONE/0.5/0/0
+ObjectTemplate.intensity CRD_NONE/100/0/1
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExplSmall2 ***
+ObjectTemplate.create SpriteParticle Fx_ExplSmall2
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.size CRD_UNIFORM/8/2/0
+ObjectTemplate.gravityModifier CRD_NONE/1/0/0
+ObjectTemplate.sizeOverTime 0/0.560045|1/1.80319|1/1
+ObjectTemplate.texture e_explani06
+ObjectTemplate.initRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/30/1
+ObjectTemplate.rotationSpeedOverTime 0/0.209998|100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/0|46/255/255/255/120|65/255/255/255/59|100/100/100/0/0
+ObjectTemplate.numAnimationFrames 16
+ObjectTemplate.animationSpeed CRD_NONE/70/0/0
+
+
+rem *** Em_ExplSmall2_flash ***
+ObjectTemplate.create Emitter Em_ExplSmall2_flash
+ObjectTemplate.template Fx_ExplSmall2_flash
+ObjectTemplate.lodDistance 900
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0/1/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExplSmall2_flash ***
+ObjectTemplate.create SpriteParticle Fx_ExplSmall2_flash
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.size CRD_NONE/2/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 1/1|50/0|100/0
+ObjectTemplate.texture e_fire4
+ObjectTemplate.initRotation CRD_NONE/1/0/0
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.colorRGBAOverTime 0/255/224/159/255|49/255/255/192/200|100/255/255/128/0
+
+rem *** Em_ExplSmall2_Cloud ***
+ObjectTemplate.create Emitter Em_ExplSmall2_Cloud
+ObjectTemplate.template Fx_ExplSmall2_Cloud
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/50/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/7/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/10/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/7/1
+ObjectTemplate.startRotation CRD_UNIFORM/1/180/0
+
+rem *** Fx_ExplSmall2_Cloud ***
+ObjectTemplate.create SpriteParticle Fx_ExplSmall2_Cloud
+ObjectTemplate.timeToLive CRD_UNIFORM/0.8/0.8/0
+ObjectTemplate.size CRD_NONE/3/0/0
+ObjectTemplate.sizeOverTime 0/0.5|100/1.5
+ObjectTemplate.texture e_dirtAni03
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/50/1
+ObjectTemplate.colorRGBAOverTime 0/228/228/228/51|31/155/155/155/160|55/100/100/100/112|0/0
+
+rem *** Em_ExplSmall2_Smoke ***
+ObjectTemplate.create Emitter Em_ExplSmall2_Smoke
+ObjectTemplate.template Fx_ExplSmall2_Smoke
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.delay CRD_NONE/0.2/0/0
+ObjectTemplate.timeToLive CRD_NONE/0/0/0
+ObjectTemplate.intensity CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/-1.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/100/0/0
+rem *** Fx_ExplSmall2_Smoke ***
+ObjectTemplate.create SpriteParticle Fx_ExplSmall2_Smoke
+ObjectTemplate.timeToLive CRD_NONE/0/0/0
+ObjectTemplate.size CRD_UNIFORM/0/0/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.3/0/0
+ObjectTemplate.sizeOverTime 0/|0/0|0/0
+ObjectTemplate.gravityModifierOverTime 0/0.199988|100/0.199988
+ObjectTemplate.texture e_muzs3_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.XYSizeRatio CRD_NONE/1.1/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/214/185/141/102|55/74/74/74/45|100/0/0/0/0
+
+ObjectTemplate.create Emitter Em_Ground
+ObjectTemplate.template Fx_Ground
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.timeToLive CRD_NONE/0/0/0
+ObjectTemplate.intensity CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/1/0/1
+ObjectTemplate.positionalSpeedInUp CRD_NONE/7/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/1/0/1
+ObjectTemplate.startRotation CRD_UNIFORM/1/180/1
+rem *** SUOMIFINLANDSmall2 ***
+ObjectTemplate.create SpriteParticle Fx_Ground
+ObjectTemplate.timeToLive CRD_NONE/1/1/0
+ObjectTemplate.size CRD_UNIFORM/0/0/0
+ObjectTemplate.drag CRD_NONE/0.4/0/0
+ObjectTemplate.sizeOverTime 0/3|10/2|100/0.39976
+ObjectTemplate.texture e_smoke5
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.colorRGBAOverTime 0/240/240/240/204|28/223/223/223/146|100/100/100/100/0
+
+rem *** Em_ExplSmall2xap_Dirt ***
+ObjectTemplate.create Emitter Em_ExplSmall2xap_Dirt
+ObjectTemplate.template Fx_ExplSmall2xap_Dirt
+ObjectTemplate.lodDistance 900
+ObjectTemplate.timeToLive CRD_NONE/0.4/0/0
+ObjectTemplate.intensity CRD_NONE/1/0/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0/0/0
+rem ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/3/5/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/7/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+
+rem *** Fx_ExplSmall2xap_Dirt ***
+ObjectTemplate.create SpriteParticle Fx_ExplSmall2xap_Dirt
+ObjectTemplate.timeToLive CRD_NONE/2/3/0
+ObjectTemplate.size CRD_UNIFORM/0.4/2/3
+ObjectTemplate.gravityModifier CRD_NONE/2/30/20
+ObjectTemplate.drag CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 1/1|50/3|100/4.5
+ObjectTemplate.gravityModifierOverTime 100/0
+ObjectTemplate.texture grenade_snow
+ObjectTemplate.initRotation CRD_UNIFORM/0/0/0
+rem ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/0/0
+rem ObjectTemplate.colorRGBAOverTime 0/255/255/255/153|255/255/255/255/255|100/255/255/255/255
+rem ObjectTemplate.sizeOverTime 0/1|100/0
+
+rem *** Em_Small2_Sparks ***
+ObjectTemplate.create Emitter Em_Small2_Sparks
+ObjectTemplate.template Fx_Small2_Sparks
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/70/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/7/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/10/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/7/1
+ObjectTemplate.startRotation CRD_UNIFORM/1/180/0
+
+
+rem *** Fx_Small2_Sparks ***
+ObjectTemplate.create SpriteParticle Fx_Small2_Sparks
+ObjectTemplate.timeToLive CRD_UNIFORM/0.8/0.8/0
+ObjectTemplate.size CRD_NONE/7/0/0
+ObjectTemplate.sizeOverTime 0/0.5|100/1.5
+ObjectTemplate.texture e_dirtAni03
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/50/1
+ObjectTemplate.colorRGBAOverTime 0/0/0/0/204|32/192/192/192/177|45/145/138/138/167|79/24/0/0/63|100/0/0/0/0
+ObjectTemplate.hasStaticColor 1
+
+
+rem *** Em_Small2BlackSmoke3 ***
+ObjectTemplate.create Emitter Em_Small2BlackSmoke3
+ObjectTemplate.template Fx_Small2BlackSmoke3
+ObjectTemplate.looping 0
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.intensity CRD_NONE/30/10/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0/0.1/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.05/1
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInLeft CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_Small2BlackSmoke3  ***
+ObjectTemplate.create SpriteParticle Fx_Small2BlackSmoke3
+ObjectTemplate.timeToLive CRD_UNIFORM/1/1/0
+ObjectTemplate.size CRD_UNIFORM/3/0.4/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.2/0/0
+ObjectTemplate.sizeOverTime 0/1.5|100/2
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.drag CRD_NONE/5/0/0
+ObjectTemplate.initRotation CRD_EXPONENTIAL/0/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/50/1
+ObjectTemplate.rotationSpeedOverTime 0/0|100/1
+ObjectTemplate.colorRGBAOverTime 0/228/228/228/51|31/155/155/155/160|55/100/100/100/112|0/0
+
+
+ObjectTemplate.create Emitter Em_mutsis
+ObjectTemplate.template Fx_mutsis
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.9/0/0
+ObjectTemplate.intensity CRD_UNIFORM/17/4/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0/0.1/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.05/1
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInup CRD_UNIFORM/9/0/0
+ObjectTemplate.positionalSpeedInLeft CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/1/180/0
+
+
+rem *** Fx_BuildingSmokeIdleDark ***
+ObjectTemplate.create SpriteParticle Fx_mutsis
+ObjectTemplate.timeToLive CRD_UNIFORM/1/7/0
+ObjectTemplate.size CRD_NONE/2/1/0
+ObjectTemplate.sizeOverTime 0/1|100/4
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.initRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/50/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.colorRGBAOverTime 0/228/228/228/51|31/155/155/155/160|55/100/100/100/112|0/0
+
+rem *** em_muzzSmall2_kagga ***
+ObjectTemplate.create emitter em_muzzSmall2_kagga
+ObjectTemplate.template Fx_MuzzSmall2_kagga
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.TimeToLive CRD_NONE/1/0/0
+ObjectTemplate.intensity CRD_NONE/3/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/-1/-2/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/-1/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+
+rem *** fx_muzzSmall2_kagga ***
+ObjectTemplate.create spriteparticle fx_muzzSmall2_kagga
+ObjectTemplate.TimeToLive CRD_UNIFORM/3/3/0
+ObjectTemplate.drag CRD_NONE/3/0/0
+ObjectTemplate.sizeOverTime 0/2|100/4
+ObjectTemplate.gravityModifierOverTime 0/0.199988|100/0.199988
+ObjectTemplate.texture e_muzs3_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/10/1
+ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/51|31/183/183/183/160|55/128/128/128/112|100/255/255/255/22
+
+
+rem *** em_muzzSmall2_smoke ***
+ObjectTemplate.create emitter em_muzzSmall2_smoke
+ObjectTemplate.template Fx_MuzzSmall2_Smoke
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.TimeToLive CRD_NONE/0.3/0/0
+ObjectTemplate.intensity CRD_NONE/8/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/-2.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/1/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+
+rem *** fx_muzzSmall2_smoke ***
+ObjectTemplate.create spriteparticle fx_muzzSmall2_smoke
+ObjectTemplate.TimeToLive CRD_UNIFORM/1/2/0
+ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.sizeOverTime 0/2|100/3
+ObjectTemplate.gravityModifierOverTime 0/0.199988|100/0.199988
+ObjectTemplate.texture e_muzs3_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/10/1
+ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/51|31/183/183/183/160|55/128/128/128/112|100/255/255/255/22
+
+
+rem *** em_muzzSmall2_wsmoke ***
+ObjectTemplate.create emitter em_muzzSmall2_wsmoke
+ObjectTemplate.template Fx_MuzzSmall2_WSmoke
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.TimeToLive CRD_NONE/0.4/0/0
+ObjectTemplate.intensity CRD_NONE/7/0/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/-10/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+ObjectTemplate.addChild 1
+
+
+rem *** fx_muzzSmall2_wsmoke ***
+ObjectTemplate.create spriteparticle fx_muzzSmall2_wsmoke
+ObjectTemplate.TimeToLive CRD_UNIFORM/1/2/0
+ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.sizeOverTime 0/2|100/3
+ObjectTemplate.gravityModifierOverTime 0/0.199988|100/0.199988
+ObjectTemplate.texture e_muzs3_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/10/1
+ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/51|31/183/183/183/160|55/128/128/128/112|100/255/255/255/22
+
+
+
+
+rem *** Em_muzzSmall2_blackSmoke ***
+ObjectTemplate.create Emitter Em_muzzSmall2_blackSmoke
+ObjectTemplate.template Fx_muzzSmall2_blackSmoke
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.intensity CRD_NONE/15/15/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0/0.1/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.05/1
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/1/0
+ObjectTemplate.positionalSpeedInLeft CRD_UNIFORM/0/1/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_muzzSmall2blackSmoke  ***
+ObjectTemplate.create SpriteParticle Fx_muzzSmall2_blackSmoke
+ObjectTemplate.timeToLive CRD_UNIFORM/1/3/0
+ObjectTemplate.size CRD_UNIFORM/0.8/0.4/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.2/0/0
+ObjectTemplate.sizeOverTime 0/0.5|100/2
+ObjectTemplate.texture e_muzs3_I
+ObjectTemplate.initRotation CRD_EXPONENTIAL/0/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/50/1
+ObjectTemplate.rotationSpeedOverTime 0/0|100/1
+ObjectTemplate.colorRGBAOverTime 0/228/228/228/51|31/155/155/155/160|55/100/100/100/112|0/0
+
+
+rem *** Em_ExplSmall2_ShockW ***
+ObjectTemplate.create Emitter Em_ExplSmall2_ShockW
+ObjectTemplate.template Fx_ExplSmall2_ShockW
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/15/0/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0/2/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExplSmall2_ShockW ***
+ObjectTemplate.create Particle Fx_ExplSmall2_ShockW
+ObjectTemplate.geometry shockwave_m1
+ObjectTemplate.timeToLive CRD_NONE/0.8/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeModifier 0.8/2/5
+ObjectTemplate.sizeOverTime 0/1|100/2
+ObjectTemplate.gravityModifierOverTime 0/0.800195|73/5.91983|100/10
+ObjectTemplate.alphaOverTime 0/1|100/0
+

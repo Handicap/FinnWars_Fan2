@@ -1,0 +1,183 @@
+rem *** Piiska ***
+ObjectTemplate.create PlayerControlObject Piiska
+ObjectTemplate.NameTagOffset 0/-0.5/0
+ObjectTemplate.setNetworkableInfo PiiskaBodyInfo
+ObjectTemplate.geometry tripod_temp
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 50
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Piiska
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_turret_16x16.dds"
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.vehicleFov 0.3
+ObjectTemplate.addTemplate lodPiiska
+ObjectTemplate.addTemplate Piiskaseat
+ObjectTemplate.setPosition 0.356885/0.0/0.0
+
+rem *** lodPiiska ***
+ObjectTemplate.create LodObject lodPiiska
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.lodSelector PiiskaLodSelector
+ObjectTemplate.addTemplate Piiskacomplex
+ObjectTemplate.addTemplate Piiskasimple
+ObjectTemplate.addTemplate Piiskawreck
+
+rem *** Piiskacomplex ***
+ObjectTemplate.create Bundle Piiskacomplex
+ObjectTemplate.loadSoundScript Sounds/WespeTrack.ssc
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate Piiskaentry
+ObjectTemplate.setPosition -0.299/0.0/1.2
+ObjectTemplate.addTemplate Piiskaentry
+ObjectTemplate.setPosition -0.299/0.0/-1.199
+ObjectTemplate.addTemplate Piiskacamera
+ObjectTemplate.setPosition 0.365664/0.865929/0.029
+ObjectTemplate.addTemplate Piiska_gunner_pco1
+ObjectTemplate.setPosition 0.0/0.0/-0.449
+
+rem *** Piiskaentry ***
+ObjectTemplate.create EntryPoint Piiskaentry
+ObjectTemplate.setEntryRadius 2.5
+
+rem *** Piiskacamera ***
+ObjectTemplate.create Camera Piiskacamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Piiska_gunner_pco1 ***
+ObjectTemplate.create PlayerControlObject Piiska_gunner_pco1
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo PiiskaBodyInfo
+ObjectTemplate.aiTemplate PiiskaCannon
+ObjectTemplate.setSoldierExitLocation -2/0/0 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_turret_16x16.dds"
+ObjectTemplate.artPos 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate Piiskaentry
+ObjectTemplate.setPosition 0.4/0.0/0.5
+ObjectTemplate.addTemplate Piiskatower
+ObjectTemplate.setPosition 0.0/0.00683646/0.444618
+
+rem *** Piiskatower ***
+ObjectTemplate.create rotationalbundle Piiskatower
+ObjectTemplate.setNetworkableInfo PiiskaBodyInfo
+rem ObjectTemplate.loadSoundScript Sounds/boforsTurret.ssc
+ObjectTemplate.geometry Piiska_hull
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMinRotation -80/0/0
+ObjectTemplate.setMaxRotation 80/0/0
+ObjectTemplate.setMaxSpeed 10/10/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate Piiskagunbase
+ObjectTemplate.setPosition 0.0/-0.0856307/0.945994
+ObjectTemplate.addTemplate Piiskawheell
+ObjectTemplate.setPosition -0.600673/-0.307653/1.020034
+ObjectTemplate.addTemplate Piiskawheelr
+ObjectTemplate.setPosition 0.622026/-0.307653/1.020034
+ObjectTemplate.addTemplate Piiska_gunnerseat
+ObjectTemplate.setPosition -0.310639/0.078221/0.0260491
+ObjectTemplate.setRotation 9/0/0
+
+rem *** Piiskagunbase ***
+ObjectTemplate.create rotationalbundle Piiskagunbase
+ObjectTemplate.setNetworkableInfo PiiskaBodyInfo
+rem ObjectTemplate.loadSoundScript Sounds/wespegunbase.ssc
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/8/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate Piiskacannon
+ObjectTemplate.setPosition 0.0/-0.00599/0.00712774
+ObjectTemplate.addTemplate Piiskagunnercamera
+ObjectTemplate.setPosition -0.259/0.486825/-0.2453183
+
+
+
+ObjectTemplate.create SimpleObject Piiskatesteri
+ObjectTemplate.geometry tracklight_m1
+
+
+rem *** Piiskagunnercamera ***
+ObjectTemplate.create Camera Piiskagunnercamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMExternTrace 1
+
+rem *** Piiskawheell ***
+ObjectTemplate.create SimpleObject Piiskawheell
+ObjectTemplate.geometry Piiska_wheel_l
+
+rem *** Piiskawheelr ***
+ObjectTemplate.create SimpleObject Piiskawheelr
+ObjectTemplate.geometry Piiska_wheel_r
+
+rem *** Piiskaseat ***
+ObjectTemplate.create seatobject Piiskaseat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** l39_crouchseat ***
+ObjectTemplate.create seatobject Piiska_gunnerseat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatAnimationLowerBody Lb_CrouchMg
+
+rem *** Piiskasimple ***
+ObjectTemplate.create SimpleObject Piiskasimple
+ObjectTemplate.geometry Piiska_Hull
+
+rem *** Piiskawreck ***
+ObjectTemplate.create SimpleObject Piiskawreck
+ObjectTemplate.geometry Wreck_bofors_m1
+
+
+
+rem *** Piiskalodselector ***
+LodSelectorTemplate.create distcompareselector2 Piiskalodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 100

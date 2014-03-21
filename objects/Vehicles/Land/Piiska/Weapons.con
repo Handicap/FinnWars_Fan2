@@ -1,0 +1,22 @@
+rem *** Piiskacannon ***
+ObjectTemplate.create firearms Piiskacannon
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/wespeCannon.ssc
+ObjectTemplate.geometry piiska_pipe
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.aiTemplate WespeMainGun_Piiska0
+ObjectTemplate.projectileTemplate BoforsProjectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 30
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 300
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 15
+ObjectTemplate.roundOfFire 0.32
+ObjectTemplate.fireingForce 80
+ObjectTemplate.recoilSpeed 8
+ObjectTemplate.recoilSize 7
+ObjectTemplate.addTemplate e_muzzpriest
+ObjectTemplate.setPosition 0.0/0.0/1.6
+ObjectTemplate.setRotation -179.999/0.0/0.0
+

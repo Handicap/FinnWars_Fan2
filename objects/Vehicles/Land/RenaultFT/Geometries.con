@@ -1,0 +1,93 @@
+renderer.beginGlobalCluster RenaultFT
+
+GeometryTemplate.create StandardMesh RenaultFT_Cannon_M1
+GeometryTemplate.file renaultft_cannon
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh RenaultFT_Hull_M1
+GeometryTemplate.file renaultft_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh RenaultFT_BigWheel
+GeometryTemplate.file renaultft_bigwheel
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh RenaultFT_SmallWheel
+GeometryTemplate.file renaultft_smallwheel
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh RenaultFT_tread_mc_left
+GeometryTemplate.file renaultft_mc_left
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh RenaultFT_tread_mc_right
+GeometryTemplate.file renaultft_mc_right
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create AnimatedMesh RenaultFT_Track_L_M1
+GeometryTemplate.file renaultft_left_track
+GeometryTemplate.setSkin animations/renaultft_track_l.skn
+
+GeometryTemplate.create AnimatedMesh RenaultFT_Track_R_M1
+GeometryTemplate.file renaultft_right_track
+GeometryTemplate.setSkin animations/renaultft_track_r.skn
+
+GeometryTemplate.create StandardMesh RenaultFT_Tower_M1
+GeometryTemplate.file renaultft_turret
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_RenaultFT_Driver_M1
+GeometryTemplate.file 1P_Wespe_Driver_M1
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh RenaultFT_Hull_L1
+GeometryTemplate.file renaultft_hull
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_RenaultFT_M1
+GeometryTemplate.file renaultft_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500

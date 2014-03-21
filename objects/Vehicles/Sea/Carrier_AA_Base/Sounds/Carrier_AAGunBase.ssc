@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Carrier_AAGunBase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Carrier_AAGunBase.ssc
+	
+#templateLevel LOW
+
+	#include Low/Carrier_AAGunBase.ssc

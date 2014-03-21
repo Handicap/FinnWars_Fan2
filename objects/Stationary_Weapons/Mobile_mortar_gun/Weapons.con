@@ -1,0 +1,27 @@
+rem *** Mobile_mortar_gunGunBarrel ***
+ObjectTemplate.create firearms Mobile_mortar_gunGunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/Mortarfire.ssc
+ObjectTemplate.aiTemplate Mobile_mortar_gunGun
+ObjectTemplate.addTemplate e_MuzzMortar
+ObjectTemplate.setPosition 0/0.5/0.5
+ObjectTemplate.setRotation 0/185/0
+ObjectTemplate.projectileTemplate mortar_Projectile
+ObjectTemplate.projectilePosition 0/0/1.3
+ObjectTemplate.magSize 25
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 5
+ObjectTemplate.autoReload 1
+ObjectTemplate.velocity 65
+ObjectTemplate.reloadtime 3.5
+ObjectTemplate.roundOfFire 0.75
+ObjectTemplate.recoilSpeed 10.0
+ObjectTemplate.recoilSize 50
+ObjectTemplate.fireingForce 50
+ObjectTemplate.setFireDev 1.0 1.0 0.004
+ObjectTemplate.setMinDev 0.2
+ObjectTemplate.fireInCameraDof 0
+ObjectTemplate.heatAddWhenFire 0.20
+ObjectTemplate.coolDownPerSec 0.09
+ObjectTemplate.timeDelayOnOverHeat 3
+ObjectTemplate.AmmoType	5

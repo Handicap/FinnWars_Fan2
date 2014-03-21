@@ -1,0 +1,5 @@
+NetworkableInfo.createNewInfo Pak40BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo AT25BodyInfo
+NetworkableInfo.setPredictionMode PMLinear

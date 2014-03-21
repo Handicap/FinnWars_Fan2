@@ -1,0 +1,65 @@
+beginrem
+
+rem *** boforsengine ***
+ObjectTemplate.create engine boforsengine
+ObjectTemplate.setNetworkableInfo BoforsEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/WespeEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 3.5
+ObjectTemplate.setDifferential 3.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate boforswheell
+ObjectTemplate.setPosition -0.700673/-0.167653/1.37696
+ObjectTemplate.addTemplate boforswheelr
+ObjectTemplate.setPosition 0.722026/-0.167653/1.37082
+ObjectTemplate.addTemplate boforswheell
+ObjectTemplate.setPosition -0.961598/-0.178997/-0.434709
+ObjectTemplate.addTemplate boforswheelr
+ObjectTemplate.setPosition 0.95007/-0.178997/-0.423321
+
+
+rem *** boforswheell ***
+ObjectTemplate.create spring boforswheell
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Bofors_wheel_l
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 17.5
+ObjectTemplate.setDamping 2.2
+
+
+rem *** boforswheelr ***
+ObjectTemplate.create spring boforswheelr
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Bofors_wheel_r
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 17.5
+ObjectTemplate.setDamping 2.2
+endrem
+
+
+rem *** boforswheell ***
+ObjectTemplate.create simpleobject boforswheell
+ObjectTemplate.geometry Bofors_wheel_l
+
+
+rem *** boforswheelr ***
+ObjectTemplate.create simpleobject boforswheelr
+ObjectTemplate.geometry Bofors_wheel_r

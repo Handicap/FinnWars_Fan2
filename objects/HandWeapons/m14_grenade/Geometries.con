@@ -1,0 +1,6 @@
+GeometryTemplate.create StandardMesh m14_grenade
+GeometryTemplate.file m14grenade
+
+GeometryTemplate.create StandardMesh Shad_m14
+GeometryTemplate.file m14lowpoly
+

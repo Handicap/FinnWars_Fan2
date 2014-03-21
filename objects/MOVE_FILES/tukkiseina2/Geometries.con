@@ -1,0 +1,9 @@
+GeometryTemplate.create StandardMesh tukkiseina2
+GeometryTemplate.file tukkiseina2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 99
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+

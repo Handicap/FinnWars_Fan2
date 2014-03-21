@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SturmGeschutzCannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/SturmGeschutzCannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/SturmGeschutzCannon.ssc

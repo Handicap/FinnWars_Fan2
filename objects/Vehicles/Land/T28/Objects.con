@@ -1,0 +1,606 @@
+
+
+rem *** t28 ***
+ObjectTemplate.create playercontrolobject t28
+ObjectTemplate.setNetworkableInfo t28BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.drag 2
+ObjectTemplate.mass 50000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 150
+ObjectTemplate.maxhitpoints 150
+ObjectTemplate.material 50
+ObjectTemplate.criticalDamage 100
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 20
+ObjectTemplate.hpLostWhileDamageFromDeepWater 20
+ObjectTemplate.addArmorEffect 100 e_PanzDamage 0/1/-1.6
+ObjectTemplate.addArmorEffect 20 e_PanzFire 0/1/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.damageFromDeepWater 1
+ObjectTemplate.aiTemplate t28
+ObjectTemplate.setSoldierExitLocation -0/2.5/-1.0 0/0/0
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_panzeriv.tga"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTHeavyTank
+ObjectTemplate.setToolTipType TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t28_32x32"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate lodt28
+ObjectTemplate.addTemplate t28_drivercamera
+ObjectTemplate.setPosition 0.0/0.688506/2.11
+ObjectTemplate.addTemplate lodt28cockpit
+ObjectTemplate.setPosition -0.0166205/0.68277/0.87758
+
+rem *** T34-85_gunner_pco1 ***
+ObjectTemplate.create playercontrolobject t28_back_gunner
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo t28BodyInfo
+ObjectTemplate.aiTemplate T26-M33Cannon
+ObjectTemplate.setSoldierExitLocation -0/1/0 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/120
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate t28_back_gunrot
+ObjectTemplate.setPosition 0/0.45/1.33
+
+
+rem *** t28_kkturret_r ***
+ObjectTemplate.create rotationalbundle t28_back_gunrot
+ObjectTemplate.setNetworkableInfo t28TurretInfo
+ObjectTemplate.loadSoundScript Sounds/tigerTurret.ssc
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.MinRotation -30/0/0
+ObjectTemplate.MaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate t28_back_gunbase
+
+
+rem *** t28_kkturret_gunbase_l ***
+ObjectTemplate.create rotationalbundle t28_back_gunbase
+ObjectTemplate.geometry t28_takakk
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo t28TurretInfo
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate t28Camera_back_gunner
+ObjectTemplate.setPosition 0.0/0.15/0.0
+ObjectTemplate.addTemplate lodNwGCockpit
+ObjectTemplate.setPosition 1.075/0.17/0.15
+ObjectTemplate.addTemplate coaxial_DP
+ObjectTemplate.setPosition 0/0.05/0.2
+
+
+rem *** lodt28 ***
+ObjectTemplate.create lodobject lodt28
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodselector t28LodSelector
+ObjectTemplate.addTemplate t28complex
+ObjectTemplate.addTemplate t28simple
+ObjectTemplate.addTemplate t28wreck
+
+
+rem *** t28complex ***
+ObjectTemplate.create bundle t28complex
+ObjectTemplate.geometry t28_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate t28entry
+ObjectTemplate.setPosition 0.0/0.0/1.2
+ObjectTemplate.addTemplate e_tankinpakokaasu
+ObjectTemplate.setPosition 0.333228/0.434125/-2.35429
+ObjectTemplate.addTemplate t28entry
+ObjectTemplate.setPosition 0.0/0.0/-1.199
+ObjectTemplate.addTemplate t28engine
+ObjectTemplate.addTemplate t28engine2
+ObjectTemplate.addTemplate t28_gunner
+ObjectTemplate.addTemplate t28_left_tower
+ObjectTemplate.addTemplate t28_right_tower
+
+
+rem *** t28entry ***
+ObjectTemplate.create entrypoint t28entry
+ObjectTemplate.setEntryRadius 3.5
+
+
+rem *** t28trackl ***
+ObjectTemplate.create animatedbundle t28trackl
+ObjectTemplate.loadSoundScript Sounds/TigerTrackL.ssc
+ObjectTemplate.geometry t28_TrackL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/t28_track_l.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.012/0
+ObjectTemplate.addTemplate t28_takaiso_l
+ObjectTemplate.setPosition -1.15958/0.785686/-3.07381
+ObjectTemplate.addTemplate t28_etuiso_l
+ObjectTemplate.setPosition -1.15958/0.865797/3.39618
+ObjectTemplate.addTemplate t28_pieniyla_l
+ObjectTemplate.setPosition -1.11234/1/-0.628439
+ObjectTemplate.addTemplate t28_pieniyla_l
+ObjectTemplate.setPosition -1.10616/1/0.901743
+ObjectTemplate.addTemplate t28_pieniyla_l
+ObjectTemplate.setPosition -1.10616/1/2.15
+ObjectTemplate.addTemplate t28_pieniyla_l
+ObjectTemplate.setPosition -1.10616/1/-2.4
+ObjectTemplate.addTemplate t28_pieniala_l
+ObjectTemplate.setPosition -1.11234/0.192728/2.25919
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate t28_pieniala_l_dummy
+ObjectTemplate.setPosition -1.10616/0.192728/2.65313
+ObjectTemplate.addTemplate t28_pieniala_l_dummy
+ObjectTemplate.setPosition -1.10616/0.192728/1.7
+ObjectTemplate.addTemplate t28_pieniala_l_dummy
+ObjectTemplate.setPosition -1.10616/0.192728/1.3
+ObjectTemplate.addTemplate t28_pieniala_l_dummy
+ObjectTemplate.setPosition -1.10616/0.192728/0.8
+ObjectTemplate.addTemplate t28_pieniala_l_dummy
+ObjectTemplate.setPosition -1.10616/0.192728/0.4
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate t28_pieniala_l_dummy
+ObjectTemplate.setPosition -1.10616/0.192728/-0.1
+ObjectTemplate.addTemplate t28_pieniala_l_dummy
+ObjectTemplate.setPosition -1.10616/0.192728/-0.5
+ObjectTemplate.addTemplate t28_pieniala_l_dummy
+ObjectTemplate.setPosition -1.10616/0.192728/-1.0
+ObjectTemplate.addTemplate t28_pieniala_l_dummy
+ObjectTemplate.setPosition -1.10616/0.192728/-1.5
+ObjectTemplate.addTemplate t28_pieniala_l_dummy
+ObjectTemplate.setPosition -1.10616/0.192728/-2.0
+ObjectTemplate.addTemplate t28_pieniala_l
+ObjectTemplate.setPosition -1.10616/0.192828/-2.4
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+
+rem *** t28trackr ***
+ObjectTemplate.create animatedbundle t28trackr
+ObjectTemplate.loadSoundScript Sounds/TigerTrackR.ssc
+ObjectTemplate.geometry t28_TrackR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/t28_track_r.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.012/0
+ObjectTemplate.addTemplate t28_etuiso_r
+ObjectTemplate.setPosition 1.10617/0.865797/3.39618
+ObjectTemplate.addTemplate t28_takaiso_r
+ObjectTemplate.setPosition 1.10617/0.785686/-3.07381
+ObjectTemplate.addTemplate t28_pieniyla_r
+ObjectTemplate.setPosition 1.11234/1/-0.628439
+ObjectTemplate.addTemplate t28_pieniyla_r
+ObjectTemplate.setPosition 1.10616/1/0.901743
+ObjectTemplate.addTemplate t28_pieniyla_r
+ObjectTemplate.setPosition 1.10616/1/2.15
+ObjectTemplate.addTemplate t28_pieniyla_r
+ObjectTemplate.setPosition 1.10616/1/-2.4
+ObjectTemplate.addTemplate t28_pieniala_r
+ObjectTemplate.setPosition 1.11234/0.192728/2.25919
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate t28_pieniala_r_dummy
+ObjectTemplate.setPosition 1.10616/0.192728/2.65313
+ObjectTemplate.addTemplate t28_pieniala_r_dummy
+ObjectTemplate.setPosition 1.10616/0.192728/1.7
+ObjectTemplate.addTemplate t28_pieniala_r_dummy
+ObjectTemplate.setPosition 1.10616/0.192728/1.3
+ObjectTemplate.addTemplate t28_pieniala_r_dummy
+ObjectTemplate.setPosition 1.10616/0.192728/0.8
+ObjectTemplate.addTemplate t28_pieniala_r_dummy
+ObjectTemplate.setPosition 1.10616/0.192728/0.4
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate t28_pieniala_r_dummy
+ObjectTemplate.setPosition 1.10616/0.192728/-0.1
+ObjectTemplate.addTemplate t28_pieniala_r_dummy
+ObjectTemplate.setPosition 1.10616/0.192728/-0.5
+ObjectTemplate.addTemplate t28_pieniala_r_dummy
+ObjectTemplate.setPosition 1.10616/0.192728/-1.0
+ObjectTemplate.addTemplate t28_pieniala_r_dummy
+ObjectTemplate.setPosition 1.10616/0.192728/-1.5
+ObjectTemplate.addTemplate t28_pieniala_r_dummy
+ObjectTemplate.setPosition 1.10616/0.192728/-2.0
+ObjectTemplate.addTemplate t28_pieniala_r
+ObjectTemplate.setPosition 1.10616/0.192828/-2.4
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+
+rem *** t28tower ***
+ObjectTemplate.create rotationalbundle t28tower
+ObjectTemplate.setNetworkableInfo t28TurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/tigertower.ssc
+ObjectTemplate.geometry t28_Tow_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMaxSpeed 15/15/0
+ObjectTemplate.setAcceleration 75/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate t28gunbase
+ObjectTemplate.setPosition -0.0166206/0.495529/0.99638
+ObjectTemplate.addTemplate t28_back_gunner
+ObjectTemplate.setRotation 180/0/0
+
+
+rem *** t28gunbase ***
+ObjectTemplate.create rotationalbundle t28gunbase
+ObjectTemplate.setNetworkableInfo t28GunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/tigerGunBase.ssc
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 15/15/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate t28gunbarrel
+ObjectTemplate.setPosition 0.0152325/-0.0692074/0.0312236
+ObjectTemplate.addTemplate coaxial_DP
+ObjectTemplate.setPosition 0.51/-0.05/-0.00785894
+ObjectTemplate.addTemplate t28camera
+ObjectTemplate.setPosition -0.480608/-0.00109491/0.0558218
+ObjectTemplate.addTemplate lodt28gunnerCockpit
+ObjectTemplate.setPosition 0.597/0.0/0.15
+
+
+rem *** lodt28cockpit ***
+ObjectTemplate.create lodobject lodt28cockpit
+ObjectTemplate.lodselector t28cockpitSelector
+ObjectTemplate.addTemplate t28cockpitexternal
+ObjectTemplate.setPosition -0.631158/-1.4/-0.22
+ObjectTemplate.addTemplate t28cockpitinternal
+ObjectTemplate.setPosition 0.20/-1.27/-0.1
+
+
+rem *** lodT34-76Cockpit ***
+ObjectTemplate.create LodObject lodt28gunnerCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate t28gunnerCockpitExternal
+ObjectTemplate.addTemplate t28gunnerCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector t28gunnercockpitSelector
+
+
+rem *** T34-76CockpitExternal ***
+ObjectTemplate.create SimpleObject t28gunnerCockpitExternal
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** T34-76CockpitInternal ***
+ObjectTemplate.create SimpleObject t28gunnerCockpitInternal
+ObjectTemplate.geometry 1p_t28Gunner
+
+
+rem *** T34-76cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector t28gunnercockpitSelector
+LodSelectorTemplate.addLodDistance 1
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** t28cockpitexternal ***
+ObjectTemplate.create simpleobject t28cockpitexternal
+
+
+rem *** t28cockpitinternal ***
+ObjectTemplate.create simpleobject t28cockpitinternal
+ObjectTemplate.geometry 1P_t28_Driver_M1
+
+
+rem *** t28camera ***
+ObjectTemplate.create camera t28camera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+ObjectTemplate.OutsideHudOffset 0.26/0.606/-0.184
+
+
+rem *** t28_drivercamera ***
+ObjectTemplate.create camera t28_drivercamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+
+rem *** t28simple ***
+ObjectTemplate.create simpleobject t28simple
+ObjectTemplate.geometry t28_Hull_L1
+
+
+rem *** t28wreck ***
+ObjectTemplate.create simpleobject t28wreck
+ObjectTemplate.geometry Wreck_t28_m1
+
+
+rem *** t28_right_tower ***
+ObjectTemplate.create playercontrolobject t28_right_tower
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo t28BodyInfo
+ObjectTemplate.aiTemplate t26-m31Cannon
+ObjectTemplate.setSoldierExitLocation 1/1.5/2 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/110
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.DirBarXScale 20
+ObjectTemplate.DirBarYScaleAbove 40
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate t28_kkturret_r
+ObjectTemplate.setPosition 0.8/0.5/2
+ObjectTemplate.addTemplate t28entry
+
+
+rem *** t28_left_tower ***
+ObjectTemplate.create playercontrolobject t28_left_tower
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo t28BodyInfo
+ObjectTemplate.aiTemplate t26-m31Cannon
+ObjectTemplate.setSoldierExitLocation -1/1.5/2 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/100
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.DirBarXScale 20
+ObjectTemplate.DirBarYScaleAbove 40
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate t28_kkturret_l
+ObjectTemplate.setPosition -0.8/0.45/2
+ObjectTemplate.addTemplate t28entry
+
+
+rem *** t28_kkturret_l ***
+ObjectTemplate.create rotationalbundle t28_kkturret_l
+ObjectTemplate.setNetworkableInfo t28TurretInfo
+ObjectTemplate.loadSoundScript Sounds/tigerTurret.ssc
+ObjectTemplate.geometry t28_kkturret
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.MinRotation -135/0/0
+ObjectTemplate.MaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate t28_kkturret_gunbase_l
+ObjectTemplate.setPosition 0.154795/-0.094339/0.371315
+
+
+rem *** t28_kkturret_r ***
+ObjectTemplate.create rotationalbundle t28_kkturret_r
+ObjectTemplate.setNetworkableInfo t28TurretInfo
+ObjectTemplate.loadSoundScript Sounds/tigerTurret.ssc
+ObjectTemplate.geometry t28_kkturret
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.MinRotation -30/0/0
+ObjectTemplate.MaxRotation 135/0/0
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate t28_kkturret_gunbase_r
+ObjectTemplate.setPosition 0.154001/-0.094339/0.371265
+
+
+rem *** t28_kkturret_gunbase_l ***
+ObjectTemplate.create rotationalbundle t28_kkturret_gunbase_l
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo t26-m31GunInfo
+ObjectTemplate.loadSoundScript Sounds/tigergunbase.ssc
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate t28_kkturret_gunnercamera_l
+ObjectTemplate.setPosition -0.0765339/0.499474/0.305648
+ObjectTemplate.addTemplate lodNwGCockpit
+ObjectTemplate.setPosition 1.035/0.5/0.45
+ObjectTemplate.addTemplate coaxial_DP
+ObjectTemplate.setPosition 0/0.3/0.2
+ObjectTemplate.addTemplate mg_view
+ObjectTemplate.setPosition 0/0/-1
+
+
+rem *** t28_kkturret_gunbase_r ***
+ObjectTemplate.create rotationalbundle t28_kkturret_gunbase_r
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo t26-m31GunInfo
+ObjectTemplate.loadSoundScript Sounds/tigergunbase.ssc
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate t28_kkturret_gunnercamera_r
+ObjectTemplate.setPosition -0.0765339/0.499474/0.305648
+ObjectTemplate.addTemplate lodNwGCockpit
+ObjectTemplate.setPosition 1.035/0.5/0.45
+ObjectTemplate.addTemplate coaxial_DP
+ObjectTemplate.setPosition 0/0.3/0.2
+ObjectTemplate.addTemplate mg_view
+ObjectTemplate.setPosition 0/0/1
+
+ObjectTemplate.create SimpleObject mg_view
+ObjectTemplate.geometry mg_view
+
+
+rem *** t28_kkturret_gunnercamera_l ***
+ObjectTemplate.create camera t28_kkturret_gunnercamera_l
+ObjectTemplate.addTemplate lodt28sight
+ObjectTemplate.setPosition 0/0/0.3
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+
+rem *** t28_kkturret_gunnercamera_r ***
+ObjectTemplate.create camera t28_kkturret_gunnercamera_r
+ObjectTemplate.addTemplate lodt28sight
+ObjectTemplate.setPosition 0/0/0.3
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+
+
+rem *** t28_gunner ***
+ObjectTemplate.create playercontrolobject t28_gunner
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo t28BodyInfo
+ObjectTemplate.aiTemplate t26-m31Cannon
+ObjectTemplate.setSoldierExitLocation -0/1.5/0 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/icon_gunner.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.DirBarXScale 20
+ObjectTemplate.DirBarYScaleAbove 40
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate t28entry
+ObjectTemplate.addTemplate t28tower
+ObjectTemplate.setPosition -0.0166205/0.860005/0.565461
+
+rem *** T34-85Camera_runko_kk ***
+ObjectTemplate.create Camera t28Camera_back_gunner
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+rem *** t28cockpitselector ***
+LodSelectorTemplate.create distcompareselector t28cockpitselector
+LodSelectorTemplate.addLodDistance 1
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** t26-m33cockpitselector ***
+LodSelectorTemplate.create distcompareselector t28cockpitselector
+LodSelectorTemplate.addLodDistance 1.2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+ObjectTemplate.create simpleobject t28_gunnersight
+ObjectTemplate.geometry t28_Sight
+
+ObjectTemplate.create simpleobject t28_gunnersight_temp
+
+rem *** t26-m33cockpitselector ***
+LodSelectorTemplate.create distcompareselector t28_gunnersightselector
+LodSelectorTemplate.addLodDistance 1.2
+LodSelectorTemplate.addLodComparison 0.5
+
+ObjectTemplate.create lodobject lodt28sight
+ObjectTemplate.lodselector t28_gunnersightselector
+ObjectTemplate.addTemplate t28_gunnersight_temp
+ObjectTemplate.addTemplate t28_gunnersight
+ObjectTemplate.setPosition 0.0/0/0.5
+
+rem *** t28lodselector ***
+LodSelectorTemplate.create distcompareselector2 t28lodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 300

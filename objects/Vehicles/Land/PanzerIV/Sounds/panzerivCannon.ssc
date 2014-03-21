@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/panzerivCannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/panzerivCannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/panzerivCannon.ssc

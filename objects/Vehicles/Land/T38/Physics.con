@@ -1,0 +1,182 @@
+
+
+rem *** t38engine_r ***
+ObjectTemplate.create engine t38engine_r
+ObjectTemplate.setNetworkableInfo t38EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/t38Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.5
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate t38trackr
+ObjectTemplate.setPosition -0.018/0/0.383493
+
+
+rem *** t38engine_l ***
+ObjectTemplate.create engine t38engine_l
+ObjectTemplate.setNetworkableInfo t38EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/t38Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.5
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate t38trackl
+ObjectTemplate.setPosition 0.017/0/0.383493
+
+
+
+
+rem ***  t38engine_water ***
+ObjectTemplate.create Engine t38engine_water
+ObjectTemplate.setNetworkableInfo CDNRaftEngineInfo
+ObjectTemplate.loadSoundScript Sounds/Lcvp_Engine_Water.ssc
+ObjectTemplate.setMinRotation 0/0/-750
+ObjectTemplate.setMaxRotation 0/0/1000
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 2
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNoPropellerEffectAtSpeed 10
+
+
+rem *** t38_Rudder_Stern  ***
+ObjectTemplate.create Wing t38_Rudder_Stern
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/0.1/0
+ObjectTemplate.setAcceleration 0/-10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 4
+
+
+rem *** t38_Rudder_Aft ***
+ObjectTemplate.create Wing t38_Rudder_Aft
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/0.1/0
+ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 4
+
+
+
+rem *** t38_smallwheel_l ***
+ObjectTemplate.create spring t38_smallwheel_l
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry t38_smallwheel_l_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 17.5
+ObjectTemplate.setDamping 2.2
+
+
+rem *** t38_smallwheel_r ***
+ObjectTemplate.create spring t38_smallwheel_r
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry t38_smallwheel_r_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 17.5
+ObjectTemplate.setDamping 2.2
+
+
+rem *** t38_frontwheel_l ***
+ObjectTemplate.create spring t38_frontwheel_l
+ObjectTemplate.geometry t38_frontwheel_l_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t38_frontwheel_r ***
+ObjectTemplate.create spring t38_frontwheel_r
+ObjectTemplate.geometry t38_frontwheel_r_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t38_backwheel_l ***
+ObjectTemplate.create spring t38_backwheel_l
+ObjectTemplate.geometry t38_backwheel_l_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t38_backwheel_r ***
+ObjectTemplate.create spring t38_backwheel_r
+ObjectTemplate.geometry t38_backwheel_r_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t38_smallwheel_dummy_l ***
+ObjectTemplate.create spring t38_smallwheel_dummy_l
+ObjectTemplate.geometry t38_smallwheel_dummy_l_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t38_smallwheel_dummy_r ***
+ObjectTemplate.create spring t38_smallwheel_dummy_r
+ObjectTemplate.geometry t38_smallwheel_dummy_r_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+

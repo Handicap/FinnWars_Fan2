@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo 76rk27TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo 76rk27GunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo 76rk27BodyInfo
+NetworkableInfo.setPredictionMode PMLinear

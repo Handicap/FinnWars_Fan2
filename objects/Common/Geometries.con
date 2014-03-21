@@ -1,0 +1,78 @@
+GeometryTemplate.create StandardMesh tracklight_m1
+GeometryTemplate.file tracklight_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklight_m1pysty
+GeometryTemplate.file tracklight_m1pysty
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tripod_mobmaxim
+GeometryTemplate.file tripod_mobmaxim_m3
+
+GeometryTemplate.create StandardMesh tripod_mobmaxim2
+GeometryTemplate.file tripod_mobmaxim_2_m1
+
+GeometryTemplate.create StandardMesh projectile_m1
+GeometryTemplate.file projectile_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh flame_projectile
+GeometryTemplate.file flame_projectile
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tripod_stick_m1
+GeometryTemplate.file tripod_stick_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+GeometryTemplate.create StandardMesh tripod_temp
+GeometryTemplate.file tripod_stick_m1
+GeometryTemplate.scale 0.0001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+GeometryTemplate.create StandardMesh tripod_stick_2_m1
+GeometryTemplate.file tripod_stick_2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+GeometryTemplate.create StandardMesh tripod_stick_mg42_m1
+GeometryTemplate.file tripod_stick_mg42_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200

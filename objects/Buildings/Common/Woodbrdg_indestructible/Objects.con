@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject Woodbrdg_indestructible
+ObjectTemplate.geometry Woodbrdg_indestructible
+ObjectTemplate.setHasCollisionPhysics 1

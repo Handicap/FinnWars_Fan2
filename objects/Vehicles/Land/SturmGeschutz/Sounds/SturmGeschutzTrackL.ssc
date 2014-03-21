@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SturmGeschutzTrackL.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/SturmGeschutzTrackL.ssc
+	
+#templateLevel LOW
+
+	#include Low/SturmGeschutzTrackL.ssc

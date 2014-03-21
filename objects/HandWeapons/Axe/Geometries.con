@@ -1,0 +1,20 @@
+GeometryTemplate.create StandardMesh Axe
+GeometryTemplate.file axe
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Shad_axe
+GeometryTemplate.file axe
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 2
+GeometryTemplate.setLodDistance 2 3
+GeometryTemplate.setLodDistance 3 4
+GeometryTemplate.setLodDistance 4 5
+GeometryTemplate.setLodDistance 5 6
+

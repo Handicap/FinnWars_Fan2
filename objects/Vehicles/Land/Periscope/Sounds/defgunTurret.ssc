@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/defgunTurret.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/defgunTurret.ssc
+	
+#templateLevel LOW
+
+	#include Low/defgunTurret.ssc

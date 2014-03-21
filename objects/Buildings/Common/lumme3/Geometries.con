@@ -1,0 +1,5 @@
+GeometryTemplate.create StandardMesh lumme3
+GeometryTemplate.file lumme3
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 30

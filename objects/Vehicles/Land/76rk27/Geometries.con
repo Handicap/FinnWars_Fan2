@@ -1,0 +1,36 @@
+renderer.beginGlobalCluster 76rk27
+
+GeometryTemplate.create StandardMesh 76rk27_Pipe
+GeometryTemplate.file 76rk_cannon
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 76rk27_hull
+GeometryTemplate.file 76rk_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+renderer.endGlobalCluster
+
+beginrem
+GeometryTemplate.create StandardMesh 76rk27_Hull_L1
+GeometryTemplate.file 76rk27
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_76rk27_M1
+GeometryTemplate.file Wreck_76rk27_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+endrem

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ChihaTurret.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ChihaTurret.ssc
+	
+#templateLevel LOW
+
+	#include Low/ChihaTurret.ssc

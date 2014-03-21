@@ -1,0 +1,7 @@
+NetworkableInfo.createNewInfo HanomagInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo HanomagPassengerInfo
+NetworkableInfo.setPredictionMode PMNone
+NetworkableInfo.setBasePriority 0
+

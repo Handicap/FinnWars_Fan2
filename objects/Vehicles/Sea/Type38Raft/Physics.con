@@ -1,0 +1,59 @@
+
+
+rem *** Type38Raft_Engine ***
+ObjectTemplate.create Engine Type38Raft_Engine
+ObjectTemplate.setNetworkableInfo Type38RaftEngineInfo
+ObjectTemplate.loadSoundScript Sounds/Lcvp_Engine_Water.ssc
+ObjectTemplate.setMinRotation 0/0/-750
+ObjectTemplate.setMaxRotation 0/0/1500
+ObjectTemplate.setMaxSpeed 0/0/1500
+ObjectTemplate.setAcceleration 0/0/1500
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 7
+ObjectTemplate.setDifferential .7
+ObjectTemplate.setNoPropellerEffectAtSpeed 15
+
+
+rem *** Type38Raft_Rudder_Stern ***
+ObjectTemplate.create Wing Type38Raft_Rudder_Stern
+ObjectTemplate.setMinRotation 0/-7.5/0
+ObjectTemplate.setMaxRotation 0/7.5/0
+ObjectTemplate.setMaxSpeed 0/10/0
+ObjectTemplate.setAcceleration 0/-15/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Type38Raft_Rudder_Aft ***
+ObjectTemplate.create Wing Type38Raft_Rudder_Aft
+ObjectTemplate.setMinRotation 0/-7.5/0
+ObjectTemplate.setMaxRotation 0/7.5/0
+ObjectTemplate.setMaxSpeed 0/10/0
+ObjectTemplate.setAcceleration 0/15/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Type38Raft_Floater ***
+ObjectTemplate.create FloatingBundle Type38Raft_Floater
+ObjectTemplate.setHullHeight 0.2
+ObjectTemplate.setFloatMaxLift 6
+ObjectTemplate.setFloatMinLift 6
+ObjectTemplate.setSinkingSpeedMod 0
+
+beginrem
+rem *** Type38Raft_Floater ***
+ObjectTemplate.create FloatingBundle Type38Raft_Floater2
+ObjectTemplate.setHullHeight 0.2
+ObjectTemplate.setFloatMaxLift 6
+ObjectTemplate.setFloatMinLift 6
+ObjectTemplate.setSinkingSpeedMod 7
+endrem

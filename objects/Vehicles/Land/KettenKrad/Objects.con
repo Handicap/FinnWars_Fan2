@@ -1,0 +1,408 @@
+rem *** KettenKrad ***
+ObjectTemplate.create PlayerControlObject KettenKrad
+ObjectTemplate.NameTagOffset 0/2.0/0.429
+ObjectTemplate.setNetworkableInfo KettenKradInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 3.5
+ObjectTemplate.mass 2500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 70
+ObjectTemplate.maxhitpoints 70
+ObjectTemplate.material 44
+ObjectTemplate.criticalDamage 30
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.addArmorEffect 30 e_KettenKradDamage 0/0.98/0.05
+ObjectTemplate.addArmorEffect 8 e_KettenKradFire 0/1.57/0.15
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate KettenKrad
+rem -------------------------------------
+ObjectTemplate.addTemplate lodKettenKrad
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/0 0/0/0
+ObjectTemplate.GUIIndex 59
+ObjectTemplate.setVehicleIcon "Vehicle/IconKettenKrad.tga"
+ObjectTemplate.setVehicleIconPos 70/88
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTKettenkrad
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodKettenKrad ***
+ObjectTemplate.create LodObject lodKettenKrad
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKradComplex
+ObjectTemplate.addTemplate KettenKradSimple
+ObjectTemplate.addTemplate KettenKradWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector KettenKradLodSelector
+
+rem *** KettenKradComplex ***
+ObjectTemplate.create Bundle KettenKradComplex
+ObjectTemplate.geometry KettenKrad_Hull_M1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKradDriverSeat
+ObjectTemplate.setPosition 0/1.2/0.429
+ObjectTemplate.addTemplate KettenKradCamera
+ObjectTemplate.setPosition 0/1.07/0.35
+ObjectTemplate.addTemplate KettenKradEntry
+ObjectTemplate.setPosition 0/0/1.3
+ObjectTemplate.addTemplate KettenKradEntry
+ObjectTemplate.setPosition 0/0/-1.599
+ObjectTemplate.addTemplate KettenKradHorn
+ObjectTemplate.addTemplate KettenKrad_MG42_PCO1
+ObjectTemplate.setPosition 0/0.425/-0.869
+ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.addTemplate KettenKradEngine
+ObjectTemplate.setPosition 0/0.82/0
+ObjectTemplate.addTemplate KettenKradSteeringDummy
+ObjectTemplate.setPosition 0/0.635/1.09
+rem ObjectTemplate.setPosition 0/0.815/1.09
+
+rem *** KettenKradSimple ***
+ObjectTemplate.create SimpleObject KettenKradSimple
+ObjectTemplate.geometry KettenKrad_Hull_L1
+
+rem *** KettenKradWreck ***
+ObjectTemplate.create SimpleObject KettenKradWreck
+ObjectTemplate.geometry Wreck_KettenKrad_m1
+
+rem *** KettenKradLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 KettenKradLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 135
+
+rem ****************************************************
+rem                KettenKrad Cameras
+rem ****************************************************
+
+rem *** KettenKradCamera ***
+ObjectTemplate.create Camera KettenKradCamera
+ObjectTemplate.setMinRotation -90/-50/0
+ObjectTemplate.setMaxRotation 90/5/0
+ObjectTemplate.setMaxSpeed 180/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+rem *** KettenKradCamera2 ***
+ObjectTemplate.create Camera KettenKradCamera2
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+rem ****************************************************
+rem                KettenKrad EntryPoints
+rem ****************************************************
+
+rem *** KettenKradEntry ***
+ObjectTemplate.create EntryPoint KettenKradEntry
+ObjectTemplate.setEntryRadius 2.8
+
+rem ****************************************************
+rem                KettenKrad Gunners w/Objects
+rem ****************************************************
+
+rem *** KettenKrad_MG42_PCO1 ***
+ObjectTemplate.create PlayerControlObject KettenKrad_MG42_PCO1
+ObjectTemplate.NameTagOffset 0/0.60/0
+ObjectTemplate.setNetworkableInfo KettenKradInfo
+ObjectTemplate.aiTemplate KettenKradPassenger
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKradEntry
+ObjectTemplate.setPosition 0/-0.425/0.73
+ObjectTemplate.addTemplate KettenKradEntry
+ObjectTemplate.setPosition 0/-0.425/-2.169
+ObjectTemplate.addTemplate KettenKradMG42HolderPCO1
+ObjectTemplate.setPosition 0/0.35/0.275
+ObjectTemplate.addTemplate KettenKradMG42Seat
+ObjectTemplate.setPosition 0/0.35/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/0.5/1.5 0/0/0
+ObjectTemplate.GUIIndex 60
+ObjectTemplate.setVehicleIcon "Vehicle/IconKettenKrad.tga"
+ObjectTemplate.setVehicleIconPos 53/70
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTKettenkrad
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** KettenKradMG42HolderPCO1 ***
+ObjectTemplate.create RotationalBundle KettenKradMG42HolderPCO1
+ObjectTemplate.setNetworkableInfo KettenKradInfo
+ObjectTemplate.loadSoundScript Sounds/HoHaTurret.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKradRotation_MG42
+rem -------------------------------------
+ObjectTemplate.setMinRotation -45/0/0
+ObjectTemplate.setMaxRotation 45/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setAutomaticYawStabilization 1
+
+rem *** KettenKradGunMount ***
+ObjectTemplate.create SimpleObject KettenKradGunMount
+ObjectTemplate.geometry Chi-ha_MGun_mount_M1
+
+rem *** KettenKradRotation_MG42 ***
+ObjectTemplate.create RotationalBundle KettenKradRotation_MG42
+ObjectTemplate.setNetworkableInfo KettenKradInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKradGunMount
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate MG42
+ObjectTemplate.setPosition 0/0.06/0.141
+ObjectTemplate.addTemplate KettenKradCamera2
+ObjectTemplate.setPosition 0/0.35/-0.129
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setAutomaticPitchStabilization 1
+
+
+rem ****************************************************
+rem                KettenKrad SeatObjects
+rem ****************************************************
+
+rem *** KettenKradDriverSeat ***
+ObjectTemplate.create SeatObject KettenKradDriverSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatAnimationLowerBody Lb_PassengerInHanomag
+
+
+rem *** KettenKradMG42Seat ***
+ObjectTemplate.create SeatObject KettenKradMG42Seat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem ****************************************************
+rem                 KettenKrad SteeringWheel
+rem ****************************************************
+
+rem *** KettenKradSteeringDummy ***
+ObjectTemplate.create AnimatedBundle KettenKradSteeringDummy
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKradSteering
+
+
+rem *** KettenKradSteering ***
+ObjectTemplate.create RotationalBundle KettenKradSteering
+ObjectTemplate.setNetworkableInfo KettenKradSteeringInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate lodKettenKradSteering
+
+ObjectTemplate.addTemplate Attach_R_Hand
+ObjectTemplate.setPosition 0.27/0.26/-0.328
+ObjectTemplate.setRotation 122.764/4.645/159.856
+ObjectTemplate.addTemplate Attach_L_Hand
+ObjectTemplate.setPosition -0.288/0.27/-0.328
+ObjectTemplate.setRotation 77.08/-4.135/175.219
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 240/0/0
+ObjectTemplate.setAcceleration 120/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** lodKettenKradSteering ***
+ObjectTemplate.create LodObject lodKettenKradSteering
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKradHighRSteering
+ObjectTemplate.addTemplate KettenKradLowSteering
+rem -------------------------------------
+ObjectTemplate.lodSelector KettenKradSteeringSelector
+
+rem *** KettenKradHighRSteering ***
+ObjectTemplate.create SimpleObject KettenKradHighRSteering
+ObjectTemplate.geometry 1P_KettenKrad_Str_M1
+
+rem *** KettenKradLowSteering ***
+ObjectTemplate.create SimpleObject KettenKradLowSteering
+ObjectTemplate.geometry KettenKrad_Steering_M1
+
+rem *** KettenKradSteeringSelector ***
+LodSelectorTemplate.create DistanceSelector KettenKradSteeringSelector
+LodSelectorTemplate.addLodDistance 10
+
+
+rem ****************************************************
+rem              KettenKrad Tires/Track Wheels
+rem ****************************************************
+
+rem *** KettenKradFrontSpring ***
+ObjectTemplate.create RotationalBundle KettenKradFrontWheel
+ObjectTemplate.setNetworkableInfo KettenKradInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKradFrontSpring
+ObjectTemplate.setPosition 0/-0.799/0.302
+rem -------------------------------------
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 320/0/0
+ObjectTemplate.setAcceleration 160/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** KettenKradFrontLSpring ***
+ObjectTemplate.create RotationalBundle KettenKradFrontWheelL
+ObjectTemplate.setNetworkableInfo KettenKradInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKradFrontSpringL
+ObjectTemplate.setPosition 0/-0.799/0.302
+rem -------------------------------------
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setMaxSpeed 240/0/0
+ObjectTemplate.setAcceleration 120/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+   
+rem *** KettenKradFrontRSpring ***
+ObjectTemplate.create RotationalBundle KettenKradFrontWheelR
+ObjectTemplate.setNetworkableInfo KettenKradInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKradFrontSpringR
+ObjectTemplate.setPosition 0/-0.799/0.302
+rem -------------------------------------
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setMaxSpeed 240/0/0
+ObjectTemplate.setAcceleration 120/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem ****************************************************
+rem                  KettenKrad Tracks
+rem ****************************************************
+
+rem *** hanomagTrackL ***
+ObjectTemplate.create AnimatedBundle KettenKrad_TrackL
+ObjectTemplate.geometry KettenKrad_LTrack_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/KettenKrad_LTrack_M1.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.012/0
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKrad_LMediumWheel
+ObjectTemplate.setPosition -0.438/0.44/0.884
+
+ObjectTemplate.addTemplate KettenKrad_LLargeWheel_Dummy
+ObjectTemplate.setPosition -0.439/0.229/0.315
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate KettenKrad_LLargeWheel_Dummy
+ObjectTemplate.setPosition -0.533/0.229/-0.063
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate KettenKrad_LLargeWheel_Dummy
+ObjectTemplate.setPosition -0.439/0.229/-0.426
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate KettenKrad_LLargeWheel_WithSmoke
+ObjectTemplate.setPosition -0.533/0.229/-0.803
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate KettenKrad_LLargeWheel_Dummy
+ObjectTemplate.setPosition -0.439/0.389/-1.048
+rem -------------------------------------
+beginrem
+	ObjectTemplate.setCheckBoneDistance 0.3
+	ObjectTemplate.buildSkeleton animations/KettenKrad_LTrack_M1.ske
+	ObjectTemplate.buildSkin KettenKrad_LTrack_M1 animations/KettenKrad_LTrack_M1.skn
+endrem
+
+
+rem *** hanomagTrackR ***
+ObjectTemplate.create AnimatedBundle KettenKrad_TrackR
+ObjectTemplate.geometry KettenKrad_RTrack_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/KettenKrad_RTrack_M1.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.012/0
+rem -------------------------------------
+ObjectTemplate.addTemplate KettenKrad_RMediumWheel
+ObjectTemplate.setPosition 0.438/0.44/0.884
+
+ObjectTemplate.addTemplate KettenKrad_RLargeWheel_Dummy
+ObjectTemplate.setPosition 0.439/0.229/0.315
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate KettenKrad_RLargeWheel_Dummy
+ObjectTemplate.setPosition 0.533/0.229/-0.063
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate KettenKrad_RLargeWheel_Dummy
+ObjectTemplate.setPosition 0.439/0.229/-0.426
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate KettenKrad_RLargeWheel_WithSmoke
+ObjectTemplate.setPosition 0.533/0.229/-0.803
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate KettenKrad_RLargeWheel_Dummy
+ObjectTemplate.setPosition 0.439/0.389/-1.048
+rem -------------------------------------
+beginrem
+	ObjectTemplate.setCheckBoneDistance 0.3
+	ObjectTemplate.buildSkeleton animations/KettenKrad_RTrack_M1.ske
+	ObjectTemplate.buildSkin KettenKrad_RTrack_M1 animations/KettenKrad_RTrack_M1.skn
+endrem
+

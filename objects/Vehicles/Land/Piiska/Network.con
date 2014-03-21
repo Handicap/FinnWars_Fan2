@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo PiiskaTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo PiiskaGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo PiiskaBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

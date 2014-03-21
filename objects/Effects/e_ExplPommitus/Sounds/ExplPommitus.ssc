@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include ExplPommitus_MedLow.ssc
+	
+#templateLevel MEDIUM
+
+	#include ExplPommitus_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include ExplgPommitus_MedLow.ssc

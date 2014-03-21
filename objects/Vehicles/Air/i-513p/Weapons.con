@@ -1,0 +1,61 @@
+
+
+rem *** I-153GunBarrel ***
+ObjectTemplate.create FireArms I-153pGuns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/I-153fire.ssc
+ObjectTemplate.aiTemplate I-153MachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_Muzzleko
+rem ObjectTemplate.addTemplate e_Muzzleko
+rem ObjectTemplate.addTemplate em_ShellAir
+rem ObjectTemplate.setPosition -0.199/-0.199/-0.699
+rem -------------------------------------
+ObjectTemplate.projectileTemplate I-153Projectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/5/0/0
+ObjectTemplate.magSize 2500
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 850
+ObjectTemplate.roundOfFire 30
+ObjectTemplate.setMinDev 1.2
+ObjectTemplate.addFireArmsPosition 0.215/1.15/1.6 0/0/0
+ObjectTemplate.addFireArmsPosition -0.215/1.15/1.6 0/0/0
+ObjectTemplate.addFireArmsPosition 0.425/0.6/1.7 0/0/0
+ObjectTemplate.addFireArmsPosition -0.425/0.6/1.7 0/0/0
+ObjectTemplate.AmmoType	10
+
+rem *** I-153Projectile ***
+ObjectTemplate.create Projectile I-153Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/Projectile.ssc
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/1.5/0/0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.material 256
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+
+rem *** SpitfireBombDummy ***
+ObjectTemplate.create FireArms I-153pBomb
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate HawkP75Bombs
+ObjectTemplate.visibleDummyProjectileTemplate VITTUSAATANAPERKELE
+ObjectTemplate.projectileTemplate FighterBomb
+ObjectTemplate.projectilePosition 0/-1/0
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.addFireArmsPosition -2.1/-0.0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 2.1/-0.0/0 0/0/0
+ObjectTemplate.addFireArmsPosition -2.4/-0.0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 2.4/-0.0/0 0/0/0
+ObjectTemplate.AmmoType 7
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 1
+ObjectTemplate.roundOfFire 3
+ObjectTemplate.velocity 0
+ObjectTemplate.setInputFire c_PIAltFire
+

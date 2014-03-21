@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject hlato1
+ObjectTemplate.geometry hlato1
+ObjectTemplate.setHasCollisionPhysics 1

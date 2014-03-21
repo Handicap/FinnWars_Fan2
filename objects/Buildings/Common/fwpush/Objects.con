@@ -1,0 +1,183 @@
+ObjectTemplate.create PlayerControlObject FWPush
+ObjectTemplate.setNetworkableInfo FWPushBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 4500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 201
+ObjectTemplate.hpLostWhileCriticalDamage 10
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 0
+ObjectTemplate.timetoliveafterdeath 20
+ObjectTemplate.startoneffects 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodFWPush
+
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition 1.8/0/1.8
+ObjectTemplate.setRotation 45.00/0.00/0.00
+
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition 2.6/0/0
+ObjectTemplate.setRotation 90.00/0.00/0.00
+
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition 1.8/0/-1.8
+ObjectTemplate.setRotation -45.00/0.00/0.00
+
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition 0/0/-2.6
+ObjectTemplate.setRotation 0.00/0.00/0.00
+
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition -1.8/0/-1.8
+ObjectTemplate.setRotation 45.00/0.00/0.00
+
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition -2.6/0/0
+ObjectTemplate.setRotation 90.00/0.00/0.00
+
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition -1.8/0/1.8
+ObjectTemplate.setRotation -45.00/0.00/0.00
+
+
+ObjectTemplate.addTemplate sandbag_2m_m1
+ObjectTemplate.setPosition 0/0/2.6
+ObjectTemplate.setRotation 0.00/0.00/0.00
+
+
+rem ObjectTemplate.addTemplate tankobs_ste_M1
+rem ObjectTemplate.setPosition 0/0/1
+rem ObjectTemplate.setRotation 62.00/0.00/0.00
+
+
+rem ObjectTemplate.addTemplate tankobs_ste_M1
+rem ObjectTemplate.setPosition 1/0/-1
+rem ObjectTemplate.setRotation 12.00/0.00/0.00
+
+
+rem ObjectTemplate.addTemplate tankobs_ste_M1
+rem ObjectTemplate.setPosition -1/0/-1
+rem ObjectTemplate.setRotation 34.00/0.00/0.00
+
+
+
+rem -------------------------------------
+ObjectTemplate.GUIIndex 30
+ObjectTemplate.setVehicleIcon ""
+ObjectTemplate.setVehicleIconPos 80/57
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setMinimapIcon ""
+ObjectTemplate.hasRestrictedExit 1
+rem ------------------------------------
+ObjectTemplate.addTemplate FWPushKillInside
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.create SupplyDepot FWPushKillInside
+ObjectTemplate.radius 3
+ObjectTemplate.team 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 1
+
+ObjectTemplate.addVehicleType zis5_cover -1 -1000 0
+ObjectTemplate.setHealth -1 -1000 0
+
+
+rem *** lodFlagProtector ***
+ObjectTemplate.create LodObject lodFWPush
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FWPushComplex
+ObjectTemplate.addTemplate FWPushSimple
+ObjectTemplate.addTemplate FWPushWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector FWPushLodSelector
+
+
+rem *** FlagProtectorComplex ***
+rem ObjectTemplate.create Bundle FWPushComplex
+rem ObjectTemplate.geometry FWPush
+rem ObjectTemplate.setHasCollisionPhysics 1
+
+
+rem *** FlagProtectorComplex ***
+ObjectTemplate.create Bundle FWPushComplex
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodFWPushCockpit
+rem -------------------------------------
+
+rem *** FlagProtectorCockpit ***
+ObjectTemplate.create LodObject lodFWPushCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate FWPushCockpitExternal
+ObjectTemplate.addTemplate FWPushCockpitExternal
+rem -------------------------------------
+ObjectTemplate.lodSelector FWPushCockpitSelector
+
+
+rem *** FlagProtectorCockpitExternal ***
+ObjectTemplate.create SimpleObject FWPushCockpitExternal
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry FWPush
+
+rem *** FlagProtectorCockpitInternal ***
+ObjectTemplate.create Bundle FWPushCockpitInternal
+ObjectTemplate.geometry
+
+rem *** FlagProtectorCockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector FWPushCockpitSelector
+LodSelectorTemplate.addLodDistance 3.05
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** FlagProtectorSimple ***
+ObjectTemplate.create SimpleObject FWPushSimple
+ObjectTemplate.geometry FWPush
+
+
+rem *** FlagProtectorWreck ***
+ObjectTemplate.create Bundle FWPushWreck
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate FWPushWreckS
+
+
+rem *** FlagProtectorWreckS ***
+ObjectTemplate.create SimpleObject FWPushWreckS
+ObjectTemplate.geometry FWPush
+
+
+rem *** Factory_DestLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 FWPushLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 300

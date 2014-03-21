@@ -1,0 +1,45 @@
+ObjectTemplate.create Bundle citymesh1_m1
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate citymesh1_m1
+ObjectTemplate.addTemplate lodcitymesh1
+ObjectTemplate.addTemplate citymesh1fence_m1
+
+LodSelectorTemplate.create DistanceSelector citymesh1Selector
+LodSelectorTemplate.addLodDistance 200
+ObjectTemplate.create LodObject lodcitymesh1
+ObjectTemplate.lodselector citymesh1Selector
+ObjectTemplate.addTemplate citymesh1Interior
+ObjectTemplate.addTemplate citymesh1Exterior
+
+ObjectTemplate.create bundle citymesh1Interior
+ObjectTemplate.geometry citymesh1_m1
+
+rem ---------------------------
+
+ObjectTemplate.addTemplate eurocarpet1_M1
+ObjectTemplate.setPosition 0.5/8.42/-0.21
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate eurocarpet2_M1
+ObjectTemplate.setPosition 0.1/12.57/-1
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate euchair02_M1
+ObjectTemplate.setPosition -1.327/8.655/1.103
+ObjectTemplate.setRotation 159.052/-3.357/-90.934
+
+
+ObjectTemplate.addTemplate eubooksh_M1
+ObjectTemplate.setPosition 2.5/12.51/-4.033
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.create SimpleObject citymesh1fence_m1
+ObjectTemplate.geometry citymesh1fence_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addToCollisionGroup c_CGProjectiles
+
+
+rem ---------------------------
+ObjectTemplate.create SimpleObject citymesh1Exterior
+ObjectTemplate.geometry citymesh1_m2

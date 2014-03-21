@@ -1,0 +1,14 @@
+GeometryTemplate.create StandardMesh Woodbrdg_M1
+GeometryTemplate.file Woodbrdg_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 60
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 300
+
+GeometryTemplate.create StandardMesh woodbrd_piece
+GeometryTemplate.file woodbrd_piece
+
+GeometryTemplate.create StandardMesh woodbrd_destroy
+GeometryTemplate.file woodbrd_destroy

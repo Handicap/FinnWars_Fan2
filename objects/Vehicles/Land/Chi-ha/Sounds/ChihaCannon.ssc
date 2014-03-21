@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ChihaCannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ChihaCannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/ChihaCannon.ssc

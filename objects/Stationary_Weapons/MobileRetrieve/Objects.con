@@ -1,0 +1,71 @@
+rem *** MobileRetrieve ***
+ObjectTemplate.create PlayerControlObject MobileRetrieve
+ObjectTemplate.setNetworkableInfo PTRaftBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.drag 0.999
+ObjectTemplate.mass 5000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 2
+ObjectTemplate.maxhitpoints 2
+ObjectTemplate.material 43
+ObjectTemplate.criticalDamage 10
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.hpLostWhileCriticalDamage 2.75
+ObjectTemplate.hpLostWhileDamageFromWater 0.5
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.explosionForce 0
+ObjectTemplate.speedMod 1.0
+ObjectTemplate.hpLostWhileUpSideDown 25
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.aiTemplate PTRaftAI_MobileRetrieve0
+ObjectTemplate.addTemplate lodPTRaft_MobileRetrieve1
+ObjectTemplate.setPcoId 0
+ObjectTemplate.setSoldierExitLocation -0.3/0.3/-1.5 0/0/0
+ObjectTemplate.GUIIndex 42
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Elco_Raft.tga"
+ObjectTemplate.setVehicleIconPos 45/75
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTPTRaft
+ObjectTemplate.exitTimer -0.5
+ObjectTemplate.exitSpeedMod 0
+
+rem *** lodPTRaft_MobileRetrieve1 ***
+ObjectTemplate.create LodObject lodPTRaft_MobileRetrieve1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate PTRaftComplex_MobileRetrieve2
+ObjectTemplate.addTemplate PTRaftSimple_MobileRetrieve20
+ObjectTemplate.lodselector PTRaftLodSelector
+
+rem *** PTRaftComplex_MobileRetrieve2 ***
+ObjectTemplate.create Bundle PTRaftComplex_MobileRetrieve2
+ObjectTemplate.geometry mobilemaxim_thrower
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate MobileAmmoDepot
+
+
+rem *** PTRaftSimple_MobileRetrieve20 ***
+ObjectTemplate.create SimpleObject PTRaftSimple_MobileRetrieve20
+ObjectTemplate.geometry mobilemaxim_thrower
+
+
+rem *** ammoboxvehicle ***
+ObjectTemplate.create supplydepot MobileAmmoDepot
+ObjectTemplate.radius 1
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 17 1 2.0 0
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc

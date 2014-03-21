@@ -1,0 +1,29 @@
+rem *** IlyushinBombDummy ***
+rem *** Yak9BombDummy ***
+ObjectTemplate.create FireArms IL_RS-82rocket
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.visibleDummyProjectileTemplate RS-82dummyraketti
+ObjectTemplate.projectileTemplate RS-82Rocket
+ObjectTemplate.projectilePosition 0/-1.0/0
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.addFireArmsPosition -3.6/-0.03/0		1/-3/0
+ObjectTemplate.addFireArmsPosition 3.6/-0.03/0 		-1/-3/0
+ObjectTemplate.addFireArmsPosition -3.9/0/-0.05 	1/-3/0
+ObjectTemplate.addFireArmsPosition 3.9/0/-0.05 		-1/-3/0
+ObjectTemplate.addFireArmsPosition -4.2/0.03/-0.1 	1/-3/0
+ObjectTemplate.addFireArmsPosition 4.2/0.03/-0.1 	-1/-3/0
+ObjectTemplate.addFireArmsPosition -4.5/0.05/-0.15 	1/-3/0
+ObjectTemplate.addFireArmsPosition 4.5/0.05/-0.15 	-1/-3/0
+ObjectTemplate.AmmoType 7
+ObjectTemplate.recoilSpeed 0
+ObjectTemplate.recoilSize 0
+ObjectTemplate.fireingForce 0
+ObjectTemplate.setMinDev 10.5
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 150
+ObjectTemplate.roundOfFire 6
+ObjectTemplate.setInputFire c_PIAltFire
+
+ObjectTemplate.create SimpleObject RS-82dummyraketti
+ObjectTemplate.geometry rs-82_m1

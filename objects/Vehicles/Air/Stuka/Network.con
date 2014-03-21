@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo Stuka_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Stuka_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Stuka_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

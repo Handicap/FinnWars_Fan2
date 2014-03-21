@@ -1,0 +1,16 @@
+NetworkableInfo.createNewInfo zis5_aaEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo zis5_aaSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo zis5_aaBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo zis5_aaSpringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo zis5_aaTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+

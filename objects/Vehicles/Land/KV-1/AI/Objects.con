@@ -1,0 +1,126 @@
+rem *** KV-1Mobile ***
+aiTemplatePlugIn.create Mobile KV-1Mobile
+aiTemplatePlugIn.vehicleNumber 0
+aiTemplatePlugIn.maxSpeed 10.0
+aiTemplatePlugIn.turnRadius 5.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+aiTemplatePlugIn.lodHeight 1.2
+aiTemplatePlugIn.isTurnable 1
+
+rem *** KV-1Physical ***
+aiTemplatePlugIn.create Physical KV-1Physical
+aiTemplatePlugIn.setStrType HeavyArmour
+
+rem *** KV-1Cover ***
+aiTemplatePlugIn.create Cover KV-1Cover
+aiTemplatePlugIn.coverValue 4.0
+
+rem *** KV-1Turret ***
+aiTemplatePlugIn.create Armament KV-1Turret
+
+rem *** KV-1Unit ***
+aiTemplatePlugIn.create Unit KV-1Unit
+aiTemplatePlugIn.equipmentType 0
+aiTemplatePlugIn.setStrategicStrength 0 4
+aiTemplatePlugIn.setStrategicStrength 1 4
+
+rem *** KV-1Ctrl ***
+aiTemplatePlugIn.create ControlInfo KV-1Ctrl
+aiTemplatePlugIn.driveTurnControl PIYaw
+aiTemplatePlugIn.driveThrottleControl PIThrottle
+aiTemplatePlugIn.aimHorizontalControl PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity -1.0
+aiTemplatePlugIn.pitchSensitivity 0.21817
+aiTemplatePlugIn.rollSensitivity -0.21817
+aiTemplatePlugIn.yawSensitivity -2.5
+aiTemplatePlugIn.lookVerticalSensitivity 0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead 1.0
+aiTemplatePlugIn.pitchLookAhead 1.0
+aiTemplatePlugIn.rollLookAhead 1.0
+aiTemplatePlugIn.yawLookAhead 1.0
+aiTemplatePlugIn.lookVerticalLookAhead 1.0
+aiTemplatePlugIn.lookHorizontalLookAhead 1.0
+aiTemplatePlugIn.throttleScale 1.0
+aiTemplatePlugIn.pitchScale 5.0
+aiTemplatePlugIn.rollScale 5.0
+aiTemplatePlugIn.yawScale 0.0020
+aiTemplatePlugIn.lookVerticalScale 1.0
+aiTemplatePlugIn.lookHorizontalScale 1.0
+aiTemplatePlugIn.maxSpeedBumpinessFallOff 0.001
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -360/-20/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 360/5/0
+
+rem *** t26-m33CannonArms_KV-14 ***
+aiTemplatePlugIn.create Armament t26-m33CannonArms_KV-14
+
+rem *** t26-m33CannonUnit_KV-15 ***
+aiTemplatePlugIn.create Unit t26-m33CannonUnit_KV-15
+aiTemplatePlugIn.equipmentType 13
+aiTemplatePlugIn.setStrategicStrength 0 5
+aiTemplatePlugIn.setStrategicStrength 1 5
+aiTemplatePlugIn.setSelectKey PIMenuSelect2
+
+rem *** t26-m33CannonCtrl_KV-16 ***
+aiTemplatePlugIn.create ControlInfo t26-m33CannonCtrl_KV-16
+aiTemplatePlugIn.driveTurnControl PIYaw
+aiTemplatePlugIn.driveThrottleControl PIThrottle
+aiTemplatePlugIn.aimHorizontalControl PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity -1.0
+aiTemplatePlugIn.pitchSensitivity 0.21817
+aiTemplatePlugIn.rollSensitivity -0.21817
+aiTemplatePlugIn.yawSensitivity -2.5
+aiTemplatePlugIn.lookVerticalSensitivity 0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead 1.0
+aiTemplatePlugIn.pitchLookAhead 1.0
+aiTemplatePlugIn.rollLookAhead 1.0
+aiTemplatePlugIn.yawLookAhead 1.0
+aiTemplatePlugIn.lookVerticalLookAhead 1.0
+aiTemplatePlugIn.lookHorizontalLookAhead 1.0
+aiTemplatePlugIn.throttleScale 1.0
+aiTemplatePlugIn.pitchScale 5.0
+aiTemplatePlugIn.rollScale 5.0
+aiTemplatePlugIn.yawScale 0.0020
+aiTemplatePlugIn.lookVerticalScale 1.0
+aiTemplatePlugIn.lookHorizontalScale 1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -20/-40/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 20/5/0
+
+aiTemplate.create KV-1
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.addType ITMobile
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 25
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 30
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn KV-1Mobile
+aiTemplate.addPlugIn KV-1Physical
+aiTemplate.addPlugIn KV-1Cover
+aiTemplate.addPlugIn KV-1Turret
+aiTemplate.addPlugIn KV-1Unit
+aiTemplate.addPlugIn KV-1Ctrl
+
+aiTemplate.create T26-M33Cannon_KV-13
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 15
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 20
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn t26-m33CannonArms_KV-14
+aiTemplate.addPlugIn t26-m33CannonUnit_KV-15
+aiTemplate.addPlugIn t26-m33CannonCtrl_KV-16
+

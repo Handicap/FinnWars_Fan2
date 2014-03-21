@@ -1,0 +1,188 @@
+
+
+rem *** Gloster_GladiatorEngine ***
+ObjectTemplate.create Engine Gloster_GladiatorEngine
+ObjectTemplate.setNetworkableInfo Gloster_GladiatorInfo
+ObjectTemplate.loadSoundScript Sounds/Gloster_GladiatorEngine.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodGloster_GladiatorPropeller
+ObjectTemplate.setPosition 0/-0.14/-2.06
+ObjectTemplate.addTemplate Gloster_GladiatorLandingGearR
+ObjectTemplate.setPosition 0.54/-0.579/-2.019
+ObjectTemplate.addTemplate Gloster_GladiatorLandingGearL
+ObjectTemplate.setPosition -0.539/-0.579/-2.019
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-300000
+ObjectTemplate.setMaxRotation 0.3/0/500000
+ObjectTemplate.setMaxSpeed 1000000000000/0/500000
+ObjectTemplate.setAcceleration 50000/0/100000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 15
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 70
+
+
+rem *** Gloster_GladiatorwheelR ***
+ObjectTemplate.create Spring Gloster_GladiatorwheelR
+ObjectTemplate.geometry Gloster_Gladiator_Wheel_Right_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** Gloster_GladiatorWheelL ***
+ObjectTemplate.create Spring Gloster_GladiatorWheelL
+ObjectTemplate.geometry Gloster_Gladiator_Wheel_left_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** Gloster_GladiatorBodyWingVertical ***
+ObjectTemplate.create Wing Gloster_GladiatorBodyWingVertical
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/-0.1
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+
+rem *** Gloster_GladiatorFlaps4 ***
+ObjectTemplate.create Wing Gloster_GladiatorFlaps4
+ObjectTemplate.setNetworkableInfo Gloster_GladiatorInfo
+ObjectTemplate.geometry Gloster_Gladiator_Flap_right_outer_M1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/400/0
+ObjectTemplate.setAcceleration 0/600/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -0.5/0/0.72
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Gloster_GladiatorFlaps2 ***
+ObjectTemplate.create Wing Gloster_GladiatorFlaps2
+ObjectTemplate.setNetworkableInfo Gloster_GladiatorInfo
+ObjectTemplate.geometry Gloster_Gladiator_Flap_left_outer_M1
+ObjectTemplate.setMinRotation 0/-40/0
+ObjectTemplate.setMaxRotation 0/40/0
+ObjectTemplate.setMaxSpeed 0/140/0
+ObjectTemplate.setAcceleration 0/-120/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0.5/0/0.72
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Gloster_GladiatorFlaps3 ***
+ObjectTemplate.create Wing Gloster_GladiatorFlaps3
+ObjectTemplate.setNetworkableInfo Gloster_GladiatorInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
+ObjectTemplate.geometry Gloster_Gladiator_Flap_right_inner_M1
+ObjectTemplate.setMinRotation 0/-3/0
+ObjectTemplate.setMaxRotation 0/3/0
+ObjectTemplate.setMaxSpeed 0/50/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -2.32/-0.165/0.599
+ObjectTemplate.setFlapLift 4
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+
+rem *** Gloster_GladiatorFlaps1 ***
+ObjectTemplate.create Wing Gloster_GladiatorFlaps1
+ObjectTemplate.setNetworkableInfo Gloster_GladiatorInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
+ObjectTemplate.geometry Gloster_Gladiator_Flap_left_inner_M1
+ObjectTemplate.setMinRotation 0/-3/0
+ObjectTemplate.setMaxRotation 0/3/0
+ObjectTemplate.setMaxSpeed 0/50/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 2.319/-0.165/0.599
+ObjectTemplate.setFlapLift 4
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+
+rem *** Gloster_GladiatorTailFlapR ***
+ObjectTemplate.create Wing Gloster_GladiatorTailFlapR
+ObjectTemplate.setNetworkableInfo Gloster_GladiatorInfo
+ObjectTemplate.geometry Gloster_Gladiator_tailflap_Right_M1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.4
+ObjectTemplate.setFlapLift 0.25
+
+
+rem *** Gloster_GladiatorTailFlapL ***
+ObjectTemplate.create Wing Gloster_GladiatorTailFlapL
+ObjectTemplate.setNetworkableInfo Gloster_GladiatorInfo
+ObjectTemplate.geometry Gloster_Gladiator_tailflap_Left_M1
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/55/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/-40/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.4
+ObjectTemplate.setFlapLift 0.25
+
+
+rem *** Gloster_GladiatorWheelBackSpring ***
+ObjectTemplate.create Spring Gloster_GladiatorWheelBackSpring
+ObjectTemplate.geometry Gloster_Gladiator_Wheel_back_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** Gloster_GladiatorRudder ***
+ObjectTemplate.create Wing Gloster_GladiatorRudder
+ObjectTemplate.setNetworkableInfo Gloster_GladiatorInfo
+ObjectTemplate.geometry Gloster_Gladiator_rodder_M1
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/60/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1.5

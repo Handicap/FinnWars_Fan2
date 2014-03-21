@@ -1,0 +1,6 @@
+GeometryTemplate.create StandardMesh area_model
+GeometryTemplate.file objective_area
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+

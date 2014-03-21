@@ -1,0 +1,271 @@
+
+
+rem *** Fokker ***
+ObjectTemplate.create PlayerControlObject Fokker
+ObjectTemplate.setNetworkableInfo Fokker_body_info
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.1266
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 0.917/0.71/0.784
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 3
+ObjectTemplate.hitpoints 50
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.material 60
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 35 em_Bf109Damage 0/-0.084/1.9
+ObjectTemplate.addArmorEffect 20 e_Bf109Fire 0/0.6/1.9
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_Plane 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Fokker
+rem -------------------------------------
+ObjectTemplate.addTemplate lodFokker
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -3/0.1/-2.8 0/0/0
+ObjectTemplate.GUIIndex 101
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setToolTipType  TTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_fokker_64x64.tga"
+
+
+rem *** lodFokker ***
+ObjectTemplate.create LodObject lodFokker
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FokkerComplex
+ObjectTemplate.addTemplate FokkerSimple
+ObjectTemplate.addTemplate FokkerWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector FokkerLodSelector
+
+
+rem *** FokkerComplex ***
+ObjectTemplate.create Bundle FokkerComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodFokkerCockpit
+ObjectTemplate.addTemplate FokkerCamera
+ObjectTemplate.setPosition 0/1.3/-1.35
+ObjectTemplate.addTemplate FokkerEntry
+ObjectTemplate.setPosition 0/0/-0.999
+ObjectTemplate.addTemplate FokkerSeat
+ObjectTemplate.setPosition 0/0.75/-1.099
+ObjectTemplate.addTemplate FokkerEngine
+ObjectTemplate.setPosition 0/0.5659/1.6714
+ObjectTemplate.addTemplate FokkerBodyWingVertical
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate FokkerFlapTailLeft
+ObjectTemplate.setPosition -0.8201/0.8054/-4.1599
+ObjectTemplate.addTemplate FokkerFlapTailRight
+ObjectTemplate.setPosition 0.9188/0.8042/-4.159
+ObjectTemplate.addTemplate FokkerRudder
+ObjectTemplate.setPosition 0/0.6235/-4.6775
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate FokkerFlapLeftInner
+ObjectTemplate.setPosition -1.616/-0.339/-0.697
+ObjectTemplate.setRotation 5.5/0/-5.999
+ObjectTemplate.addTemplate FokkerFlapRightInner
+ObjectTemplate.setPosition 1.613/-0.339/-0.697
+ObjectTemplate.setRotation -5.499/0/6
+ObjectTemplate.addTemplate FokkerFlapLeftOuter
+ObjectTemplate.setPosition -3.984/-0.099/-0.464
+ObjectTemplate.setRotation 6/0/-5.999
+ObjectTemplate.addTemplate FokkerFlapRightOuter
+ObjectTemplate.setPosition 3.981/-0.099/-0.464
+ObjectTemplate.setRotation -5.999/0/6
+ObjectTemplate.addTemplate FokkerGuns
+ObjectTemplate.addTemplate FokkerGuns2
+rem -------------------------------------
+
+
+rem *** lodFokkerCockpit ***
+ObjectTemplate.create LodObject lodFokkerCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate FokkerCockpitExternal
+ObjectTemplate.addTemplate FokkerCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector FokkerCockpitSelector
+
+
+rem *** FokkerCockpitExternal ***
+ObjectTemplate.create Bundle FokkerCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry Fokker_fus_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate FokkerCanopy
+ObjectTemplate.setPosition 0/0.805/-0.346
+rem -------------------------------------
+
+
+rem *** FokkerCanopy ***
+ObjectTemplate.create SimpleObject FokkerCanopy
+ObjectTemplate.geometry Fokker_canopy_m1
+
+
+rem *** FokkerCockpitInternal ***
+ObjectTemplate.create SimpleObject FokkerCockpitInternal
+ObjectTemplate.geometry 1P_Fokker_M1
+
+
+rem *** FokkerCockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector FokkerCockpitSelector
+LodSelectorTemplate.addLodDistance 20
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** FokkerCamera ***
+ObjectTemplate.create Camera FokkerCamera
+ObjectTemplate.setMinRotation -60/-40/0
+ObjectTemplate.setMaxRotation 60/5/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/-5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/-0.8/5.2
+
+rem *** FokkerEntry ***
+ObjectTemplate.create EntryPoint FokkerEntry
+ObjectTemplate.setEntryRadius 5.5
+
+
+rem *** FokkerSeat ***
+ObjectTemplate.create SeatObject FokkerSeat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+
+rem *** lodFokkerPropeller ***
+ObjectTemplate.create LodObject lodFokkerPropeller
+rem -------------------------------------
+ObjectTemplate.addTemplate FokkerPropellerStatic
+ObjectTemplate.addTemplate FokkerPropellerBlurred
+rem -------------------------------------
+ObjectTemplate.lodSelector FokkerPropSelector
+
+
+rem *** FokkerPropellerStatic ***
+ObjectTemplate.create SimpleObject FokkerPropellerStatic
+ObjectTemplate.geometry Fokker_prop_m1
+
+
+rem *** FokkerPropellerBlurred ***
+ObjectTemplate.create SimpleObject FokkerPropellerBlurred
+ObjectTemplate.geometry Fokker_propblur_m1
+LodSelectorTemplate.create CompareSelector FokkerPropSelector
+LodSelectorTemplate.addLodComparison 0.07
+
+
+rem *** FokkerLandingGearLeft ***
+ObjectTemplate.create LandingGear FokkerLandingGearLeft
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry Fokker_landinggear_left_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FokkerWheelLeft
+ObjectTemplate.setPosition 0.087/-1.45/-0.042
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/85
+ObjectTemplate.setMaxSpeed 0/0/28
+ObjectTemplate.setAcceleration 0/0/90
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearUpHeight 23
+ObjectTemplate.setGearDownEngineInput 0.55
+
+
+rem *** FokkerLandingGearRight ***
+ObjectTemplate.create LandingGear FokkerLandingGearRight
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry Fokker_landinggear_right_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FokkerWheelRight
+ObjectTemplate.setPosition -0.086/-1.45/-0.042
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-85
+ObjectTemplate.setMaxSpeed 0/0/28
+ObjectTemplate.setAcceleration 0/0/-90
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearUpHeight 23
+ObjectTemplate.setGearDownEngineInput 0.55
+
+
+rem *** FokkerLandingGearBack ***
+ObjectTemplate.create LandingGear FokkerLandingGearBack
+ObjectTemplate.geometry Fokker_landinggear_back_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FokkerWheelBack
+ObjectTemplate.setPosition -0.03/-0.039/-0.589
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/50/0
+ObjectTemplate.setMaxSpeed 0/25/0
+ObjectTemplate.setAcceleration 0/80/0
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearUpHeight 23
+ObjectTemplate.setGearDownEngineInput 0.55
+
+
+rem *** FokkerWheelBack ***
+ObjectTemplate.create RotationalBundle FokkerWheelBack
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FokkerWheelBackSpring
+ObjectTemplate.setPosition 0/-0.299/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration -110/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** FokkerSimple ***
+ObjectTemplate.create SimpleObject FokkerSimple
+ObjectTemplate.geometry Fokker_Fus_L1
+
+
+rem *** FokkerWreck ***
+ObjectTemplate.create SimpleObject FokkerWreck
+ObjectTemplate.geometry Wreck_Fokker_m1
+
+
+rem *** FokkerLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 FokkerLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200

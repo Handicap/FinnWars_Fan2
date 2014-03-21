@@ -1,0 +1,60 @@
+rem
+rem *** Ammobox ***
+rem
+ObjectTemplate.create Bundle MineInf
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate MineInfComplex
+rem -------------------------------------
+
+ObjectTemplate.create PlayerControlObject MineInf_PCO
+ObjectTemplate.setNetworkableInfo MineInfBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry mineinf
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 0.01
+ObjectTemplate.maxhitpoints 0.01
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.aiTemplate DefGun
+ObjectTemplate.timetoliveafterdeath 2
+rem ObjectTemplate.fadeAtTimeToLiveAfterDeath 10
+rem ObjectTemplate.timeToStartFadeAfterDeath 10
+rem -------------------------------------
+
+ObjectTemplate.setSoldierExitLocation 0/2.2/-6.4 -180/0/0
+ObjectTemplate.GUIIndex 67
+
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_defgun.tga"
+ObjectTemplate.setVehicleIconPos 50/60
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_artillery.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTDefGun
+ObjectTemplate.setToolTipType  TTDefGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+ObjectTemplate.create Bundle MineInfComplex
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate MineInfSpawner
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.create ObjectSpawner MineInfSpawner
+ObjectTemplate.setObjectTemplate 1 MineInf_PCO
+ObjectTemplate.setObjectTemplate 2 MineInf_PCO
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 1
+ObjectTemplate.maxSpawnDelay 1
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 10

@@ -1,0 +1,47 @@
+ObjectTemplate.create Bundle SuburbHouse_4_M1
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate SuburbHouse_4_m1
+ObjectTemplate.addTemplate lodSuburbHouse_4
+
+LodSelectorTemplate.create DistanceSelector SuburbHouse_4Selector
+LodSelectorTemplate.addLodDistance 300
+ObjectTemplate.create LodObject lodSuburbHouse_4
+ObjectTemplate.lodselector SuburbHouse_4Selector
+ObjectTemplate.addTemplate SuburbHouse_4Interior
+ObjectTemplate.addTemplate SuburbHouse_4Exterior
+
+ObjectTemplate.create Bundle SuburbHouse_4Interior
+ObjectTemplate.geometry SuburbHouse_4_m1
+rem ------------------------------------------------
+
+ObjectTemplate.addTemplate civiltable_m1
+ObjectTemplate.setPosition 0.9/4.98/6.85
+ObjectTemplate.setRotation 90/0/0
+
+
+ObjectTemplate.addTemplate euchair02_M1
+ObjectTemplate.setPosition 0/4.98/7.3
+ObjectTemplate.setRotation 90/0/0
+
+
+ObjectTemplate.addTemplate euchair02_M1
+ObjectTemplate.setPosition 1.7/4.98/6.33
+ObjectTemplate.setRotation -90/0/0
+
+
+ObjectTemplate.addTemplate euchair02_M1
+ObjectTemplate.setPosition 1.8/4.98/7.3
+ObjectTemplate.setRotation -90/0/0
+
+
+
+ObjectTemplate.addTemplate eubed_M1
+ObjectTemplate.setPosition -3.2/4.98/-8.5
+ObjectTemplate.setRotation 90/0/0
+
+
+
+
+rem ----------------------------------------------------
+ObjectTemplate.create SimpleObject SuburbHouse_4Exterior
+ObjectTemplate.geometry SuburbHouse_4_m2

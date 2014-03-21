@@ -1,0 +1,137 @@
+rem *** KV-1gunbarrel ***
+ObjectTemplate.create firearms KV-1gunbarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/tigerCannon.ssc
+ObjectTemplate.geometry KV1_Canon2_M1
+ObjectTemplate.aiTemplate KV-1MainGun
+ObjectTemplate.projectileTemplate T34-76Projectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 111
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 250
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.25
+ObjectTemplate.roundOfFire 0.18
+ObjectTemplate.fireingForce 10
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 1
+ObjectTemplate.addTemplate e_Muzzpriest
+ObjectTemplate.setPosition 00.0/0/1.65939
+ObjectTemplate.setRotation -179.999/0.0/0.0
+
+rem *** coaxial_DP_KV-11 ***
+ObjectTemplate.create firearms coaxial_DP_KV-11
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.setNetworkableInfo Coaxial_DP_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.projectileTemplate DP_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/0.2
+ObjectTemplate.magSize 60
+ObjectTemplate.numOfMag 15
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 5
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.autoReload 1
+ObjectTemplate.aiTemplate Coaxial_DPAI_KV-12
+ObjectTemplate.velocity 1000
+ObjectTemplate.setFireDev 1.9 0.26 0.05
+ObjectTemplate.setMinDev 0.75
+ObjectTemplate.heatAddWhenFire 0.001
+ObjectTemplate.coolDownPerSec 0.3
+ObjectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.loadSoundScript Sounds/DP.ssc
+ObjectTemplate.addTemplate e_muzzb17
+ObjectTemplate.setPosition 0.0/0.0/0.262433
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_stationarymg_16x16.dds"
+
+rem *** Coaxial_DP_KV-17 ***
+ObjectTemplate.create firearms Coaxial_DP_KV-17
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.setNetworkableInfo Coaxial_DP_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.projectileTemplate DP_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/0.2
+ObjectTemplate.magSize 60
+ObjectTemplate.numOfMag 15
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 5
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.autoReload 1
+ObjectTemplate.aiTemplate Coaxial_DPAI_KV-18
+ObjectTemplate.velocity 1000
+ObjectTemplate.setFireDev 1.9 0.26 0.05
+ObjectTemplate.setMinDev 0.75
+ObjectTemplate.heatAddWhenFire 0.001
+ObjectTemplate.coolDownPerSec 0.3
+ObjectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.loadSoundScript Sounds/DP.ssc
+ObjectTemplate.addTemplate e_muzzb17
+ObjectTemplate.setPosition 0.0/0.0/0.262433
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_stationarymg_16x16.dds"
+
+rem *** coaxial_DP_KV-110 ***
+ObjectTemplate.create firearms coaxial_DP_KV-110
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.setNetworkableInfo Coaxial_DP_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.projectileTemplate DP_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/0.2
+ObjectTemplate.magSize 60
+ObjectTemplate.numOfMag 15
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 5
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.autoReload 1
+ObjectTemplate.aiTemplate Coaxial_DPAI_KV-111
+ObjectTemplate.velocity 1000
+ObjectTemplate.setFireDev 1.9 0.26 0.05
+ObjectTemplate.setMinDev 0.75
+ObjectTemplate.heatAddWhenFire 0.001
+ObjectTemplate.coolDownPerSec 0.3
+ObjectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.loadSoundScript Sounds/DP.ssc
+ObjectTemplate.addTemplate e_muzzb17
+ObjectTemplate.setPosition 0.0/0.0/0.262433
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_stationarymg_16x16.dds"
+
+rem *** coaxial_DP_KV-114 ***
+ObjectTemplate.create firearms coaxial_DP_KV-114
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.setNetworkableInfo Coaxial_DP_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.projectileTemplate DP_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/0.2
+ObjectTemplate.magSize 60
+ObjectTemplate.numOfMag 15
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 5
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.autoReload 1
+ObjectTemplate.aiTemplate Coaxial_DPAI_KV-115
+ObjectTemplate.velocity 1000
+ObjectTemplate.setFireDev 1.9 0.26 0.05
+ObjectTemplate.setMinDev 0.75
+ObjectTemplate.heatAddWhenFire 0.001
+ObjectTemplate.coolDownPerSec 0.3
+ObjectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.loadSoundScript Sounds/DP.ssc
+ObjectTemplate.addTemplate e_muzzb17
+ObjectTemplate.setPosition 0.0/0.0/0.262433
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setMinimapIcon "minimap/minimap_icon_stationarymg_16x16.dds"
+

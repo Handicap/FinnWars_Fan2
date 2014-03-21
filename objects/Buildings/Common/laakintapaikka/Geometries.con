@@ -1,0 +1,5 @@
+
+GeometryTemplate.create StandardMesh laakintapaikka
+GeometryTemplate.file laakintapaikka
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KettenKradHorn.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KettenKradHorn.ssc
+	
+#templateLevel LOW
+
+	#include Low/KettenKradHorn.ssc

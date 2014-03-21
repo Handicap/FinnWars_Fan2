@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/WespeTrack.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/WespeTrack.ssc
+	
+#templateLevel LOW
+
+	#include Low/WespeTrack.ssc

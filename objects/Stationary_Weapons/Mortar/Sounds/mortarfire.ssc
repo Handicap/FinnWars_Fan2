@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/defgunfire.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/defgunfire.ssc
+	
+#templateLevel LOW
+
+	#include Low/defgunfire.ssc

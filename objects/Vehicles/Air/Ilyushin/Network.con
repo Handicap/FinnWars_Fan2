@@ -1,0 +1,14 @@
+NetworkableInfo.createNewInfo IlyushinWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo IlyushinEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo IlyushinBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo IlyushinTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+

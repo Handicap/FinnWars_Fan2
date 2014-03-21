@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh riukuaita
+GeometryTemplate.file riukuaita
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 35
+
+
+

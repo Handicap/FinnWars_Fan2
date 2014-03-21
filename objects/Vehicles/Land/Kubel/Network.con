@@ -1,0 +1,11 @@
+NetworkableInfo.createNewInfo KubelEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo KubelBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo KubelSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo KubelTurretInfo
+NetworkableInfo.setPredictionMode PMLinear

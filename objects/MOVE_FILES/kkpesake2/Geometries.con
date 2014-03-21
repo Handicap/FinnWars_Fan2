@@ -1,0 +1,9 @@
+GeometryTemplate.create StandardMesh kkpesake2
+GeometryTemplate.file kkpesake2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 70
+GeometryTemplate.setLodDistance 3 120
+GeometryTemplate.setLodDistance 4 170
+GeometryTemplate.setLodDistance 5 220
+

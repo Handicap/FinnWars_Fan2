@@ -1,0 +1,18 @@
+ObjectTemplate.create lodobject viljapelto_1_M1
+ObjectTemplate.lodselector viljapelto_1_M1LodSelector
+ObjectTemplate.addTemplate viljapelto_1
+ObjectTemplate.addTemplate viljapelto_1_lod
+
+ObjectTemplate.create SimpleObject viljapelto_1
+ObjectTemplate.geometry viljapelto_1_M1
+ObjectTemplate.setHasCollisionPhysics 0
+ObjectTemplate.cullRadiusScale 1
+
+ObjectTemplate.create SimpleObject viljapelto_1_lod
+ObjectTemplate.geometry viljapelto_1_lod
+ObjectTemplate.setHasCollisionPhysics 0
+ObjectTemplate.cullRadiusScale 1
+
+LodSelectorTemplate.create distcompareselector2 viljapelto_1_M1LodSelector
+LodSelectorTemplate.hasDestroyedLod 0
+LodSelectorTemplate.addLodDistance 100

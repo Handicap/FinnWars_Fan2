@@ -1,0 +1,5 @@
+GeometryTemplate.create StandardMesh puska2
+GeometryTemplate.file puska2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 30

@@ -1,0 +1,9 @@
+GeometryTemplate.create StandardMesh Big_Bomb
+GeometryTemplate.file bomb
+GeometryTemplate.scale 0.00001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500

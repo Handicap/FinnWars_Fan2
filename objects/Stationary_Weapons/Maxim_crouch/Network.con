@@ -1,0 +1,6 @@
+NetworkableInfo.createNewInfo Maxim_crouch_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Maxim_crouch_TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+

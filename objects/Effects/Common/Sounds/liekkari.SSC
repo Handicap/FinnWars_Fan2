@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include liekkari_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include liekkari_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include liekkari_MedLow.ssc

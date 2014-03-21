@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Low/WillyEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Low/WillyEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/WillyEngine.ssc

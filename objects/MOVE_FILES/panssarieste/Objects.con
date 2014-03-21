@@ -1,0 +1,41 @@
+ObjectTemplate.create PlayerControlObject panssarieste_PCO
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setNetworkableInfo panssarieste_body
+ObjectTemplate.geometry panssarieste
+ObjectTemplate.cullRadiusScale 1.5
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 200000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 150
+ObjectTemplate.maxhitpoints 150
+ObjectTemplate.material 121
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.explosionForceMod 1
+ObjectTemplate.addArmorEffect 0 e_RichoCascadesStone 0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.FadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.setMinimapIcon "empty.dds"
+
+
+ObjectTemplate.create ObjectSpawner panssarieste
+ObjectTemplate.setObjectTemplate 1 panssarieste_PCO
+ObjectTemplate.setObjectTemplate 2 panssarieste_PCO
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 600
+ObjectTemplate.maxSpawnDelay 600
+ObjectTemplate.TimeToLive 99999999
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 10
+

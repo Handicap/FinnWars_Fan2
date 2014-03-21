@@ -1,0 +1,6 @@
+NetworkableInfo.createNewInfo Ammopack_veh_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Ammopack_veh_TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+

@@ -1,0 +1,52 @@
+rem *** bt-5cannon ***
+ObjectTemplate.create FireArms bt-5cannon
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/T26-M37Cannon.ssc
+ObjectTemplate.geometry bt-5_Cannon_M1
+ObjectTemplate.aiTemplate wespeMainGun_bt-50
+ObjectTemplate.projectileTemplate t26_projectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 70
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 250
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 0.2
+ObjectTemplate.fireingForce 5
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 4
+ObjectTemplate.addTemplate e_muzzpriest
+ObjectTemplate.setPosition 0.0/0.0/1.5
+ObjectTemplate.setRotation -179.999/0.0/0.0
+
+rem *** coaxial_mg42_bt-51 ***
+ObjectTemplate.create FireArms coaxial_mg42_bt-51
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.setNetworkableInfo Coaxial_MG42_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.projectileTemplate MG42_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/0.2
+ObjectTemplate.magSize 400
+ObjectTemplate.numOfMag 15
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.autoReload 1
+ObjectTemplate.aiTemplate Coaxial_MG42AI_bt-52
+ObjectTemplate.velocity 1000
+ObjectTemplate.setFireDev 1.9 0.26 0.05
+ObjectTemplate.setMinDev 0.75
+ObjectTemplate.heatAddWhenFire 0.001
+ObjectTemplate.coolDownPerSec 0.3
+ObjectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.loadSoundScript Sounds/mg42.ssc
+ObjectTemplate.addTemplate e_muzzb17
+ObjectTemplate.setPosition 0.0/0.1/0.262433
+ObjectTemplate.startoneffects 1
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.setPosition 0.00999994/0.07/0.37
+ObjectTemplate.startoneffects 1
+

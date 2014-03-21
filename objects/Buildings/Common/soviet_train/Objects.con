@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject soviet_train
+ObjectTemplate.geometry soviet_train
+ObjectTemplate.setHasCollisionPhysics 1

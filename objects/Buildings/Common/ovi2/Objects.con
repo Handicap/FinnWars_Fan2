@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject ovi2
+ObjectTemplate.geometry ovi2
+ObjectTemplate.setHasCollisionPhysics 1

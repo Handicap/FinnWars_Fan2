@@ -1,0 +1,31 @@
+ObjectTemplate.create FireArms Maxim_Sokolov_gun
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.setNetworkableInfo Coaxial_MG42_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.projectileTemplate MG42_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/1.2
+ObjectTemplate.magSize 250
+ObjectTemplate.numOfMag 15
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 5
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.autoReload 1
+ObjectTemplate.aiTemplate Coaxial_MG42AI
+ObjectTemplate.velocity 740
+ObjectTemplate.setFireDev 1.9 0.20 0.05
+ObjectTemplate.setMinDev 0.75
+ObjectTemplate.heatAddWhenFire 0.001
+ObjectTemplate.coolDownPerSec 0.3
+ObjectTemplate.timeDelayOnOverHeat 2
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.10/0.12/-0.8 -0/80/90
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.10/0.12/-0.8 0/-100/-90
+ObjectTemplate.loadSoundScript Sounds/mg42.ssc
+ObjectTemplate.addTemplate e_muzzmaxim
+ObjectTemplate.setPosition 0.0/0.15/0.322433
+ObjectTemplate.startoneffects 1
+ObjectTemplate.addTemplate e_shell792mmmax
+ObjectTemplate.setPosition 0.00999994/0.14/-0.12
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake

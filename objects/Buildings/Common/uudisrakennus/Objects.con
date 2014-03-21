@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject uudisrakennus
+ObjectTemplate.geometry uudisrakennus
+ObjectTemplate.setHasCollisionPhysics 1

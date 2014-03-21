@@ -1,0 +1,11 @@
+GeometryTemplate.create StandardMesh bengtskar
+GeometryTemplate.file bengtskar_maintxcol
+
+GeometryTemplate.create StandardMesh bengtskar_kaiteet
+GeometryTemplate.file bengtskar_PPasstx
+
+GeometryTemplate.create StandardMesh bengtskar_portaat
+GeometryTemplate.file bengtskar_stairtx
+
+GeometryTemplate.create StandardMesh bengtskar_ikkunat
+GeometryTemplate.file bengtskar_wintx

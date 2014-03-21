@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject bunk3
+ObjectTemplate.geometry bunk3
+ObjectTemplate.setHasCollisionPhysics 1
+
+

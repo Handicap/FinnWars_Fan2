@@ -1,0 +1,30 @@
+
+
+rem *** ragdoll_spring1 ***
+ObjectTemplate.create spring ragdoll_spring1
+ObjectTemplate.geometry ragdoll_pieni
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setStrength 2
+ObjectTemplate.setDamping 1
+ObjectTemplate.SetMinRotation -90/-90/-90
+ObjectTemplate.SetMaxRotation 90/90/90
+ObjectTemplate.SetMaxSpeed 1000/1000/1000
+ObjectTemplate.SetAcceleration 1000/1000/1000
+
+
+rem *** ragdoll_spring2 ***
+ObjectTemplate.create spring ragdoll_spring2
+ObjectTemplate.geometry ragdoll_pieni
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setStrength 1
+ObjectTemplate.setDamping 1
+ObjectTemplate.SetMinRotation -90/-90/-90
+ObjectTemplate.SetMaxRotation 90/90/90
+ObjectTemplate.SetMaxSpeed 1000/1000/1000
+ObjectTemplate.SetAcceleration 1000/1000/1000
+ObjectTemplate.addTemplate ragdoll_spring1
+ObjectTemplate.setPosition 0.0/1.03062/0.0

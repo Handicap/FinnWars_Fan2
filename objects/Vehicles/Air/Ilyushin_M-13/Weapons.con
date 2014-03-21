@@ -1,0 +1,25 @@
+
+
+
+
+
+rem *** SpitfireBombDummy ***
+ObjectTemplate.create FireArms Ilyushin_M-13Rocket
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate HawkP75Bombs
+ObjectTemplate.visibleDummyProjectileTemplate M-13Rocket
+ObjectTemplate.projectileTemplate KatyushaRocket
+ObjectTemplate.projectilePosition 0/-0.5/0
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.addFireArmsPosition -2.7/0.00/0 	0/-2/0
+ObjectTemplate.addFireArmsPosition 2.7/0.00/0 	0/-2/0
+ObjectTemplate.setMinDev 5.5
+ObjectTemplate.AmmoType 7
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 60
+ObjectTemplate.roundOfFire 2
+ObjectTemplate.setInputFire c_PIAltFire
+
+ObjectTemplate.create SimpleObject M-13Rocket
+ObjectTemplate.geometry r_rocket_m1

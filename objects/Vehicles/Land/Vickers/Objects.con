@@ -1,0 +1,434 @@
+
+
+rem *** vickers ***
+ObjectTemplate.create playercontrolobject vickers
+ObjectTemplate.NameTagOffset 0/-0.5/0
+ObjectTemplate.setNetworkableInfo vickersBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 10
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 160
+ObjectTemplate.maxhitpoints 160
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 80
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 20
+ObjectTemplate.hpLostWhileDamageFromDeepWater 20
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.addArmorEffect 80 e_PanzDamage 0/1/-1.7
+ObjectTemplate.addArmorEffect 20 e_PanzFire 0/0.8/-1.6
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.damageFromDeepWater 1
+ObjectTemplate.aiTemplate vickers
+ObjectTemplate.setSoldierExitLocation -0/2.0/0 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_panzeriv.tga"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate lodvickers
+ObjectTemplate.setPosition 0.0970691/0.0/-0.158272
+
+
+rem *** lodvickers ***
+ObjectTemplate.create lodobject lodvickers
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodselector vickersLodSelector
+ObjectTemplate.addTemplate vickerscomplex
+ObjectTemplate.addTemplate vickerssimple
+ObjectTemplate.addTemplate vickerswreck
+
+
+rem *** vickerscomplex ***
+ObjectTemplate.create bundle vickerscomplex
+ObjectTemplate.loadSoundScript Sounds/vickersTrack.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate lodvickerscockpit
+ObjectTemplate.addTemplate vickersentry
+ObjectTemplate.setPosition -0.299/0.0/1.2
+ObjectTemplate.addTemplate vickersentry
+ObjectTemplate.setPosition -0.299/0.0/-1.199
+ObjectTemplate.addTemplate vickersengine_l
+ObjectTemplate.setPosition 0.0/0.0/-0.449
+ObjectTemplate.addTemplate vickersengine_r
+ObjectTemplate.setPosition 0.0/0.0/-0.449
+ObjectTemplate.addTemplate vickerscamera
+ObjectTemplate.setPosition 0.412352/0.902674/0.955
+ObjectTemplate.addTemplate vickers_gunner_pco1
+ObjectTemplate.setPosition -0.0945622/0.942725/0.140706
+ObjectTemplate.addTemplate e_tankinpakokaasu
+ObjectTemplate.setPosition 0.333228/0.434125/-2.35429
+ObjectTemplate.addTemplate t26_tread_mc_r
+ObjectTemplate.setPosition -0.14479/-0.315014/0.139923
+ObjectTemplate.addTemplate t26_tread_mc_l
+ObjectTemplate.setPosition -0.158988/-0.315014/0.139923
+ObjectTemplate.addTemplate vickers_pco3
+ObjectTemplate.setPosition -0.7/1/1
+
+rem *** lodvickerscockpit ***
+ObjectTemplate.create lodobject lodvickerscockpit
+ObjectTemplate.lodselector vickersCockpitSelector
+ObjectTemplate.addTemplate vickerscockpitexternal
+ObjectTemplate.addTemplate vickerscockpitinternal
+ObjectTemplate.setPosition 0.58/-0.37/-0.37
+
+
+rem *** vickerscockpitexternal ***
+ObjectTemplate.create simpleobject vickerscockpitexternal
+ObjectTemplate.geometry vickers_Hull_M1
+
+
+rem *** vickerscockpitinternal ***
+ObjectTemplate.create simpleobject vickerscockpitinternal
+ObjectTemplate.geometry 1P_vickers_Driver_M1
+
+
+
+
+rem *** vickersentry ***
+ObjectTemplate.create entrypoint vickersentry
+ObjectTemplate.setEntryRadius 2.5
+
+
+rem *** vickerstrackl ***
+ObjectTemplate.create animatedbundle vickerstrackl
+ObjectTemplate.geometry vickers_Track_L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/t26_track_l.ske
+ObjectTemplate.setAnimatedTextureSpeed 0.008/0
+ObjectTemplate.addTemplate vickers_bigwheel
+ObjectTemplate.setPosition -0.998196/0.708901/1.64928
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_bigwheel
+ObjectTemplate.setPosition -1.0222/0.488118/-2.10671
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel
+ObjectTemplate.setPosition -1.0222/0.178199/1.17245
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition -1.0222/0.174785/0.797131
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition -1.0222/0.174785/0.377131
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel
+ObjectTemplate.setPosition -1.0222/0.174785/-0.04
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel
+ObjectTemplate.setPosition -1.0222/0.174785/-0.4
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition -1.0222/0.174785/-0.9
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition -1.0222/0.174785/-1.2
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel
+ObjectTemplate.setPosition -1.0222/0.174785/-1.65
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition -1.0222/0.721458/-1.4668
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition -1.0222/0.738652/-0.786813
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition -1.0222/0.77865/-0.086813
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition -1.0222/0.82652/0.8
+
+
+rem *** vickerstrackr ***
+ObjectTemplate.create animatedbundle vickerstrackr
+ObjectTemplate.geometry vickers_Track_R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/t26_track_r.ske
+ObjectTemplate.setAnimatedTextureSpeed 0.008/0
+ObjectTemplate.addTemplate vickers_bigwheel
+ObjectTemplate.setPosition 1.01887/0.708901/1.64928
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_bigwheel
+ObjectTemplate.setPosition 0.976297/0.488118/-2.10671
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition 0.976297/0.178199/1.17245
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel
+ObjectTemplate.setPosition 0.976297/0.174785/0.797131
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition 0.976297/0.174785/0.377131
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition 0.976297/0.174785/-0.04
+ObjectTemplate.useAsBone 0/-0.1/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition 0.976297/0.174785/-0.4
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel
+ObjectTemplate.setPosition 0.976297/0.174785/-0.9
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition 0.976297/0.174785/-1.2
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel
+ObjectTemplate.setPosition 0.976297/0.174785/-1.65
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition 0.976297/0.721458/-1.4668
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition 0.976297/0.738652/-0.786813
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition 0.976297/0.778652/-0.086813
+ObjectTemplate.addTemplate vickers_smallwheel_dummy
+ObjectTemplate.setPosition 0.976297/0.82652/0.8
+
+
+rem *** vickerscamera ***
+ObjectTemplate.create camera vickerscamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+
+rem *** vickers_gunner_pco1 ***
+ObjectTemplate.create playercontrolobject vickers_gunner_pco1
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo vickersBodyInfo
+ObjectTemplate.aiTemplate vickersCannon
+ObjectTemplate.setSoldierExitLocation -0/2/0 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/icon_gunner.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.DirBarXScale 20
+ObjectTemplate.DirBarYScaleAbove 40
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate vickersentry
+ObjectTemplate.setPosition 0.4/0.0/0.5
+ObjectTemplate.addTemplate vickerstower
+ObjectTemplate.setPosition -0.00913488/0.157574/-0.180944
+
+
+rem *** vickerstower ***
+ObjectTemplate.create rotationalbundle vickerstower
+ObjectTemplate.setNetworkableInfo vickersTurretInfo
+ObjectTemplate.loadSoundScript Sounds/vickersTurret.ssc
+ObjectTemplate.geometry vickers_Tower_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMaxSpeed 20/20/0
+ObjectTemplate.setAcceleration 100/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate vickersgunbase
+ObjectTemplate.setPosition 0.0/0.232244/0.62439
+
+
+rem *** vickersgunbase ***
+ObjectTemplate.create rotationalbundle vickersgunbase
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo vickersGunInfo
+ObjectTemplate.loadSoundScript Sounds/vickersgunbase.ssc
+ObjectTemplate.setMinRotation 0/-22/0
+ObjectTemplate.setMaxRotation 0/6/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate vickerscannon
+ObjectTemplate.setPosition -0.0218231/-0.143087/0.0206151
+ObjectTemplate.addTemplate vickersgunnercamera
+ObjectTemplate.setPosition -0.480608/-0.00109491/0.0558218
+rem ObjectTemplate.setPosition -0.480608/0.146458/0.218711
+ObjectTemplate.addTemplate coaxial_maxim
+ObjectTemplate.setPosition -0.02/0.14/0.07
+ObjectTemplate.addTemplate lodvickgunnerCockpit
+ObjectTemplate.setPosition 0.597/0.0/0.15
+
+
+rem *** lodT34-76Cockpit ***
+ObjectTemplate.create LodObject lodvickgunnerCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate vickgunnerCockpitExternal
+ObjectTemplate.addTemplate vickgunnerCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector vickgunnercockpitSelector
+
+
+rem *** T34-76CockpitExternal ***
+ObjectTemplate.create SimpleObject vickgunnerCockpitExternal
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** T34-76CockpitInternal ***
+ObjectTemplate.create SimpleObject vickgunnerCockpitInternal
+ObjectTemplate.geometry 1p_vickGunner
+
+
+rem *** T34-76cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector vickgunnercockpitSelector
+LodSelectorTemplate.addLodDistance 1
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** t28_right_tower ***
+ObjectTemplate.create playercontrolobject vickers_pco3
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo t28BodyInfo
+ObjectTemplate.aiTemplate t26-m31Cannon
+ObjectTemplate.setSoldierExitLocation -0/2/-1 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/100
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate vickersentry
+ObjectTemplate.addTemplate vickers_hull_gunrot
+ObjectTemplate.setPosition 0.26/-0.13/-0.215
+
+
+rem *** t28_kkturret_r ***
+ObjectTemplate.create rotationalbundle vickers_hull_gunrot
+ObjectTemplate.setNetworkableInfo vickersTurretInfo
+ObjectTemplate.loadSoundScript Sounds/tigerTurret.ssc
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.MinRotation -35/0/0
+ObjectTemplate.MaxRotation 35/0/0
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate vickers_hull_gunbase
+
+
+rem *** t28_kkturret_gunbase_l ***
+ObjectTemplate.create rotationalbundle vickers_hull_gunbase
+ObjectTemplate.geometry vickers_skp
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo vickersTurretInfo
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate vickerskkcamera
+ObjectTemplate.setPosition 0.0/0.15/-0.1
+ObjectTemplate.addTemplate coaxial_SKP
+ObjectTemplate.setPosition 0/0.00/0.00
+ObjectTemplate.addTemplate lodNwGCockpit
+ObjectTemplate.setPosition 1.086/0.125/0.05
+
+
+
+rem *** vickersgunnercamera ***
+ObjectTemplate.create camera vickerskkcamera
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+rem *** vickersgunnercamera ***
+ObjectTemplate.create camera vickersgunnercamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+ObjectTemplate.OutsideHudOffset 0.26/0.606/-0.25
+
+
+rem *** vickerssimple ***
+ObjectTemplate.create simpleobject vickerssimple
+ObjectTemplate.geometry vickers_Hull_L1
+
+
+rem *** vickerswreck ***
+ObjectTemplate.create simpleobject vickerswreck
+ObjectTemplate.geometry Wreck_vickers_m1
+
+
+rem *** vickerscockpitselector ***
+LodSelectorTemplate.create distcompareselector vickerscockpitselector
+LodSelectorTemplate.addLodDistance 1.2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** vickerslodselector ***
+LodSelectorTemplate.create distcompareselector2 vickerslodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200

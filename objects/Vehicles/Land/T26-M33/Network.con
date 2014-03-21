@@ -1,0 +1,21 @@
+NetworkableInfo.createNewInfo T26-M33TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo T26-M33GunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo T26-M33EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo T26-M33BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+
+
+NetworkableInfo.createNewInfo T26-M33_NORADBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo T26-M33_NORADTurretInfo
+NetworkableInfo.setPredictionMode PMLinear

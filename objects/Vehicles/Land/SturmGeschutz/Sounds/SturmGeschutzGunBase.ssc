@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SturmGeschutzGunBase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/SturmGeschutzGunBase.ssc
+	
+#templateLevel LOW
+
+	#include Low/SturmGeschutzGunBase.ssc

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Soutuvene_Engine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Soutuvene_Engine.ssc
+	
+#templateLevel LOW
+
+	#include Low/Soutuvene_Engine.ssc

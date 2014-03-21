@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject faustbox
+ObjectTemplate.geometry faustbox
+ObjectTemplate.setHasCollisionPhysics 1
+
+

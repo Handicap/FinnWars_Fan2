@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo Maxim_BodyInfo_Maxim_aa_single0
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Maxim_TurretInfo_Maxim_aa_single1
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Maxim_BodyInfo_Maxim_aa_single2
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Maxim_BodyInfo_Maxim_aa_single5
+NetworkableInfo.setPredictionMode PMLinear
+

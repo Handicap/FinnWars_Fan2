@@ -1,0 +1,29 @@
+
+
+rem *** coaxial_suomiSMG ***
+ObjectTemplate.create firearms coaxial_SKP
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.setNetworkableInfo Coaxial_SKP_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.projectileTemplate ThomsonProjectile
+rem ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/0.2
+ObjectTemplate.magSize 72
+ObjectTemplate.numOfMag 20
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 3
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 15
+ObjectTemplate.autoReload 1
+ObjectTemplate.aiTemplate Coaxial_MG42AI
+ObjectTemplate.velocity 396
+ObjectTemplate.setFireDev 2.2 0.3 0.08
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.heatAddWhenFire 0.001
+ObjectTemplate.coolDownPerSec 0.3
+ObjectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.loadSoundScript Sounds/SuomiSMG.ssc
+ObjectTemplate.addTemplate e_muzzb17
+ObjectTemplate.setPosition 0.0/0.0/0.262433
+ObjectTemplate.startoneffects 1

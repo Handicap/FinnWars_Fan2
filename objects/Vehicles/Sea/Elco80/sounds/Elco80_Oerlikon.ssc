@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Elco80_Oerlikon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Elco80_Oerlikon.ssc
+	
+#templateLevel LOW
+
+	#include Low/Elco80_Oerlikon.ssc

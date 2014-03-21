@@ -1,0 +1,64 @@
+ObjectTemplate.create PlayerControlObject Bombstrike
+ObjectTemplate.setNetworkableInfo Bombstrike_body_info
+ObjectTemplate.geometry Big_Bomb
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 20
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.drag 0
+ObjectTemplate.mass 100000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 100000
+ObjectTemplate.angleMod 1000000
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 0.000001
+ObjectTemplate.maxhitpoints 0.00001
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0.1
+ObjectTemplate.explosionForceMod 20
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 1
+ObjectTemplate.addArmorEffect 0 e_ExplPommitus 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplAni02 0/-0.2/0
+ObjectTemplate.addArmorEffect -1 e_waterimpact 0/0.1/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0.2/0
+ObjectTemplate.timeToLiveAfterDeath 0
+ObjectTemplate.aiTemplate Willy
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/-0.8 0/0/0
+ObjectTemplate.GUIIndex 26
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_willy.tga"
+ObjectTemplate.setVehicleIconPos 40/79
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon "empty.dds"
+ObjectTemplate.hasRestrictedExit 1
+
+
+ObjectTemplate.create SimpleObject Big_Bomb
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.geometry Big_Bomb
+
+ObjectTemplate.create ObjectSpawner Bombstrike_Spawner
+ObjectTemplate.setObjectTemplate 2 Bombstrike
+ObjectTemplate.setObjectTemplate 1 Bombstrike
+ObjectTemplate.holdObject 0
+ObjectTemplate.minSpawnDelay 1
+ObjectTemplate.maxSpawnDelay 1
+ObjectTemplate.TimeToLive 999
+ObjectTemplate.Distance 1
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.nrOfObjectToSpawn 10
+ObjectTemplate.spawnDelayAtStart 8
+ObjectTemplate.damageWhenLost 10
+ObjectTemplate.team 2

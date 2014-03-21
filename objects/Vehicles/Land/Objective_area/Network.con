@@ -1,0 +1,3 @@
+NetworkableInfo.createNewInfo areaBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+

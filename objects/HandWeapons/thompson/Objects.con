@@ -1,0 +1,100 @@
+ObjectTemplate.create HandFireArms Thompson
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate ThomsonProjectile
+rem ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_UNIFORM/2/4/0
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 30
+ObjectTemplate.numOfMag 5
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 4.8
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.zoomFov 0.95
+ObjectTemplate.altFireOnce 1
+objectTemplate.aiTemplate ThompsonSMG
+objectTemplate.GUIIndex 2
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_SMG_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_SMG_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 46
+ObjectTemplate.setAmomBarPosX 4
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setAmomBarTextPosX 8
+ObjectTemplate.setAmomBarTextPosY 4
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.soldierZoomFov 0.65
+ObjectTemplate.soldierZoomPosition -0.05/-0.01/0.08
+ObjectTemplate.soldierCameraPosition -0.01/-0.04/0.09
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 50
+ObjectTemplate.distToMinDamage 100
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 280
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.41/0.95/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/0.2/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+
+ObjectTemplate.setFireDev 1.6 0.4 0.05
+ObjectTemplate.setDevMod 1.0 0.85 0.8
+ObjectTemplate.setMinDev 0.9
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 0.9 0.2 0.2 0.1
+ObjectTemplate.setMiscDev 2.5 2.5 0.4
+
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+
+ObjectTemplate.loadSoundScript Sounds/Thompson.ssc
+
+ObjectTemplate.createSkeleton animations/Thompson.ske
+ObjectTemplate.useSkeletonPartAsMain Thompson
+ObjectTemplate.addTemplate ThompsonLod
+
+ObjectTemplate.addTemplate e_MuzzThomp
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition -0.004/0.08/0.38
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.08/0.35
+ObjectTemplate.setRotation 0/0/0
+
+rem ** Objects
+
+ObjectTemplate.create SimpleObject ThompsonMagasin
+ObjectTemplate.geometry ThompsonMagasin
+
+ObjectTemplate.create SimpleObject ThompsonFlerp
+ObjectTemplate.geometry ThompsonFlerp
+
+ObjectTemplate.create SimpleObject ThompsonSimple
+ObjectTemplate.geometry Shad_Thompson
+
+ObjectTemplate.create AnimatedBundle ThompsonComplex
+ObjectTemplate.geometry Thompson
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Thompson.ske
+ObjectTemplate.addTemplate ThompsonMagasin
+ObjectTemplate.bindToSkeletonPart magasin
+ObjectTemplate.addTemplate ThompsonFlerp
+ObjectTemplate.bindToSkeletonPart flerp
+
+ObjectTemplate.create LodObject ThompsonLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate ThompsonComplex
+ObjectTemplate.addTemplate ThompsonSimple
+
+
+

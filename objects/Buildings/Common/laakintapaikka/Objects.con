@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject laakintapaikka
+ObjectTemplate.geometry laakintapaikka
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addToCollisionGroup c_CGProjectiles

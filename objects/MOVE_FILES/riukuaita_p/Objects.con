@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject riukuaita_p
+ObjectTemplate.geometry riukuaita_p
+ObjectTemplate.setHasCollisionPhysics 1
+
+

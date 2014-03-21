@@ -1,0 +1,3 @@
+GeometryTemplate.create StandardMesh hlato1
+GeometryTemplate.file hlato1
+GeometryTemplate.setLodDistance 0 0

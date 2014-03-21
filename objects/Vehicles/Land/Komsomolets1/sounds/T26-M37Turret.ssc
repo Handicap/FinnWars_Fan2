@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/WespeTurret.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/WespeTurret.ssc
+	
+#templateLevel LOW
+
+	#include Low/WespeTurret.ssc

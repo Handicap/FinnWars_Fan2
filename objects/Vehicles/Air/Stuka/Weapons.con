@@ -1,0 +1,60 @@
+
+
+
+rem *** StukaGunBarrel ***
+ObjectTemplate.create FireArms StukaGuns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate StukaMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_Muzzleko
+rem ObjectTemplate.addTemplate em_ShellAir
+rem ObjectTemplate.setPosition 0/-0.299/-0.299
+rem -------------------------------------
+ObjectTemplate.projectileTemplate KoneTykkiProjectile
+ObjectTemplate.loadSoundScript Sounds/konetykki.ssc
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate KT_Tracer_Projectile CRD_NONE/5/0/0
+ObjectTemplate.magSize 360
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 800
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.roundOfFire 15
+ObjectTemplate.setMinDev 1.2
+ObjectTemplate.addFireArmsPosition 1.94/0/1.4 -0.4/0/0
+ObjectTemplate.addFireArmsPosition -1.94/0/1.4 0.4/0/0
+ObjectTemplate.AmmoType	8
+
+
+rem *** StukaProjectile ***
+ObjectTemplate.create Projectile StukaProjectile
+ObjectTemplate.createNotInGrid 1
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.aiTemplate StukaBombs
+ObjectTemplate.projectileTemplate HeavyBomberBomb
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/1.5/0/0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.material 213
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+
+rem *** Yak9BombDummy ***
+ObjectTemplate.create FireArms StukaBombDummy
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.visibleDummyProjectileTemplate STUKANKIKKELIMASIINA
+ObjectTemplate.projectileTemplate HeavyBomberBomb
+ObjectTemplate.projectilePosition 0/-0.5/0
+ObjectTemplate.addFireArmsPosition 0/-0.6/0 	0/0/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.roundOfFire 0.2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.aiTemplate Yak9Bombs
+ObjectTemplate.AmmoType	9
+
+ObjectTemplate.create SimpleObject STUKANKIKKELIMASIINA
+ObjectTemplate.geometry Big_Bomb_Stuka

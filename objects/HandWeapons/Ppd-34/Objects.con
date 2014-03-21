@@ -1,0 +1,101 @@
+ObjectTemplate.create HandFireArms Ppd-34
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate ThomsonProjectile
+rem ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_UNIFORM/2/4/0
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 25
+ObjectTemplate.numOfMag 5
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 4
+ObjectTemplate.roundOfFire 14.0
+ObjectTemplate.zoomFov 0.9
+ObjectTemplate.altFireOnce 1
+objectTemplate.aiTemplate ppd-34smg
+objectTemplate.GUIIndex 2
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_SMG_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_SMG_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 46
+ObjectTemplate.setAmomBarPosX 4
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setAmomBarTextPosX 8
+ObjectTemplate.setAmomBarTextPosY 4
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.soldierZoomFov 0.9
+ObjectTemplate.soldierZoomPosition -0.03/0.00/0.02
+ObjectTemplate.soldierCameraPosition -0.01/-0.04/0.09
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 50
+ObjectTemplate.distToMinDamage 100
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 381
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.5/0.7/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.3/0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+
+ObjectTemplate.setFireDev 1.4 0.27 0.04
+ObjectTemplate.setDevMod 1 0.8 0.7
+ObjectTemplate.setMinDev 0.8
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 6 2 2 0.3
+ObjectTemplate.setMiscDev 3 3 0.2
+
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+
+ObjectTemplate.loadSoundScript Sounds/Ppd-34.ssc
+
+ObjectTemplate.createSkeleton animations/Thompson.ske
+ObjectTemplate.useSkeletonPartAsMain Thompson
+ObjectTemplate.addTemplate Ppd-34Lod
+ObjectTemplate.addTemplate e_MuzzThomp
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition -0.004/0.08/0.49
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0.01/0.09/0.3405
+ObjectTemplate.setRotation 0/0/0
+
+rem *** Ppd-34Lod ***
+ObjectTemplate.create LodObject Ppd-34Lod
+ObjectTemplate.lodSelector HandWeaponLodSelector
+ObjectTemplate.addTemplate Ppd-34Complex
+ObjectTemplate.addTemplate Ppd-34Simple
+
+rem *** Ppd-34Complex ***
+ObjectTemplate.create AnimatedBundle Ppd-34Complex
+ObjectTemplate.geometry Ppd-34
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Thompson.ske
+ObjectTemplate.addTemplate Ppd-34Magasin
+ObjectTemplate.bindToSkeletonPart magasin
+beginrem
+ObjectTemplate.addTemplate Ppd-34Flerp
+ObjectTemplate.bindToSkeletonPart flerp
+endrem
+
+rem *** Ppd-34Magasin ***
+ObjectTemplate.create SimpleObject Ppd-34Magasin
+ObjectTemplate.geometry Ppd-34Magasin
+
+rem *** Ppd-34Flerp ***
+ObjectTemplate.create SimpleObject Ppd-34Flerp
+ObjectTemplate.geometry ThompsonFlerp
+
+rem *** Ppd-34Simple ***
+ObjectTemplate.create SimpleObject Ppd-34Simple
+ObjectTemplate.geometry Shad_Ppd-34
+

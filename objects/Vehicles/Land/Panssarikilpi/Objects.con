@@ -1,0 +1,203 @@
+rem *** Panssarikilpi ***
+ObjectTemplate.create PlayerControlObject Panssarikilpi
+ObjectTemplate.NameTagOffset 0/-0.2/0
+ObjectTemplate.setNetworkableInfo PanssarikilpiBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 2.5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.drag 1.5
+ObjectTemplate.mass 1000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 20
+ObjectTemplate.maxhitpoints 20
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 1
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileCriticalDamage 2
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/1/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.aiTemplate Panssarikilpi
+ObjectTemplate.addTemplate lodPanssarikilpi
+ObjectTemplate.setSoldierExitLocation 0/0/-1 0/0/0
+ObjectTemplate.GUIIndex 71
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTScoutCar
+ObjectTemplate.setToolTipType TTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_pkilpi_16x16.dds"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodPanssarikilpi ***
+ObjectTemplate.create LodObject lodPanssarikilpi
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate PanssarikilpiComplex
+ObjectTemplate.addTemplate PanssarikilpiSimple
+ObjectTemplate.addTemplate PanssarikilpiWreck
+ObjectTemplate.lodSelector PanssarikilpiLodSelector
+
+rem *** PanssarikilpiComplex ***
+ObjectTemplate.create Bundle PanssarikilpiComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate lodPanssarikilpiCockpit
+ObjectTemplate.addTemplate Panssarikilpidummymesh
+ObjectTemplate.setPosition 0.0/-0.70/0
+ObjectTemplate.addTemplate PanssarikilpiCamera
+ObjectTemplate.setPosition 0.00533717/-0.15/-0.65
+ObjectTemplate.addTemplate PanssarikilpiSeat
+ObjectTemplate.setPosition 0.32633717/0.3/-0.8
+ObjectTemplate.addTemplate PanssarikilpiEntry
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.addTemplate PanssarikilpiEntry
+ObjectTemplate.setPosition 0/0/-1
+ObjectTemplate.addTemplate PanssarikilpiEngine
+ObjectTemplate.addTemplate PanssarikilpiSteering
+ObjectTemplate.setPosition -0.276/0.368/0.546
+
+
+rem *** paskaa, ei toimi oikein ***
+ObjectTemplate.create AnimatedBundle Attach_L_Hand_Panssarikilpi
+ObjectTemplate.addSkeletonIK Bip01_L_Hand 0/0.00/0 90/90/-90
+ObjectTemplate.create AnimatedBundle Attach_R_Hand_Panssarikilpi
+ObjectTemplate.addSkeletonIK Bip01_R_Hand  0/0/0 -90/-90/90
+
+
+rem *** lodPanssarikilpiCockpit ***
+ObjectTemplate.create LodObject lodPanssarikilpiCockpit
+ObjectTemplate.addTemplate PanssarikilpiCockpitExternal
+ObjectTemplate.addTemplate PanssarikilpiCockpitInternal
+ObjectTemplate.setPosition 0/-0.249/-0.433
+ObjectTemplate.lodSelector KubelwagenCockpitSelector
+
+rem *** PanssarikilpiCockpitExternal ***
+ObjectTemplate.create SimpleObject PanssarikilpiCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry Kubelwagen_Hull_M1
+
+rem *** PanssarikilpiCockpitInternal ***
+ObjectTemplate.create Bundle PanssarikilpiCockpitInternal
+ObjectTemplate.geometry Kubelwagen_1P_M1
+
+
+rem *** PanssarikilpiSimple ***
+ObjectTemplate.create SimpleObject Panssarikilpidummymesh
+ObjectTemplate.geometry Panssarikilpi_M1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** PanssarikilpiCamera ***
+ObjectTemplate.create Camera PanssarikilpiCamera
+ObjectTemplate.setMinRotation -110/-40/0
+ObjectTemplate.setMaxRotation 110/10/0
+ObjectTemplate.setPivotPosition 0/0.25/0.3
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** PanssarikilpiSeat ***
+ObjectTemplate.create seatobject PanssarikilpiSeat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatAnimationLowerBody Lb_panssarikilpi
+rem ObjectTemplate.seatAnimationUpperBody Ub_PassengerInHanomag
+ObjectTemplate.seatAnimationUpperBody Ub_LieDownL39
+rem ObjectTemplate.seatAnimationUpperBody Ub_kk_asento
+
+rem *** PanssarikilpiEntry ***
+ObjectTemplate.create EntryPoint PanssarikilpiEntry
+ObjectTemplate.setEntryRadius 2.4
+
+rem *** PanssarikilpiFrontWheelL ***
+ObjectTemplate.create rotationalbundle PanssarikilpiFrontWheelL
+ObjectTemplate.setNetworkableInfo PanssarikilpiSteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate PanssarikilpiFrontSpringL
+ObjectTemplate.setPosition 0/-0.425/0
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 75/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** PanssarikilpiFrontWheelR ***
+ObjectTemplate.create rotationalbundle PanssarikilpiFrontWheelR
+ObjectTemplate.setNetworkableInfo PanssarikilpiSteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate PanssarikilpiFrontSpringR
+ObjectTemplate.setPosition 0/-0.425/0
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 75/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** HandWheel_Panssarikilpi0 ***
+ObjectTemplate.create rotationalbundle HandWheel_Panssarikilpi0
+ObjectTemplate.setNetworkableInfo PanssarikilpiSteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry Kubelwagen_WheelL_M1
+ObjectTemplate.setMaxSpeed 0/200/0
+ObjectTemplate.setAcceleration 0/100/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setInputToPitch c_PIThrottle
+
+
+rem *** PanssarikilpiSteering ***
+ObjectTemplate.create rotationalbundle PanssarikilpiSteering
+ObjectTemplate.setNetworkableInfo PanssarikilpiSteeringInfo
+ObjectTemplate.addTemplate lodPanssarikilpiSteering
+
+rem *** lodPanssarikilpiSteering ***
+ObjectTemplate.create LodObject lodPanssarikilpiSteering
+ObjectTemplate.addTemplate PanssarikilpiHighRSteering
+ObjectTemplate.addTemplate PanssarikilpiLowSteering
+ObjectTemplate.lodSelector KubelwagenSteeringSelector
+
+rem *** PanssarikilpiHighRSteering ***
+ObjectTemplate.create SimpleObject PanssarikilpiHighRSteering
+ObjectTemplate.geometry Kubelwagen_1P_Steering_M1
+
+rem *** PanssarikilpiLowSteering ***
+ObjectTemplate.create SimpleObject PanssarikilpiLowSteering
+ObjectTemplate.geometry Kubelwagen_Steering_M1
+
+
+rem *** PanssarikilpiSimple ***
+ObjectTemplate.create SimpleObject PanssarikilpiSimple
+ObjectTemplate.geometry Kubelwagen_Hull_L1
+
+rem *** PanssarikilpiWreck ***
+ObjectTemplate.create SimpleObject PanssarikilpiWreck
+ObjectTemplate.geometry Wreck_Kubel_m1
+
+
+
+rem *** KubelwagenLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 PanssarikilpiLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 135
+

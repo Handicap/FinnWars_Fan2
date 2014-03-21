@@ -1,0 +1,14 @@
+NetworkableInfo.createNewInfo SturmGeschutzTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SturmGeschutzGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo SturmGeschutzEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SturmGeschutzBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+

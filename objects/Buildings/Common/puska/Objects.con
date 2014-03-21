@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject puska1
+ObjectTemplate.geometry puska1
+ObjectTemplate.setHasCollisionPhysics 1

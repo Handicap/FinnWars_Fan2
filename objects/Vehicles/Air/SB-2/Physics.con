@@ -1,0 +1,198 @@
+rem *** SB-2_Body_Wing ***
+ObjectTemplate.create Wing SB-2_Body_Wing
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 6.0
+
+rem *** SB-2_FlapLeftMiddle ***
+ObjectTemplate.create Wing SB-2_FlapL
+ObjectTemplate.setNetworkableInfo SB-2WingInfo
+ObjectTemplate.geometry SB-2_FlapL
+ObjectTemplate.setMinRotation 0/-7/0
+ObjectTemplate.setMaxRotation 0/7/0
+ObjectTemplate.setMaxSpeed 0/10/0
+ObjectTemplate.setAcceleration 0/-7/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 2.5
+ObjectTemplate.setWingLift 4.2
+ObjectTemplate.setFlapLift 4.0
+
+
+rem *** SB-2_FlapRightMiddle ***
+ObjectTemplate.create Wing SB-2_FlapR
+ObjectTemplate.setNetworkableInfo SB-2WingInfo
+ObjectTemplate.geometry SB-2_FlapR
+ObjectTemplate.setMinRotation 0/-7/0
+ObjectTemplate.setMaxRotation 0/7/0
+ObjectTemplate.setMaxSpeed 0/10/0
+ObjectTemplate.setAcceleration 0/7/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 2.5
+ObjectTemplate.setWingLift 4.2
+ObjectTemplate.setFlapLift 4.0
+
+
+
+rem *** SB-2_FlapTailLeft ***
+ObjectTemplate.create Wing SB-2_FlapTailLeft
+ObjectTemplate.setNetworkableInfo SB-2WingInfo
+ObjectTemplate.geometry SB-2_FlapTailLeft_M1
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/8/0
+ObjectTemplate.setMaxSpeed 0/8/0
+ObjectTemplate.setAcceleration 0/-7/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1.45
+
+rem *** SB-2_FlapTailRight ***
+ObjectTemplate.create Wing SB-2_FlapTailRight
+ObjectTemplate.setNetworkableInfo SB-2WingInfo
+ObjectTemplate.geometry SB-2_FlapTailRight_M1
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/8/0
+ObjectTemplate.setMaxSpeed 0/8/0
+ObjectTemplate.setAcceleration 0/-7/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1.45
+
+rem *** SB-2_Rudder ***
+ObjectTemplate.create Wing SB-2_Rudder
+ObjectTemplate.setNetworkableInfo SB-2WingInfo
+ObjectTemplate.geometry SB-2_Rudder_M1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/20/0
+ObjectTemplate.setAcceleration 0/15/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 1.0
+ObjectTemplate.setFlapLift 0.4
+
+
+rem *** SB-2_EngineLeft ***
+ObjectTemplate.create Engine SB-2_EngineLeft
+ObjectTemplate.setNetworkableInfo SB-2EngineInfo
+ObjectTemplate.loadSoundScript Sounds/B17Engine1.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodSB-2Propeller
+ObjectTemplate.setPosition -0.08/0/1.47
+ObjectTemplate.addTemplate SB-2_Gear_Left
+ObjectTemplate.setPosition 0.126/-0.542/0.1
+ObjectTemplate.addTemplate SB-2_Gear_Right
+ObjectTemplate.setPosition 5.352/-0.542/0.1
+rem -------------------------------------
+beginrem
+ObjectTemplate.setMinRotation 0/0/-3000
+ObjectTemplate.setMaxRotation 0/0/7500
+ObjectTemplate.setMaxSpeed 0/0/2500
+ObjectTemplate.setAcceleration 0/0/750
+endrem
+
+ObjectTemplate.setMinRotation -0.15/0/-1500
+ObjectTemplate.setMaxRotation 0.15/0/3200
+ObjectTemplate.setMaxSpeed 750/0/1250
+ObjectTemplate.setAcceleration 500/0/800
+
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 5.0
+ObjectTemplate.setDifferential 1
+rem ObjectTemplate.setDifferential 1.9
+ObjectTemplate.setGearUp 0.4
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 1200
+
+rem *** SB-2_EngineRight ***
+ObjectTemplate.create Engine SB-2_EngineRight
+ObjectTemplate.setNetworkableInfo SB-2EngineInfo
+ObjectTemplate.loadSoundScript Sounds/B17Engine2.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodSB-2Propeller
+ObjectTemplate.setPosition 0/0/1.47
+ObjectTemplate.addTemplate SB-2_Gear_Back_Turn
+ObjectTemplate.setPosition -2.7929/-0.081/-8.071
+rem -------------------------------------
+beginrem
+ObjectTemplate.setMinRotation 0/0/-3000
+ObjectTemplate.setMaxRotation 0/0/7500
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/2000
+endrem
+
+ObjectTemplate.setMinRotation -0.15/0/-1500
+ObjectTemplate.setMaxRotation 0.15/0/3200
+ObjectTemplate.setMaxSpeed 750/0/1250
+ObjectTemplate.setAcceleration 500/0/800
+
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 5.0
+ObjectTemplate.setDifferential 1
+rem ObjectTemplate.setDifferential 1.9
+ObjectTemplate.setGearUp 0.4
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 1200
+
+
+
+rem *** SB-2_Wheel_Left ***
+ObjectTemplate.create Spring SB-2_Wheel_Left
+ObjectTemplate.geometry SB-2_WheelLeft_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 17
+
+
+rem *** SB-2_Wheel_Right ***
+ObjectTemplate.create Spring SB-2_Wheel_Right
+ObjectTemplate.geometry SB-2_WheelRight_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 17
+
+
+rem *** SB-2_Wheel_Back ***
+ObjectTemplate.create Spring SB-2_Wheel_Back
+ObjectTemplate.geometry SB-2_WheelBack_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 15
+
+rem *** BF109BodyWingVertical ***
+ObjectTemplate.create Wing SB-2BodyWingVertical
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/-0.1
+ObjectTemplate.setWingLift 0.4
+ObjectTemplate.setFlapLift 0

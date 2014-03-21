@@ -1,0 +1,32 @@
+ObjectTemplate.create Kit RusSummer_Sniper_simonov
+ObjectTemplate.setType Scout
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry Kit_simonov
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate Jap_Helmet
+rem ObjectTemplate.addTemplate Radio
+rem ObjectTemplate.addTemplate Russian_hippack
+ObjectTemplate.addTemplate NoParachute
+ObjectTemplate.addTemplate pistoolikotelo
+ObjectTemplate.addTemplate kiikarikotelo
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_scout_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_scout_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_alliesKnife.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_nagantrevolver.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_simonov.dds"
+ObjectTemplate.addWeaponIcon "Weapon/icon_empty.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_binoculars.tga"
+
+ObjectTemplate.setKitIcon 0 "kits/rus_mosinnagant_sniper.dds"
+ObjectTemplate.setKitName 0 ""
+ObjectTemplate.setKitActiveName 0 "In use/limit"
+
+ObjectTemplate.addTemplate SimonovSniper
+ObjectTemplate.addTemplate Nagant
+ObjectTemplate.addTemplate Binoculars
+ObjectTemplate.addTemplate KnifeAllies
+
+
+ObjectTemplate.aitemplate Scout

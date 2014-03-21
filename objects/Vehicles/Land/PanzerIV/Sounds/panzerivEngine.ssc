@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/panzerivEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/panzerivEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/panzerivEngine.ssc

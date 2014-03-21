@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject tukkiseina_k
+ObjectTemplate.geometry tukkiseina_k
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.cullRadiusScale 2.5

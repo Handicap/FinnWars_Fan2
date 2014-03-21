@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ChihaEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ChihaEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/ChihaEngine.ssc

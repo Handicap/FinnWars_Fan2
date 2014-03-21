@@ -1,0 +1,251 @@
+ObjectTemplate.create EffectBundle e_Savukranunew
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/SAVUKRANU.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_Savukranun
+ObjectTemplate.timeToLive CRD_NONE/30/0/0
+ObjectTemplate.addTemplate Em_Savukranu1n
+ObjectTemplate.timeToLive CRD_NONE/30/0/0
+ObjectTemplate.addTemplate Em_Savukranu2n
+ObjectTemplate.timeToLive CRD_NONE/30/0/0
+ObjectTemplate.addTemplate Em_Savukranu3n
+ObjectTemplate.timeToLive CRD_NONE/30/0/0
+ObjectTemplate.addTemplate Em_Savukranu4n
+ObjectTemplate.timeToLive CRD_NONE/30/0/0
+ObjectTemplate.addTemplate Em_Savukranu5n
+ObjectTemplate.timeToLive CRD_NONE/30/0/0
+rem -------------------------------------
+
+rem *** Em_Savukranu ***
+ObjectTemplate.create Emitter Em_Savukranun
+ObjectTemplate.template Fx_Savukranun
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 0.0004
+ObjectTemplate.lodDistance 600
+ObjectTemplate.delay CRD_NONE/2/2/0
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/2/0/0
+rem ObjectTemplate.relativePositionInDof CRD_NONE/-1.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/1.7/-1.7/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/-1.4/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/-1.2/1.2/0
+rem ObjectTemplate.startRotation CRD_UNIFORM/100/0/0
+
+
+rem *** Fx_Savukranu ***
+ObjectTemplate.create SpriteParticle Fx_Savukranun
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.size CRD_UNIFORM/2.6/2/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.4|20/1.9|50/3.5
+rem ObjectTemplate.gravityModifierOverTime 0.01/0.001|20/0.01|100/0.0
+ObjectTemplate.texture E_dustwindw_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.XYSizeRatio CRD_NONE/1.0/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+rem ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+rem ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|100/200/200/200/255
+rem ObjectTemplate.hasStaticColor 1
+
+rem ********************************************************************************************************************
+
+
+
+rem *** Em_Savukranu ***
+ObjectTemplate.create Emitter Em_Savukranu1n
+ObjectTemplate.template Fx_Savukranu1n
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 0.2
+ObjectTemplate.lodDistance 600
+ObjectTemplate.delay CRD_NONE/2.5/2.5/0
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/2/0/0
+rem ObjectTemplate.relativePositionInDof CRD_NONE/-1.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0.7/-0.7/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/-0.4/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/0.2/0/0
+rem ObjectTemplate.startRotation CRD_UNIFORM/100/0/0
+
+
+rem *** Fx_Savukranu ***
+ObjectTemplate.create SpriteParticle Fx_Savukranu1n
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.size CRD_UNIFORM/2.6/2/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.4|20/1.9|50/3.5
+rem ObjectTemplate.gravityModifierOverTime 0.01/0.001|20/0.001|100/0.0
+ObjectTemplate.texture E_dustwindw_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.XYSizeRatio CRD_NONE/1.0/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+rem ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+rem ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|100/200/200/200/255
+rem ObjectTemplate.hasStaticColor 1
+
+
+rem ********************************************************************************************************************
+
+
+
+rem *** Em_Savukranu ***
+ObjectTemplate.create Emitter Em_Savukranu2n
+ObjectTemplate.template Fx_Savukranu2n
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 0.06
+ObjectTemplate.lodDistance 600
+ObjectTemplate.delay CRD_NONE/2.5/2.5/0
+ObjectTemplate.timeToLive CRD_NONE/0.4/0/0
+ObjectTemplate.intensity CRD_NONE/8/0/0
+rem ObjectTemplate.relativePositionInDof CRD_NONE/-1.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/1.7/-1.7/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/-1.4/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/-1.2/0/0
+rem ObjectTemplate.startRotation CRD_UNIFORM/100/0/0
+
+
+rem *** Fx_Savukranu ***
+ObjectTemplate.create SpriteParticle Fx_Savukranu2n
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.size CRD_UNIFORM/2.5/2/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.4|20/1.9|50/3.5
+rem ObjectTemplate.gravityModifierOverTime 0.01/0.001|20/0.001|100/0.0
+ObjectTemplate.texture E_dustwindw_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.XYSizeRatio CRD_NONE/1.0/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+rem ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+rem ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|100/200/200/200/255
+rem ObjectTemplate.hasStaticColor 1
+
+
+
+
+
+rem ********************************************************************************************************************
+
+
+rem *** Em_Savukranu ***
+ObjectTemplate.create Emitter Em_Savukranu3n
+ObjectTemplate.template Fx_Savukranu3n
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 0.6
+ObjectTemplate.lodDistance 600
+ObjectTemplate.delay CRD_NONE/2/2/0
+ObjectTemplate.timeToLive CRD_NONE/0.55/0/0
+ObjectTemplate.intensity CRD_NONE/2/0/0
+rem ObjectTemplate.relativePositionInDof CRD_NONE/-1.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0.7/-0.7/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/-0.4/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/0.2/0/0
+rem ObjectTemplate.startRotation CRD_UNIFORM/100/0/0
+
+
+rem *** Fx_Savukranu ***
+ObjectTemplate.create SpriteParticle Fx_Savukranu3n
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.size CRD_UNIFORM/2.6/2/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.4|20/1.9|50/3.5
+rem ObjectTemplate.gravityModifierOverTime 0.01/0.001|20/0.01|100/0.0
+ObjectTemplate.texture E_dustwindw_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.XYSizeRatio CRD_NONE/1.0/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+rem ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+rem ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|100/200/200/200/255
+rem ObjectTemplate.hasStaticColor 1
+
+
+rem ********************************************************************************************************************
+
+
+
+
+rem *** Em_Savukranu ***
+ObjectTemplate.create Emitter Em_Savukranu4n
+ObjectTemplate.template Fx_Savukranu4n
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 0.0009
+ObjectTemplate.lodDistance 600
+ObjectTemplate.delay CRD_NONE/2/2/0
+ObjectTemplate.timeToLive CRD_NONE/0.7/0/0
+ObjectTemplate.intensity CRD_NONE/2/0/0
+rem ObjectTemplate.relativePositionInDof CRD_NONE/-1.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0.7/-0.7/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/-0.4/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/-0.2/0/0
+rem ObjectTemplate.startRotation CRD_UNIFORM/100/0/0
+
+
+rem *** Fx_Savukranu ***
+ObjectTemplate.create SpriteParticle Fx_Savukranu4n
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.size CRD_UNIFORM/2.6/2/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.4|20/1.9|50/3.5
+rem ObjectTemplate.gravityModifierOverTime 0.01/0.001|20/0.01|100/0.0
+ObjectTemplate.texture E_dustwindw_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.XYSizeRatio CRD_NONE/1.0/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+rem ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+rem ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|100/200/200/200/255
+rem ObjectTemplate.hasStaticColor 1
+
+
+rem ********************************************************************************************************************
+
+
+
+
+rem *** Em_Savukranu ***
+ObjectTemplate.create Emitter Em_Savukranu5n
+ObjectTemplate.template Fx_Savukranu5n
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 0.08
+ObjectTemplate.lodDistance 600
+ObjectTemplate.delay CRD_NONE/2/2/0
+ObjectTemplate.timeToLive CRD_NONE/0.8/0/0
+ObjectTemplate.intensity CRD_NONE/1/0/0
+rem ObjectTemplate.relativePositionInDof CRD_NONE/-1.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0.7/-0.7/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/-0.4/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/0.0/0/0
+rem ObjectTemplate.startRotation CRD_UNIFORM/100/0/0
+
+rem *** Fx_Savukranu ***
+ObjectTemplate.create SpriteParticle Fx_Savukranu5n
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.size CRD_UNIFORM/5.6/2/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.4|20/1.9|50/3.5
+rem ObjectTemplate.gravityModifierOverTime 0.01/0.001|20/0.01|100/0.0
+ObjectTemplate.texture E_dustwindw_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.XYSizeRatio CRD_NONE/1.0/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+rem ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+rem ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|100/200/200/200/255
+rem ObjectTemplate.hasStaticColor 1
+
+
+rem ********************************************************************************************************************

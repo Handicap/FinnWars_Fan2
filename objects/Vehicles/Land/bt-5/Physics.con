@@ -1,0 +1,105 @@
+rem *** bt-5engine_l ***
+ObjectTemplate.create Engine bt-5engine_l
+ObjectTemplate.setNetworkableInfo bt-5EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/T26-M37Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 6
+ObjectTemplate.setDifferential 3
+ObjectTemplate.setNumberOfGears 2
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate bt-5trackl
+
+rem *** bt-5_etu_r ***
+ObjectTemplate.create Spring bt-5_etu_r
+ObjectTemplate.geometry bt-5_etu_r_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** bt-5_etu_r ***
+ObjectTemplate.create Spring bt-5_etu_l
+ObjectTemplate.geometry bt-5_etu_l_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** bt-5_keski_l ***
+ObjectTemplate.create Spring bt-5_keski_l
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry bt-5_keski_l_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 17.5
+ObjectTemplate.setDamping 2.2
+
+rem *** bt-5_keski_l ***
+ObjectTemplate.create Spring bt-5_keski_r
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry bt-5_keski_r_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 17.5
+ObjectTemplate.setDamping 2.2
+
+rem *** bt-5_taka_l ***
+ObjectTemplate.create Spring bt-5_taka_l
+ObjectTemplate.geometry bt-5_taka_l_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** bt-5_taka_r ***
+ObjectTemplate.create Spring bt-5_taka_r
+ObjectTemplate.geometry bt-5_taka_r_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** bt-5engine_r ***
+ObjectTemplate.create Engine bt-5engine_r
+ObjectTemplate.setNetworkableInfo bt-5EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/T26-M37Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 6
+ObjectTemplate.setDifferential 3
+ObjectTemplate.setNumberOfGears 2
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate bt-5trackr
+
+

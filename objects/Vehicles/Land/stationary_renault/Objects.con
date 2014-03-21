@@ -1,0 +1,160 @@
+rem *** stationary_renault ***
+ObjectTemplate.create PlayerControlObject stationary_renault
+ObjectTemplate.NameTagOffset 0/-0.5/0
+ObjectTemplate.setNetworkableInfo Stationary_RenaultBodyInfo
+ObjectTemplate.geometry RenaultFT_Hull_M1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 80
+ObjectTemplate.maxhitpoints 80
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 40
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/1/-1.7
+ObjectTemplate.addArmorEffect 15 e_PanzFire 0/0.8/-1.6
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate stationary_renault
+ObjectTemplate.setSoldierExitLocation -0/2.5/0 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/icon_gunner.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_renault_16x16.dds"
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate lodstationary_renault
+ObjectTemplate.setPosition 0.0970691/0.0/-0.158272
+
+rem *** lodstationary_renault ***
+ObjectTemplate.create LodObject lodstationary_renault
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.lodSelector stationary_renaultlodselector
+ObjectTemplate.addTemplate stationary_renaultcomplex
+ObjectTemplate.addTemplate stationary_renaultsimple
+ObjectTemplate.addTemplate stationary_renaultwreck
+
+
+
+ObjectTemplate.create bundle stationary_renaultcomplex
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.loadSoundScript Sounds/WespeTrack.ssc
+ObjectTemplate.addTemplate stationary_renaultentry
+ObjectTemplate.setPosition -0.299/0.0/1.2
+ObjectTemplate.addTemplate stationary_renaultentry
+ObjectTemplate.setPosition -0.299/0.0/-1.199
+ObjectTemplate.addTemplate stationary_renaulttower
+ObjectTemplate.setPosition -0.1392556/0.746245/0.7846509
+
+
+
+
+rem *** stationary_renaultentry ***
+ObjectTemplate.create EntryPoint stationary_renaultentry
+ObjectTemplate.setEntryRadius 2.5
+
+rem *** stationary_renaultcamera ***
+ObjectTemplate.create Camera stationary_renaultcamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+
+
+
+
+rem *** renaultfttower ***
+ObjectTemplate.create rotationalbundle stationary_renaulttower
+ObjectTemplate.setNetworkableInfo Stationary_RenaultTurretInfo
+ObjectTemplate.loadSoundScript Sounds/renaultftTurret.ssc
+ObjectTemplate.geometry RenaultFT_Tower_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMaxSpeed 20/20/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate stationary_renaultgunbase
+ObjectTemplate.setPosition 0.0/0.349555/0.453856
+
+
+
+rem *** renaultftgunbase ***
+ObjectTemplate.create rotationalbundle stationary_renaultgunbase
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo Stationary_RenaultGunInfo
+ObjectTemplate.loadSoundScript Sounds/renaultftgunbase.ssc
+ObjectTemplate.setMinRotation 0/-35/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate renaultftcannon
+ObjectTemplate.setPosition -0.0218231/-0.00212097/0.014746
+ObjectTemplate.addTemplate stationary_renaultgunnercamera
+ObjectTemplate.setPosition -0.480608/-0.00109491/0.0558218
+rem ObjectTemplate.setPosition -0.480608/-0.00109491/0.0558218
+ObjectTemplate.addTemplate lodvickgunnerCockpit
+ObjectTemplate.setPosition 0.597/0.0/0.15
+rem ObjectTemplate.addTemplate coaxial_mg42
+rem ObjectTemplate.setPosition 0.148202/-0.00209494/0.0423546
+
+
+rem *** renaultftgunnercamera ***
+ObjectTemplate.create camera stationary_renaultgunnercamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+ObjectTemplate.OutsideHudOffset 0.26/0.606/-0.25
+
+
+
+rem *** stationary_renaultsimple ***
+ObjectTemplate.create SimpleObject stationary_renaultsimple
+ObjectTemplate.geometry RenaultFT_Hull_L1
+
+rem *** stationary_renaultwreck ***
+ObjectTemplate.create SimpleObject stationary_renaultwreck
+ObjectTemplate.geometry Wreck_RenaultFT_m1
+
+
+
+
+rem *** renaultftlodselector ***
+LodSelectorTemplate.create distcompareselector2 stationary_renaultlodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+

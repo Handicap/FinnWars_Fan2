@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Flak38Carriage.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Flak38Carriage.ssc
+	
+#templateLevel LOW
+
+	#include Low/Flak38Carriage.ssc

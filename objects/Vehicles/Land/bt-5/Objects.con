@@ -1,0 +1,318 @@
+rem *** bt-5 ***
+ObjectTemplate.create PlayerControlObject bt-5
+ObjectTemplate.NameTagOffset 0/-0.5/0
+ObjectTemplate.setNetworkableInfo bt-5BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 10
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.hitpoints 120
+ObjectTemplate.maxhitpoints 120
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 55
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 20
+ObjectTemplate.hpLostWhileDamageFromDeepWater 20
+rem ObjectTemplate.speedMod 0.5
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.addArmorEffect 55 e_PanzDamage 0/1/-1.7
+ObjectTemplate.addArmorEffect 20 e_PanzFire 0/0.8/-1.6
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.damageFromDeepWater 1
+ObjectTemplate.aiTemplate bt-5
+ObjectTemplate.setSoldierExitLocation -0/0.7/-1.2 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_panzeriv.tga"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate lodbt-5
+ObjectTemplate.setPosition 0.0970691/0.0/-0.158272
+
+rem *** lodbt-5 ***
+ObjectTemplate.create LodObject lodbt-5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodselector bt-5LodSelector
+ObjectTemplate.addTemplate bt-5complex
+ObjectTemplate.addTemplate bt-5simple
+ObjectTemplate.addTemplate bt-5wreck
+
+rem *** bt-5complex ***
+ObjectTemplate.create bundle bt-5complex
+ObjectTemplate.loadSoundScript Sounds/T26-M37Track.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate lodbt-5cockpit
+ObjectTemplate.addTemplate bt-5entry
+ObjectTemplate.setPosition -0.299/0.0/1.2
+ObjectTemplate.addTemplate bt-5entry
+ObjectTemplate.setPosition -0.299/0.0/-1.199
+ObjectTemplate.addTemplate bt-5engine_l
+ObjectTemplate.setPosition 0.0/0.0/0
+ObjectTemplate.addTemplate bt-5engine_r
+ObjectTemplate.setPosition 0.0/0.0/0
+ObjectTemplate.addTemplate bt-5camera
+ObjectTemplate.setPosition -0.169/0.49/0.955
+ObjectTemplate.addTemplate bt-5_gunner_pco1
+ObjectTemplate.setPosition -0.0945622/0.9/0.140706
+ObjectTemplate.addTemplate e_TankinPakokaasu
+ObjectTemplate.setPosition -0.4/0.1/-2.5
+ObjectTemplate.addTemplate bt-5seat
+ObjectTemplate.setPosition 0/0.1/2.5
+ObjectTemplate.addTemplate bt-5_tuuletus
+
+
+rem *** näkymätön collboxi johon voi heittää molotovin ***
+ObjectTemplate.create SimpleObject bt-5_tuuletus
+ObjectTemplate.geometry bt-5_tuuletus
+ObjectTemplate.hasCollisionPhysics 1
+
+
+
+rem *** zis5seat ***
+ObjectTemplate.create seatobject bt-5seat
+ObjectTemplate.seatFlags c_SeatShowHeadOfSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** lodbt-5cockpit ***
+ObjectTemplate.create LodObject lodbt-5cockpit
+ObjectTemplate.lodselector bt-5CockpitSelector
+ObjectTemplate.addTemplate bt-5cockpitexternal
+ObjectTemplate.addTemplate bt-5cockpitinternal
+ObjectTemplate.setPosition 0.0/-0.792/-0.399
+
+rem *** bt-5cockpitexternal ***
+ObjectTemplate.create SimpleObject bt-5cockpitexternal
+ObjectTemplate.geometry bt-5_Hull_M1
+
+rem *** bt-5cockpitinternal ***
+ObjectTemplate.create SimpleObject bt-5cockpitinternal
+ObjectTemplate.geometry 1P_bt-5_Driver_M1
+
+rem *** bt-5entry ***
+ObjectTemplate.create EntryPoint bt-5entry
+ObjectTemplate.setEntryRadius 2.5
+
+rem *** bt-5trackl ***
+ObjectTemplate.create animatedbundle bt-5trackl
+ObjectTemplate.geometry bt-5_Track_L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/bt-5_track_l.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.008/0
+
+ObjectTemplate.addTemplate bt-5_etu_l
+ObjectTemplate.setPosition -0.9996/-0.3527/2.3357
+
+ObjectTemplate.addTemplate bt-5_keski_l
+ObjectTemplate.setPosition -0.9998/-0.7/1.5033
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+
+ObjectTemplate.addTemplate bt-5_keski_l
+ObjectTemplate.setPosition -0.9998/-0.7/0.4821
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+
+ObjectTemplate.addTemplate bt-5_keski_l
+ObjectTemplate.setPosition -0.9998/-0.7/-0.657
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+
+ObjectTemplate.addTemplate bt-5_keski_l
+ObjectTemplate.setPosition -0.9998/-0.7/-1.5645
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+
+ObjectTemplate.addTemplate bt-5_taka_l
+ObjectTemplate.setPosition -1.0004/-0.431/-2.3643
+
+rem *** bt-5trackr ***
+ObjectTemplate.create animatedbundle bt-5trackr
+ObjectTemplate.geometry bt-5_Track_R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/bt-5_track_r.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.008/0
+
+ObjectTemplate.addTemplate bt-5_etu_r
+ObjectTemplate.setPosition 0.9998/-0.3588/2.3362
+
+ObjectTemplate.addTemplate bt-5_keski_r
+ObjectTemplate.setPosition 0.9998/-0.7/1.4933
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+
+ObjectTemplate.addTemplate bt-5_keski_r
+ObjectTemplate.setPosition 0.9998/-0.7/0.4628
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+
+ObjectTemplate.addTemplate bt-5_keski_r
+ObjectTemplate.setPosition 0.9998/-0.7/-0.6677
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+
+ObjectTemplate.addTemplate bt-5_keski_r
+ObjectTemplate.setPosition 0.9998/-0.7/-1.5839
+ObjectTemplate.useAsBone 0/-0.25/0
+ObjectTemplate.setBoneOriginOffset 0/-0.2/0
+
+ObjectTemplate.addTemplate bt-5_taka_r
+ObjectTemplate.setPosition 1.0055/-0.431/-2.3643
+
+rem *** bt-5camera ***
+ObjectTemplate.create Camera bt-5camera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+rem *** bt-5_gunner_pco1 ***
+ObjectTemplate.create PlayerControlObject bt-5_gunner_pco1
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo bt-5BodyInfo
+ObjectTemplate.aiTemplate bt-5Cannon
+ObjectTemplate.setSoldierExitLocation -0/0.7/-1.2 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/icon_gunner.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.DirBarXScale 20
+ObjectTemplate.DirBarYScaleAbove 40
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate bt-5entry
+ObjectTemplate.setPosition 0.4/0.0/0.5
+ObjectTemplate.addTemplate bt-5tower
+ObjectTemplate.setPosition 0.08913487/-0.14/0.30782382
+
+rem *** bt-5tower ***
+ObjectTemplate.create rotationalbundle bt-5tower
+ObjectTemplate.setNetworkableInfo bt-5TurretInfo
+ObjectTemplate.loadSoundScript Sounds/T26-M37Turret.ssc
+ObjectTemplate.geometry bt-5_Tower_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMaxSpeed 20/20/0
+ObjectTemplate.setAcceleration 100/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate bt-5gunbase
+ObjectTemplate.setPosition 0.0/0.114339/0.7
+
+rem *** bt-5gunbase ***
+ObjectTemplate.create rotationalbundle bt-5gunbase
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo bt-5GunInfo
+ObjectTemplate.loadSoundScript Sounds/T26-M37gunbase.ssc
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate bt-5cannon
+ObjectTemplate.setPosition -0.0218231/-0.10212097/0.0
+ObjectTemplate.addTemplate bt-5gunnercamera
+ObjectTemplate.setPosition -0.480608/-0.00109491/0.0558218
+ObjectTemplate.addTemplate lod45gunnerCockpit
+ObjectTemplate.setPosition 0.597/0.0/0.2
+ObjectTemplate.addTemplate coaxial_DP
+ObjectTemplate.setPosition 0.148202/-0.10209494/0.0423546
+
+
+rem *** lodT34-76Cockpit ***
+ObjectTemplate.create LodObject lod45gunnerCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate 45gunnerCockpitExternal
+ObjectTemplate.addTemplate 45gunnerCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector 45gunnercockpitSelector
+
+
+rem *** T34-76CockpitExternal ***
+ObjectTemplate.create SimpleObject 45gunnerCockpitExternal
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** T34-76CockpitInternal ***
+ObjectTemplate.create SimpleObject 45gunnerCockpitInternal
+ObjectTemplate.geometry 1p_45Gunner
+
+
+rem *** T34-76cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector 45gunnercockpitSelector
+LodSelectorTemplate.addLodDistance 1
+LodSelectorTemplate.addLodComparison 0.5
+
+
+
+rem *** bt-5gunnercamera ***
+ObjectTemplate.create Camera bt-5gunnercamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+ObjectTemplate.OutsideHudOffset 0.26/0.606/-0.134
+
+rem *** bt-5simple ***
+ObjectTemplate.create SimpleObject bt-5simple
+ObjectTemplate.geometry bt-5_Hull_L1
+
+rem *** bt-5wreck ***
+ObjectTemplate.create SimpleObject bt-5wreck
+ObjectTemplate.geometry Wreck_bt-5_m1
+
+rem ***  Komsomoletscockpitselector ***
+LodSelectorTemplate.create distcompareselector  bt-5cockpitselector
+LodSelectorTemplate.addLodDistance 1.2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem ***  Komsomoletslodselector ***
+LodSelectorTemplate.create distcompareselector2  bt-5lodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+

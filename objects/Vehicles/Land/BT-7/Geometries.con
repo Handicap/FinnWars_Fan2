@@ -1,0 +1,57 @@
+renderer.beginGlobalCluster bt-7
+
+GeometryTemplate.create StandardMesh bt-7_Tower_M1
+GeometryTemplate.file bt-7_tower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh bt-7_gunbase_M1
+GeometryTemplate.file bt-7_gunbase
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh bt-7_tuuletus
+GeometryTemplate.file bt7-tuuletus
+
+
+GeometryTemplate.create StandardMesh bt-7_cannon_M1
+GeometryTemplate.file bt-7_pipe
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh bt-7_Hull_M1
+GeometryTemplate.file bt-7_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh bt-7_Hull_L1
+GeometryTemplate.file bt-7_hull
+GeometryTemplate.hasDynamicShadow 1
+
+
+GeometryTemplate.create StandardMesh Wreck_bt-7_M1
+GeometryTemplate.file bt-7_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500

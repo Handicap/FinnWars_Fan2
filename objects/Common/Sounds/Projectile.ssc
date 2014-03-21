@@ -1,0 +1,12 @@
+#templateLevel HIGH
+
+#include Projectile_MedLow.ssc
+
+#templateLevel MEDIUM
+
+#include Projectile_MedLow.ssc
+
+#templateLevel LOW
+
+#include Projectile_MedLow.ssc
+

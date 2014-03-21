@@ -1,0 +1,88 @@
+rem *** Ppsh41 ***
+ObjectTemplate.create HandFireArms Ppsh41
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate ThomsonProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 70
+ObjectTemplate.numOfMag 2
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 3.6
+rem ObjectTemplate.roundOfFire 11
+ObjectTemplate.roundOfFire 15
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.zoomFov 0.9
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.aiTemplate SuomiSMGSMG
+ObjectTemplate.GUIIndex 2
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_rumpu_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_rumpu_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 46
+ObjectTemplate.setAmomBarPosX 4
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setAmomBarTextPosX 8
+ObjectTemplate.setAmomBarTextPosY 4
+ObjectTemplate.soldierZoomFov 0.9
+ObjectTemplate.soldierZoomPosition -0.03/0.00/0.02
+ObjectTemplate.soldierCameraPosition -0.01/-0.04/0.09
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType 1
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 50
+ObjectTemplate.distToMinDamage 100
+
+ObjectTemplate.velocity 488
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.7/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/0.2/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+ObjectTemplate.setFireDev 2 0.35 0.06
+ObjectTemplate.setDevMod 1.0 0.85 0.6
+ObjectTemplate.setMinDev 0.7
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 2.25 0.3 0.3 0.10
+ObjectTemplate.setMiscDev 2.5 2.5 0.1
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/ppsh.ssc
+ObjectTemplate.createSkeleton animations/thompson.ske
+ObjectTemplate.useSkeletonPartAsMain thompson
+ObjectTemplate.addTemplate Ppsh41Lod
+ObjectTemplate.addTemplate e_MuzzThomp
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition -0.0/0.0884/0.3856
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0.0102/0.1051/0.362
+ObjectTemplate.setRotation 0/0/100
+
+rem *** Ppsh41Lod ***
+ObjectTemplate.create LodObject Ppsh41Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate Ppsh41Complex
+ObjectTemplate.addTemplate Ppsh41Simple
+
+rem *** Ppsh41Complex ***
+ObjectTemplate.create AnimatedBundle Ppsh41Complex
+ObjectTemplate.geometry Ppsh41
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/thompson.ske
+
+ObjectTemplate.addTemplate Ppsh41Magasin
+ObjectTemplate.bindToSkeletonPart magasin
+
+
+rem *** Ppsh41Magasin ***
+ObjectTemplate.create SimpleObject Ppsh41Magasin
+ObjectTemplate.geometry Ppsh41Magasin
+
+
+rem *** Ppsh41Simple ***
+ObjectTemplate.create SimpleObject Ppsh41Simple
+ObjectTemplate.geometry Shad_Ppsh41

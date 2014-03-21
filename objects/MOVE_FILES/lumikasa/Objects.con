@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject lumikasa
+ObjectTemplate.geometry lumikasa
+ObjectTemplate.setHasCollisionPhysics 1
+
+

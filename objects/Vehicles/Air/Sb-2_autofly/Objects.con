@@ -1,0 +1,80 @@
+
+
+rem *** Sb-2_autofly ***
+ObjectTemplate.create playercontrolobject Sb-2_autofly
+ObjectTemplate.setNetworkableInfo Sb-2_autofly_body_info
+ObjectTemplate.geometry Sb-2_autofly_Fuselage_M1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 1
+ObjectTemplate.mass 500
+ObjectTemplate.inertiaModifier 80000/500/80000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 1000
+ObjectTemplate.maxhitpoints 1000
+ObjectTemplate.material 60
+ObjectTemplate.criticalDamage 65
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Sb-2_autofly
+ObjectTemplate.setSoldierExitLocation -3/0.1/-2.8 0/0/0
+ObjectTemplate.GUIIndex 69
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_ju87.tga"
+ObjectTemplate.setVehicleIconPos 65/100
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bomb.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType VTDiveBomber
+ObjectTemplate.setToolTipType TTDiveBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_sb2_32x32.dds"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.addTemplate Sb-2_autoflycomplex
+
+
+rem *** Sb-2_autoflycomplex ***
+ObjectTemplate.create bundle Sb-2_autoflycomplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate sb-2Middle_Wing
+ObjectTemplate.setPosition 0/0/2
+ObjectTemplate.addTemplate sb-2Middle_Wing
+ObjectTemplate.setPosition 0/0/-2
+ObjectTemplate.addTemplate Sb-2_autoflyengine
+ObjectTemplate.setPosition 0.0/0.259/3.579
+ObjectTemplate.addTemplate bombstrike_spawner
+ObjectTemplate.setPosition 0.0/-2.0/0.0
+
+rem *** lodSb-2_autoflypropeller ***
+ObjectTemplate.create lodobject lodSb-2_autoflypropeller
+ObjectTemplate.lodselector Sb-2_autoflyPropSelector
+
+rem *** Sb-2_autoflypropellerstatic ***
+ObjectTemplate.create simpleobject Sb-2_autoflypropellerstatic
+ObjectTemplate.geometry Sb-2_autofly_prp1
+
+
+rem *** Sb-2_autoflypropellerblurred ***
+ObjectTemplate.create simpleobject Sb-2_autoflypropellerblurred
+ObjectTemplate.geometry Sb-2_autofly_prp2
+
+
+rem *** Sb-2_autoflypropselector ***
+LodSelectorTemplate.create compareselector Sb-2_autoflypropselector
+LodSelectorTemplate.addLodComparison 0.07

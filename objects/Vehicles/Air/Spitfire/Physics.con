@@ -1,0 +1,186 @@
+rem *** SpitfireAirbreakLeft ***
+ObjectTemplate.create Wing SpitfireAirbreakLeft
+ObjectTemplate.setNetworkableInfo Spitfire_wing_info
+ObjectTemplate.geometry spitfire_airbreak_left_m1
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 1.539/-0.05/0.883
+ObjectTemplate.setFlapLift 2
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+
+rem *** SpitfireAirbreakRight ***
+ObjectTemplate.create Wing SpitfireAirbreakRight
+ObjectTemplate.setNetworkableInfo Spitfire_wing_info
+ObjectTemplate.geometry spitfire_airbreak_right_m1
+ObjectTemplate.setMinRotation 0/-2/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -1.539/-0.05/0.883
+ObjectTemplate.setFlapLift 2
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+
+rem *** SpitfireRudderBackVertical ***
+ObjectTemplate.create Wing SpitfireRudderBackVertical
+ObjectTemplate.setNetworkableInfo Spitfire_wing_info
+ObjectTemplate.geometry spitfire_rodder_m1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/60/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1.5
+
+
+rem *** SpitfireBodyWingVertical ***
+ObjectTemplate.create Wing SpitfireBodyWingVertical
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/-0.6
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+
+rem *** SpitfireRudderBackLeft ***
+ObjectTemplate.create Wing SpitfireRudderBackLeft
+ObjectTemplate.setNetworkableInfo Spitfire_wing_info
+ObjectTemplate.geometry spitfire_tailflap_left_m1
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.7
+
+
+rem *** SpitfireRudderBackRight ***
+ObjectTemplate.create Wing SpitfireRudderBackRight
+ObjectTemplate.setNetworkableInfo Spitfire_wing_info
+ObjectTemplate.geometry spitfire_tailflap_right_m1
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.7
+
+
+rem *** SpitfireRudderFrontLeft ***
+ObjectTemplate.create Wing SpitfireRudderFrontLeft
+ObjectTemplate.setNetworkableInfo Spitfire_wing_info
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
+ObjectTemplate.geometry spitfire_wingflap_left_m1
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/120/0
+ObjectTemplate.setAcceleration 0/-120/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0.5/0/0.41
+ObjectTemplate.setWingLift 2.4
+ObjectTemplate.setFlapLift 2.3
+
+
+rem *** SpitfireRudderFrontRight ***
+ObjectTemplate.create Wing SpitfireRudderFrontRight
+ObjectTemplate.setNetworkableInfo Spitfire_wing_info
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
+ObjectTemplate.geometry spitfire_wingflap_right_m1
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/120/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -0.5/0/0.2
+ObjectTemplate.setWingLift 2.5
+ObjectTemplate.setFlapLift 2
+
+
+rem *** SpitfireEngine ***
+ObjectTemplate.create Engine SpitfireEngine
+ObjectTemplate.setNetworkableInfo Spitfire_engine_info
+ObjectTemplate.loadSoundScript Sounds/SpitfireEngine.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodSpitfirePropeller
+ObjectTemplate.setPosition 0/0.135/-0.799
+ObjectTemplate.addTemplate SpitfireLandingGearL
+ObjectTemplate.setPosition -0.645/-0.45/-3.543
+ObjectTemplate.addTemplate SpitfireLandingGearR
+ObjectTemplate.setPosition 0.646/-0.45/-3.543
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-3000
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 1000/0/500
+ObjectTemplate.setAcceleration 500/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 15
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 70
+
+
+rem *** SpitfireWheel3 ***
+ObjectTemplate.create Spring SpitfireWheel3
+ObjectTemplate.geometry spitfire_wheel_left_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** SpitfireWheel2 ***
+ObjectTemplate.create Spring SpitfireWheel2
+ObjectTemplate.geometry spitfire_wheel_right_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** SpitfireWheel1 ***
+ObjectTemplate.create Spring SpitfireWheel1
+ObjectTemplate.geometry spitfire_wheel_tail_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12

@@ -1,0 +1,6 @@
+NetworkableInfo.createNewInfo KettenKradInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo KettenKradSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+

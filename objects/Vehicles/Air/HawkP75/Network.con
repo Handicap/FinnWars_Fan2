@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo HawkP75_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo HawkP75_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo HawkP75_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

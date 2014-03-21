@@ -1,0 +1,104 @@
+rem *** Ammopack ***
+ObjectTemplate.create HandFireArms Ammopack
+ObjectTemplate.networkableInfo HandFireArmsInfo
+rem ObjectTemplate.loadSoundScript Sounds/MedPack.ssc
+ObjectTemplate.itemIndex 6
+ObjectTemplate.projectileTemplate AmmopackProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magType 0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 2
+ObjectTemplate.fireOnce 1
+ObjectTemplate.GUIIndex 9
+ObjectTemplate.hasArmor 1
+ObjectTemplate.material 70
+ObjectTemplate.hitpoints 10000
+ObjectTemplate.maxhitpoints 10000
+ObjectTemplate.AmmoType 2
+ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
+ObjectTemplate.setAmmoIcon "weapon/icon_ammo_64x32.tga"
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setHasMag 0
+ObjectTemplate.aiTemplate MedPackAI
+ObjectTemplate.soldierCameraPosition 0/-0.05/0.3
+ObjectTemplate.reloadtime 1.5
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 1
+ObjectTemplate.createSkeleton animations/MedPack.ske
+ObjectTemplate.useSkeletonPartAsMain base
+ObjectTemplate.addTemplate AmmopackLod
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+rem *** AmmopackLod ***
+ObjectTemplate.create LodObject AmmopackLod
+ObjectTemplate.lodSelector HandWeaponLodSelector
+ObjectTemplate.addTemplate AmmopackComplex
+ObjectTemplate.addTemplate AmmopackSimple
+
+rem *** AmmopackComplex ***
+ObjectTemplate.create AnimatedBundle AmmopackComplex
+ObjectTemplate.geometry AmmoPack
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/MedPack.ske
+
+rem *** AmmopackSimple ***
+ObjectTemplate.create SimpleObject AmmopackSimple
+ObjectTemplate.geometry Shad_AmmoPack
+
+
+ObjectTemplate.create Projectile AmmopackProjectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry mobilemaxim_thrower
+ObjectTemplate.saveInSeparateFile 1 
+ObjectTemplate.addTemplate AmmopackSimple
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate AmmopackvehSpawner
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.timeToLive CRD_NONE/40.0/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.material 230
+ObjectTemplate.invisible 0
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 50 
+
+
+beginrem
+ObjectTemplate.create SupplyDepot Ammopack1
+ObjectTemplate.radius 6
+ObjectTemplate.team 0
+ObjectTemplate.timeToLive CRD_NONE/16/0/0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 1 -1 15 0
+rem ObjectTemplate.addAmmoType 2 -1 1.2 0
+ObjectTemplate.addAmmoType 3 -1 1.2 0
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.workOnSoldiers 1
+endrem
+
+
+
+rem ***MobileSpawneri*** 
+ObjectTemplate.create ObjectSpawner AmmopackvehSpawner
+ObjectTemplate.setObjectTemplate 1 Ammopack_veh
+ObjectTemplate.setObjectTemplate 2 Ammopack_veh
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 1
+ObjectTemplate.maxSpawnDelay 1
+ObjectTemplate.TimeToLive 3
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0.0/0
+ObjectTemplate.team 1 
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 2
+

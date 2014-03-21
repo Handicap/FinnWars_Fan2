@@ -1,0 +1,38 @@
+rem *** Ammopack_veh ***
+ObjectTemplate.create PlayerControlObject Ammopack_veh
+ObjectTemplate.networkableInfo Ammopack_veh_BodyInfo
+ObjectTemplate.setSoldierExitLocation -0.0/0/-1.8 0/0/0
+ObjectTemplate.aiTemplate Ammopack_veh
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.setPcoId 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 2
+ObjectTemplate.maxhitpoints 2
+ObjectTemplate.material 45
+ObjectTemplate.GUIIndex 81
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTStationaryMG
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_empty.dds"
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.addTemplate Ammopack_depot
+ObjectTemplate.setPosition 0/0.0/0
+
+
+rem *** Ammopack_depo ***
+ObjectTemplate.create SupplyDepot Ammopack_depot
+ObjectTemplate.radius 4
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 1 80 10 0
+rem ObjectTemplate.addAmmoType 2 -1 1.2 0
+ObjectTemplate.addAmmoType 3 5 1.2 0
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.workOnSoldiers 1

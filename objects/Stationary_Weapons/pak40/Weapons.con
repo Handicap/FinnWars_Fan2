@@ -1,0 +1,46 @@
+
+
+rem *** Pak40_gun_fire ***
+ObjectTemplate.create FireArms Pak40Gun
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/Pak40GunBarrel.ssc
+ObjectTemplate.aiTemplate Pak40MainGun
+ObjectTemplate.geometry pak40_Cannon_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzPriest
+rem ObjectTemplate.setPosition 0/0/0.4
+ObjectTemplate.setPosition 0/0/3
+ObjectTemplate.setRotation 0/180/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Pak40Projectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 400
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 15
+ObjectTemplate.roundOfFire 0.22
+ObjectTemplate.fireingForce 100
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 6
+rem ObjectTemplate.addTemplate e_muzzpriest
+rem ObjectTemplate.setPosition 0.0/0.0/1.5
+rem ObjectTemplate.setRotation -179.999/0.0/0.0
+
+
+rem *** Pak40_Projectile ***
+ObjectTemplate.create Projectile Pak40Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry projectile_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 129
+ObjectTemplate.material2 134
+ObjectTemplate.hasCollisionEffect 1
+rem ObjectTemplate.addTemplate e_PanzShootTrail
+
+

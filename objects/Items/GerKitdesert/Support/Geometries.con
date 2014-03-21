@@ -1,0 +1,8 @@
+
+
+
+
+
+GeometryTemplate.create StandardMesh MG42_handkit
+GeometryTemplate.file MG42_handkit
+GeometryTemplate.setLodDistance 0 0

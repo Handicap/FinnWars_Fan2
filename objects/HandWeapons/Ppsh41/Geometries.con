@@ -1,0 +1,25 @@
+
+GeometryTemplate.create StandardMesh Ppsh41
+GeometryTemplate.file ppsh
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Ppsh41magasin
+GeometryTemplate.file ppshlipas
+GeometryTemplate.hasDynamicShadow 1
+
+
+GeometryTemplate.create StandardMesh Shad_Ppsh41
+GeometryTemplate.file kit_ppsh
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100

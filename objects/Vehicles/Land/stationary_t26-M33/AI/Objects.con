@@ -1,0 +1,68 @@
+rem *** stationary_t26-M33Mobile ***
+aiTemplatePlugIn.create Mobile stationary_t26-M33Mobile
+aiTemplatePlugIn.vehicleNumber 0
+aiTemplatePlugIn.maxSpeed 12.0
+aiTemplatePlugIn.turnRadius 5.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+aiTemplatePlugIn.lodHeight 0.9
+aiTemplatePlugIn.isTurnable 1
+
+rem *** stationary_t26-M33Physical ***
+aiTemplatePlugIn.create Physical stationary_t26-M33Physical
+aiTemplatePlugIn.setStrType HeavyArmour
+
+rem *** stationary_t26-M33Cover ***
+aiTemplatePlugIn.create Cover stationary_t26-M33Cover
+aiTemplatePlugIn.coverValue 4.0
+
+rem *** stationary_t26-M33Unit ***
+aiTemplatePlugIn.create Unit stationary_t26-M33Unit
+aiTemplatePlugIn.equipmentType 14
+aiTemplatePlugIn.setStrategicStrength 0 2
+aiTemplatePlugIn.setStrategicStrength 1 2
+
+rem *** stationary_t26-M33Ctrl ***
+aiTemplatePlugIn.create ControlInfo stationary_t26-M33Ctrl
+aiTemplatePlugIn.driveTurnControl PIYaw
+aiTemplatePlugIn.driveThrottleControl PIThrottle
+aiTemplatePlugIn.aimHorizontalControl PIYaw
+aiTemplatePlugIn.aimVerticalControl PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl PIYaw
+aiTemplatePlugIn.lookVerticalControl PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity -1.0
+aiTemplatePlugIn.pitchSensitivity 0.21817
+aiTemplatePlugIn.rollSensitivity -0.21817
+aiTemplatePlugIn.yawSensitivity -2.5
+aiTemplatePlugIn.lookVerticalSensitivity 0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead 1.0
+aiTemplatePlugIn.pitchLookAhead 1.0
+aiTemplatePlugIn.rollLookAhead 1.0
+aiTemplatePlugIn.yawLookAhead 1.0
+aiTemplatePlugIn.lookVerticalLookAhead 1.0
+aiTemplatePlugIn.lookHorizontalLookAhead 1.0
+aiTemplatePlugIn.throttleScale 1.0
+aiTemplatePlugIn.pitchScale 1.0
+aiTemplatePlugIn.rollScale 1.0
+aiTemplatePlugIn.yawScale 0.0020
+aiTemplatePlugIn.lookVerticalScale 1.0
+aiTemplatePlugIn.lookHorizontalScale 1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg 0/0/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 0/0/0
+
+aiTemplate.create stationary_t26-M33
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.addType ITMobile
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 15
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 10
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn stationary_t26-M33Mobile
+aiTemplate.addPlugIn stationary_t26-M33Physical
+aiTemplate.addPlugIn stationary_t26-M33Cover
+aiTemplate.addPlugIn stationary_t26-M33Unit
+aiTemplate.addPlugIn stationary_t26-M33Ctrl
+

@@ -1,0 +1,11 @@
+renderer.beginGlobalCluster ragdoll
+
+GeometryTemplate.create StandardMesh ragdoll_pieni
+GeometryTemplate.file ragdoll_pienibox
+
+GeometryTemplate.create StandardMesh ragdoll_iso
+GeometryTemplate.file ragdoll_isobox
+
+renderer.endGlobalCluster
+
+

@@ -1,0 +1,15 @@
+NetworkableInfo.createNewInfo Ju88AWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Ju88AEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Ju88ABodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Ju88ADorsalTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Ju88ANoseTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+

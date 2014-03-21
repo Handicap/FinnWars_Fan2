@@ -1,0 +1,97 @@
+
+
+rem *** fai_spring_frontl ***
+ObjectTemplate.create spring fai_spring_frontl
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry fai_Whe1L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** fai_spring_frontr ***
+ObjectTemplate.create spring fai_spring_frontr
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry fai_Whe1R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** fai_engine ***
+ObjectTemplate.create engine fai_engine
+ObjectTemplate.setNetworkableInfo faiEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/faiEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/0/-1
+ObjectTemplate.setMaxRotation 0/0/1
+ObjectTemplate.setMaxSpeed 0/0/10
+ObjectTemplate.setAcceleration 0/0/10
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 3.5
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setNumberOfGears 4
+ObjectTemplate.setGearUp 0.85
+ObjectTemplate.setGearDown 0.4
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate fai_wheel_backl
+ObjectTemplate.setPosition -0.895469/-0.571845/-3.87289
+ObjectTemplate.addTemplate fai_wheel_backr
+ObjectTemplate.setPosition 0.910235/-0.571845/-3.87289
+
+
+rem *** fai_wheel_backl ***
+ObjectTemplate.create spring fai_wheel_backl
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry fai_Whe2L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+
+
+rem *** fai_wheel_backr ***
+ObjectTemplate.create spring fai_wheel_backr
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry fai_Whe2R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+
+
+rem *** fai_wheel_backldummy ***
+ObjectTemplate.create spring fai_wheel_backldummy
+ObjectTemplate.geometry fai_Whe2L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** fai_wheel_backrdummy ***
+ObjectTemplate.create spring fai_wheel_backrdummy
+ObjectTemplate.geometry fai_Whe2R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0

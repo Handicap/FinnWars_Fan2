@@ -1,0 +1,14 @@
+NetworkableInfo.createNewInfo Type38RaftWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Type38RaftEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Type38RaftBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Type38RaftPassengerInfo
+NetworkableInfo.setPredictionMode PMNone
+NetworkableInfo.setBasePriority 0
+
+

@@ -1,0 +1,93 @@
+ObjectTemplate.create HandFireArms DP
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate DPProjectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_UNIFORM/2/4/0
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 47
+ObjectTemplate.numOfMag 3
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 4.6
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.GUIIndex 7
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_SMG_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_SMG_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 46
+ObjectTemplate.setAmomBarPosX 4
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setAmomBarTextPosX 8
+ObjectTemplate.setAmomBarTextPosY 4
+ObjectTemplate.setCrossHairType CHTnone
+objectTemplate.aiTemplate DPAI
+ObjectTemplate.zoomFov 0.8
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.6
+ObjectTemplate.soldierZoomPosition -0.0287/-0.017/-0.2
+ObjectTemplate.soldierCameraPosition 0.06/-0.068/-0.03
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+
+ObjectTemplate.altFireOnce 1
+rem objectTemplate.UseScope 1
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 840
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.2/0.7/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+
+ObjectTemplate.setFireDev 2 1 0.7
+ObjectTemplate.setDevMod 5 2.5 0.5
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.setTurnDev 0.9 0.4 0.4 0.9
+ObjectTemplate.setSpeedDev 1.5 0.6 0.6 0.2
+ObjectTemplate.setMiscDev 3 2 0.25
+`
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/DP.ssc
+
+ObjectTemplate.createSkeleton animations/DP.ske
+ObjectTemplate.useSkeletonPartAsMain DPBody
+ObjectTemplate.addTemplate DPLod
+
+ObjectTemplate.addTemplate e_MuzzSG44
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.03/0.70
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.04/0.18
+ObjectTemplate.setRotation 0/0/0
+
+rem *** Objects ***
+ObjectTemplate.create SimpleObject DPReload
+ObjectTemplate.geometry DPReload
+
+ObjectTemplate.create SimpleObject DPMag
+ObjectTemplate.geometry DPMag
+
+ObjectTemplate.create SimpleObject DPSimple
+ObjectTemplate.geometry Shad_DP
+
+ObjectTemplate.create AnimatedBundle DPComplex
+ObjectTemplate.geometry DP
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/DP.ske
+ObjectTemplate.addTemplate DPReload
+ObjectTemplate.bindToSkeletonPart DPReload
+ObjectTemplate.addTemplate DPMag
+ObjectTemplate.bindToSkeletonPart DPMag
+
+ObjectTemplate.create LodObject DPLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate DPComplex
+ObjectTemplate.addTemplate DPSimple

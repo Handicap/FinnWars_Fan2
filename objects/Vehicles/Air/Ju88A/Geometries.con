@@ -1,0 +1,176 @@
+renderer.beginGlobalCluster Ju88A
+
+GeometryTemplate.create StandardMesh Ju88A_BellyGun_M1
+GeometryTemplate.file Junker_GunB_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_Fus_M1
+GeometryTemplate.file Junker_fus_FW_m3
+rem GeometryTemplate.file Junker_Fus_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_Cockpit_M1
+GeometryTemplate.file Junker_Cockpit_M1
+
+GeometryTemplate.create StandardMesh Ju88A_GearLeft_M1
+GeometryTemplate.file Junker_GearLeft_M1
+geometryTemplate.cullFactor 0.08
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_GearRight_M1
+GeometryTemplate.file Junker_GearRight_M1
+geometryTemplate.cullFactor 0.08
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_GearBack_M1
+GeometryTemplate.file Junker_GearBack_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_FlapLeftOuter_M1
+GeometryTemplate.file Junker_FlapLeftOuter_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_FlapLeftMiddle_M1
+GeometryTemplate.file Junker_FlapLeftMiddle_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_FlapRightMiddle_M1
+GeometryTemplate.file Junker_FlapRightMiddle_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_FlapRightOuter_M1
+GeometryTemplate.file Junker_FlapRightOuter_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_FlapTailRight_M1
+GeometryTemplate.file Junker_FlapTailRight_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_FlapTailLeft_M1
+GeometryTemplate.file Junker_FlapTailLeft_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_Rudder_M1
+GeometryTemplate.file Junker_Rudder_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_WheelBack_M1
+GeometryTemplate.file Junker_WheelBack_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_WheelLeft_M1
+GeometryTemplate.file Junker_WheelLeft_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+
+GeometryTemplate.create StandardMesh Ju88A_WheelRight_M1
+GeometryTemplate.file Junker_WheelRight_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Ju88A_Shad_L1
+GeometryTemplate.file Junker_fus_L1
+
+GeometryTemplate.create StandardMesh Wreck_Ju88A_1_M1
+GeometryTemplate.file Junker_wreck_fus_M1
+
+GeometryTemplate.create StandardMesh Ju88A_RearGunner_Gun_M1
+GeometryTemplate.file Junker_Rim42_M1
+geometryTemplate.cullFactor 0.15
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 4
+GeometryTemplate.setLodDistance 2 6
+GeometryTemplate.setLodDistance 3 8
+GeometryTemplate.setLodDistance 4 10
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Wreck_Ju88A_tail_m1
+GeometryTemplate.file Junker_wreck_tail_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 400
+GeometryTemplate.setLodDistance 4 600
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Wreck_Ju88A_wing_m1
+GeometryTemplate.file Junker_wreck_wing_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 400
+GeometryTemplate.setLodDistance 4 600
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Junker_Propeller_M1
+GeometryTemplate.file Junker_Propeller_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+

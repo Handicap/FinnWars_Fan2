@@ -1,0 +1,105 @@
+ObjectTemplate.create HandFireArms Nagant
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 2
+ObjectTemplate.projectileTemplate p38Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 7
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 7
+ObjectTemplate.roundOfFire 2.5
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate NagantAI
+ObjectTemplate.zoomFov 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.95 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.soldierZoomPosition -0.01/-0.01/0.1
+ObjectTemplate.soldierCameraPosition 0.02/-0.05/0.2
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+ObjectTemplate.set1pFov 0.47
+
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 20
+ObjectTemplate.distToMinDamage 40
+
+rem ObjectTemplate.autoReload 1
+ObjectTemplate.GUIIndex 16
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_Pistol_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Pistol_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 41
+ObjectTemplate.setAmomBarPosX 5
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setAmomBarTextPosX 6
+ObjectTemplate.setAmomBarTextPosY 4
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+ObjectTemplate.setSniperSight -1
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 272
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.6/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/-0.2/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 2.5 1.5 0.07
+ObjectTemplate.setMinDev 1.5
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 1.5 0.2 0.2 0.1
+ObjectTemplate.setMiscDev 2.5 2.5 0.1
+
+Rem *** Deviation  End *****
+
+
+ObjectTemplate.fireInCameraDof 1
+
+ObjectTemplate.loadSoundScript Sounds/Nagant.ssc
+
+ObjectTemplate.createSkeleton animations/colt.ske
+ObjectTemplate.useSkeletonPartAsMain Nagant
+ObjectTemplate.addTemplate NagantLod
+
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.0125/0.1937
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.create AnimatedBundle NagantComplex
+ObjectTemplate.createSkeleton animations/colt.ske
+ObjectTemplate.geometry Nagant
+ObjectTemplate.addTemplate NagantTrigger
+ObjectTemplate.bindToSkeletonPart Trigger
+rem ObjectTemplate.addTemplate NagantHane
+rem ObjectTemplate.bindToSkeletonPart hane
+rem ObjectTemplate.addTemplate NagantMantel
+rem ObjectTemplate.bindToSkeletonPart mantel
+rem ObjectTemplate.addTemplate Gunmag
+rem ObjectTemplate.bindToSkeletonPart mag
+
+ObjectTemplate.create SimpleObject NagantSimple
+ObjectTemplate.geometry Shad_Nagant
+
+ObjectTemplate.create SimpleObject NagantTrigger
+ObjectTemplate.geometry NagantTrigger
+
+rem ObjectTemplate.create SimpleObject NagantMantel
+rem ObjectTemplate.geometry NagantMantel
+
+rem ObjectTemplate.create SimpleObject NagantHane
+rem ObjectTemplate.geometry NagantHane
+
+ObjectTemplate.create LodObject NagantLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate NagantComplex
+ObjectTemplate.addTemplate NagantSimple
+
+
+
+
+

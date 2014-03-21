@@ -1,0 +1,40 @@
+rem *** 76rk27cannon ***
+ObjectTemplate.create FireArms 76rk27cannon
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/76rk27Cannon.ssc
+ObjectTemplate.geometry 76rk27_Pipe
+ObjectTemplate.aiTemplate WespeMainGun_76rk270
+ObjectTemplate.projectileTemplate  76rk27Projectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 20
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 240
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 0.185
+ObjectTemplate.fireingForce 70
+ObjectTemplate.setMaxDev 1.2
+ObjectTemplate.setMinDev 0.3
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 6
+ObjectTemplate.addTemplate e_muzzpriest
+ObjectTemplate.setPosition 0.0/0.0/1.5
+ObjectTemplate.setRotation -179.999/0.0/0.0
+
+
+rem ***  76rk27projectile ***
+ObjectTemplate.create projectile  76rk27projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry projectile_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.TimeToLive CRD_NONE/10/0/0
+ObjectTemplate.endEffectTemplate e_MuzzMortar
+ObjectTemplate.damageType 1
+ObjectTemplate.material 237
+ObjectTemplate.material2 206
+ObjectTemplate.radius 20
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.mass 140
+ObjectTemplate.drag 0.14

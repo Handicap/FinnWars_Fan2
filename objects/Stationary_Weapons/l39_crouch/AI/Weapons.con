@@ -1,0 +1,14 @@
+weaponTemplate.create Browning_l39_crouch1
+weaponTemplate.burst 
+weaponTemplate.indirect 
+weaponTemplate.minRange 
+weaponTemplate.maxRange 
+weaponTemplate.weaponActivate 
+weaponTemplate.weaponFire 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+

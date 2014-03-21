@@ -1,0 +1,97 @@
+
+
+rem *** WillyEngine ***
+ObjectTemplate.create Engine WillyEngine
+ObjectTemplate.setNetworkableInfo WillyEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/WillyEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodsnowmobilePropeller
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-3000
+ObjectTemplate.setMaxRotation 0.3/0/3000
+ObjectTemplate.setMaxSpeed 500/0/100
+ObjectTemplate.setAcceleration 500/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 12
+ObjectTemplate.setDifferential 1
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 150
+
+
+rem *** WillyFrontSpringR ***
+ObjectTemplate.create Spring WillyFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.setPosition -0.60575/1.501245/-1.31701
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem ObjectTemplate.setPosition -0.60575/1.501245/-1.31701
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+rem *** WillyFrontSpringL ***
+ObjectTemplate.create Spring WillyFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.setPosition 0.80776/1.501245/-1.402085
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem ObjectTemplate.setPosition 0.80776/1.501245/-1.402085
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+rem *** WillyBackSpringR ***
+ObjectTemplate.create Spring WillyBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.setPosition 0.69141/-0.434372/0
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem ObjectTemplate.setPosition 0.69141/-0.434372/0
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+rem *** WillyBackSpringL ***
+ObjectTemplate.create Spring WillyBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Willy_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_wdustWheelFL
+rem ObjectTemplate.setPosition -0.72704/-0.434372/0
+rem ObjectTemplate.addTemplate e_wdustWheelF
+rem ObjectTemplate.setPosition -0.72704/-0.434372/0
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5

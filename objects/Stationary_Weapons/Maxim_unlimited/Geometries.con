@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh Maxim_m1
+GeometryTemplate.file maxim_gun
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 4
+GeometryTemplate.setLodDistance 2 6
+GeometryTemplate.setLodDistance 3 8
+GeometryTemplate.setLodDistance 4 10
+GeometryTemplate.setLodDistance 5 100

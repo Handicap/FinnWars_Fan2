@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/faiEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/faiEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/faiEngine.ssc

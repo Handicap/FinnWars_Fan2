@@ -1,0 +1,8 @@
+#include ../../../Common/Sounds/EngineMap.ssc
+
+newPatch
+
+#include ../../Common/Sounds/Dive.ssc
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0

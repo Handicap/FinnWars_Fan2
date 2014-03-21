@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/flak38GunBase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/flak38GunBase.ssc
+	
+#templateLevel LOW
+
+	#include Low/flak38GunBase.ssc

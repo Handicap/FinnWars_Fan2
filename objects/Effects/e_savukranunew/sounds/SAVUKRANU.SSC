@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include SAVUKRANU_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include SAVUKRANU_High.ssc
+	
+#templateLevel LOW
+
+	#include SAVUKRANU_High.ssc

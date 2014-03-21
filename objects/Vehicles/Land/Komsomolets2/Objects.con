@@ -1,0 +1,111 @@
+rem *** Komsomolets2 ***
+ObjectTemplate.create PlayerControlObject Komsomolets2
+ObjectTemplate.NameTagOffset 0/0.5/0
+ObjectTemplate.setNetworkableInfo Komsomolets2BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 10
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.hitpoints 70
+ObjectTemplate.maxhitpoints 70
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 40
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 20
+ObjectTemplate.hpLostWhileDamageFromDeepWater 20
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/1/-1.7
+ObjectTemplate.addArmorEffect 15 e_PanzFire 0/0.8/-1.6
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.damageFromDeepWater 1
+ObjectTemplate.aiTemplate Komsomolets
+ObjectTemplate.setSoldierExitLocation -0.7/1.5/0.8 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_panzeriv.tga"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_komso_16x16.dds"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate lodKomsomolets2
+ObjectTemplate.setPosition 0.0970691/0.0/-0.158272
+
+rem *** lodKomsomolets2 ***
+ObjectTemplate.create LodObject lodKomsomolets2
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.lodselector Komsomolets2LodSelector
+ObjectTemplate.addTemplate Komsomolets2complex
+ObjectTemplate.addTemplate Komsomolets2simple
+ObjectTemplate.addTemplate Komsomolets2wreck
+
+rem *** Komsomolets2complex ***
+ObjectTemplate.create bundle Komsomolets2complex
+ObjectTemplate.loadSoundScript Sounds/T26-M37Track.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate lodKomsomoletscockpit
+ObjectTemplate.addTemplate Komsomoletsentry
+ObjectTemplate.setPosition -0.299/0.0/1.2
+ObjectTemplate.addTemplate Komsomoletsentry
+ObjectTemplate.setPosition -0.299/0.0/-1.199
+ObjectTemplate.addTemplate Komsomoletsengine_l
+ObjectTemplate.addTemplate Komsomoletsengine_r
+ObjectTemplate.addTemplate Komsomoletscamera
+ObjectTemplate.setPosition -0.169/0.49/0.955
+ObjectTemplate.addTemplate Komsomolets_gunner_pco1
+ObjectTemplate.setPosition 0.0045622/1.08/0.140706
+ObjectTemplate.addTemplate Komsomoletspassengerpco2
+ObjectTemplate.setPosition 0.3515/1.08/-0.5514
+ObjectTemplate.setRotation 90.0/0.0/0.0
+ObjectTemplate.addTemplate Komsomoletspassengerpco3
+ObjectTemplate.setPosition -0.388451/1.08/-0.47931
+ObjectTemplate.setRotation -90.0/0.0/0.0
+ObjectTemplate.addTemplate Komsomoletspassengerpco4
+ObjectTemplate.setPosition -0.34012/1.08/-1.47931
+ObjectTemplate.setRotation -90.0/0.0/0.0
+ObjectTemplate.addTemplate Komsomoletspassengerpco5
+ObjectTemplate.setPosition 0.370743/1.08/-1.5514
+ObjectTemplate.setRotation 90.0/0.0/0.0
+ObjectTemplate.addTemplate e_TankinPakokaasu
+ObjectTemplate.setPosition -0.4/0.1/-2.5
+ObjectTemplate.addTemplate Komsomolets_tread_mc
+ObjectTemplate.setPosition 0.0/0.0/0.0
+
+
+
+
+rem *** Komsomoletssimple ***
+ObjectTemplate.create SimpleObject Komsomolets2simple
+ObjectTemplate.geometry Komsomolets_Hull_L1
+
+rem *** Komsomoletswreck ***
+ObjectTemplate.create SimpleObject Komsomolets2wreck
+ObjectTemplate.geometry Wreck_Komsomolets_m1
+
+
+rem ***  Komsomoletslodselector ***
+LodSelectorTemplate.create distcompareselector2  Komsomolets2lodselector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+

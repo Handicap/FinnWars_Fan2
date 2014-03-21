@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo Stationary_RenaultTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Stationary_RenaultGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo Stationary_RenaultEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Stationary_RenaultBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

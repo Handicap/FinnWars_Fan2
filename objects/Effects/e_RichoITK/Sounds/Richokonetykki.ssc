@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Richokonetykki_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include Richokonetykki_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include Richokonetykki_MedLow.ssc

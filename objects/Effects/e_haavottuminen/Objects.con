@@ -1,0 +1,18 @@
+ObjectTemplate.create SimpleObject Haavottuminenob
+ObjectTemplate.geometry Haavottuminen
+
+ObjectTemplate.create Bundle Health_injuries
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Haavottuminenob
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate injuriessupply
+ObjectTemplate.setPosition 0/0/0
+
+
+ObjectTemplate.create SupplyDepot injuriessupply
+ObjectTemplate.radius 1
+ObjectTemplate.team 0
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.setHealth -1 -0.5 0

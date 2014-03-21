@@ -1,0 +1,64 @@
+ObjectTemplate.create PlayerControlObject Tank_bomb
+ObjectTemplate.setNetworkableInfo Tank_bomb_body_info
+ObjectTemplate.geometry projectile_m1
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.drag 1.5
+ObjectTemplate.mass 200
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 2
+ObjectTemplate.maxhitpoints 2
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 0.01
+ObjectTemplate.explosionForceMod 20
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Willy
+rem -------------------------------------
+rem ObjectTemplate.addTemplate Tank_bomb_Engine
+ObjectTemplate.addTemplate e_rocketFume
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/-0.8 0/0/0
+ObjectTemplate.GUIIndex 26
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_willy.tga"
+ObjectTemplate.setVehicleIconPos 40/79
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+
+ObjectTemplate.create SimpleObject Tank_bomb_s
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.geometry projectile_m1
+rem ObjectTemplate.geometry Tank_bomb
+
+ObjectTemplate.create ObjectSpawner Tank_bomb_Spawner
+ObjectTemplate.setObjectTemplate 2 Willy
+ObjectTemplate.setObjectTemplate 1 Willy
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 0
+ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.TimeToLive 1
+ObjectTemplate.Distance 999
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.nrOfObjectToSpawn 1
+ObjectTemplate.damageWhenLost 10
+ObjectTemplate.team 2

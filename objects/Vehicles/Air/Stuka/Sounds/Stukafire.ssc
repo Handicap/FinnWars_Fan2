@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include FireHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include FireMedium.ssc
+	
+#templateLevel LOW
+
+	#include FireLow.ssc

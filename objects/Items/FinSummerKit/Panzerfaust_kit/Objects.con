@@ -1,0 +1,29 @@
+ObjectTemplate.create Kit FinSummer_Panzerfaust
+ObjectTemplate.setType AT
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry panzerfaust_main
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate German_Helmet
+rem ObjectTemplate.addTemplate German_hippack
+ObjectTemplate.addTemplate NoParachute
+ObjectTemplate.addTemplate puukon_tuppi
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_medic_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_medic_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_puukko.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "kits/m39_kit.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_panzerfaust.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+
+ObjectTemplate.setKitIcon 2 "kits/fin_m28-30.dds"
+ObjectTemplate.setKitName 2 ""
+ObjectTemplate.setKitActiveName 2 "In use/limit"
+
+ObjectTemplate.addTemplate M27Rifle
+
+ObjectTemplate.addTemplate KnifeAxis
+ObjectTemplate.addTemplate Panzerfaust
+
+ObjectTemplate.aiTemplate  AT

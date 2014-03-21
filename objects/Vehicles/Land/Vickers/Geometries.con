@@ -1,0 +1,103 @@
+renderer.beginGlobalCluster vickers
+
+GeometryTemplate.create StandardMesh 1p_vickGunner
+GeometryTemplate.file 1p_vickgunner
+
+GeometryTemplate.create StandardMesh vickers_Cannon_M1
+GeometryTemplate.file vickers_cannon
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh vickers_Hull_M1
+GeometryTemplate.file vickers_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create AnimatedMesh vickers_Track_L_M1
+GeometryTemplate.file t26_track_L
+GeometryTemplate.setSkin animations/t26_track_l.skn
+
+GeometryTemplate.create AnimatedMesh vickers_Track_R_M1
+GeometryTemplate.file t26_track_R
+GeometryTemplate.setSkin animations/t26_track_r.skn
+
+GeometryTemplate.create StandardMesh vickers_smallwheel_g
+GeometryTemplate.file t26_smallwheel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh vickers_smallwheel_dummy_g
+GeometryTemplate.file t26_smallwheel_dummy
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh vickers_bigwheel_g
+GeometryTemplate.file t26_bigwheel
+geometryTemplate.cullFactor 0.01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh vickers_Tower_M1
+GeometryTemplate.file vickers_turret
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_vickers_Driver_M1
+GeometryTemplate.file 1P_Wespe_Driver_M1
+
+GeometryTemplate.create StandardMesh 1P_vickers_Gunner_M1
+GeometryTemplate.file 1p_T34_Gunner_m1
+
+GeometryTemplate.create StandardMesh t26_tread_mc_l
+GeometryTemplate.file t26_tread_mc_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh t26_tread_mc_r
+GeometryTemplate.file t26_tread_mc_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh vickers_skp
+GeometryTemplate.file vickers_hull_skp
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh vickers_Hull_L1
+GeometryTemplate.file vickers_hull
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_vickers_M1
+GeometryTemplate.file vickers_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500

@@ -1,0 +1,34 @@
+GeometryTemplate.create StandardMesh M27Rifle
+GeometryTemplate.file M39_base
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Shad_M27Rifle
+GeometryTemplate.file kit_m39
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+GeometryTemplate.create StandardMesh Shad_M27Rifle_Scope
+GeometryTemplate.file mosin_scope
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+GeometryTemplate.create StandardMesh M27RifleScope
+GeometryTemplate.file mosin_scope
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+
+
+
+

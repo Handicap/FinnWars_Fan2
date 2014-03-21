@@ -1,0 +1,37 @@
+
+
+rem *** e_shell1250mm ***
+ObjectTemplate.create effectbundle e_shell1250mm
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript ..\common\Sounds/shells.ssc
+ObjectTemplate.TimeToLive CRD_NONE/-1/0/0
+ObjectTemplate.addTemplate em_shell1250mm
+ObjectTemplate.setPosition 0.0/0.00999999/-0.264
+ObjectTemplate.setRotation -9.993/-4.994/0.0340064
+
+
+rem *** em_shell1250mm ***
+ObjectTemplate.create emitter em_shell1250mm
+ObjectTemplate.template Fx_shell1250mm
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 45
+ObjectTemplate.TimeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0.01/1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.5/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0.4/1
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0.9/1.1/0
+ObjectTemplate.rotationalSpeedInDof CRD_EXPONENTIAL/-20/0/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/10/0/1
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/4/0/1
+ObjectTemplate.startRotation CRD_NONE/150/0/0
+ObjectTemplate.showInThirdPerson 1
+
+
+rem *** fx_shell1250mm ***
+ObjectTemplate.create particle fx_shell1250mm
+ObjectTemplate.geometry shell1250mmHI_m1
+ObjectTemplate.TimeToLive CRD_NONE/1/0/0
+ObjectTemplate.size CRD_NONE/1.7/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0.5/0/0

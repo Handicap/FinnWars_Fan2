@@ -1,0 +1,101 @@
+rem *** Sturmboot_Engine ***
+ObjectTemplate.create Engine Sturmboot_Engine
+ObjectTemplate.setNetworkableInfo SturmobootEngineInfo
+ObjectTemplate.loadSoundScript Sounds/Lcvp_Engine_Water.ssc
+ObjectTemplate.setMinRotation 0/0/-750
+ObjectTemplate.setMaxRotation 0/0/1000
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 5
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setNoPropellerEffectAtSpeed 10
+
+rem *** Sturmboot_Rudder_Stern ***
+ObjectTemplate.create Wing Sturmboot_Rudder_Stern
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/0.1/0
+ObjectTemplate.setAcceleration 0/-10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 4
+
+rem *** Sturmboot_Rudder_Aft ***
+ObjectTemplate.create Wing Sturmboot_Rudder_Aft
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/0.1/0
+ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 4
+
+rem *** Sturmboot_Floater ***
+ObjectTemplate.create FloatingBundle Sturmboot_Floater
+ObjectTemplate.setHullHeight 0.2
+ObjectTemplate.setFloatMaxLift 6
+ObjectTemplate.setFloatMinLift 6
+ObjectTemplate.setSinkingSpeedMod 1
+
+
+
+
+
+rem Näkymättömät pyörät, ettei jää karille pomppimaan.
+
+rem *** fai_spring_frontl ***
+ObjectTemplate.create spring Sturmboot_spring_frontl
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubelwagen_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setStrength 30
+ObjectTemplate.setDamping 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+
+
+rem *** fai_spring_frontr ***
+ObjectTemplate.create spring Sturmboot_spring_frontr
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubelwagen_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setStrength 30
+ObjectTemplate.setDamping 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+
+rem *** fai_spring_frontl ***
+ObjectTemplate.create spring Sturmboot_spring_backl
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubelwagen_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setStrength 30
+ObjectTemplate.setDamping 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+
+
+
+rem *** fai_spring_frontr ***
+ObjectTemplate.create spring Sturmboot_spring_backr
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Kubelwagen_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setStrength 30
+ObjectTemplate.setDamping 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+
+
+

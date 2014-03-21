@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/T26-M31gunbase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/T26-M31gunbase.ssc
+	
+#templateLevel LOW
+
+	#include Low/T26-M31gunbase.ssc

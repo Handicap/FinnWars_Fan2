@@ -1,0 +1,15 @@
+rem *** e_ExplBazooka ***
+ObjectTemplate.create EffectBundle e_ExplBazooka
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript ../Common/Sounds/e_ExplBazooka.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_ExplBazooka
+ObjectTemplate.addTemplate Em_ExplBazooka1
+ObjectTemplate.addTemplate Em_ExplBazooka_FireSmoke
+rem ObjectTemplate.addTemplate Em_ExplBazooka_BlackSmoke
+ObjectTemplate.addTemplate Em_ExplBazooka_flash
+ObjectTemplate.addTemplate Em_ExplBazooka_Cloud
+ObjectTemplate.addTemplate Em_ExplBazooka_Smoke
+ObjectTemplate.addTemplate Em_Expl_sparksSmall
+ObjectTemplate.timeToLive CRD_NONE/0.8/0/0
+rem -------------------------------------

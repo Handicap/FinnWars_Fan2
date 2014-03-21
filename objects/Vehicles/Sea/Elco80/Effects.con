@@ -1,0 +1,25 @@
+rem *** e_PTBoatWreck ***
+ObjectTemplate.create EffectBundle e_PTBoatWreck
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_PTBoatSpawnRaft
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+rem -------------------------------------
+
+
+rem *** Em_PTBoatSpawnRaft ***
+ObjectTemplate.create Emitter Em_PTBoatSpawnRaft
+ObjectTemplate.template Elco80Raft
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.intensity CRD_NONE/1/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/0/0/0
+ObjectTemplate.movetowatersurface 0
+ObjectTemplate.IsSpawnEffect 1

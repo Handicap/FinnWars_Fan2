@@ -1,0 +1,60 @@
+#templateLevel HIGH
+
+newPatch
+load @ROOT/Sound/@RTD/VEFTRTYAW.wav
+loop
+minDistance 1
+dopplerOff
+priority -7
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 20
+	param 200
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+#templateLevel MEDIUM
+
+newPatch
+load @ROOT/Sound/@RTD/VEFTRTYAW.wav
+loop
+minDistance 1
+dopplerOff
+priority -7
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 20
+	param 200
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect

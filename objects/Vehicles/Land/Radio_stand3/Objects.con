@@ -1,0 +1,59 @@
+
+
+rem *** Defgun ***
+ObjectTemplate.create PlayerControlObject Radio_Stand3
+ObjectTemplate.setNetworkableInfo Radio_Stand3BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.geometry Radio_mesh
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 50
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.material 121
+ObjectTemplate.criticalDamage 40
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.addArmorEffect 30 e_DefGunDamage 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.aiTemplate DefGun
+ObjectTemplate.timetoliveafterdeath 2
+rem ObjectTemplate.fadeAtTimeToLiveAfterDeath 10
+rem ObjectTemplate.timeToStartFadeAfterDeath 10
+rem -------------------------------------
+ObjectTemplate.addTemplate RadioStand3Complex
+
+rem ObjectTemplate.addTemplate Radio3_SoldierSpawn
+rem ObjectTemplate.setPosition 1.58946/0.680601/-0.0558696
+rem ObjectTemplate.addTemplate Radio3_SoldierSpawn
+rem ObjectTemplate.setPosition 1.48137/1.0207/-1.34586
+
+ObjectTemplate.setSoldierExitLocation 0/2.2/-6.4 -180/0/0
+ObjectTemplate.GUIIndex 67
+
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_defgun.tga"
+ObjectTemplate.setVehicleIconPos 50/60
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_artillery.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTDefGun
+ObjectTemplate.setToolTipType  TTDefGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_empty.dds"
+
+ObjectTemplate.create Bundle RadioStand3Complex
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate Radio3_SoldierSpawn
+ObjectTemplate.setPosition 1.20885/0.685601/1.40586
+
+ObjectTemplate.create SpawnPoint Radio3_SoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 64
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0

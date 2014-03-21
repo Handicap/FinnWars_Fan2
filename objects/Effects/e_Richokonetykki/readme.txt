@@ -1,0 +1,2 @@
+kuten arvata saattaa, effu ei toimi nykysell‰‰n miss‰‰n. Tarkoitus siis olisi pist‰‰ lentokoneiden kk-effu osuttaessa
+mihin tahansa objektiin tai pintaan. Esim maahan, toiseen lentokoneeseen ja kulkuneuvoon.

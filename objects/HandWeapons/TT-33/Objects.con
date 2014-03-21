@@ -1,0 +1,107 @@
+ObjectTemplate.create HandFireArms TT-33
+ObjectTemplate.itemIndex 2
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate NagantProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 4
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate TT-33AI
+ObjectTemplate.zoomFov 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.95 
+ObjectTemplate.soldierZoomPosition -0.01/-0.01/0.1
+ObjectTemplate.soldierCameraPosition 0.02/-0.05/0.2
+ObjectTemplate.AmmoType	1
+ObjectTemplate.addRootSpeed 0
+
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 20
+ObjectTemplate.distToMinDamage 40
+
+rem ObjectTemplate.autoReload 1
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 420
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.8/0.6/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/-0.2/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 2.9 1.5 0.07
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 1.5 0.2 0.2 0.1
+ObjectTemplate.setMiscDev 2.5 2.5 0.1
+
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/TT-33.ssc
+ObjectTemplate.GUIIndex 1
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_Pistol_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Pistol_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 41
+ObjectTemplate.setAmomBarPosX 5
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setAmomBarTextPosX 6
+ObjectTemplate.setAmomBarTextPosY 4
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+ObjectTemplate.createSkeleton animations/Colt.ske
+ObjectTemplate.useSkeletonPartAsMain TT-33
+ObjectTemplate.addTemplate TT-33Lod
+
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0.005/0.015/0.145
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0.01/0.02/0.28
+ObjectTemplate.setRotation 0/0/0
+
+
+rem ** Objects
+
+ObjectTemplate.create SimpleObject TT-33Simple
+ObjectTemplate.geometry Shad_TT-331
+
+ObjectTemplate.create AnimatedBundle TT-33Complex
+ObjectTemplate.geometry TT-331
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Colt.ske
+
+
+ObjectTemplate.addTemplate TT-33Mantel
+ObjectTemplate.bindToSkeletonPart mantel
+ObjectTemplate.addTemplate Gunmag_TT-330
+ObjectTemplate.bindToSkeletonPart mag
+
+
+rem *** TT-33Mantel ***
+ObjectTemplate.create SimpleObject TT-33Mantel
+ObjectTemplate.geometry TT-331mantel
+
+rem *** Gunmag_TT-330 ***
+ObjectTemplate.create SimpleObject Gunmag_TT-330
+ObjectTemplate.geometry TT-331mag
+
+
+
+ObjectTemplate.create LodObject TT-33Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate TT-33Complex
+ObjectTemplate.addTemplate TT-33Simple
+
+
+

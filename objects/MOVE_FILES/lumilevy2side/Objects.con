@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject lumilevy2side
+ObjectTemplate.geometry lumilevy2side
+ObjectTemplate.cullradiusscale 3
+ObjectTemplate.setHasCollisionPhysics 1
+
+

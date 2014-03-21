@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/AA_Allies_GunBarrel.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/AA_Allies_GunBarrel.ssc
+	
+#templateLevel LOW
+
+	#include Low/AA_Allies_GunBarrel.ssc

@@ -1,0 +1,105 @@
+renderer.beginGlobalCluster t26-m31
+
+GeometryTemplate.create StandardMesh t26-m31_Cannon_M1
+GeometryTemplate.file t26_twinpk
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh t26-m31_Hull_M1
+GeometryTemplate.file t26_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 175
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create AnimatedMesh t26-m31_Track_L_M1
+GeometryTemplate.file t26_track_L
+GeometryTemplate.setSkin animations/t26_track_l.skn
+
+GeometryTemplate.create AnimatedMesh t26-m31_Track_R_M1
+GeometryTemplate.file t26_track_R
+GeometryTemplate.setSkin animations/t26_track_r.skn
+
+GeometryTemplate.create StandardMesh t26-m31_Sight
+GeometryTemplate.file mg_view
+
+GeometryTemplate.create StandardMesh t26-m31_smallwheel_g
+GeometryTemplate.file t26_smallwheel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t26-m31_smallwheel_dummy_g
+GeometryTemplate.file t26_smallwheel_dummy
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t26-m31_bigwheel_g
+GeometryTemplate.file t26_bigwheel
+geometryTemplate.cullFactor 0.01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t26-m31_Tower_M1
+GeometryTemplate.file t26_twintower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_t26-m31_Driver_M1
+GeometryTemplate.file 1P_Wespe_Driver_M1
+
+GeometryTemplate.create StandardMesh t26-m31_Door_M1
+rem GeometryTemplate.file Wespe_Door_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh t26_tread_mc_l
+GeometryTemplate.file t26_tread_mc_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh t26_tread_mc_r
+GeometryTemplate.file t26_tread_mc_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh t26-m31_Hull_L1
+GeometryTemplate.file t26_hull
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_t26-m31_M1
+GeometryTemplate.file t26_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500

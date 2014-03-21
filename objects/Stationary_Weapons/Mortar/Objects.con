@@ -1,0 +1,141 @@
+
+
+rem *** Mortar ***
+ObjectTemplate.create PlayerControlObject Mortar
+ObjectTemplate.setNetworkableInfo MortarBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry tripod_temp
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 60
+ObjectTemplate.maxhitpoints 60
+ObjectTemplate.material 47
+ObjectTemplate.criticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.addArmorEffect 10 e_PanzFire  0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/2/0
+ObjectTemplate.addArmorEffect 0 e_PanzFire 0/0/0
+ObjectTemplate.aiTemplate Mortar
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodMortar
+Beginrem -------------------------------------
+ObjectTemplate.addTemplate MortarEntry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate MortarTurret
+ObjectTemplate.setPosition 0/0/0
+Endrem -------------------------------------
+
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 67
+
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 50/60
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_krh"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTDefGun
+ObjectTemplate.setToolTipType  TTDefGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 45
+ObjectTemplate.DirBarYScaleAbove 20
+ObjectTemplate.DirBarYScaleBelow 20
+ObjectTemplate.DirBarYScaleMin -55
+ObjectTemplate.DirBarYScaleMax -5
+
+rem *** lodMortar ***
+ObjectTemplate.create LodObject lodMortar
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate MortarOrginal
+ObjectTemplate.addTemplate MortarWreck
+ObjectTemplate.setPosition 0/0/0.6
+rem -------------------------------------
+ObjectTemplate.lodSelector lodMortarSelect
+
+ObjectTemplate.create Bundle MortarOrginal
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate MortarEntry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate MortarTurret
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+
+rem *** MortarEntry ***
+ObjectTemplate.create EntryPoint MortarEntry
+ObjectTemplate.setEntryRadius 3.5
+
+
+rem *** MortarTurret ***
+ObjectTemplate.create RotationalBundle MortarTurret
+ObjectTemplate.setNetworkableInfo MortarBodyInfo
+rem ObjectTemplate.geometry mortar_pipe
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.loadSoundScript Sounds/defgunturret.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate MortarGunBase
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Mortar_Seat
+ObjectTemplate.setPosition 0/0.6/-0.4
+ObjectTemplate.addTemplate mortar_pipe_m1
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 50/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Mortar_Seat ***
+ObjectTemplate.create SeatObject Mortar_Seat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatAnimationLowerBody Lb_CrouchMg
+
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.12/0.08/-0.68 -30/80/90
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.12/0.08/-0.68 30/-100/-90
+
+rem *** MortarGunBase ***
+ObjectTemplate.create RotationalBundle MortarGunBase
+ObjectTemplate.setNetworkableInfo MortarBodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate MortarGunBarrel
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate MortarCamera
+ObjectTemplate.setPosition 0/8/1
+ObjectTemplate.setRotation 0/60/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-85/0
+ObjectTemplate.setMaxRotation 0/-35/0
+ObjectTemplate.setMaxSpeed 0/50/0
+ObjectTemplate.setAcceleration 0/200/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** MortarCamera ***
+ObjectTemplate.create Camera MortarCamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMExternTrace 1
+
+rem *** MortarWreck ***
+ObjectTemplate.create SimpleObject MortarWreck
+
+ObjectTemplate.create SimpleObject mortar_pipe_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.geometry mortar_pipe
+
+rem *** lodMortarSelect ***
+LodSelectorTemplate.create DistCompareSelector2 lodMortarSelect
+LodSelectorTemplate.hasDestroyedLod 1

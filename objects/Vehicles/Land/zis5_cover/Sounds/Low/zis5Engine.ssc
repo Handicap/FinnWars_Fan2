@@ -1,0 +1,88 @@
+newPatch
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/start1.wav
+minDistance 1
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 100
+	param 1
+	param -1	
+endEffect
+
+############
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/Willyengine3.wav
+loop
+minDistance 2
+relativePosition 0/0/0
+priority 10
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 0.8
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.45
+	param 0.55
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 220
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+###################
+### Engine Stop ###
+###################
+
+load @ROOT/Sound/@RTD/willyenginestp.wav
+minDistance 2
+trigger Release
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 100
+	param 1
+	param -1	
+endEffect
+
+

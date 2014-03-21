@@ -1,0 +1,46 @@
+rem *** HawkP75Guns ***
+ObjectTemplate.create FireArms HawkP75Guns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/Mustangfire.ssc
+ObjectTemplate.aiTemplate HawkP75MachineGun
+ObjectTemplate.visibleBarrelTemplate e_Muzzleko
+ObjectTemplate.projectileTemplate MustangProjectile
+ObjectTemplate.projectilePosition 0/0/2.5
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.magSize 1562
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 854
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.setMinDev 1.2
+ObjectTemplate.addFireArmsPosition 0.239/1.162/2.35 0/0/0
+ObjectTemplate.addFireArmsPosition -0.239/1.162/2.35 0/0/0
+ObjectTemplate.addFireArmsPosition 2.289/0.159/1.05 0/0/0
+ObjectTemplate.addFireArmsPosition -2.289/0.159/1.05 0/0/0
+ObjectTemplate.addFireArmsPosition 2.015/0.152/1.05 0/0/0
+ObjectTemplate.addFireArmsPosition -2.015/0.152/1.05 0/0/0
+ObjectTemplate.AmmoType 10
+
+
+rem *** SpitfireBombDummy ***
+ObjectTemplate.create FireArms HawkP75BombDummy
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate HawkP75Bombs
+ObjectTemplate.visibleDummyProjectileTemplate VITTUSAATANAPERKELE
+ObjectTemplate.projectileTemplate FighterBomb
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.addFireArmsPosition -3.5/0.1/0 0/0/0
+ObjectTemplate.addFireArmsPosition 3.5/0.1/0 0/0/0
+ObjectTemplate.addFireArmsPosition -2.9/0./0 0/0/0
+ObjectTemplate.addFireArmsPosition 2.9/0./0 0/0/0
+ObjectTemplate.addFireArmsPosition -3.2/0.06/0 0/0/0
+ObjectTemplate.addFireArmsPosition 3.2/0.06/0 0/0/0
+ObjectTemplate.AmmoType 7
+ObjectTemplate.magSize 6
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.roundOfFire 3
+ObjectTemplate.setInputFire c_PIAltFire
+
+ObjectTemplate.create SimpleObject VITTUSAATANAPERKELE
+ObjectTemplate.geometry Big_Bomb_M1

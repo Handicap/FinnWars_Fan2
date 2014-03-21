@@ -1,0 +1,130 @@
+renderer.beginGlobalCluster SturmGeschutz
+
+GeometryTemplate.create StandardMesh 1p_STUKGunner
+GeometryTemplate.file 1p_STUKgunner
+
+
+GeometryTemplate.create StandardMesh StuGIII_Cannon_m1
+GeometryTemplate.file sturm_cannon
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+beginrem
+GeometryTemplate.create StandardMesh StuGIII_Gunner_m1
+GeometryTemplate.file StuGIII_Gunner_m1
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+endrem
+
+
+GeometryTemplate.create AnimatedMesh StuGIII_Track_Left_m1
+GeometryTemplate.file StuGIII_Track_Left_m1
+GeometryTemplate.setSkin animations/StuGIII_Track_Left_m1.skn
+
+
+GeometryTemplate.create AnimatedMesh StuGIII_Track_Right_m1
+GeometryTemplate.file StuGIII_Track_Right_m1
+GeometryTemplate.setSkin animations/StuGIII_Track_Right_m1.skn
+
+
+GeometryTemplate.create StandardMesh StuGIII_BWheel_Left_m1
+GeometryTemplate.file StuGIII_BWheel_Left_m1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+
+GeometryTemplate.create StandardMesh stugtukit_g
+GeometryTemplate.file stugtukit
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh StuGIII_BWheel_Right_m1
+GeometryTemplate.file StuGIII_BWheel_Right_m1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh StuGIII_MWheel_Left_m1
+GeometryTemplate.file StuGIII_MWheel_Left_m1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh StuGIII_MWheel_Right_m1
+GeometryTemplate.file StuGIII_MWheel_Right_m1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh StuGIII_SWheel_Left_m1
+GeometryTemplate.file StuGIII_SWheel_Left_m1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh StuGIII_SWheel_Right_m1
+GeometryTemplate.file StuGIII_SWheel_Right_m1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh StuGIII_Hull_m1
+GeometryTemplate.file sturm_main
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 100
+
+
+
+renderer.endGlobalCluster
+
+
+GeometryTemplate.create StandardMesh StuGIII_Hull_L1
+GeometryTemplate.file sturm_main
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_StuGIII_m1
+GeometryTemplate.file sturm_main
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500

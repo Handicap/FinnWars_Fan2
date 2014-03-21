@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject krh_laatikko
+ObjectTemplate.geometry krh_laatikko
+ObjectTemplate.setHasCollisionPhysics 1
+
+

@@ -1,0 +1,21 @@
+
+
+rem *** StukaEngine ***
+ObjectTemplate.create Engine Tank_bomb_Engine
+ObjectTemplate.setNetworkableInfo Tank_bomb_engine_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/500000
+ObjectTemplate.setMaxSpeed 10000000/10000000/10000000
+ObjectTemplate.setAcceleration 1000000000000/1000000000000/1000000000000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setEngineType c_ETRocket
+ObjectTemplate.setTorque 80
+ObjectTemplate.setNoPropellerEffectAtSpeed 100
+ObjectTemplate.setDifferential 50
+
+ObjectTemplate.create Wing Tank_bomb_Wing
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0.1
+ObjectTemplate.setFlapLift 0

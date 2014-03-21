@@ -1,0 +1,162 @@
+rem *** 76rk27 ***
+ObjectTemplate.create PlayerControlObject 76rk27
+ObjectTemplate.NameTagOffset 0/-0.5/0
+ObjectTemplate.setNetworkableInfo 76rk27BodyInfo
+ObjectTemplate.geometry tripod_temp
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 1
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 8
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 50
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate 76rk27
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 76
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_turret_16x16.dds"
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.vehicleFov 0.3
+ObjectTemplate.addTemplate 76rk27complex
+ObjectTemplate.addTemplate 76rk27seat
+ObjectTemplate.setPosition 0.356885/0.0/0.0
+
+rem *** 76rk27complex ***
+ObjectTemplate.create bundle 76rk27complex
+ObjectTemplate.loadSoundScript Sounds/76rk27Track.ssc
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate 76rk27entry
+ObjectTemplate.setPosition -0.299/0.0/1.2
+ObjectTemplate.addTemplate 76rk27entry
+ObjectTemplate.setPosition -0.299/0.0/-1.199
+ObjectTemplate.addTemplate 76rk27camera
+ObjectTemplate.setPosition 0.365664/0.865929/0.029
+ObjectTemplate.addTemplate 76rk27_gunner_pco1
+ObjectTemplate.setPosition 0.0/0.0/-0.449
+
+rem *** 76rk27entry ***
+ObjectTemplate.create EntryPoint 76rk27entry
+ObjectTemplate.setEntryRadius 2.5
+
+rem *** 76rk27camera ***
+ObjectTemplate.create Camera 76rk27camera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setMinRotation 90/-30/0
+ObjectTemplate.setMaxRotation -90/30/0
+ObjectTemplate.useScope 1
+ObjectTemplate.setSniperSight 1
+ObjectTemplate.setScopeIcon "binocular.tga"
+ObjectTemplate.vehicleFoV 0.3
+
+
+
+rem *** 76rk27_gunner_pco1 ***
+ObjectTemplate.create PlayerControlObject 76rk27_gunner_pco1
+ObjectTemplate.NameTagOffset 0/-0.1/0
+ObjectTemplate.setNetworkableInfo 76rk27BodyInfo
+ObjectTemplate.aiTemplate 76rk27Cannon
+ObjectTemplate.setSoldierExitLocation -2/0/0 180/0/0
+ObjectTemplate.GUIIndex 78
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTArtillery
+ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_turret_16x16.dds"
+ObjectTemplate.artPos 1
+ObjectTemplate.hasRestrictedExit 1
+
+ObjectTemplate.DirBarXScale 180
+ObjectTemplate.DirBarYScaleAbove 30
+ObjectTemplate.DirBarYScaleBelow 0
+ObjectTemplate.DirBarYScaleMin -95
+ObjectTemplate.DirBarYScaleMax -50
+
+
+ObjectTemplate.addTemplate 76rk27entry
+ObjectTemplate.setPosition 0.4/0.0/0.5
+ObjectTemplate.addTemplate 76rk27tower
+ObjectTemplate.setPosition 0.0/-0.85683646/1.294
+
+rem *** 76rk27tower ***
+ObjectTemplate.create rotationalbundle 76rk27tower
+ObjectTemplate.setNetworkableInfo 76rk27BodyInfo
+ObjectTemplate.loadSoundScript Sounds/76rk27Turret.ssc
+ObjectTemplate.geometry 76rk27_hull
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 10/10/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.addTemplate 76rk27gunbase
+ObjectTemplate.setPosition 0.0/0.8756307/-0.1
+ObjectTemplate.addTemplate 76rk27seat
+ObjectTemplate.setPosition -0.670639/0.958221/-0.8760491
+
+rem *** 76rk27gunbase ***
+ObjectTemplate.create rotationalbundle 76rk27gunbase
+ObjectTemplate.setNetworkableInfo 76rk27BodyInfo
+ObjectTemplate.loadSoundScript Sounds/76rk27gunbase.ssc
+ObjectTemplate.setMinRotation 0/-35/0
+ObjectTemplate.setMaxRotation 0/6/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.addTemplate 76rk27cannon
+ObjectTemplate.addTemplate 76rk27gunnercamera
+ObjectTemplate.setPosition -0.299/1.306825/-0.1653183
+
+
+rem *** 76rk27gunnercamera ***
+ObjectTemplate.create Camera 76rk27gunnercamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMExternTrace 1
+
+
+rem *** 76rk27seat ***
+ObjectTemplate.create seatobject 76rk27seat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+
+rem *** 76rk27gunnercamera ***
+ObjectTemplate.create Camera 76rk27seatcamera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.CVMExternTrace 1
+

@@ -1,0 +1,14 @@
+ObjectTemplate.create EntryPoint SoldierEntry
+ObjectTemplate.setEntryRadius 2
+
+ObjectTemplate.create Camera SoldierCamera
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setHasTarget 0
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 1
+ObjectTemplate.CVMFrontChase 1
+ObjectTemplate.CVMFlyBy 1
+ObjectTemplate.CVMTrace 1
+ObjectTemplate.CVMExternTrace 0
+

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/T26-M31Engine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/T26-M31Engine.ssc
+	
+#templateLevel LOW
+
+	#include Low/T26-M31Engine.ssc

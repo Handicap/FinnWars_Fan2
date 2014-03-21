@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Elco80_Engine_Water.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Elco80_Engine_Water.ssc
+	
+#templateLevel LOW
+
+	#include Low/Elco80_Engine_Water.ssc

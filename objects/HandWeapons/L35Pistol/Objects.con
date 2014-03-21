@@ -1,0 +1,124 @@
+ObjectTemplate.create HandFireArms L35Pistol
+ObjectTemplate.itemIndex 2
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate p38Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 4
+ObjectTemplate.roundOfFire 6
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate L35PistolAI
+ObjectTemplate.zoomFov 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.95 
+ObjectTemplate.soldierZoomPosition -0.01/-0.01/0.1
+ObjectTemplate.soldierCameraPosition 0.02/-0.05/0.2
+ObjectTemplate.AmmoType	1
+ObjectTemplate.addRootSpeed 0
+
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 20
+ObjectTemplate.distToMinDamage 40
+
+rem ObjectTemplate.autoReload 1
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 335
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.6/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/-0.2/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 2.5 1.5 0.07
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 1.5 0.2 0.2 0.1
+ObjectTemplate.setMiscDev 2.5 2.5 0.1
+
+
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/L35Pistol.ssc
+ObjectTemplate.GUIIndex 1
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_Pistol_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Pistol_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 41
+ObjectTemplate.setAmomBarPosX 5
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setAmomBarTextPosX 6
+ObjectTemplate.setAmomBarTextPosY 4
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+
+ObjectTemplate.createSkeleton animations/WalterP38.ske
+ObjectTemplate.useSkeletonPartAsMain WalterP38
+ObjectTemplate.addTemplate L35PistolLod
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0.000/0.0/0.2068
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0.01/0.02/0.28
+ObjectTemplate.setRotation 0/0/0
+
+rem *** L35PistolLod ***
+ObjectTemplate.create LodObject L35PistolLod
+ObjectTemplate.lodSelector HandWeaponLodSelector
+ObjectTemplate.addTemplate L35PistolComplex
+ObjectTemplate.addTemplate L35PistolSimple
+
+rem *** L35PistolComplex ***
+ObjectTemplate.create AnimatedBundle L35PistolComplex
+ObjectTemplate.geometry L35Pistol
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/WalterP38.ske
+
+beginrem
+ObjectTemplate.addTemplate L35PistolTrigger
+ObjectTemplate.bindToSkeletonPart Trigger
+ObjectTemplate.addTemplate L35PistolHane
+ObjectTemplate.bindToSkeletonPart Hane
+ObjectTemplate.addTemplate L35PistolMantel
+ObjectTemplate.bindToSkeletonPart mantel
+endrem
+
+ObjectTemplate.addTemplate L35Pistolclip
+ObjectTemplate.bindToSkeletonPart mag
+
+
+
+
+beginrem
+rem *** L35PistolTrigger ***
+ObjectTemplate.create SimpleObject L35PistolTrigger
+ObjectTemplate.geometry WalterP38Trigger
+
+rem *** L35PistolHane ***
+ObjectTemplate.create SimpleObject L35PistolHane
+ObjectTemplate.geometry WalterP38Hane
+
+rem *** L35PistolMantel ***
+ObjectTemplate.create SimpleObject L35PistolMantel
+ObjectTemplate.geometry WalterP38Mantel
+endrem
+
+
+
+rem *** Gunmag_L35Pistol0 ***
+ObjectTemplate.create SimpleObject L35Pistolclip
+ObjectTemplate.geometry L35Pistollipas
+
+rem *** L35PistolSimple ***
+ObjectTemplate.create SimpleObject L35PistolSimple
+ObjectTemplate.geometry Shad_L35Pistol
+
+

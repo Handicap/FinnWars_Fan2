@@ -1,0 +1,152 @@
+renderer.beginGlobalCluster Stuka
+GeometryTemplate.create StandardMesh Stuka_Fuselage_M1
+GeometryTemplate.file Ju87_Fuselage_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Stuka_whe1_M1
+GeometryTemplate.file Ju87_Wheel_Left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Stuka_whe2_M1
+GeometryTemplate.file Ju87_Wheel_Right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh Stuka_wheB_M1
+GeometryTemplate.file Ju87_Wheel_Back_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+beginrem
+GeometryTemplate.create StandardMesh Stuka_can1_M1
+GeometryTemplate.file Ju87_can1_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+endrem
+
+GeometryTemplate.create StandardMesh Stuka_prp1
+GeometryTemplate.file Ju87_propeller_m1
+
+GeometryTemplate.create StandardMesh Stuka_prp2
+GeometryTemplate.file Ju87_blurprp_m1
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh Stuka_Rudder_M1
+GeometryTemplate.file Ju87_Rodder_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Stuka_Flap_Left_Inner_M1
+GeometryTemplate.file Ju87_Flap_Left_Inner_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Stuka_Flap_Left_Middle_M1
+GeometryTemplate.file Ju87_Flap_Left_Middle_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Stuka_Flap_Left_Outer_M1
+GeometryTemplate.file Ju87_Flap_Left_Outer_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Stuka_Flap_Right_Inner_M1
+GeometryTemplate.file Ju87_Flap_Right_Inner_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Stuka_Flap_Right_Middle_M1
+GeometryTemplate.file Ju87_Flap_Right_Middle_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Stuka_Flap_Right_Outer_M1
+GeometryTemplate.file Ju87_Flap_Right_Outer_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Stuka_Flap_Tail_Left_M1
+GeometryTemplate.file Ju87_Flap_Tail_Left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Stuka_Flap_Tail_Right_M1
+GeometryTemplate.file Ju87_Flap_Tail_Right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 1P_Stuka_Driver_M1
+GeometryTemplate.file 1P_ju87_m1
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Stuka_Fuselage_L1
+GeometryTemplate.file Ju87_Fuselage_L1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 600
+
+GeometryTemplate.create StandardMesh Wreck_Stuka_m1
+GeometryTemplate.file Wreck_ju87_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500

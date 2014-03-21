@@ -1,0 +1,34 @@
+GeometryTemplate.create StandardMesh US_Britt_Bacpac
+GeometryTemplate.file US_Britt_Bacpac_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 100
+
+ObjectTemplate.create ActiveKitPart NoParachute
+ObjectTemplate.OverrideAirMovementInhibitations 1
+ObjectTemplate.setBoneName HipPack
+ObjectTemplate.setCopyLinksCount 0
+
+
+ObjectTemplate.create KitPart kiikarikotelo
+ObjectTemplate.geometry kiikarikotelo
+ObjectTemplate.setBoneName HipPack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart pistoolikotelo
+ObjectTemplate.geometry pistoolikotelo
+ObjectTemplate.setBoneName HipPack
+ObjectTemplate.setCopyLinksCount 0
+
+
+ObjectTemplate.create KitPart puukon_tuppi
+ObjectTemplate.geometry puukon_tuppi
+ObjectTemplate.setBoneName HipPack
+ObjectTemplate.setCopyLinksCount 0
+
+
+ObjectTemplate.create KitPart nakkipipo
+ObjectTemplate.geometry nakkipipo
+ObjectTemplate.setBoneName A
+ObjectTemplate.setCopyLinksCount 0
+

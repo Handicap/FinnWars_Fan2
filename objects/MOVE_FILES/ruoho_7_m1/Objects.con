@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject ruoho_7_M1
+ObjectTemplate.geometry ruoho_7_M1
+ObjectTemplate.setHasCollisionPhysics 0
+ObjectTemplate.cullRadiusScale 1

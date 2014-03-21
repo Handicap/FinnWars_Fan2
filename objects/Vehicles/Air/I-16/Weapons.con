@@ -1,0 +1,37 @@
+rem *** I-16Guns ***
+ObjectTemplate.create firearms I-16Guns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/I-153fire.ssc
+ObjectTemplate.aiTemplate I-16MachineGun
+ObjectTemplate.visibleBarrelTemplate e_Muzzleko
+ObjectTemplate.projectileTemplate I-153Projectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/3/0/0
+ObjectTemplate.magSize 1300
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 850
+ObjectTemplate.roundOfFire 30
+ObjectTemplate.setMinDev 1.8
+ObjectTemplate.addFireArmsPosition 0.19/1.05/1.6 0/0/0
+ObjectTemplate.addFireArmsPosition -0.19/1.05/1.6 0/0/0
+ObjectTemplate.AmmoType 10
+
+rem *** I-16Guns2 ***
+ObjectTemplate.create firearms I-16Guns2
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/konetykki.ssc
+ObjectTemplate.aiTemplate I-16MachineGun
+ObjectTemplate.visibleBarrelTemplate e_Muzzleko
+ObjectTemplate.projectileTemplate KoneTykkiProjectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate KT_Tracer_Projectile CRD_NONE/3/0/0
+ObjectTemplate.magSize 360
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 840
+ObjectTemplate.setMinDev 2.2
+ObjectTemplate.roundOfFire 15
+ObjectTemplate.addFireArmsPosition 1.3666/0.2587/1.7 0/0/0
+ObjectTemplate.addFireArmsPosition -1.3666/0.2587/1.7 0/0/0
+ObjectTemplate.AmmoType 10
+ObjectTemplate.setInputFire c_PIAltFire
+

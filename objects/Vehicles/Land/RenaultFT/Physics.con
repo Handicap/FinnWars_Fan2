@@ -1,0 +1,70 @@
+
+
+rem *** renaultftengine_r ***
+ObjectTemplate.create engine renaultftengine_r
+ObjectTemplate.setNetworkableInfo RenaultFTEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/RenaultFTEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 1.5
+ObjectTemplate.setDifferential 1.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate renaultfttrackr
+ObjectTemplate.setPosition 0.555172/-0.0210533/0.993133
+
+
+rem *** renaultftengine_l ***
+ObjectTemplate.create engine renaultftengine_l
+ObjectTemplate.setNetworkableInfo RenaultFTEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/RenaultFTEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 1.5
+ObjectTemplate.setDifferential 1.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate renaultfttrackl
+ObjectTemplate.setPosition -0.481559/-0.0210533/0.993133
+
+
+rem *** renaultft_bigwheel ***
+ObjectTemplate.create spring renaultft_bigwheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry RenaultFT_BigWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 10
+
+
+rem *** renaultft_smallwheel ***
+ObjectTemplate.create spring renaultft_smallwheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry RenaultFT_SmallWheel
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 10

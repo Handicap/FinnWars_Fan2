@@ -1,0 +1,6 @@
+NetworkableInfo.createNewInfo Maxim_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Maxim_TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+

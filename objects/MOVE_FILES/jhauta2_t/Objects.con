@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject jhauta2_t
+ObjectTemplate.geometry jhauta2_t
+ObjectTemplate.setHasCollisionPhysics 1
+
+

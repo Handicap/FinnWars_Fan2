@@ -1,0 +1,14 @@
+weaponTemplate.create MG42Unlimited_Ammopack_veh1
+weaponTemplate.burst 
+weaponTemplate.indirect 
+weaponTemplate.minRange 
+weaponTemplate.maxRange 
+weaponTemplate.weaponActivate 
+weaponTemplate.weaponFire 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+

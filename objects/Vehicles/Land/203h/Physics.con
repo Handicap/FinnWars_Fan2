@@ -1,0 +1,115 @@
+
+
+rem *** 203hengine ***
+ObjectTemplate.create engine 203hengine
+ObjectTemplate.setNetworkableInfo 203hEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/203hEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 1/0/1
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 0.5
+ObjectTemplate.setDifferential 0.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate 203htrackl
+ObjectTemplate.setPosition -0.01/-0.3/0.0
+ObjectTemplate.addTemplate 203htrackr
+ObjectTemplate.setPosition 0.01/-0.3/0.0
+
+
+rem *** 203hwheel2l ***
+ObjectTemplate.create spring 203hwheel2l
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry 203h_wheel2L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 17.5
+ObjectTemplate.setDamping 2.2
+
+
+rem *** 203hwheel2lsmoke ***
+ObjectTemplate.create spring 203hwheel2lsmoke
+ObjectTemplate.geometry 203h_wheel2L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+ObjectTemplate.addTemplate e_wdustpanzl
+ObjectTemplate.addTemplate e_wdustpanz
+
+
+rem *** 203hwheel2ldummy ***
+ObjectTemplate.create spring 203hwheel2ldummy
+ObjectTemplate.geometry 203h_wheel2L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** 203hwheel2r ***
+ObjectTemplate.create spring 203hwheel2r
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry 203h_wheel2R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 17.5
+ObjectTemplate.setDamping 2.2
+
+
+rem *** 203hwheel2rsmoke ***
+ObjectTemplate.create spring 203hwheel2rsmoke
+ObjectTemplate.geometry 203h_wheel2R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+ObjectTemplate.addTemplate e_wdustpanzl
+ObjectTemplate.addTemplate e_wdustpanz
+
+
+rem *** 203hwheel2rdummy ***
+ObjectTemplate.create spring 203hwheel2rdummy
+ObjectTemplate.geometry 203h_wheel2R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+
+
+
+
+rem *** fai_spring_frontr ***
+ObjectTemplate.create spring 203h_spring_frontr
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry fai_Whe1R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+

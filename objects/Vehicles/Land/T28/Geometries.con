@@ -1,0 +1,145 @@
+renderer.beginGlobalCluster t28
+
+GeometryTemplate.create StandardMesh 1p_t28Gunner
+GeometryTemplate.file 1p_t28gunner
+
+GeometryTemplate.create StandardMesh t28_kkturret
+GeometryTemplate.file T28_kkturret
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh t28_Cannon2_M1
+GeometryTemplate.file T28_Cannon
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh t28_Hull_M1
+GeometryTemplate.file t28_Hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 35
+GeometryTemplate.setLodDistance 3 50
+GeometryTemplate.setLodDistance 4 75
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create AnimatedMesh t28_TrackL_M1
+GeometryTemplate.file t28_track_l
+GeometryTemplate.setSkin animations/t28_track_l.skn
+
+GeometryTemplate.create AnimatedMesh t28_TrackR_M1
+GeometryTemplate.file t28_track_r
+GeometryTemplate.setSkin animations/t28_track_r.skn
+
+GeometryTemplate.create StandardMesh T28_etuiso_r
+GeometryTemplate.file T28_etuiso_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh T28_etuiso_l
+GeometryTemplate.file T28_etuiso_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh T28_takaiso_r
+GeometryTemplate.file T28_takaiso_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh T28_takaiso_l
+GeometryTemplate.file T28_takaiso_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t28_pieniala_l
+GeometryTemplate.file t28_pieniala_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t28_pieniala_r
+GeometryTemplate.file t28_pieniala_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t28_pieniyla_l
+GeometryTemplate.file t28_pieniyla_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t28_pieniyla_r
+GeometryTemplate.file t28_pieniyla_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh t28_Tow_M1
+GeometryTemplate.file t28_turret
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh t28_Tower_Hatch_M1
+rem GeometryTemplate.file Tiger_Tow_Hatch_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh t28_kk_view
+GeometryTemplate.file mg_view
+
+GeometryTemplate.create StandardMesh 1P_t28_Driver_M1
+GeometryTemplate.file 1P_Wespe_Driver_M1
+
+GeometryTemplate.create StandardMesh t28_takakk
+GeometryTemplate.file T28_takakk
+
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh t28_Hull_L1
+GeometryTemplate.file t28_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 350
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Wreck_t28_M1
+GeometryTemplate.file t28_Hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 350
+GeometryTemplate.setLodDistance 5 500

@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject kuoppa
+ObjectTemplate.geometry kuoppa
+ObjectTemplate.setHasCollisionPhysics 1
+
+

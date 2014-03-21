@@ -1,0 +1,5 @@
+GeometryTemplate.create StandardMesh viljapelto_6_M1
+GeometryTemplate.file viljapelto_6_M1
+
+GeometryTemplate.create StandardMesh viljapelto_6_lod
+GeometryTemplate.file viljapelto_6_lod

@@ -1,0 +1,89 @@
+
+
+rem *** e_MuzzMaxim ***
+ObjectTemplate.create EffectBundle e_muzzleko
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate em_Muzzlekop
+ObjectTemplate.setPosition 0.0/0.0/-0.12
+ObjectTemplate.addTemplate em_Muzzleko_blackSmoke2
+ObjectTemplate.timeToLive CRD_NONE/0/0/0
+ObjectTemplate.addTemplate em_shell792mm1
+rem -------------------------------------
+
+
+rem *** em_MuzzMaximp ***
+ObjectTemplate.create Emitter em_Muzzlekop
+ObjectTemplate.template fx_Muzzlekop2
+ObjectTemplate.lodDistance 500
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.noPhysics 1
+ObjectTemplate.addChild 1
+ObjectTemplate.showInThirdPerson 1
+
+
+rem *** fx_MuzzMaximp2 ***
+ObjectTemplate.create Particle fx_Muzzlekop2
+ObjectTemplate.geometry muzzheavy_m1
+ObjectTemplate.timeToLive CRD_NONE/0.07/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+
+
+rem *** Em_MuzzMaxim_blackSmoke2 ***
+ObjectTemplate.create Emitter Em_Muzzleko_blackSmoke2
+ObjectTemplate.template Fx_Muzzleko_blackSmoke2
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 400
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/7/0/0
+ObjectTemplate.positionalSpeedIndof CRD_UNIFORM/0/10/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInup CRD_UNIFORM/2/0/0
+
+
+rem *** Fx_MuzzMaximblackSmoke2  ***
+ObjectTemplate.create SpriteParticle Fx_Muzzleko_blackSmoke2
+ObjectTemplate.timeToLive CRD_UNIFORM/1/3/0
+ObjectTemplate.size CRD_UNIFORM/0.3/0.4/0
+ObjectTemplate.drag CRD_NONE/4/0/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.2/0/0
+ObjectTemplate.sizeOverTime 0/0.9|100/2
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.initRotation CRD_EXPONENTIAL/0/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/50/1
+ObjectTemplate.rotationSpeedOverTime 0/0|100/1
+ObjectTemplate.colorRGBAOverTime 0/228/228/228/51|31/155/155/155/160|33/100/100/100/112|0/0
+
+rem *** em_shell792mm ***
+ObjectTemplate.create emitter em_shell792mm1
+ObjectTemplate.template Fx_Shell792mm1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 60
+ObjectTemplate.TimeToLive CRD_NONE/5/0/0
+ObjectTemplate.intensity CRD_NONE/1/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0.0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/-10/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+
+
+rem *** fx_shell792mm ***
+ObjectTemplate.create particle fx_shell792mm1
+ObjectTemplate.geometry shell1250mmHI_m1
+ObjectTemplate.drag CRD_NONE/4/0/0
+ObjectTemplate.TimeToLive CRD_NONE/1/0/0
+ObjectTemplate.gravityModifier CRD_NONE/2/0/0
+

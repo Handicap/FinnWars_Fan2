@@ -1,0 +1,37 @@
+ObjectTemplate.create KitPart Germ_ScoutHelm_Desert
+ObjectTemplate.geometry Germ_ScoutHelm_Desert
+ObjectTemplate.setBoneName A
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create Kit German_G43_Desert
+ObjectTemplate.setType Scout
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry Kit_K98_Sniper
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate Germ_ScoutHelm_Desert
+rem ObjectTemplate.addTemplate Radio
+ObjectTemplate.addTemplate german_HipPack
+ObjectTemplate.addTemplate NoParachute
+ObjectTemplate.addTemplate pistoolikotelo
+ObjectTemplate.addTemplate kiikarikotelo
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_scout_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_scout_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_alliesKnife.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_walter.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_m98_scope.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_binoculars.tga"
+
+ObjectTemplate.setKitIcon 0 "kits/ger_sniper.dds"
+ObjectTemplate.setKitName 0 ""
+ObjectTemplate.setKitActiveName 0 "In use/limit"
+
+ObjectTemplate.addTemplate Gewehr43_zf4
+ObjectTemplate.addTemplate walterp38
+ObjectTemplate.addTemplate KnifeAllies
+
+ObjectTemplate.addTemplate Binoculars
+rem ObjectTemplate.addTemplate GrenadeAxis
+ObjectTemplate.aiTemplate  Scout

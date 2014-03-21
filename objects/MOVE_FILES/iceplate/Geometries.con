@@ -1,0 +1,3 @@
+GeometryTemplate.create StandardMesh iceplate
+GeometryTemplate.file lake-ice
+GeometryTemplate.setLodDistance 0 0

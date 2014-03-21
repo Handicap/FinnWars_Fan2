@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject puucee
+ObjectTemplate.geometry puucee
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.cullRadiusScale 1.5
+

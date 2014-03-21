@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject pvradio
+ObjectTemplate.geometry pvradio
+ObjectTemplate.setHasCollisionPhysics 1
+
+

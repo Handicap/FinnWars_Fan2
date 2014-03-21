@@ -1,0 +1,25 @@
+
+rem *** IlyushinBombDummy ***
+rem *** Yak9BombDummy ***
+ObjectTemplate.create FireArms Yak9BombDummy
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.projectileTemplate BazookaProjectile
+ObjectTemplate.loadSoundScript Sounds/panzershrek.ssc
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.addFireArmsPosition 1.859/-0.049/4.9 -1.3/0/0
+ObjectTemplate.addFireArmsPosition -2.059/-0.049/4.9 -1.3/0/0
+ObjectTemplate.magSize 6
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.velocity 150
+ObjectTemplate.radius 40
+ObjectTemplate.ForceOnExplosion 50
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.aiTemplate Yak9Bombs
+ObjectTemplate.AmmoType	9
+
+ObjectTemplate.create SimpleObject Yak9BombDummy
+ObjectTemplate.geometry Big_Bomb_M1

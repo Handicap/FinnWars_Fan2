@@ -1,0 +1,88 @@
+renderer.beginGlobalCluster KettenKrad
+
+GeometryTemplate.create StandardMesh KettenKrad_Hull_M1
+GeometryTemplate.file KettenKrad_Hull_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 45
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create AnimatedMesh KettenKrad_LTrack_M1
+GeometryTemplate.file KettenKrad_LTrack_M1
+GeometryTemplate.setSkin animations/KettenKrad_LTrack_M1.skn
+
+GeometryTemplate.create AnimatedMesh KettenKrad_RTrack_M1
+GeometryTemplate.file KettenKrad_RTrack_M1
+GeometryTemplate.setSkin animations/KettenKrad_RTrack_M1.skn
+
+rem *** Front tires used for steering ***
+GeometryTemplate.create StandardMesh KettenKrad_fronttire_M1
+GeometryTemplate.file KettenKrad_FWheel_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+rem *** Wheels used for tracks ***
+GeometryTemplate.create StandardMesh KettenKrad_LMediumWheel_M1
+GeometryTemplate.file KettenKrad_LWheel_a_M1
+geometryTemplate.cullFactor 0.005
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KettenKrad_RMediumWheel_M1
+GeometryTemplate.file KettenKrad_RWheel_a_M1
+geometryTemplate.cullFactor 0.005
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KettenKrad_LLargeWheel_M1
+GeometryTemplate.file KettenKrad_LWheel_b_M1
+geometryTemplate.cullFactor 0.005
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KettenKrad_RLargeWheel_M1
+GeometryTemplate.file KettenKrad_RWheel_b_M1
+geometryTemplate.cullFactor 0.005
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh KettenKrad_Cockpit_M1
+GeometryTemplate.file 1P_KettenKrad_Hull_M1
+
+GeometryTemplate.create StandardMesh KettenKrad_Hull_L1
+GeometryTemplate.file KettenKrad_Hull_L1
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_KettenKrad_m1
+GeometryTemplate.file KettenKrad_Wreck_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh KettenKrad_Steering_M1
+GeometryTemplate.file KettenKrad_Steering_M1
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1P_KettenKrad_Str_M1
+GeometryTemplate.file 1P_KettenKrad_Steering_M1
+GeometryTemplate.cullFactor 2
+
+renderer.endGlobalCluster

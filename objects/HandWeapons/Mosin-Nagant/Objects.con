@@ -1,0 +1,188 @@
+
+
+rem ----------------------------------------------------------
+rem Firearm: Mosin-Nagant
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms Mosin-Nagant
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 3
+ObjectTemplate.projectileTemplate no4Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 5
+ObjectTemplate.numOfMag 5
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1.4
+ObjectTemplate.roundOfFire 0.4
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate Mosin-NagantAI
+ObjectTemplate.zoomFov 0.67
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.GUIIndex 6
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_Rifle_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Rifle_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 20
+ObjectTemplate.setAmomBarPosX 6
+ObjectTemplate.setAmomBarPosY -17
+ObjectTemplate.setAmomBarTextPosX 5
+ObjectTemplate.setAmomBarTextPosY 10
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+ObjectTemplate.soldierZoomFov 0.9
+ObjectTemplate.soldierZoomPosition -0.06/0.01/-0.17
+ObjectTemplate.soldierCameraPosition -0.02/-0.03/-0.04
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+ObjectTemplate.timeToNotAllowChange 0.25
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 1000
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.2/1.2/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 0 0 0
+ObjectTemplate.setDevMod  1 0.95 0.85
+ObjectTemplate.setMinDev 0.35
+ObjectTemplate.setTurnDev 0.8 0.08 0.08 0.04
+ObjectTemplate.setSpeedDev 1.5 0.5 0.5 0.06
+ObjectTemplate.setMiscDev 2.5 2.5 0.05
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/Mosin-Nagant.ssc
+ObjectTemplate.createSkeleton animations/Mosin-Nagant.ske
+ObjectTemplate.useSkeletonPartAsMain Mosin-Nagant
+ObjectTemplate.addTemplate Mosin-NagantLod
+
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.045/0.745
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_Shell792D
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.03/0.39
+ObjectTemplate.setRotation 0/0/0
+
+
+
+rem ----------------------------------------------------------
+rem Firearm: Mosin-NagantSniper
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms Mosin-NagantSniper
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 3
+ObjectTemplate.zoomFov 0.1
+ObjectTemplate.unZoomBetweenFireTime 3.0
+ObjectTemplate.useScope 1
+ObjectTemplate.projectileTemplate no4Projectile
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 5
+ObjectTemplate.numOfMag 5
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1.4
+ObjectTemplate.roundOfFire 0.4
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.GUIIndex 113
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_Rifle_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Rifle_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 20
+ObjectTemplate.setAmomBarPosX 6
+ObjectTemplate.setAmomBarPosY -17
+ObjectTemplate.setAmomBarTextPosX 5
+ObjectTemplate.setAmomBarTextPosY 10
+ObjectTemplate.setScopeIcon "sniper.tga"
+ObjectTemplate.setSightIcon "scout_ring_128x128.tga"
+ObjectTemplate.setSniperSight 1
+ObjectTemplate.setCrossHairType CHTNone
+
+objectTemplate.aiTemplate SniperMosin-NagantAI
+rem ObjectTemplate.positionalSpeedInDof CRD_NONE/800/0/0
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.06/0.01/-0.17
+ObjectTemplate.soldierCameraPosition -0.02/-0.03/-0.04
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+ObjectTemplate.timeToNotAllowChange 2.25
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 1000
+ObjectTemplate.setFireDev 0 0 0
+ObjectTemplate.setDevMod  1 0.95 0.85
+ObjectTemplate.setTurnDev 0.5 0.25 0.25 0.03
+ObjectTemplate.setSpeedDev 1.5 0.5 0.5 0.04
+ObjectTemplate.setMiscDev 2.5 2.5 0.05
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/Mosin-Nagant.ssc
+
+ObjectTemplate.createSkeleton animations/Mosin-Nagant.ske
+ObjectTemplate.useSkeletonPartAsMain Mosin-Nagant
+ObjectTemplate.addTemplate Mosin-NagantSniperLod
+
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.045/0.8
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shell792D
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.03/0.39
+ObjectTemplate.setRotation 0/0/0
+
+
+rem
+rem ** Objects
+rem
+
+ObjectTemplate.create SimpleObject Mosin-NagantBase
+ObjectTemplate.geometry Mosin-NagantBase
+
+ObjectTemplate.create SimpleObject Mosin-NagantScope
+ObjectTemplate.geometry Mosin-NagantScope
+
+ObjectTemplate.create SimpleObject Mosin-NagantSniperSimple
+ObjectTemplate.geometry Shad_Mosin-Nagant_Scope
+
+ObjectTemplate.create AnimatedBundle Mosin-NagantSniperComplex
+ObjectTemplate.geometry Mosin-Nagant
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Mosin-Nagant.ske
+ObjectTemplate.addTemplate Mosin-NagantScope
+ObjectTemplate.setPosition 0.000822808/0.0774618/0.112351
+ObjectTemplate.bindToSkeletonPart SIKTE
+
+ObjectTemplate.create LodObject Mosin-NagantSniperLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate Mosin-NagantSniperComplex
+ObjectTemplate.addTemplate Mosin-NagantSniperSimple
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.create SimpleObject Mosin-NagantSimple
+ObjectTemplate.geometry Shad_Mosin-Nagant
+
+ObjectTemplate.create AnimatedBundle Mosin-NagantComplex
+ObjectTemplate.geometry Mosin-Nagant
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Mosin-Nagant.ske
+
+ObjectTemplate.create LodObject Mosin-NagantLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate Mosin-NagantComplex
+ObjectTemplate.addTemplate Mosin-NagantSimple
+
+

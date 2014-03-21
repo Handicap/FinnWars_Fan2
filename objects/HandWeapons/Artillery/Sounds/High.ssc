@@ -1,0 +1,22 @@
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/artillery.wav
+minDistance 300
+dopplerOff
+volume 2
+priority 10
+randomStartPitch 0.02 / 0.02
+relativePosition 0/20/-50
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 200
+	param 500
+	param 1
+	param -1
+endEffect

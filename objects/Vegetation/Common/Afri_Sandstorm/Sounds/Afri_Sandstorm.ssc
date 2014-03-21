@@ -1,0 +1,7 @@
+#templateLevel HIGH
+
+	#include Afri_Sandstorm_HighMed.ssc
+	
+#templateLevel MEDIUM
+
+	#include Afri_Sandstorm_HighMed.ssc

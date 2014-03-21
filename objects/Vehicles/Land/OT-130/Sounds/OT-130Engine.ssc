@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/WespeEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/WespeEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/WespeEngine.ssc

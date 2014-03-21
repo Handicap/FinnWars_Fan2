@@ -1,0 +1,43 @@
+ObjectTemplate.create KitPart German_medicpack
+ObjectTemplate.geometry Medic_laukku
+ObjectTemplate.setBoneName HipPack
+ObjectTemplate.setCopyLinksCount 0
+
+
+
+
+
+ObjectTemplate.create Kit FinSummer_medic
+ObjectTemplate.setType AT
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry Kit_medic
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate finsummercap
+rem ObjectTemplate.addTemplate German_hippack
+ObjectTemplate.addTemplate NoParachute
+ObjectTemplate.addTemplate German_medicpack
+ObjectTemplate.addTemplate puukon_tuppi
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_medic_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_medic_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_puukko.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "kits/mosinnagant_kit.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_medpack.tga"
+ObjectTemplate.setMinimapIcon "Minimap/map_medic.dds"
+
+ObjectTemplate.setKitIcon 3 "kits/fin_m28-30.dds"
+ObjectTemplate.setKitName 3 ""
+ObjectTemplate.setKitActiveName 3 "In use/limit"
+
+ObjectTemplate.addTemplate mosin-nagant_carbine
+rem ObjectTemplate.addTemplate M39Rifle
+ObjectTemplate.addTemplate KnifeAxis
+rem ObjectTemplate.addTemplate binoculars
+ObjectTemplate.addTemplate MedPack
+
+
+ObjectTemplate.aiTemplate  AT

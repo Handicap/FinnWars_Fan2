@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KettenKradTrack.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KettenKradTrack.ssc
+	
+#templateLevel LOW
+
+	#include Low/KettenKradTrack.ssc

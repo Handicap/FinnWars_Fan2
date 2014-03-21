@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include high/bombhigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include mid/bombmid.ssc
+	
+#templateLevel LOW
+
+	#include low/bomblow.ssc

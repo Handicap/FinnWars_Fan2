@@ -1,0 +1,27 @@
+newPatch
+
+load @ROOT/Sound/@RTD/explwaterfar1.wav
+minDistance 35
+randomStartPitch 0.11 / 0
+priority 9
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.5
+	param 1.5
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 160
+	param 1
+	param -1
+endEffect

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/203hgunbase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/203hgunbase.ssc
+	
+#templateLevel LOW
+
+	#include Low/203hgunbase.ssc

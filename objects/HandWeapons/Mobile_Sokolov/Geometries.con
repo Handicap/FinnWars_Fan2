@@ -1,0 +1,5 @@
+GeometryTemplate.create StandardMesh mobile_sokolov_carry
+GeometryTemplate.file mobile_sokolov_carry
+
+GeometryTemplate.create StandardMesh mobile_sokolov_carryLOD
+GeometryTemplate.file mobile_sokolov_carryLOD

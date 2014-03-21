@@ -1,0 +1,122 @@
+rem *** e_ExplGranade ***
+ObjectTemplate.create EffectBundle e_Nebel
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/SAVUKRANU.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_NebelGranade
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate Em_NebelGranade_flash
+ObjectTemplate.addTemplate Em_NebelGranadeBlackSmoke3
+ObjectTemplate.addTemplate Em_NebelGranade_Smoke
+rem -------------------------------------
+
+
+rem *** Em_ExplGranade ***
+ObjectTemplate.create Emitter Em_NebelGranade
+ObjectTemplate.template Fx_ExplGranade
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.timeToLive CRD_NONE/0.5/0/0
+ObjectTemplate.intensity CRD_NONE/100/0/1
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInup CRD_UNIFORM/3/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExplGranade ***
+ObjectTemplate.create SpriteParticle Fx_NebelGranade
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.size CRD_UNIFORM/2/2/0
+ObjectTemplate.gravityModifier CRD_NONE/1/0/0
+ObjectTemplate.sizeOverTime 0/0.560045|1/1.80319|1/1
+ObjectTemplate.texture E_dustwindw_I
+ObjectTemplate.initRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/30/1
+ObjectTemplate.rotationSpeedOverTime 0/0.209998|100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/0|46/255/255/255/120|65/255/255/255/59|100/100/100/0/0
+ObjectTemplate.numAnimationFrames 8
+ObjectTemplate.initAnimationFrame CRD_NONE/8/0/0
+ObjectTemplate.animationSpeed CRD_NONE/70/0/0
+
+
+rem *** Em_ExplGranade_flash ***
+ObjectTemplate.create Emitter Em_NebelGranade_flash
+ObjectTemplate.template Fx_ExplGranade_flash
+ObjectTemplate.lodDistance 900
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0/1/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExplGranade_flash ***
+ObjectTemplate.create SpriteParticle Fx_NebelGranade_flash
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.size CRD_NONE/2/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 1/1|50/0|100/0
+ObjectTemplate.texture e_fire4
+ObjectTemplate.initRotation CRD_NONE/1/0/0
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.colorRGBAOverTime 0/255/224/159/255|49/255/255/192/200|100/255/255/128/0
+
+
+rem *** Em_ExplGranade_Smoke ***
+ObjectTemplate.create Emitter Em_NebelGranade_Smoke
+ObjectTemplate.template Fx_NebelGranade_Smoke
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.delay CRD_NONE/0.2/0/0
+ObjectTemplate.timeToLive CRD_NONE/0/0/0
+ObjectTemplate.intensity CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/-1.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/100/0/0
+rem *** Fx_ExplGranade_Smoke ***
+ObjectTemplate.create SpriteParticle Fx_NebelGranade_Smoke
+ObjectTemplate.timeToLive CRD_NONE/0/0/0
+ObjectTemplate.size CRD_UNIFORM/0/0/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.3/0/0
+ObjectTemplate.sizeOverTime 0/|0/0|0/0
+ObjectTemplate.gravityModifierOverTime 0/0.199988|100/0.199988
+ObjectTemplate.texture E_dustwindw_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.XYSizeRatio CRD_NONE/1.1/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/214/185/141/102|55/74/74/74/45|100/0/0/0/0
+
+
+rem *** Em_granadeBlackSmoke3 ***
+ObjectTemplate.create Emitter Em_NebelGranadeBlackSmoke3
+ObjectTemplate.template Fx_granadeBlackSmoke3
+ObjectTemplate.looping 0
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.intensity CRD_NONE/15/10/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0/0.1/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.05/1
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInLeft CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_granadeBlackSmoke3  ***
+ObjectTemplate.create SpriteParticle Fx_NebelGranadeBlackSmoke3
+ObjectTemplate.timeToLive CRD_UNIFORM/3/3/0
+ObjectTemplate.size CRD_UNIFORM/5/0.4/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.2/0/0
+ObjectTemplate.sizeOverTime 0/1.5|100/2
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.drag CRD_NONE/5/0/0
+ObjectTemplate.initRotation CRD_EXPONENTIAL/0/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/50/1
+ObjectTemplate.rotationSpeedOverTime 0/0|100/1
+ObjectTemplate.colorRGBAOverTime 0/228/228/228/51|31/155/155/155/160|55/100/100/100/112|0/0
+

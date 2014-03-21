@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo Sb-2_autofly_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sb-2_autofly_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sb-2_autofly_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

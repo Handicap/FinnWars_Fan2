@@ -1,0 +1,33 @@
+
+
+rem *** ragdoll ***
+ObjectTemplate.create playercontrolobject ragdoll
+ObjectTemplate.setNetworkableInfo ragdollBodyInfo
+ObjectTemplate.geometry ragdoll_iso
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.drag 2
+ObjectTemplate.dragOffset 0/0/0
+ObjectTemplate.mass 2000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 99999
+ObjectTemplate.maxhitpoints 99999
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 6
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.setSoldierExitLocation -2.5/0/0 0/0/0
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.addTemplate ragdoll_spring2
+ObjectTemplate.setPosition 0.0/1.03062/0.0
+

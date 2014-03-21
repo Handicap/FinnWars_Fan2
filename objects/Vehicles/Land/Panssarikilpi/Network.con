@@ -1,0 +1,11 @@
+NetworkableInfo.createNewInfo PanssarikilpiEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo PanssarikilpiBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo PanssarikilpiSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo PanssarikilpiTurretInfo
+NetworkableInfo.setPredictionMode PMLinear

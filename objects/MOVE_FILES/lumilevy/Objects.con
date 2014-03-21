@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject lumilevy
+ObjectTemplate.geometry lumilevy
+ObjectTemplate.setHasCollisionPhysics 1
+
+

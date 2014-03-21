@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo vickersTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo vickersGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo vickersEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo vickersBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

@@ -1,0 +1,504 @@
+rem *** Hanomag ***
+ObjectTemplate.create PlayerControlObject Hanomag
+ObjectTemplate.NameTagOffset 0/-0.6/2
+ObjectTemplate.setNetworkableInfo HanomagInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 15000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 120
+ObjectTemplate.maxhitpoints 120
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 50
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 0
+ObjectTemplate.hpLostWhileDamageFromDeepWater 20
+ObjectTemplate.addArmorEffect 50 e_HanomagDamage 0/0.5/2.5
+ObjectTemplate.addArmorEffect 20 e_HanomagFire 0/1/2.7
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.damageFromDeepWater 1
+ObjectTemplate.aiTemplate Hanomag
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHanomag
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/0 0/0/0
+ObjectTemplate.GUIIndex 59
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodHanomag ***
+ObjectTemplate.create LodObject lodHanomag
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HanomagComplex
+ObjectTemplate.addTemplate HanomagSimple
+ObjectTemplate.addTemplate HanomagWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector HanomagLodSelector
+
+
+rem *** HanomagComplex ***
+ObjectTemplate.create Bundle HanomagComplex
+ObjectTemplate.loadSoundScript Sounds/hanomagTrack.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHanomagCockpit
+ObjectTemplate.addTemplate hanomagCamera
+ObjectTemplate.setPosition -0.414/1.1/0.83
+ObjectTemplate.addTemplate Hanomag_MG42_PCO1
+ObjectTemplate.addTemplate Hanomag_Passanger_PCO2
+ObjectTemplate.addTemplate Hanomag_Passanger_PCO3
+ObjectTemplate.addTemplate Hanomag_Passanger_PCO4
+ObjectTemplate.addTemplate Hanomag_Passanger_PCO5
+ObjectTemplate.addTemplate hanomagSupplyDepot
+ObjectTemplate.setPosition 0/0.484/-1.38
+ObjectTemplate.addTemplate hanomagVehicleSupplyDepot
+ObjectTemplate.setPosition 0/0.464/-1.999
+ObjectTemplate.addTemplate hanomagEntry
+ObjectTemplate.setPosition 0/0/1.7
+ObjectTemplate.addTemplate hanomagEntry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate hanomagEngine
+ObjectTemplate.addTemplate hanomagWheelFR
+ObjectTemplate.setPosition 0.4/0.464/2.8
+ObjectTemplate.addTemplate hanomagWheelFL
+ObjectTemplate.setPosition -0.399/0.464/2.812
+rem -------------------------------------
+
+
+rem *** lodHanomagCockpit ***
+ObjectTemplate.create LodObject lodHanomagCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate HanomagCockpitExternal
+ObjectTemplate.addTemplate HanomagCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector HanomagcockpitSelector
+
+
+rem *** HanomagCockpitExternal ***
+ObjectTemplate.create SimpleObject HanomagCockpitExternal
+ObjectTemplate.geometry Hanomag_Hull_M1
+
+
+rem *** HanomagCockpitInternal ***
+ObjectTemplate.create SimpleObject HanomagCockpitInternal
+ObjectTemplate.geometry 1P_Hanomag_Driver_M1
+
+
+rem *** HanomagcockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector HanomagcockpitSelector
+LodSelectorTemplate.addLodDistance 4
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** hanomagCamera ***
+ObjectTemplate.create Camera hanomagCamera
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+rem *** Hanomag_MG42_PCO1 ***
+ObjectTemplate.create PlayerControlObject Hanomag_MG42_PCO1
+ObjectTemplate.NameTagOffset 0/0.60/0
+ObjectTemplate.setNetworkableInfo HanomagInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate hanomagEntry
+ObjectTemplate.setPosition 0/0/1.7
+ObjectTemplate.addTemplate hanomagEntry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate HanomagShield
+ObjectTemplate.setPosition 0/0/0.27
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/0/0 0/0/0
+ObjectTemplate.GUIIndex 60
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/90
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** hanomagEntry ***
+ObjectTemplate.create EntryPoint hanomagEntry
+ObjectTemplate.setEntryRadius 2.8
+
+
+rem *** HanomagShield ***
+ObjectTemplate.create RotationalBundle HanomagShield
+ObjectTemplate.setNetworkableInfo HanomagInfo
+ObjectTemplate.loadSoundScript Sounds/hanomagTurret.ssc
+ObjectTemplate.geometry Hanomag_shield_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HanomagRotation_MG42
+ObjectTemplate.setPosition 0/1.32/0.54
+ObjectTemplate.addTemplate HanomagMG42Seat
+ObjectTemplate.setPosition 0/0.75/-0.15
+ObjectTemplate.setRotation 0/0.9/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setAutomaticYawStabilization 1
+
+
+rem *** HanomagRotation_MG42 ***
+ObjectTemplate.create RotationalBundle HanomagRotation_MG42
+ObjectTemplate.setNetworkableInfo HanomagInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate MG42_unlimited
+ObjectTemplate.setPosition 0/0/-0.1
+ObjectTemplate.addTemplate HanomagCamera2
+ObjectTemplate.setPosition 0/0.16/-0.57
+ObjectTemplate.setRotation 0/1/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setAutomaticPitchStabilization 1
+
+
+rem *** hanomagCamera2 ***
+ObjectTemplate.create Camera hanomagCamera2
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMenuSelect3
+ObjectTemplate.setInputToPitch c_PIMenuSelect3
+ObjectTemplate.setInputToRoll c_PIMenuSelect3
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+rem *** HanomagMG42Seat ***
+ObjectTemplate.create SeatObject HanomagMG42Seat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+
+rem *** Hanomag_Passanger_PCO2 ***
+ObjectTemplate.create PlayerControlObject Hanomag_Passanger_PCO2
+ObjectTemplate.NameTagOffset 0/-0.2/-1
+ObjectTemplate.setNetworkableInfo HanomagPassengerInfo
+ObjectTemplate.aiTemplate HanomagPassenger3
+rem -------------------------------------
+ObjectTemplate.addTemplate HanomagEntry2
+ObjectTemplate.setPosition 0/0/-2.599
+ObjectTemplate.addTemplate HanomagPassangerCamera
+ObjectTemplate.setPosition -0.359/0.7/-0.199
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate HanomagPassangerSeat
+ObjectTemplate.setPosition -0.299/1/-0.199
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+rem ObjectTemplate.setSoldierExitLocation 0/0.3/-3 180/0/0
+ObjectTemplate.setSoldierExitLocation -1.5/0.3/-1.5 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/100
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** hanomagEntry2 ***
+ObjectTemplate.create EntryPoint hanomagEntry2
+ObjectTemplate.setEntryRadius 2.3
+
+
+rem *** HanomagPassangerCamera ***
+ObjectTemplate.create Camera HanomagPassangerCamera
+ObjectTemplate.setMinRotation -90/0/0
+ObjectTemplate.setMaxRotation 90/0/0
+ObjectTemplate.setMaxSpeed 180/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMenuSelect3
+ObjectTemplate.setInputToRoll c_PIMenuSelect3
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+
+rem *** HanomagPassangerSeat ***
+ObjectTemplate.create SeatObject HanomagPassangerSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatAnimationUpperBody Ub_PassengerInHanomag
+ObjectTemplate.seatAnimationLowerBody Lb_PassengerInHanomag
+
+
+rem *** Hanomag_Passanger_PCO3 ***
+ObjectTemplate.create PlayerControlObject Hanomag_Passanger_PCO3
+ObjectTemplate.NameTagOffset 0/-0.4/-1
+ObjectTemplate.setNetworkableInfo HanomagPassengerInfo
+ObjectTemplate.aiTemplate HanomagPassenger4
+rem -------------------------------------
+ObjectTemplate.addTemplate HanomagEntry2
+ObjectTemplate.setPosition 0/0/-2.599
+ObjectTemplate.addTemplate HanomagPassangerCamera
+ObjectTemplate.setPosition 0.36/0.7/-0.699
+ObjectTemplate.setRotation -89.999/0/0
+ObjectTemplate.addTemplate HanomagPassangerSeat
+ObjectTemplate.setPosition 0.3/1/-0.699
+ObjectTemplate.setRotation -89.999/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.5/0.3/-1.5 0/0/0
+ObjectTemplate.GUIIndex 62
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/110
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** Hanomag_Passanger_PCO4 ***
+ObjectTemplate.create PlayerControlObject Hanomag_Passanger_PCO4
+ObjectTemplate.NameTagOffset 0/-0.6/-1
+ObjectTemplate.setNetworkableInfo HanomagPassengerInfo
+ObjectTemplate.aiTemplate HanomagPassenger5
+rem -------------------------------------
+ObjectTemplate.addTemplate HanomagEntry2
+ObjectTemplate.setPosition 0/0/-2.599
+ObjectTemplate.addTemplate HanomagPassangerCamera
+ObjectTemplate.setPosition 0/0.7/-1.199
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate HanomagPassangerSeat
+ObjectTemplate.setPosition 0/1/-1.199
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0.3/-1.5 0/0/0
+ObjectTemplate.GUIIndex 63
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/120
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** Hanomag_Passanger_PCO5 ***
+ObjectTemplate.create PlayerControlObject Hanomag_Passanger_PCO5
+ObjectTemplate.NameTagOffset 0/-0.8/-1
+ObjectTemplate.setNetworkableInfo HanomagPassengerInfo
+ObjectTemplate.aiTemplate HanomagPassenger6
+rem -------------------------------------
+ObjectTemplate.addTemplate HanomagEntry2
+ObjectTemplate.setPosition 0/0/-2.599
+ObjectTemplate.addTemplate HanomagPassangerCamera
+ObjectTemplate.setPosition 0/0.7/-1.699
+ObjectTemplate.setRotation -89.999/0/0
+ObjectTemplate.addTemplate HanomagPassangerSeat
+ObjectTemplate.setPosition 0/1/-1.699
+ObjectTemplate.setRotation -89.999/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.5/0.3/-1.5 0/0/0
+ObjectTemplate.GUIIndex 64
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/120
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** hanomagSupplyDepot ***
+ObjectTemplate.create SupplyDepot hanomagSupplyDepot
+ObjectTemplate.radius 1.4
+ObjectTemplate.team 0
+ObjectTemplate.setHealth -1 4.0 0
+ObjectTemplate.addAmmoType 1 -1 15 0
+ObjectTemplate.addAmmoType 2 -1 1.2 0
+ObjectTemplate.addAmmoType 3 -1 1.2 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
+
+rem *** hanomagVehicleSupplyDepot ***
+ObjectTemplate.create SupplyDepot hanomagVehicleSupplyDepot
+ObjectTemplate.radius 20
+ObjectTemplate.team 1
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 0 -1 20 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
+
+
+rem *** hanomagTrackL ***
+ObjectTemplate.create AnimatedBundle hanomagTrackL
+ObjectTemplate.geometry hanomag_TrackL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/hanomagTrackL.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.012/0
+rem -------------------------------------
+ObjectTemplate.addTemplate hanomagWheel3LDummy
+ObjectTemplate.setPosition -0.833/0.229/0.31
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel3LDummy
+ObjectTemplate.setPosition -0.833/0.229/-0.467
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel3L
+ObjectTemplate.setPosition -0.833/0.229/-1.208
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel4L
+ObjectTemplate.setPosition -0.739/0.229/0.68
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel4LDummy
+ObjectTemplate.setPosition -0.739/0.229/-0.088
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel4LDummySmoke
+ObjectTemplate.setPosition -0.739/0.229/-0.831
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel4LBack
+ObjectTemplate.setPosition -0.739/0.41/-1.613
+ObjectTemplate.addTemplate hanomagWheelFIL
+ObjectTemplate.setPosition -0.738/0.42/1.354
+rem -------------------------------------
+
+
+rem *** hanomagTrackR ***
+ObjectTemplate.create AnimatedBundle hanomagTrackR
+ObjectTemplate.geometry hanomag_TrackR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/hanomagTrackR.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.012/0
+rem -------------------------------------
+ObjectTemplate.addTemplate hanomagWheel3RDummy
+ObjectTemplate.setPosition 0.833/0.259/0.31
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel3RDummy
+ObjectTemplate.setPosition 0.833/0.259/-0.467
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel3R
+ObjectTemplate.setPosition 0.833/0.259/-1.208
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel4R
+ObjectTemplate.setPosition 0.739/0.259/0.68
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel4RDummy
+ObjectTemplate.setPosition 0.739/0.259/-0.088
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel4RDummySmoke
+ObjectTemplate.setPosition 0.739/0.259/-0.831
+ObjectTemplate.useAsBone 0/-0.08/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate hanomagWheel4RBack
+ObjectTemplate.setPosition 0.739/0.41/-1.613
+ObjectTemplate.addTemplate hanomagWheelFIR
+ObjectTemplate.setPosition 0.738/0.42/1.354
+rem -------------------------------------
+
+
+rem *** hanomagWheelFR ***
+ObjectTemplate.create RotationalBundle hanomagWheelFR
+ObjectTemplate.setNetworkableInfo HanomagInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate hanomagWheelFRSpring
+ObjectTemplate.setPosition 0.236/-0.799/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 240/0/0
+ObjectTemplate.setAcceleration 120/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** hanomagWheelFL ***
+ObjectTemplate.create RotationalBundle hanomagWheelFL
+ObjectTemplate.setNetworkableInfo HanomagInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate hanomagWheelFLSpring
+ObjectTemplate.setPosition -0.236/-0.799/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 240/0/0
+ObjectTemplate.setAcceleration 120/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** HanomagSimple ***
+ObjectTemplate.create SimpleObject HanomagSimple
+ObjectTemplate.geometry Hanomag_Hull_L1
+
+
+rem *** HanomagWreck ***
+ObjectTemplate.create SimpleObject HanomagWreck
+ObjectTemplate.geometry Wreck_Hanomag_m1
+
+
+rem *** HanomagLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 HanomagLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 135

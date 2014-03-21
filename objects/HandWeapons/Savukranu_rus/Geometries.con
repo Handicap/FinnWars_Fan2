@@ -1,0 +1,12 @@
+GeometryTemplate.create StandardMesh poruskimeshSAATANA
+GeometryTemplate.file poruskisavu
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 70
+
+
+GeometryTemplate.create StandardMesh Shad_poruskimeshSAATANA
+GeometryTemplate.file poruskisavu
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+

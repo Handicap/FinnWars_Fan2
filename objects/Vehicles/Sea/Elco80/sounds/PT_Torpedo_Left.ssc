@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/PT_Torpedo_Left.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/PT_Torpedo_Left.ssc
+	
+#templateLevel LOW
+
+	#include Low/PT_Torpedo_Left.ssc

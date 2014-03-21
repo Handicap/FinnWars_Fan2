@@ -1,0 +1,6 @@
+GeometryTemplate.create StandardMesh talo3
+GeometryTemplate.file talo3
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 70
+GeometryTemplate.setLodDistance 2 90
+GeometryTemplate.setLodDistance 3 120

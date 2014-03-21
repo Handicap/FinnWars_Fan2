@@ -1,0 +1,108 @@
+rem
+rem *** e_Faust ***
+rem
+ObjectTemplate.create EffectBundle e_Faust
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_Faust_Flare
+ObjectTemplate.setPosition 0/0/-0.5
+ObjectTemplate.addTemplate Em_Faust_Flare1
+ObjectTemplate.setPosition 0/0/-0.4
+ObjectTemplate.addTemplate Em_Faust_Flare2
+ObjectTemplate.setPosition 0/0/0.4
+rem -------------------------------------
+
+rem *** Em_Faust_Flare ***
+ObjectTemplate.create Emitter Em_Faust_Flare
+ObjectTemplate.template Fx_Faust_Flare
+ObjectTemplate.startProbability 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0/-1/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.05/1
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInLeft CRD_UNIFORM/0/0/0
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.2/2/2
+ObjectTemplate.intensity CRD_NONE/100/0/0
+
+ 
+rem *** Fx_Faust_Flare ***
+ObjectTemplate.create SpriteParticle Fx_Faust_Flare
+ObjectTemplate.TimeToLive CRD_NONE/0.7/0.7/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.2/0/0
+ObjectTemplate.drag CRD_NONE/5/0/0
+ObjectTemplate.sizeOverTime 0/0.3|50/0.3|100/0.3
+ObjectTemplate.texture e_muz1_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatioOverTime 0/1|100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/51|18/255/255/128/114|36/255/187/60/177|52/255/128/0/51|100/0/0/0/0
+
+
+
+
+rem *** Em_Faust_Flare1 ***
+ObjectTemplate.create Emitter Em_Faust_Flare1
+ObjectTemplate.template Fx_Faust_Flare1
+ObjectTemplate.startProbability 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0/-1/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.05/1
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInLeft CRD_UNIFORM/0/0/0
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.9/2/2
+ObjectTemplate.intensity CRD_NONE/20/0/0
+
+ 
+rem *** Fx_Faust_Flare1 ***
+ObjectTemplate.create SpriteParticle Fx_Faust_Flare1
+ObjectTemplate.TimeToLive CRD_NONE/0.7/0.7/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.8/0/0
+rem ObjectTemplate.sizeOverTime 0/0.5|50/0.8|100/1.2
+ObjectTemplate.sizeOverTime 0/0.5|50/1.2|100/2.4
+ObjectTemplate.texture e_muz1_I
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/50/1
+ObjectTemplate.rotationSpeedOverTime 0/0|100/1
+ObjectTemplate.XYSizeRatioOverTime 0/1|100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/51|18/255/255/128/114|36/255/187/60/177|52/255/128/0/51|100/0/0/0/0
+ObjectTemplate.HasStaticColor 1
+
+
+
+
+
+rem *** Em_Faust_Flare2 ***
+ObjectTemplate.create Emitter Em_Faust_Flare2
+ObjectTemplate.template Fx_Faust_Flare2
+ObjectTemplate.startProbability 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0/1/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.05/1
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInLeft CRD_UNIFORM/0/0/0
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.4/2/2
+ObjectTemplate.intensity CRD_NONE/20/0/0
+
+ 
+rem *** Fx_Faust_Flare2 ***
+ObjectTemplate.create SpriteParticle Fx_Faust_Flare2
+ObjectTemplate.TimeToLive CRD_NONE/0.7/0.7/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.8/0/0
+ObjectTemplate.sizeOverTime 0/0.3|50/0.8|100/1
+ObjectTemplate.texture e_muz1_I
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/50/1
+ObjectTemplate.rotationSpeedOverTime 0/0|100/1
+ObjectTemplate.XYSizeRatioOverTime 0/1|100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/51|18/255/255/128/114|36/255/187/60/177|52/255/128/0/51|100/0/0/0/0
+ObjectTemplate.HasStaticColor 1
+

@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject kartta_o
+ObjectTemplate.geometry kartta_o
+ObjectTemplate.setHasCollisionPhysics 0
+
+

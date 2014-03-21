@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject talo4
+ObjectTemplate.geometry talo4
+ObjectTemplate.cullradiusscale 3
+ObjectTemplate.setHasCollisionPhysics 1

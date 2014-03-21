@@ -1,0 +1,18 @@
+ObjectTemplate.create bundle bengtskar
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addTemplate bengtskarStatic
+ObjectTemplate.addTemplate bengtskarKaiteet
+ObjectTemplate.addTemplate bengtskarPortaat
+ObjectTemplate.addTemplate bengtskarIkkunat
+
+ObjectTemplate.create simpleobject bengtskarStatic
+ObjectTemplate.geometry bengtskar
+
+ObjectTemplate.create simpleobject bengtskarKaiteet
+ObjectTemplate.geometry bengtskar_kaiteet
+
+ObjectTemplate.create simpleobject bengtskarPortaat
+ObjectTemplate.geometry bengtskar_portaat
+
+ObjectTemplate.create simpleobject bengtskarIkkunat
+ObjectTemplate.geometry bengtskar_ikkunat

@@ -1,0 +1,14 @@
+weaponTemplate.create KV-1MainGun
+weaponTemplate.burst 
+weaponTemplate.indirect 
+weaponTemplate.minRange 
+weaponTemplate.maxRange 
+weaponTemplate.weaponActivate 
+weaponTemplate.weaponFire 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+

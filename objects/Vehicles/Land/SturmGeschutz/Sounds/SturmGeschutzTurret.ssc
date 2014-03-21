@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SturmGeschutzTurret.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/SturmGeschutzTurret.ssc
+	
+#templateLevel LOW
+
+	#include Low/SturmGeschutzTurret.ssc

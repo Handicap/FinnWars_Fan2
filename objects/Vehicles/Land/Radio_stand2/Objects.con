@@ -1,0 +1,48 @@
+
+
+rem *** Defgun ***
+ObjectTemplate.create PlayerControlObject Radio_Stand2
+ObjectTemplate.setNetworkableInfo Radio_StandBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry Radio_mesh
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 600
+ObjectTemplate.maxhitpoints 600
+ObjectTemplate.material 121
+ObjectTemplate.criticalDamage 40
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.hpLostWhileUpSideDown 1
+ObjectTemplate.hpLostWhileDamageFromWater 1
+ObjectTemplate.aiTemplate DefGun
+ObjectTemplate.timetoliveafterdeath 2
+rem ObjectTemplate.fadeAtTimeToLiveAfterDeath 10
+rem ObjectTemplate.timeToStartFadeAfterDeath 10
+rem -------------------------------------
+ObjectTemplate.addTemplate RadioStandComplex2
+
+rem ObjectTemplate.addTemplate Radio_SoldierSpawn
+rem ObjectTemplate.setPosition 1.58946/0.680601/-0.0558696
+rem ObjectTemplate.addTemplate Radio_SoldierSpawn
+rem ObjectTemplate.setPosition 1.48137/1.0207/-1.34586
+
+ObjectTemplate.setSoldierExitLocation 0/2.2/-6.4 -180/0/0
+ObjectTemplate.GUIIndex 67
+
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_defgun.tga"
+ObjectTemplate.setVehicleIconPos 50/60
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_artillery.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTDefGun
+ObjectTemplate.setToolTipType  TTDefGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_empty.dds"
+
+ObjectTemplate.create Bundle RadioStandComplex2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate Radio_SoldierSpawn
+ObjectTemplate.setPosition 1.20885/0.685601/1.40586

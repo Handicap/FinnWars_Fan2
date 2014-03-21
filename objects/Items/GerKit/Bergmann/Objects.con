@@ -1,0 +1,31 @@
+ObjectTemplate.create Kit Fin_Bergmann
+ObjectTemplate.setType Assault
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry mp18
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate German_Helmet
+ObjectTemplate.addTemplate German_hippack
+ObjectTemplate.addTemplate NoParachute
+
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_assault_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_assault_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_axe.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_japMg.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_grenadeaxis.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+
+ObjectTemplate.setKitIcon 1 "kits/fin_m31skp.dds"
+ObjectTemplate.setKitName 1 ""
+ObjectTemplate.setKitActiveName 1 "In use/limit"
+
+rem *** The order is important, first the best weapons!
+
+ObjectTemplate.addTemplate MP18
+ObjectTemplate.addTemplate Axe
+ObjectTemplate.addTemplate GrenadeAxis
+
+ObjectTemplate.aiTemplate  Assault
+

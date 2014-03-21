@@ -1,0 +1,5 @@
+GeometryTemplate.create StandardMesh hirsitalo
+GeometryTemplate.file hirsimokki
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 200

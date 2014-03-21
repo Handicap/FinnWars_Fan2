@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject kaivo
+ObjectTemplate.geometry kaivo
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.cullRadiusScale 1.5

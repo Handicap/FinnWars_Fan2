@@ -1,0 +1,38 @@
+ObjectTemplate.create Bundle French_Barn_Lrg_m1
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate French_Barn_Lrg_m1
+ObjectTemplate.addTemplate lodFrench_Barn_Lrg
+
+LodSelectorTemplate.create DistanceSelector French_Barn_LrgSelector
+LodSelectorTemplate.addLodDistance 300
+ObjectTemplate.create LodObject lodFrench_Barn_Lrg
+ObjectTemplate.lodselector French_Barn_LrgSelector
+ObjectTemplate.addTemplate French_Barn_LrgInterior
+ObjectTemplate.addTemplate French_Barn_LrgExterior
+
+ObjectTemplate.create Bundle French_Barn_LrgInterior
+ObjectTemplate.geometry French_Barn_Lrg_m1
+
+rem ---------------------------
+
+
+ObjectTemplate.addTemplate Woodladder_4m_m1
+ObjectTemplate.setPosition -3.4/2.2/0.3
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Woodladder_4m_m1
+ObjectTemplate.setPosition -1.349/6.3/1.99
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate stecrate1_m1
+ObjectTemplate.setPosition 2.3/4.0/2.4719
+ObjectTemplate.setRotation 0/0/0
+
+
+
+rem ---------------------------
+
+
+
+ObjectTemplate.create SimpleObject French_Barn_LrgExterior
+ObjectTemplate.geometry French_Barn_Lrg_m2

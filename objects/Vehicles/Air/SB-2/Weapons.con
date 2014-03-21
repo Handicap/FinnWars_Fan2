@@ -1,0 +1,154 @@
+
+
+
+rem *** SB-2BombHolder2 ***
+ObjectTemplate.create FireArms SB-2BombRack
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate B17Bombs
+ObjectTemplate.projectileTemplate FighterBomb
+ObjectTemplate.projectilePosition 0/-0.5/0
+ObjectTemplate.magSize 10
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 8
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition 0.1/-0.1/0 0/0/0
+ObjectTemplate.addFireArmsPosition -0.1/-0.1/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0.1/-0.1/0.1 0/0/0
+ObjectTemplate.addFireArmsPosition -0.1/-0.1/0.1 0/0/0
+ObjectTemplate.addFireArmsPosition 0.2/-0.1/0 0/0/0
+ObjectTemplate.addFireArmsPosition -0.2/-0.1/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0.2/-0.1/0.1 0/0/0
+ObjectTemplate.addFireArmsPosition -0.2/-0.1/0.1 0/0/0
+ObjectTemplate.AmmoType	9
+
+
+
+rem *** SB-2_NoseGunner_Gun ***
+ObjectTemplate.create FireArms SB-2_NoseGunner_Gun
+ObjectTemplate.loadSoundScript Sounds/RearGunBarrelLeft.ssc
+ObjectTemplate.setNetworkableInfo Vehicle_MG42_Info
+ObjectTemplate.geometry SB-2_RearGunner_Gun_M1
+ObjectTemplate.aiTemplate MG42Unlimited
+ObjectTemplate.projectileTemplate I-153Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 600
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 7.5
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.velocity 850
+ObjectTemplate.roundOfFire 30
+ObjectTemplate.autoReload 1
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.AmmoType	10
+
+
+ObjectTemplate.setFireDev 0.9 0.25 0.05
+ObjectTemplate.setMinDev 1.0
+
+ObjectTemplate.fireInCameraDof 1
+objectTemplate.heatAddWhenFire 0.008
+objectTemplate.coolDownPerSec 0.15
+objectTemplate.timeDelayOnOverHeat 1
+beginrem
+ObjectTemplate.aiTemplate MG42Air
+ObjectTemplate.projectileTemplate SB-2_Bullet_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 650
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 16
+ObjectTemplate.autoReload 1
+ObjectTemplate.AmmoType	10
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.velocity 825
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.setMinDev 0.8
+endrem
+
+ObjectTemplate.addTemplate e_MuzzB17
+ObjectTemplate.setPosition 0/0.01/0.6
+ObjectTemplate.setRotation 0/0/0
+
+
+
+
+rem *** SB-2_NoseGunner_Gun ***
+ObjectTemplate.create FireArms SB-2_RearGunner_Gun
+ObjectTemplate.loadSoundScript Sounds/RearGunBarrelLeft.ssc
+ObjectTemplate.setNetworkableInfo Vehicle_MG42_Info
+ObjectTemplate.geometry SB-2_RearGunner_Gun_M1
+ObjectTemplate.aiTemplate MG42Unlimited
+ObjectTemplate.projectileTemplate I-153Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 600
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 7.5
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.velocity 850
+ObjectTemplate.roundOfFire 30
+ObjectTemplate.autoReload 1
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.AmmoType	10
+
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.02/-0.03/-0.43 0/80/90
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.03/0.02/-0.34 0/-160/-20
+
+
+ObjectTemplate.setFireDev 0.9 0.25 0.05
+ObjectTemplate.setMinDev 1.0
+
+ObjectTemplate.fireInCameraDof 1
+objectTemplate.heatAddWhenFire 0.008
+objectTemplate.coolDownPerSec 0.15
+objectTemplate.timeDelayOnOverHeat 1
+beginrem
+ObjectTemplate.aiTemplate MG42Air
+ObjectTemplate.projectileTemplate SB-2_Bullet_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 650
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 16
+ObjectTemplate.autoReload 1
+ObjectTemplate.AmmoType	10
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.velocity 825
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.setMinDev 0.8
+endrem
+
+ObjectTemplate.addTemplate e_MuzzB17
+ObjectTemplate.setPosition 0/0.01/0.6
+ObjectTemplate.setRotation 0/0/0
+
+
+
+
+rem *** SB-2_Bullet_Projectile ***
+ObjectTemplate.create Projectile SB-2_Bullet_Projectile
+ObjectTemplate.createNotInGrid 1
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/1.5/0/0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.material 256
+rem ObjectTemplate.material 213
+rem ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1

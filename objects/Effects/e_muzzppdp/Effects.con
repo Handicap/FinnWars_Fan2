@@ -1,0 +1,121 @@
+
+
+rem *** e_Muzzppdp ***
+ObjectTemplate.create EffectBundle e_Muzzppdp
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate em_muzzppdpp
+ObjectTemplate.addTemplate em_1P_muzzppdpp
+ObjectTemplate.setPosition -0.013/0.013/0.02
+ObjectTemplate.addTemplate em_muzzppdpp_glow
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.addTemplate em_muzzppdp_blackSmoke2
+ObjectTemplate.timeToLive CRD_NONE/0/0/0
+
+
+rem -------------------------------------
+
+
+rem *** em_muzzppdpp ***
+ObjectTemplate.create Emitter em_muzzppdpp
+ObjectTemplate.template fx_muzzppdpp2
+ObjectTemplate.lodDistance 500
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.noPhysics 1
+ObjectTemplate.addChild 1
+ObjectTemplate.showInThirdPerson 1
+
+
+rem *** fx_muzzppdpp2 ***
+ObjectTemplate.create Particle fx_muzzppdpp2
+ObjectTemplate.geometry muzzSMG_m1
+ObjectTemplate.timeToLive CRD_NONE/0.07/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+
+
+rem *** em_1P_muzzppdpp ***
+ObjectTemplate.create Emitter em_1P_muzzppdpp
+ObjectTemplate.template FX_1P_muzzppdpp
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.noPhysics 1
+ObjectTemplate.addChild 1
+ObjectTemplate.showInFirstPerson 1
+
+
+rem *** fx_1p_muzzppdpp ***
+ObjectTemplate.create Particle fx_1p_muzzppdpp
+ObjectTemplate.geometry e_muzzGun_m1
+ObjectTemplate.timeToLive CRD_NONE/0.07/0/0
+ObjectTemplate.size CRD_NONE/0.25/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeModifier 1/1/1
+
+
+rem *** em_muzzppdpp_glow ***
+ObjectTemplate.create Emitter em_muzzppdpp_glow
+ObjectTemplate.template fx_muzzppdpp_glow
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.05/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0.03/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+ObjectTemplate.showInThirdPerson 1
+
+
+rem *** fx_muzzppdpp_glow ***
+ObjectTemplate.create SpriteParticle fx_muzzppdpp_glow
+ObjectTemplate.timeToLive CRD_NONE/0.07/0.07/0
+ObjectTemplate.size CRD_NONE/0.17/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.texture e_fire4
+ObjectTemplate.initRotation CRD_NONE/1/0/0
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.colorRGBAOverTime 0/255/255/128/255|77/255/157/29/172|100/255/128/0/65
+
+
+
+
+
+
+rem *** Em_muzzppdp_blackSmoke2 ***
+ObjectTemplate.create Emitter Em_muzzppdp_blackSmoke2
+ObjectTemplate.template Fx_muzzppdp_blackSmoke2
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 400
+ObjectTemplate.timeToLive CRD_NONE/0.2/0.5/0.2
+ObjectTemplate.intensity CRD_NONE/70/0/0
+ObjectTemplate.positionalSpeedIndof CRD_UNIFORM/0/10/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInup CRD_UNIFORM/0/0/0
+
+
+rem *** Fx_muzzppdpblackSmoke2  ***
+ObjectTemplate.create SpriteParticle Fx_muzzppdp_blackSmoke2
+ObjectTemplate.timeToLive CRD_UNIFORM/0.2/0.2/0
+ObjectTemplate.size CRD_UNIFORM/0.1/0.2/0
+ObjectTemplate.drag CRD_NONE/6/0/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.2/0/0
+ObjectTemplate.sizeOverTime 0/0.2|100/1
+ObjectTemplate.texture e_muzs2_I
+ObjectTemplate.initRotation CRD_EXPONENTIAL/0/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/50/1
+ObjectTemplate.rotationSpeedOverTime 0/0|100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/51|18/255/255/128/114|36/255/187/60/177|52/255/128/0/51|100/0/0/0/0
+ObjectTemplate.HasStaticColor 1

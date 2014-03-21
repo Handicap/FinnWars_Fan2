@@ -1,0 +1,28 @@
+ObjectTemplate.create PlayerControlObject faustbox_ammo_spawnable
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setNetworkableInfo faustbox_ammo_spawnable_body
+ObjectTemplate.geometry faustbox_kiinni
+objectTemplate.cullRadiusScale 3.0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 5
+ObjectTemplate.explosionDamage 4
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 200000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 121
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.explosionForceMod 1
+ObjectTemplate.addArmorEffect 0 e_ExplAni01 0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.FadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.setMinimapIcon "empty.dds"
+ObjectTemplate.addTemplate faustbox_ammoSupplyDepot
+rem ObjectTemplate.addTemplate faustbox_ammoVehicleSupplyDepot

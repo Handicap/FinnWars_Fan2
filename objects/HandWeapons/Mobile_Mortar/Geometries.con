@@ -1,0 +1,5 @@
+GeometryTemplate.create StandardMesh mortar_carry
+GeometryTemplate.file mortar_carry
+
+GeometryTemplate.create StandardMesh mortar_carryLOD
+GeometryTemplate.file mortar_carryLOD

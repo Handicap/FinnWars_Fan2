@@ -1,0 +1,29 @@
+ObjectTemplate.create Kit Pilot_Rus_kit
+ObjectTemplate.setType Assault
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry Kit_pilot
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+rem ObjectTemplate.addTemplate Russ_Helmet
+rem ObjectTemplate.addTemplate Russian_hippack
+ObjectTemplate.addTemplate piloottihattu
+ObjectTemplate.addTemplate pistoolikotelo
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_assault_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_assault_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_alliesKnife.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_colt.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_repairpack.tga"
+
+ObjectTemplate.setKitIcon 1 "kits/rus_ppd34.dds"
+ObjectTemplate.setKitName 1 ""
+ObjectTemplate.setKitActiveName 1 "In use/limit"
+
+ObjectTemplate.addTemplate tt-33
+ObjectTemplate.addTemplate KnifeAllies
+ObjectTemplate.addTemplate RepairPack
+
+ObjectTemplate.aitemplate Assault

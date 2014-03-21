@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Pak40GunBarrel.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Pak40GunBarrel.ssc
+	
+#templateLevel LOW
+
+	#include Low/Pak40GunBarrel.ssc

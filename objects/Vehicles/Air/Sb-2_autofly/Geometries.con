@@ -1,0 +1,26 @@
+renderer.beginGlobalCluster Sb-2_autofly
+GeometryTemplate.create StandardMesh Sb-2_autofly_Fuselage_M1
+GeometryTemplate.file sb-2_nonfly
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 40
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Sb-2_autofly_prp1
+GeometryTemplate.file Ju87_propeller_m1
+
+GeometryTemplate.create StandardMesh Sb-2_autofly_prp2
+GeometryTemplate.file Ju87_blurprp_m1
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh Sb-2_autofly_Fuselage_L1
+GeometryTemplate.file sb-2_nonfly
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 80
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 400
+GeometryTemplate.setLodDistance 4 800
+GeometryTemplate.setLodDistance 5 1000

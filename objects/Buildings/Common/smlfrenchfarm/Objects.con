@@ -1,0 +1,47 @@
+ObjectTemplate.create Bundle smlfrenchfarm_m1
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate smlfrenchfarm_m1
+ObjectTemplate.addTemplate lodsmlfrenchfarm
+
+LodSelectorTemplate.create DistanceSelector smlfrenchfarmSelector
+LodSelectorTemplate.addLodDistance 400
+ObjectTemplate.create LodObject lodsmlfrenchfarm
+ObjectTemplate.lodselector smlfrenchfarmSelector
+ObjectTemplate.addTemplate smlfrenchfarmInterior
+ObjectTemplate.addTemplate smlfrenchfarmExterior
+
+ObjectTemplate.create Bundle smlfrenchfarmInterior
+ObjectTemplate.geometry smlfrenchfarm_m1
+
+rem ---------------------------
+ObjectTemplate.addTemplate Pachair_m1
+ObjectTemplate.setPosition 2.25/0.475/-6.7
+ObjectTemplate.setRotation -95/0/0
+
+ObjectTemplate.addTemplate Pachair_m1
+ObjectTemplate.setPosition 0.55/0.475/-6.7
+ObjectTemplate.setRotation 99/0/0
+
+
+ObjectTemplate.addTemplate civiltable_m1
+ObjectTemplate.setPosition 1.42/0.485/-6.165
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate plateshelf_m1
+ObjectTemplate.setPosition 1.44/2.255/-7.529
+ObjectTemplate.setRotation 0/0/180 
+
+ObjectTemplate.addTemplate eubed_m1
+ObjectTemplate.setPosition -0.6/0.48/2.595
+ObjectTemplate.setRotation 0/0/0
+
+
+
+
+rem ---------------------------
+
+
+ObjectTemplate.create SimpleObject smlfrenchfarmExterior
+ObjectTemplate.geometry smlfrenchfarm_m2
+
+

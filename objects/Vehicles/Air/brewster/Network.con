@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo Brewster_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Brewster_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Brewster_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

@@ -1,0 +1,427 @@
+rem ***************************************************************************************************************
+rem ***************************************************************************************************************
+rem *** Aichival geometries should be here since there are two types of Aichival's using the same geometries
+rem ***************************************************************************************************************
+rem ***************************************************************************************************************
+
+renderer.beginGlobalCluster Aichival
+
+GeometryTemplate.create StandardMesh rh_aichi_fus_M1
+GeometryTemplate.file rh_aichi_fus_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh rh_aichi_rfllarge_M1
+GeometryTemplate.file rh_aichi_rfllarge_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh rh_aichi_lfllarge_M1
+GeometryTemplate.file rh_aichi_lfllarge_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh rh_aichi_cockwifr_M1
+GeometryTemplate.file rh_aichi_cockwifr_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh rh_aichi_cockwiba_M1
+GeometryTemplate.file rh_aichi_cockwiba_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh rh_aichi_lwhe_M1
+GeometryTemplate.file rh_aichi_lwhe_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh rh_aichi_rwhe_M1
+GeometryTemplate.file rh_aichi_rwhe_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh rh_aichi_tailflap_M1
+GeometryTemplate.file rh_aichi_tailflap_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh rh_aichi_lflsmall_M1
+GeometryTemplate.file rh_aichi_lflsmall_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh rh_aichi_rflsmall_M1
+GeometryTemplate.file rh_aichi_rflsmall_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh rh_aichi_rbflap_M1
+GeometryTemplate.file rh_aichi_rbflap_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh rh_aichi_lbflap_M1
+GeometryTemplate.file rh_aichi_lbflap_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh aichi_Wheel_back_m1
+GeometryTemplate.file bf109_Wheel_back_m1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 1p_Aichi_Val_m1
+GeometryTemplate.file 1p_Aichi_Val_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh rh_aichi_prop_M1
+GeometryTemplate.file rh_aichi_prop_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh rh_aichi_blrprop_M1
+GeometryTemplate.file zero_propblur_m1
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh rh_aichi_fus_L1
+GeometryTemplate.file rh_aichi_fus_L1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Wreck_aichi_m1
+GeometryTemplate.file Wreck_aichi_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+
+rem ***************************************************************************************************************
+rem ***************************************************************************************************************
+rem *** SBD geometries should be here since there are two types of SBD's using the same geometries
+rem ***************************************************************************************************************
+rem ***************************************************************************************************************
+
+renderer.beginGlobalCluster SBD
+GeometryTemplate.create StandardMesh SBD-6_fus_M1
+GeometryTemplate.file SBD-6_fus_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 20
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 1p_SBD-6_cockpit_m1
+GeometryTemplate.file 1p_SBD-6_cockpit_m1
+
+GeometryTemplate.create StandardMesh SBD-6_hatch_tgn_M1
+GeometryTemplate.file SBD-6_hatch_tgn_M1
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 20
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh SBD-6_prop_M1
+GeometryTemplate.file SBD-6_prop_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh SBD-6_prop_M2
+GeometryTemplate.file SBD_propblur_M1
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh SBD-6_fus_rod_left_M1
+GeometryTemplate.file SBD-6_fus_rod_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh SBD-6_wing_rod_left_M1
+GeometryTemplate.file SBD-6_wing_rod_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh SBD-6_wing_left_M1
+GeometryTemplate.file SBD-6_wing_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh 1p_SBD-6_gunmount_m1
+GeometryTemplate.file 1p_SBD-6_gunmount_m1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 20
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 1p_SBD-6_guns_m1
+GeometryTemplate.file 1p_SBD-6_guns_m1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 20
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh SBD-6_flap_right_M1
+GeometryTemplate.file SBD-6_flap_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh SBD-6_flap_mid_m1
+GeometryTemplate.file SBD-6_flap_mid_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh SBD-6_fus_rod_mid_M1
+GeometryTemplate.file SBD-6_fus_rod_mid_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh SBD-6_wing_right_M1
+GeometryTemplate.file SBD-6_wing_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh SBD-6_grhatch_right_M1
+GeometryTemplate.file SBD-6_grhatch_right_M1
+geometryTemplate.cullFactor 0.1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh SBD-6_grhatch_left_M1
+GeometryTemplate.file SBD-6_grhatch_left_M1
+geometryTemplate.cullFactor 0.1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh SBD-6_damp_gear_left_M1
+GeometryTemplate.file SBD-6_damp_gear_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh SBD-6_damp_gear_right_M1
+GeometryTemplate.file SBD-6_damp_gear_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh SBD-6_whe_left_M1
+GeometryTemplate.file SBD-6_whe_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh SBD-6_whe_right_M1
+GeometryTemplate.file SBD-6_whe_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh SBD-6_backwheel_M1
+GeometryTemplate.file SBD-6_backwheel_M1
+geometryTemplate.cullFactor 0.04
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh SBD-6_damp_left_M1
+GeometryTemplate.file SBD-6_damp_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh SBD-6_damp_right_M1
+GeometryTemplate.file SBD-6_damp_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh SBD-6_fus_rod_right_M1
+GeometryTemplate.file SBD-6_fus_rod_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh SBD-6_flap_left_M1
+GeometryTemplate.file SBD-6_flap_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh SBD-6_wing_rod_right_M1
+GeometryTemplate.file SBD-6_wing_rod_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 100
+
+GeometryTemplate.create StandardMesh SBD-6_gea_lft_m1
+GeometryTemplate.file SBD-6_gea_lft_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh SBD-6_gea_rgt_m1
+GeometryTemplate.file SBD-6_gea_rgt_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh SBD-6_fus_L1
+GeometryTemplate.file SBD-6_fus_L1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Wreck_SBD_m1
+GeometryTemplate.file Wreck_SBD_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+rem ***************************************************************************************************************
+rem ***************************************************************************************************************
+rem ***************************************************************************************************************

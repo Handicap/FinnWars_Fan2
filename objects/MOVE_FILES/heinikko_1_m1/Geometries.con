@@ -1,0 +1,3 @@
+GeometryTemplate.create StandardMesh heinikko_1_M1
+GeometryTemplate.file heinikko_1_M1
+GeometryTemplate.shader Shaders/Tree/Billboard

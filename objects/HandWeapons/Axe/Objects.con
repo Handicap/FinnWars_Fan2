@@ -1,0 +1,44 @@
+ObjectTemplate.create HandFireArms Axe
+ObjectTemplate.itemIndex 1
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate KnifeProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 2
+ObjectTemplate.fireOnce 1
+ObjectTemplate.roundOfFire 1.2
+ObjectTemplate.GUIIndex 83
+ObjectTemplate.setHudAmmoType ATNone
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/knife.ssc
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
+ObjectTemplate.aiTemplate ShovelAI
+ObjectTemplate.addFireArmsPosition 0.0/0.2/0.05 0/0/0
+ObjectTemplate.addFireArmsPosition 0.1/-0.1/0.05 0/0/0
+ObjectTemplate.addFireArmsPosition 0.1/-0.1/0.05 0/0/0
+
+
+ObjectTemplate.velocity 85
+
+ObjectTemplate.createSkeleton animations/KnifeAxis.ske
+ObjectTemplate.useSkeletonPartAsMain Base
+ObjectTemplate.addTemplate AxeLod
+
+rem *** Objects ***
+ObjectTemplate.create SimpleObject AxeSimple
+ObjectTemplate.geometry Shad_Axe
+
+ObjectTemplate.create AnimatedBundle AxeComplex
+ObjectTemplate.geometry Axe
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/KnifeAllies.ske
+
+ObjectTemplate.create LodObject AxeLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate AxeComplex
+ObjectTemplate.addTemplate AxeSimple
+
+

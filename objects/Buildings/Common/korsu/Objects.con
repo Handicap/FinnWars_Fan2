@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject korsu
+ObjectTemplate.geometry korsu
+ObjectTemplate.setHasCollisionPhysics 1

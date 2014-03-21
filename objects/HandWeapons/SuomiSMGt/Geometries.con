@@ -1,0 +1,10 @@
+GeometryTemplate.create StandardMesh SuomiSMGmagasinStick
+GeometryTemplate.file skptanko
+GeometryTemplate.hasDynamicShadow 1
+
+
+GeometryTemplate.create StandardMesh Shad_SuomiSMGt
+GeometryTemplate.file kit_skpt
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300

@@ -1,0 +1,14 @@
+weaponTemplate.create wespeMainGun_stationary_t26-M331
+weaponTemplate.burst 
+weaponTemplate.indirect 
+weaponTemplate.minRange 
+weaponTemplate.maxRange 
+weaponTemplate.weaponActivate 
+weaponTemplate.weaponFire 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+weaponTemplate.setStrength 
+

@@ -1,0 +1,92 @@
+rem *** Komsomoletsengine_l ***
+ObjectTemplate.create Engine Komsomoletsengine_l
+ObjectTemplate.setNetworkableInfo KomsomoletsEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/T26-M37Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 3/0/8
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 4.0
+ObjectTemplate.setDifferential 3.8
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate Komsomoletstrackl
+
+rem *** Komsomolets_wheelfront_l ***
+ObjectTemplate.create Spring Komsomolets_wheelfront_l
+ObjectTemplate.geometry Komsomolets_front_l
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** Komsomolets_wheelfront_r ***
+ObjectTemplate.create Spring Komsomolets_wheelfront_r
+ObjectTemplate.geometry Komsomolets_front_r
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** Komsomolets_wheel ***
+ObjectTemplate.create Spring Komsomolets_wheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Komsomolets_smallwheel_g
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 17.5
+ObjectTemplate.setDamping 2.2
+
+rem *** Komsomolets_wheelrear_l ***
+ObjectTemplate.create Spring Komsomolets_wheelrear_l
+ObjectTemplate.geometry Komsomolets_rear_l
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** Komsomolets_wheelfront_r ***
+ObjectTemplate.create Spring Komsomolets_wheelrear_r
+ObjectTemplate.geometry Komsomolets_rear_r
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** Komsomoletsengine_r ***
+ObjectTemplate.create Engine Komsomoletsengine_r
+ObjectTemplate.setNetworkableInfo KomsomoletsEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/T26-M37Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/6
+ObjectTemplate.setAcceleration 3/0/8
+ObjectTemplate.setInputToRoll c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 4.0
+ObjectTemplate.setDifferential 3.8
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate Komsomoletstrackr

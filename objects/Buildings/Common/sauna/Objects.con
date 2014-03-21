@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject sauna
+ObjectTemplate.geometry sauna
+ObjectTemplate.setHasCollisionPhysics 1

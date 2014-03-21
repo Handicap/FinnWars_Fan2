@@ -1,0 +1,6 @@
+NetworkableInfo.createNewInfo L39_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo L39_TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+

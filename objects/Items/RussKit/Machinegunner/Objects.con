@@ -1,0 +1,29 @@
+ObjectTemplate.create Kit Rus_Mgunner
+ObjectTemplate.setType Scout
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry Kit_sokolov
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate pistoolikotelo
+ObjectTemplate.addTemplate Russ_Helmet
+ObjectTemplate.addTemplate NoParachute
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_engineer_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_engineer_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_alliesknife.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_nagantrevolver.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_mobilemaxim.dds"
+
+ObjectTemplate.setKitIcon 4 "kits/rus_m36simo.dds"
+ObjectTemplate.setKitName 4 ""
+ObjectTemplate.setKitActiveName 4 "In use/limit"
+
+ObjectTemplate.addTemplate Mobile_Sokolov
+rem ObjectTemplate.addTemplate Mobile_Maxim_high <---bugaa
+ObjectTemplate.addTemplate Nagant
+ObjectTemplate.addTemplate KnifeAllies
+
+ObjectTemplate.aitemplate Engineer

@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo Maxim_SokolovTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Maxim_SokolovGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Maxim_SokolovBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

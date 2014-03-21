@@ -1,0 +1,159 @@
+
+
+
+rem *** Ju88ABombHolder2 ***
+ObjectTemplate.create FireArms Ju88ABombRack2
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate B17Bombs
+ObjectTemplate.projectileTemplate FighterBomb
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 10
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 4
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.addFireArmsPosition -1/-0.1/0 0/0/0
+ObjectTemplate.addFireArmsPosition 1/-0.1/0 0/0/0
+ObjectTemplate.addFireArmsPosition -2/-0.1/0 0/0/0
+ObjectTemplate.addFireArmsPosition 2/-0.1/0 0/0/0
+ObjectTemplate.AmmoType	9
+
+
+rem *** Ju88ABombHolder ***
+ObjectTemplate.create FireArms Ju88ABombRack
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate B17Bombs
+ObjectTemplate.projectileTemplate HeavyBomberBomb
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 2
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition -1/-0.1/0 0/0/0
+ObjectTemplate.addFireArmsPosition 1/-0.1/0 0/0/0
+ObjectTemplate.AmmoType	9
+
+rem *** Ju88A_NoseGunner_Gun ***
+ObjectTemplate.create FireArms Ju88A_NoseGunner_Gun
+ObjectTemplate.loadSoundScript Sounds/MG42.ssc
+ObjectTemplate.setNetworkableInfo Vehicle_MG42_Info
+ObjectTemplate.geometry Ju88A_RearGunner_Gun_M1
+ObjectTemplate.aiTemplate MG42Air
+ObjectTemplate.projectileTemplate MG42_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 600
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 7
+ObjectTemplate.autoReload 1
+ObjectTemplate.AmmoType	10
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.setFireDev 0.9 0.25 0.05
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.velocity 900
+ObjectTemplate.fireInCameraDof 1
+
+ObjectTemplate.addTemplate e_MuzzB17
+ObjectTemplate.setPosition 0/0.1/0.8
+ObjectTemplate.setRotation 0/0/0
+
+rem *** Ju88A_RearGunner_LeftGun ***
+ObjectTemplate.create FireArms Ju88A_RearGunner_LeftGun
+ObjectTemplate.loadSoundScript Sounds/MG42.ssc
+ObjectTemplate.setNetworkableInfo Vehicle_MG42_Info
+ObjectTemplate.geometry Ju88A_RearGunner_Gun_M1
+ObjectTemplate.aiTemplate MG42Air
+ObjectTemplate.projectileTemplate MG42_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 600
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 7
+ObjectTemplate.autoReload 1
+ObjectTemplate.AmmoType	10
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.setFireDev 0.9 0.25 0.05
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.velocity 900
+ObjectTemplate.fireInCameraDof 1
+
+ObjectTemplate.addTemplate e_MuzzB17
+ObjectTemplate.setPosition 0/0.1/0.8
+ObjectTemplate.setRotation 0/0/0
+
+rem *** Ju88A_RearGunner_RightGun ***
+ObjectTemplate.create FireArms Ju88A_RearGunner_RightGun
+ObjectTemplate.loadSoundScript Sounds/MG42.ssc
+ObjectTemplate.setNetworkableInfo Vehicle_MG42_Info
+ObjectTemplate.geometry Ju88A_RearGunner_Gun_M1
+ObjectTemplate.aiTemplate MG42Air
+ObjectTemplate.projectileTemplate MG42_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 600
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 7
+ObjectTemplate.autoReload 1
+ObjectTemplate.AmmoType	10
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.setFireDev 0.9 0.25 0.05
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.velocity 900
+ObjectTemplate.fireInCameraDof 1
+
+ObjectTemplate.addTemplate e_MuzzB17
+ObjectTemplate.setPosition 0/0.1/0.8
+ObjectTemplate.setRotation 0/0/0
+
+rem *** Ju88A_BellyGun ***
+ObjectTemplate.create FireArms Ju88A_BellyGun
+ObjectTemplate.loadSoundScript Sounds/MG42.ssc
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.geometry Ju88A_BellyGun_M1
+ObjectTemplate.aiTemplate B17MachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzB17 
+rem -------------------------------------
+ObjectTemplate.projectileTemplate MG42_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 600
+ObjectTemplate.numOfMag 1
+ObjectTemplate.setFireDev 0.9 0.25 0.05
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.velocity 900
+ObjectTemplate.roundOfFire 7
+ObjectTemplate.addFireArmsPosition 0.12/0/0.65 0/0/0
+ObjectTemplate.addFireArmsPosition -0.119/0/0.65 0/0/0
+ObjectTemplate.AmmoType	10
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+
+
+rem *** Ju88A_Bullet_Projectile ***
+ObjectTemplate.create Projectile Ju88A_Bullet_Projectile
+ObjectTemplate.createNotInGrid 1
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/1.5/0/0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.material 213
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1

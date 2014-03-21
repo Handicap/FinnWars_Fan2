@@ -1,0 +1,146 @@
+GeometryTemplate.create StandardMesh I-16_Fus_M1
+GeometryTemplate.file i-16_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 450
+GeometryTemplate.setLodDistance 4 800
+
+
+
+GeometryTemplate.create StandardMesh I-16_airbreak_left_m1
+GeometryTemplate.file spitfire_airbreak_left_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh I-16_airbreak_right_m1
+GeometryTemplate.file spitfire_airbreak_right_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh I-16_cpit
+GeometryTemplate.file i-16_cpit
+
+
+GeometryTemplate.create StandardMesh I-16_rodder_m1
+GeometryTemplate.file i-16_rudder
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+
+GeometryTemplate.create StandardMesh I-16_gear_left_m1
+GeometryTemplate.file i-16_gearmac_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh I-16_gear_right_m1
+GeometryTemplate.file i-16_gearmac_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+
+
+GeometryTemplate.create StandardMesh I-16_wheel_left_m1
+GeometryTemplate.file i-153_wheel_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh I-16_wheel_right_m1
+GeometryTemplate.file i-153_wheel_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh I-16_wheel_tail_m1
+GeometryTemplate.file i-153_backwheel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh I-16_wingflap_left_m1
+GeometryTemplate.file spitfire_wingflap_left_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh I-16_wingflap_right_m1
+GeometryTemplate.file spitfire_wingflap_right_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+
+
+GeometryTemplate.create StandardMesh I-16_tailflap_left_m1
+GeometryTemplate.file i-16_korkeus_l
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh I-16_tailflap_right_m1
+GeometryTemplate.file i-16_korkeus_r
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+
+GeometryTemplate.create StandardMesh I-16_Propeller_m1
+GeometryTemplate.file i-16_prop
+GeometryTemplate.scale 1
+
+GeometryTemplate.create StandardMesh I-16_Propeller_Blur_m1
+GeometryTemplate.file Spitfire_Propeller_m2
+GeometryTemplate.scale 0.8
+GeometryTemplate.alphaLodDistance 750
+
+
+GeometryTemplate.create StandardMesh Wreck_I-16_1_m1
+GeometryTemplate.file i-16_hull
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500

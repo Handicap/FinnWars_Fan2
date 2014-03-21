@@ -1,0 +1,8 @@
+GeometryTemplate.create StandardMesh maxim_gun_carry
+GeometryTemplate.file maxim_gun_carry
+
+GeometryTemplate.create StandardMesh maxim_gun_carryLOD
+GeometryTemplate.file maxim_gun_carryLOD
+
+GeometryTemplate.create StandardMesh mobilemaxim_thrower
+GeometryTemplate.file mobilemaxim_thrower

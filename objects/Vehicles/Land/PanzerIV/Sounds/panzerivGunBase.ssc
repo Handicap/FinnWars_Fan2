@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/panzerivGunBase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/panzerivGunBase.ssc
+	
+#templateLevel LOW
+
+	#include Low/panzerivGunBase.ssc

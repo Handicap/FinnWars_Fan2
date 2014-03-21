@@ -1,0 +1,86 @@
+rem *** SimonovSniper ***
+ObjectTemplate.create HandFireArms SimonovSniper
+ObjectTemplate.itemIndex 3
+ObjectTemplate.zoomFov 0.1
+rem ObjectTemplate.unZoomBetweenFireTime 3.0
+ObjectTemplate.useScope 1
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate barProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 15
+ObjectTemplate.numOfMag 6
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 4
+ObjectTemplate.fireOnce 1
+ObjectTemplate.roundOfFire 8
+ObjectTemplate.aiTemplate SimonovAI
+ObjectTemplate.soldierZoomFov 0.9
+ObjectTemplate.soldierZoomPosition -0.06/0.01/-0.17
+ObjectTemplate.soldierCameraPosition -0.02/-0.03/-0.04
+
+ObjectTemplate.setScopeIcon "sniper.tga"
+ObjectTemplate.setSightIcon "scout_ring_128x128.tga"
+ObjectTemplate.setSniperSight 1
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.velocity 2000
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.5/1/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.75/0.75/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+ObjectTemplate.setFireDev 4 1 0.05
+ObjectTemplate.setDevMod  1 0.95 0.85
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.setTurnDev 0.5 0.45 0.45 0.03
+ObjectTemplate.setSpeedDev 2.25 0.5 0.5 0.08
+ObjectTemplate.setMiscDev 2.5 2.5 0.05
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/Simonov.ssc
+ObjectTemplate.GUIIndex 18
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_Bar_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Bar_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 48
+ObjectTemplate.setAmomBarPosX 5
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.createSkeleton animations/k98.ske
+ObjectTemplate.useSkeletonPartAsMain Simonov
+ObjectTemplate.addTemplate SimonovSniperLod
+ObjectTemplate.addTemplate e_MuzzSG44
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.06/1
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.04/0.28
+ObjectTemplate.setRotation 0/0/0
+
+
+
+ObjectTemplate.create SimpleObject SimonovScope
+ObjectTemplate.geometry SimonovScope
+
+
+rem *** SimonovSniperLod ***
+ObjectTemplate.create LodObject SimonovSniperLod
+ObjectTemplate.lodSelector HandWeaponLodSelector
+ObjectTemplate.addTemplate SimonovSniperComplex
+ObjectTemplate.addTemplate SimonovSniperSimple
+
+rem *** SimonovSniperComplex ***
+ObjectTemplate.create AnimatedBundle SimonovSniperComplex
+ObjectTemplate.geometry Simonov
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/k98.ske
+ObjectTemplate.addTemplate SimonovScope
+ObjectTemplate.bindToSkeletonPart SIKTE
+
+rem *** SimonovSniperSimple ***
+ObjectTemplate.create SimpleObject SimonovSniperSimple
+ObjectTemplate.geometry Shad_Simonov
+

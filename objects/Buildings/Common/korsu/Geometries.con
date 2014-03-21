@@ -1,0 +1,6 @@
+GeometryTemplate.create StandardMesh korsu
+GeometryTemplate.file korsu
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40

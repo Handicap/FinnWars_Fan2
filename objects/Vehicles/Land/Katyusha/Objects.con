@@ -1,0 +1,340 @@
+
+
+rem *** Katyusha ***
+ObjectTemplate.create PlayerControlObject Katyusha
+ObjectTemplate.setNetworkableInfo KatBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.drag 2
+ObjectTemplate.dragOffset 0/0/0
+ObjectTemplate.mass 4500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 70
+ObjectTemplate.Maxhitpoints 70
+ObjectTemplate.material 44
+ObjectTemplate.criticalDamage 26
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 0
+ObjectTemplate.hpLostWhileDamageFromDeepWater 20
+ObjectTemplate.addArmorEffect 26 e_KatyushaDamage 0/0.5/2.5
+ObjectTemplate.addArmorEffect 10 e_KatyushaFire 0/0.45/3
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/-1/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/-1/5
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/-1/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.damageFromDeepWater 1
+ObjectTemplate.aiTemplate Katyusha
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setMinDev 10
+rem -------------------------------------
+ObjectTemplate.addTemplate lodKatyusha
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.5/0/0 0/0/0
+ObjectTemplate.GUIIndex 20
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_katyusha.tga"
+ObjectTemplate.setVehicleIconPos 53/91
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setMinDev 10
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTArtillery
+ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodKatyusha ***
+ObjectTemplate.create LodObject lodKatyusha
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate KatyushaComplex
+ObjectTemplate.addTemplate KatyushaSimple
+ObjectTemplate.addTemplate KatyushaWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector KatyushaLodSelector
+
+
+rem *** KatyushaComplex ***
+ObjectTemplate.create Bundle KatyushaComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodKatyushaCockpit
+ObjectTemplate.addTemplate KatyushaSeat
+ObjectTemplate.setPosition -0.299/0.7/1.2
+ObjectTemplate.addTemplate Katyusha_Camera
+ObjectTemplate.setPosition -0.299/1/1
+ObjectTemplate.addTemplate Katyusha_Wheel_FrontL
+ObjectTemplate.setPosition -0.8/0.1/2.8
+ObjectTemplate.addTemplate Katyusha_Wheel_FrontR
+ObjectTemplate.setPosition 0.8/0.1/2.8
+ObjectTemplate.addTemplate Katyusha_PCO1
+ObjectTemplate.setPosition 0/0.6/-2.049
+ObjectTemplate.addTemplate Katyusha_Engine
+ObjectTemplate.setPosition 0/0/2
+ObjectTemplate.addTemplate KatyushaInteriorSteerDummy
+ObjectTemplate.setPosition -0.315/0.1/2.14
+ObjectTemplate.setRotation 0/-30/0
+rem -------------------------------------
+
+
+rem *** lodKatyushaCockpit ***
+ObjectTemplate.create LodObject lodKatyushaCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate KatyushaExterior
+ObjectTemplate.addTemplate KatyushaInterior
+ObjectTemplate.setPosition 0/1.01/1.48
+rem -------------------------------------
+ObjectTemplate.lodSelector KatyushaCockpitSelector
+
+
+rem *** KatyushaExterior ***
+ObjectTemplate.create SimpleObject KatyushaExterior
+ObjectTemplate.geometry Katyusha_Main_M1
+
+
+rem *** KatyushaInterior ***
+ObjectTemplate.create Bundle KatyushaInterior
+ObjectTemplate.geometry 1P_Katyusha_M1
+
+
+rem *** KatyushaSteeringDummy ***
+ObjectTemplate.create AnimatedBundle KatyushaInteriorSteerDummy
+rem -------------------------------------
+ObjectTemplate.addTemplate KatyushaInteriorSteer
+rem -------------------------------------
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.24/0.9/0.0 -80/60/50
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.26/0.9/-0.0 -80/-60/50
+
+
+rem *** KatyushaInterior ***
+ObjectTemplate.create RotationalBundle KatyushaInteriorSteer
+ObjectTemplate.setNetworkableInfo KatBodyInfo
+rem ObjectTemplate.geometry 1P_Katyusha_Steer_M1
+ObjectTemplate.addTemplate lodKatyushaSteering
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 80/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** lodKatyushaSteering ***
+ObjectTemplate.create LodObject lodKatyushaSteering
+rem -------------------------------------
+ObjectTemplate.addTemplate KatyushaHighRSteering
+ObjectTemplate.addTemplate KatyushaLowSteering
+rem -------------------------------------
+ObjectTemplate.lodSelector KatyushaSteeringSelector
+
+
+rem *** KatyushaHighRSteering ***
+ObjectTemplate.create SimpleObject KatyushaHighRSteering
+ObjectTemplate.geometry 1P_Katyusha_Steer_M1
+
+
+rem *** KatyushaLowSteering ***
+ObjectTemplate.create SimpleObject KatyushaLowSteering
+rem ObjectTemplate.geometry Katyusha_Steering_M1
+
+LodSelectorTemplate.create DistanceSelector KatyushaSteeringSelector
+LodSelectorTemplate.addLodDistance 2
+
+rem *** KatyushaCockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector KatyushaCockpitSelector
+LodSelectorTemplate.addLodDistance 15
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** KatyushaSeat ***
+ObjectTemplate.create SeatObject KatyushaSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+
+
+rem *** Katyusha_Camera ***
+ObjectTemplate.create Camera Katyusha_Camera
+ObjectTemplate.setMinRotation -80/-5/0
+ObjectTemplate.setMaxRotation 70/10/0
+ObjectTemplate.setPivotPosition 0/0.25/0.2
+ObjectTemplate.setMaxSpeed 200/200/0
+ObjectTemplate.setAcceleration 100000/100000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setInputToRoll c_PIMenuSelect3
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 0
+ObjectTemplate.CVMExternTrace 0
+
+
+
+rem *** Katyusha_Wheel_FrontL ***
+ObjectTemplate.create RotationalBundle Katyusha_Wheel_FrontL
+ObjectTemplate.setNetworkableInfo KatBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Katyusha_Spring_FrontL
+ObjectTemplate.setPosition 0/-0.599/0
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 80/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** Katyusha_Wheel_FrontR ***
+ObjectTemplate.create RotationalBundle Katyusha_Wheel_FrontR
+ObjectTemplate.setNetworkableInfo KatBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Katyusha_Spring_FrontR
+ObjectTemplate.setPosition 0/-0.599/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 80/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** Katyusha_PCO1 ***
+ObjectTemplate.create PlayerControlObject Katyusha_PCO1
+ObjectTemplate.setNetworkableInfo KatBodyInfo
+ObjectTemplate.aiTemplate KatyushaCannon
+rem -------------------------------------
+ObjectTemplate.addTemplate Katyusha_Ramp_Rot
+ObjectTemplate.addTemplate Katyusha_Entry
+ObjectTemplate.setPosition 0/0/-0.199
+ObjectTemplate.addTemplate KatyushaRampSeat
+ObjectTemplate.setPosition 0.299/0.1/3.25
+ObjectTemplate.addTemplate Katyusha_hands_PcoId1
+ObjectTemplate.setPosition 0.299/0.1/3.25
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/0 0/0/0
+ObjectTemplate.GUIIndex 21
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_katyusha.tga"
+ObjectTemplate.setVehicleIconPos 35/55
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_rocket.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setMinDev 10
+ObjectTemplate.setVehicleType  VTArtillery
+ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.addTemplate e_muzzpriest
+ObjectTemplate.setPosition 0.0/0.0/-3.5
+
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 70
+ObjectTemplate.DirBarYScaleAbove 37.5
+ObjectTemplate.DirBarYScaleBelow 0
+ObjectTemplate.DirBarYScaleMin -90
+ObjectTemplate.DirBarYScaleMax -45
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** Katyusha_Entry ***
+ObjectTemplate.create EntryPoint Katyusha_Entry
+ObjectTemplate.setEntryRadius 4
+
+rem *** Katyusha_Ramp_Rot ***
+ObjectTemplate.create RotationalBundle Katyusha_Ramp_Rot
+ObjectTemplate.setNetworkableInfo KatTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/KatyushaRampRot.ssc
+ObjectTemplate.geometry Katyusha_Ramp_Rot_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Katyusha_Ramp
+ObjectTemplate.setPosition 0/0.47/-0.829
+rem -------------------------------------
+ObjectTemplate.setMinRotation -70/0/-70
+ObjectTemplate.setMaxRotation 70/0/70
+ObjectTemplate.setMaxSpeed 20/0/20
+ObjectTemplate.setAcceleration 1000/0/1000
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** Katyusha_Ramp ***
+ObjectTemplate.create RotationalBundle Katyusha_Ramp
+ObjectTemplate.setNetworkableInfo KatGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/KatyushaRamp.ssc
+ObjectTemplate.geometry Katyusha_Ramp_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate KatyushaRampSeat
+ObjectTemplate.addTemplate Katyusha_Camera_PcoId1
+ObjectTemplate.addTemplate KatyushaFireArmsBundle
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** KatyushaRampSeat ***
+ObjectTemplate.create SeatObject KatyushaRampSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+
+
+rem *** Katyusha_Camera_PcoId1 ***
+ObjectTemplate.create Camera Katyusha_Camera_PcoId1
+ObjectTemplate.setPivotPosition 0/0.25/0.2
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.CVMInside 1
+ObjectTemplate.CVMChase 0
+ObjectTemplate.CVMFrontChase 0
+ObjectTemplate.CVMFlyBy 0
+ObjectTemplate.CVMTrace 1
+ObjectTemplate.CVMExternTrace 1
+
+rem *** ampujan kädet***
+ObjectTemplate.create AnimatedBundle Katyusha_hands_PcoId1
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.3/-0.15/0.25 -90/180/0
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.3/-0.1/0.25 -90/180/0
+
+
+rem *** KatyushaSimple ***
+ObjectTemplate.create SimpleObject KatyushaSimple
+ObjectTemplate.geometry Katyusha_Main_L1
+
+
+rem *** KatyushaWreck ***
+ObjectTemplate.create SimpleObject KatyushaWreck
+ObjectTemplate.geometry Wreck_Katyusha_m1
+
+
+rem *** KatyushaLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 KatyushaLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 135
+

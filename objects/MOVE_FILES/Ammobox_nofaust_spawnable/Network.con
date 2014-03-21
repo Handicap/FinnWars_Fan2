@@ -1,0 +1,2 @@
+NetworkableInfo.createNewInfo Ammobox_nofaust_Spawnable_body
+NetworkableInfo.setPredictionMode PMLinear

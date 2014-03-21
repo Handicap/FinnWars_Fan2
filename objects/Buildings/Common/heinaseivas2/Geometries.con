@@ -1,0 +1,6 @@
+GeometryTemplate.create StandardMesh heinaseivas2
+GeometryTemplate.file heinaseivas2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 15
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40

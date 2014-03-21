@@ -1,0 +1,5 @@
+GeometryTemplate.create StandardMesh l39_carry
+GeometryTemplate.file l39_carry
+
+GeometryTemplate.create StandardMesh l39_carryLOD
+GeometryTemplate.file l39_carryLOD

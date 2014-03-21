@@ -1,0 +1,30 @@
+
+GeometryTemplate.create StandardMesh Type38Raft_Hull_M1
+GeometryTemplate.file Type38_Raft_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Type38Raft_Hull_L1
+GeometryTemplate.file PT_Raft_L1
+
+GeometryTemplate.create StandardMesh Type38Raft_prop_M1
+GeometryTemplate.file PT_Propeller_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Type38Raft_Motor_M1
+GeometryTemplate.file PT_Motor_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800

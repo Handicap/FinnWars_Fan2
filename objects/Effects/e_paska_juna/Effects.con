@@ -1,0 +1,36 @@
+
+
+rem *** e_Bf109Fire ***
+ObjectTemplate.create EffectBundle e_paska_juna
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_mokeBIG11
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+rem *** Em_Bf109SmokeBIG ***
+ObjectTemplate.create Emitter Em_mokeBIG11
+ObjectTemplate.template Fx_mokeBIG11
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 0.08
+ObjectTemplate.lodDistance 240
+ObjectTemplate.timeToLive CRD_NONE/0.04/0/0
+ObjectTemplate.intensity CRD_NONE/30/0/0
+rem ObjectTemplate.startRotation CRD_UNIFORM/100/0/0
+rem *** Fx_Bf109SmokeBIG ***
+ObjectTemplate.create SpriteParticle Fx_mokeBIG11
+ObjectTemplate.timeToLive CRD_NONE/9/0/0
+ObjectTemplate.size CRD_UNIFORM/1.9/1/0
+ObjectTemplate.sizeOverTime 0/0.4|5/1.9|30/1.6|50/1.9|100/2.5
+ObjectTemplate.gravityModifier CRD_NONE/-0.29/0/0
+ObjectTemplate.drag CRD_NONE/4/0/0
+ObjectTemplate.gravityModifierOverTime 0.01/0.001|35/10.9|50/20.5|100/30.0
+ObjectTemplate.texture E_dustwindw_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.XYSizeRatio CRD_NONE/1.0/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+rem ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+rem ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|100/200/200/200/255

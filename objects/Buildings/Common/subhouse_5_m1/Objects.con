@@ -1,0 +1,71 @@
+ObjectTemplate.create Bundle subhouse_5_m1
+ObjectTemplate.setHasCollisionPhysics 1
+objectTemplate.aiTemplate subhouse_5_m1
+ObjectTemplate.addTemplate lodsubhouse_5
+
+LodSelectorTemplate.create DistanceSelector subhouse_5Selector
+LodSelectorTemplate.addLodDistance 300
+ObjectTemplate.create LodObject lodsubhouse_5
+ObjectTemplate.lodselector subhouse_5Selector
+ObjectTemplate.addTemplate subhouse_5Interior
+ObjectTemplate.addTemplate subhouse_5Exterior
+
+ObjectTemplate.create Bundle subhouse_5Interior
+ObjectTemplate.geometry subhouse_5_m1
+
+rem ------------------------------------------------
+
+ObjectTemplate.addTemplate civiltable_m1
+ObjectTemplate.setPosition -4.9/0.15/3.4
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate euchair03
+ObjectTemplate.setPosition -4/0.15/3.7
+ObjectTemplate.setRotation -90/0/0
+
+
+ObjectTemplate.addTemplate euchair03
+ObjectTemplate.setPosition -5.7/0.15/2.93
+ObjectTemplate.setRotation 90/0/0
+
+
+ObjectTemplate.addTemplate stove_eu_m1
+ObjectTemplate.setPosition -9.4/0.16/0
+ObjectTemplate.setRotation -90/0/0
+
+
+rem ------------------------------------------------
+
+ObjectTemplate.addTemplate eucloset_m1
+ObjectTemplate.setPosition 6.5/0.16/-4
+ObjectTemplate.setRotation 0/0/180
+
+ObjectTemplate.addTemplate plateshelf_m1
+ObjectTemplate.setPosition 9.76/1.7/-1
+ObjectTemplate.setRotation -90/0/180
+
+
+rem ------------------------------------------------
+
+
+ObjectTemplate.addTemplate eubed_m1
+ObjectTemplate.setPosition 8.76/4.11/2
+ObjectTemplate.setRotation -90/0/0
+
+ObjectTemplate.addTemplate eubed_m1
+ObjectTemplate.setPosition 8.76/4.11/-2
+ObjectTemplate.setRotation -90/0/0
+
+
+ObjectTemplate.addTemplate eubooksh_m1
+ObjectTemplate.setPosition -3.7/4.11/-0.5
+ObjectTemplate.setRotation -90/0/0
+
+
+ObjectTemplate.addTemplate euchair02_m1
+ObjectTemplate.setPosition 3/4.11/4.2
+ObjectTemplate.setRotation 180/0/0
+
+rem ---------------------------------------------------
+ObjectTemplate.create SimpleObject subhouse_5Exterior
+ObjectTemplate.geometry subhouse_5_m2

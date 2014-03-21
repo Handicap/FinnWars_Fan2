@@ -1,0 +1,28 @@
+ObjectTemplate.create Kit Rus_tanker
+ObjectTemplate.setType Engineer
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry Kit_tanker
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate pistoolikotelo
+ObjectTemplate.addTemplate nakkipipo
+ObjectTemplate.addTemplate NoParachute
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_engineer_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_engineer_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_alliesKnife.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_colt.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_empty.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_repairpack.tga"
+
+ObjectTemplate.setKitIcon 4 "kits/rus_m36simo.dds"
+ObjectTemplate.setKitName 4 ""
+ObjectTemplate.setKitActiveName 4 "In use/limit"
+
+ObjectTemplate.addTemplate tt-33
+ObjectTemplate.addTemplate KnifeAllies
+ObjectTemplate.addTemplate RepairPack
+
+ObjectTemplate.aitemplate Engineer

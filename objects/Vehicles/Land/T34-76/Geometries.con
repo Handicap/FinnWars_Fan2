@@ -1,0 +1,112 @@
+
+GeometryTemplate.create StandardMesh 1p_76Gunner
+GeometryTemplate.file 1p_76gunner
+
+GeometryTemplate.create StandardMesh T34-76_Hull_L1
+GeometryTemplate.file T-34_Hull_L1
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_T34-76_M1
+GeometryTemplate.file Wreck_T34_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
+
+renderer.beginGlobalCluster T34-76
+
+GeometryTemplate.create StandardMesh T34-76_pipe
+GeometryTemplate.file t3476_pipe
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh T34-76_Hull_M1
+GeometryTemplate.file T-34-85_Hull_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create AnimatedMesh T34-76_TrackL_M1
+GeometryTemplate.file T-34_TrackL_M1
+GeometryTemplate.setSkin animations/T-34_TrackL_M1.skn
+
+GeometryTemplate.create AnimatedMesh T34-76_TrackR_M1
+GeometryTemplate.file T-34_TrackR_M1
+GeometryTemplate.setSkin animations/T-34_TrackR_M1.skn
+
+GeometryTemplate.create StandardMesh T34-76_whe1R_M1
+GeometryTemplate.file T-34_whe1R_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh T34-76_whe1L_M1
+GeometryTemplate.file T-34_whe1L_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh T34-76_whe2R_M1
+GeometryTemplate.file T-34_whe2R_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh T34-76_whe2L_M1
+GeometryTemplate.file T-34_whe2L_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh T34-76_whe3L_M1
+GeometryTemplate.file T-34_whe3L_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh T34-76_whe3R_M1
+GeometryTemplate.file T-34_whe3R_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh T34-76_Hull_Hatch_M1
+GeometryTemplate.file T-34_Hull_Hatch_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh T34-76_Tower_M1
+GeometryTemplate.file t3476_tower
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+renderer.endGlobalCluster
+
+

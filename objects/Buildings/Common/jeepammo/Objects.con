@@ -1,0 +1,38 @@
+
+
+rem *** jeepammo ***
+ObjectTemplate.create bundle jeepammo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.addTemplate ammoboxvehicle_veh
+ObjectTemplate.addTemplate ammoboxvehicle_JV
+
+
+rem *** ammoboxvehicle ***
+ObjectTemplate.create supplydepot ammoboxvehicle_veh
+ObjectTemplate.radius 10
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 0 -1 1 0
+ObjectTemplate.addAmmoType 1 -1 15 0
+ObjectTemplate.addAmmoType 2 -1 0.3 0
+ObjectTemplate.addAmmoType 3 -1 1.2 0
+ObjectTemplate.addAmmoType 5 -1 0.5 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
+
+
+rem *** ammoboxvehicle ***
+ObjectTemplate.create supplydepot ammoboxvehicle_JV
+ObjectTemplate.radius 4
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 16 -1 0.12 0
+ObjectTemplate.addAmmoType 0 -1 1 0
+ObjectTemplate.addAmmoType 1 -1 15 0
+ObjectTemplate.addAmmoType 2 -1 0.3 0
+ObjectTemplate.addAmmoType 3 -1 1.2 0
+ObjectTemplate.addAmmoType 5 -1 0.5 0
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc

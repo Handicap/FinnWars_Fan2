@@ -1,0 +1,62 @@
+newPatch
+#########################################################################################################
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/Handgranade.wav
+minDistance 20
+volume 10
+dopplerOff
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 150
+	param 1
+	param -1
+endEffect
+
+#####################################################################################################
+### Reverb ###
+##############
+load @ROOT/Sound/@RTD/Handgranade_rev.wav
+minDistance 50
+dopplerOff
+volume 10
+priority 8
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 150
+	param 1
+	param -1
+endEffect
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.9
+	param 0
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.1
+	param 0.1
+	param 0
+	param 1
+endEffect
+
+trigger Volume

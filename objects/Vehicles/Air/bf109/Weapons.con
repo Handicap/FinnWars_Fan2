@@ -1,0 +1,72 @@
+
+
+rem *** BF109GunBarrel ***
+ObjectTemplate.create FireArms BF109Guns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/bf109fire.ssc
+ObjectTemplate.aiTemplate BF109MachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_muzzleko
+rem -------------------------------------
+ObjectTemplate.projectileTemplate BF109Projectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/3/0/0
+ObjectTemplate.magSize 1000
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 750
+ObjectTemplate.roundOfFire 19
+ObjectTemplate.setMinDev 1.2
+ObjectTemplate.addFireArmsPosition 0.205/1/1.7 0/0/0
+ObjectTemplate.addFireArmsPosition -0.205/1/1.7 0/0/0
+ObjectTemplate.AmmoType	8
+
+
+rem *** BF109Projectile ***
+ObjectTemplate.create Projectile BF109Projectile
+ObjectTemplate.createNotInGrid 1
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/1.5/0/0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.material 213
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+
+
+ObjectTemplate.create FireArms StukaGuns11
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/konetykki.ssc
+ObjectTemplate.aiTemplate StukaMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_muzzleko
+rem ObjectTemplate.addTemplate em_ShellAir
+rem ObjectTemplate.setPosition 0/-0.299/-0.299
+rem -------------------------------------
+ObjectTemplate.projectileTemplate KoneTykkiProjectile
+ObjectTemplate.projectilePosition 0/0/2.5
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/3/0/0
+ObjectTemplate.magSize 150
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 800
+ObjectTemplate.setMinDev 1.4
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.roundOfFire 15
+ObjectTemplate.addFireArmsPosition 0/0.5/3 0/0/0
+ObjectTemplate.AmmoType	8
+
+rem *** Yak9Projectile ***
+ObjectTemplate.create Projectile BF109Projectile
+ObjectTemplate.createNotInGrid 1
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/1.5/0/0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.material 213
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1

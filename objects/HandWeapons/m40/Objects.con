@@ -1,0 +1,111 @@
+ObjectTemplate.create HandFireArms m40
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+rem ObjectTemplate.projectileTemplate ThomsonProjectile
+rem ------------------------
+ObjectTemplate.projectileTemplate ot34_flame1_Projectile
+ObjectTemplate.material 210
+ObjectTemplate.minDamage 0.9
+
+
+rem ------------------------
+rem ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_UNIFORM/2/4/0
+ObjectTemplate.projectilePosition 0.1/-0.1/1.64
+rem ObjectTemplate.projectileTemplate OT-130Projectile2
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 300
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 100
+ObjectTemplate.zoomFov 0.9
+ObjectTemplate.altFireOnce 1
+objectTemplate.aiTemplate m40smg
+
+
+ObjectTemplate.GUIIndex 7
+ObjectTemplate.setHudAmmoType ATIconAndHeatBar
+ObjectTemplate.setAmmoIcon "weapon/icon_canister_64x32.tga"
+beginrem
+objectTemplate.GUIIndex 2
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Weapon/icon_canister"
+ObjectTemplate.setAmmoBarFill "Weapon/icon_canister"
+endrem
+ObjectTemplate.setAmmoBarSize 46
+ObjectTemplate.setAmomBarPosX 4
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setAmomBarTextPosX 8
+ObjectTemplate.setAmomBarTextPosY 4
+ObjectTemplate.setCrossHairType CHTIcon
+rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.soldierZoomFov 0.95
+ObjectTemplate.soldierZoomPosition 0.05/0.01/0.08
+ObjectTemplate.soldierCameraPosition 0.07/0.02/0.09
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+
+objectTemplate.heatAddWhenFire 0.025
+objectTemplate.coolDownPerSec 0.4
+objectTemplate.timeDelayOnOverHeat 1.3
+
+ObjectTemplate.minDamage 0.5
+ObjectTemplate.distToStartLoseDamage 50
+ObjectTemplate.distToMinDamage 100
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 50
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.5/0.7/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.3/0.3/0
+ObjectTemplate.setHasRecoilForce 0
+ObjectTemplate.setGoBackOnRecoil 0
+
+ObjectTemplate.setFireDev 2.0 0.25 0.1
+ObjectTemplate.setDevMod 1.0 1.0 1.0
+ObjectTemplate.setMinDev 1
+ObjectTemplate.setTurnDev 0.0 0.0 0.0 0.0
+ObjectTemplate.setSpeedDev 0 0 0 0
+ObjectTemplate.setMiscDev 1 1 1
+
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+
+rem ObjectTemplate.loadSoundScript Sounds/mp40.ssc
+
+ObjectTemplate.createSkeleton animations/mp40.ske
+rem animations/Mosin-Nagant.ske
+ObjectTemplate.useSkeletonPartAsMain m40
+ObjectTemplate.addTemplate m40Lod
+
+
+ObjectTemplate.addTemplate e_flam0r
+rem ObjectTemplate.setInputId -1
+rem ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0.05/0.0/0.33
+rem ObjectTemplate.setRotation 0/0/0
+
+rem ObjectTemplate.addTemplate e_Shell9mm
+rem ObjectTemplate.setInputId -1
+rem ObjectTemplate.startoneffects 0
+rem ObjectTemplate.setPosition 0/0.08/0.35
+rem ObjectTemplate.setRotation 0/0/0
+
+rem ** Objects
+
+ObjectTemplate.create SimpleObject m40Simple
+ObjectTemplate.geometry flamethrower
+
+ObjectTemplate.create AnimatedBundle m40Complex
+ObjectTemplate.geometry flamethrower
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/mp40.ske
+
+ObjectTemplate.create LodObject m40Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate m40Complex
+ObjectTemplate.addTemplate m40Simple
+
+

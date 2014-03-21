@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject Military_boxW3_M1
+ObjectTemplate.geometry Military_boxW3_M1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.material 121
+

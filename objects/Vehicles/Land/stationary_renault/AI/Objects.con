@@ -1,0 +1,121 @@
+rem *** stationary_renaultMobile ***
+aiTemplatePlugIn.create Mobile stationary_renaultMobile
+aiTemplatePlugIn.vehicleNumber 0
+aiTemplatePlugIn.maxSpeed 12.0
+aiTemplatePlugIn.turnRadius 5.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+aiTemplatePlugIn.lodHeight 0.9
+aiTemplatePlugIn.isTurnable 1
+
+rem *** stationary_renaultPhysical ***
+aiTemplatePlugIn.create Physical stationary_renaultPhysical
+aiTemplatePlugIn.setStrType HeavyArmour
+
+rem *** stationary_renaultCover ***
+aiTemplatePlugIn.create Cover stationary_renaultCover
+aiTemplatePlugIn.coverValue 4.0
+
+rem *** stationary_renaultUnit ***
+aiTemplatePlugIn.create Unit stationary_renaultUnit
+aiTemplatePlugIn.equipmentType 14
+aiTemplatePlugIn.setStrategicStrength 0 2
+aiTemplatePlugIn.setStrategicStrength 1 2
+
+rem *** stationary_renaultCtrl ***
+aiTemplatePlugIn.create ControlInfo stationary_renaultCtrl
+aiTemplatePlugIn.driveTurnControl PIYaw
+aiTemplatePlugIn.driveThrottleControl PIThrottle
+aiTemplatePlugIn.aimHorizontalControl PIYaw
+aiTemplatePlugIn.aimVerticalControl PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl PIYaw
+aiTemplatePlugIn.lookVerticalControl PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity -1.0
+aiTemplatePlugIn.pitchSensitivity 0.21817
+aiTemplatePlugIn.rollSensitivity -0.21817
+aiTemplatePlugIn.yawSensitivity -2.5
+aiTemplatePlugIn.lookVerticalSensitivity 0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead 1.0
+aiTemplatePlugIn.pitchLookAhead 1.0
+aiTemplatePlugIn.rollLookAhead 1.0
+aiTemplatePlugIn.yawLookAhead 1.0
+aiTemplatePlugIn.lookVerticalLookAhead 1.0
+aiTemplatePlugIn.lookHorizontalLookAhead 1.0
+aiTemplatePlugIn.throttleScale 1.0
+aiTemplatePlugIn.pitchScale 1.0
+aiTemplatePlugIn.rollScale 1.0
+aiTemplatePlugIn.yawScale 0.0020
+aiTemplatePlugIn.lookVerticalScale 1.0
+aiTemplatePlugIn.lookHorizontalScale 1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg 0/0/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 0/0/0
+
+rem *** stationary_renaultCannonArms ***
+aiTemplatePlugIn.create Armament stationary_renaultCannonArms
+
+rem *** stationary_renaultCannonUnit ***
+aiTemplatePlugIn.create Unit stationary_renaultCannonUnit
+aiTemplatePlugIn.equipmentType 13
+aiTemplatePlugIn.setStrategicStrength 0 5
+aiTemplatePlugIn.setStrategicStrength 1 5
+aiTemplatePlugIn.setSelectKey PIMenuSelect2
+
+rem *** stationary_renaultCannonCtrl ***
+aiTemplatePlugIn.create ControlInfo stationary_renaultCannonCtrl
+aiTemplatePlugIn.driveTurnControl PIYaw
+aiTemplatePlugIn.driveThrottleControl PIThrottle
+aiTemplatePlugIn.aimHorizontalControl PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity -1.0
+aiTemplatePlugIn.pitchSensitivity 0.21817
+aiTemplatePlugIn.rollSensitivity -0.21817
+aiTemplatePlugIn.yawSensitivity -2.5
+aiTemplatePlugIn.lookVerticalSensitivity 0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead 1.0
+aiTemplatePlugIn.pitchLookAhead 1.0
+aiTemplatePlugIn.rollLookAhead 1.0
+aiTemplatePlugIn.yawLookAhead 1.0
+aiTemplatePlugIn.lookVerticalLookAhead 1.0
+aiTemplatePlugIn.lookHorizontalLookAhead 1.0
+aiTemplatePlugIn.throttleScale 1.0
+aiTemplatePlugIn.pitchScale 5.0
+aiTemplatePlugIn.rollScale 5.0
+aiTemplatePlugIn.yawScale 0.0020
+aiTemplatePlugIn.lookVerticalScale 1.0
+aiTemplatePlugIn.lookHorizontalScale 1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -20/-40/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 20/5/0
+
+aiTemplate.create stationary_renault
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.addType ITMobile
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 15
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 10
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn stationary_renaultMobile
+aiTemplate.addPlugIn stationary_renaultPhysical
+aiTemplate.addPlugIn stationary_renaultCover
+aiTemplate.addPlugIn stationary_renaultUnit
+aiTemplate.addPlugIn stationary_renaultCtrl
+
+aiTemplate.create stationary_renaultCannon
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITGround
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 15
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 20
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn stationary_renaultCannonArms
+aiTemplate.addPlugIn stationary_renaultCannonUnit
+aiTemplate.addPlugIn stationary_renaultCannonCtrl
+

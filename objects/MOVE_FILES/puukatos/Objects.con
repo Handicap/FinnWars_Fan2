@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject puukatos
+ObjectTemplate.geometry puukatos
+ObjectTemplate.setHasCollisionPhysics 1
+
+

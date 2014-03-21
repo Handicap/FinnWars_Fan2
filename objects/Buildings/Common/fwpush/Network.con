@@ -1,0 +1,2 @@
+NetworkableInfo.createNewInfo FWPushBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

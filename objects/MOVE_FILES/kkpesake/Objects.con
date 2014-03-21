@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject kkpesake
+ObjectTemplate.geometry kkpesake
+ObjectTemplate.setHasCollisionPhysics 1

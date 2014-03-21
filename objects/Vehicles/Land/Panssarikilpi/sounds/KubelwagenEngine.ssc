@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KubelwagenEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KubelwagenEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/KubelwagenEngine.ssc

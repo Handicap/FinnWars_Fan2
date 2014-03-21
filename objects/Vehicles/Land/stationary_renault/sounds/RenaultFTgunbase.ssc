@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Wespegunbase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Wespegunbase.ssc
+	
+#templateLevel LOW
+
+	#include Low/Wespegunbase.ssc

@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject kkpesake2
+ObjectTemplate.geometry kkpesake2
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.cullRadiusScale 1.5
+
+

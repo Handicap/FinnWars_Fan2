@@ -1,0 +1,279 @@
+
+
+rem *** BF109 ***
+ObjectTemplate.create PlayerControlObject BF109
+ObjectTemplate.setNetworkableInfo BF109Info
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.07
+ObjectTemplate.mass 3000
+ObjectTemplate.inertiaModifier 1/1/1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 60
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 em_Bf109Damage 0/0.102/2.11
+ObjectTemplate.addArmorEffect 40 em_PlaneDamage 0/0.103/1.91
+ObjectTemplate.addArmorEffect 20 e_Bf109Fire 0/0.6/2.11
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_Plane 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate BF109
+rem -------------------------------------
+ObjectTemplate.addTemplate lodBF109
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4/0.243/-2 0/0/0
+ObjectTemplate.GUIIndex 31
+ObjectTemplate.setVehicleIcon "Vehicle/empty.dds"
+ObjectTemplate.setVehicleIconPos 10/80
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_konetykki.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setToolTipType  TTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_bf109_64x64.tga"
+
+
+rem *** lodBF109 ***
+ObjectTemplate.create LodObject lodBF109
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate BF109Complex
+ObjectTemplate.addTemplate BF109Simple
+ObjectTemplate.addTemplate BF109Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector BF109LodSelector
+
+
+rem *** BF109Complex ***
+ObjectTemplate.create Bundle BF109Complex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodbf109Cockpit
+ObjectTemplate.addTemplate bf109Camera
+ObjectTemplate.setPosition -0.001/1.2085/-0.649
+ObjectTemplate.setRotation 0/0/0
+beginrem
+ObjectTemplate.setPosition -0.001/1.1915/-0.649
+ObjectTemplate.setRotation 0/-2/0
+endrem
+ObjectTemplate.addTemplate bf109Entry
+ObjectTemplate.setPosition 0/0/-1.199
+ObjectTemplate.addTemplate bf109Seat
+ObjectTemplate.setPosition 0/0.55/-0.599
+ObjectTemplate.addTemplate BF109Engine
+ObjectTemplate.setPosition 0/0.55/2.68
+ObjectTemplate.addTemplate BF109BodyWingVertical
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate BF109Flaps4
+ObjectTemplate.setPosition 4.17/0.42/-0.369
+ObjectTemplate.setRotation -7.999/0/8.5
+ObjectTemplate.addTemplate BF109Flaps2
+ObjectTemplate.setPosition -4.169/0.42/-0.369
+ObjectTemplate.setRotation 8/0/-8.499
+ObjectTemplate.addTemplate BF109Flaps3
+ObjectTemplate.setPosition 2.32/0.165/-0.599
+ObjectTemplate.setRotation -6.899/0/7.5
+ObjectTemplate.addTemplate BF109Flaps1
+ObjectTemplate.setPosition -2.319/0.165/-0.599
+ObjectTemplate.setRotation 6.9/0/-7.499
+ObjectTemplate.addTemplate BF109AirbreakRU
+ObjectTemplate.setPosition 0.968/0.05/-0.746
+ObjectTemplate.setRotation 0/0/2
+ObjectTemplate.addTemplate BF109AirbreakLU
+ObjectTemplate.setPosition -0.958/0.025/-0.737
+ObjectTemplate.setRotation 0/0/-1.999
+ObjectTemplate.addTemplate BF109TailFlapR
+ObjectTemplate.setPosition 0.805/1.165/-5.477
+ObjectTemplate.addTemplate BF109TailFlapL
+ObjectTemplate.setPosition -0.797/1.165/-5.477
+ObjectTemplate.addTemplate BF109wheelBack
+ObjectTemplate.setPosition 0/0.751/-5.197
+ObjectTemplate.addTemplate BF109Rudder
+ObjectTemplate.setPosition 0/1.205/-5.487
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate BF109Guns
+ObjectTemplate.addTemplate StukaGuns11
+rem -------------------------------------
+
+
+rem *** lodbf109Cockpit ***
+ObjectTemplate.create LodObject lodbf109Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate bf109CockpitStatic
+ObjectTemplate.addTemplate bf109CockpitBlurred
+rem -------------------------------------
+ObjectTemplate.lodSelector bf109cockpitSelector
+
+
+rem *** bf109CockpitStatic ***
+ObjectTemplate.create SimpleObject bf109CockpitStatic
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry bf109_fus_M1
+
+
+rem *** bf109CockpitBlurred ***
+ObjectTemplate.create SimpleObject bf109CockpitBlurred
+ObjectTemplate.geometry 1P_bf109_M1
+
+
+rem *** bf109cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector bf109cockpitSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** BF109Camera ***
+ObjectTemplate.create Camera BF109Camera
+ObjectTemplate.setMinRotation -65/-40/0
+ObjectTemplate.setMaxRotation 65/5/0
+ObjectTemplate.setMaxSpeed 90/-90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0.001/-0.2/3.7
+
+
+rem *** BF109Entry ***
+ObjectTemplate.create EntryPoint BF109Entry
+ObjectTemplate.setEntryRadius 5
+
+
+rem *** BF109Seat ***
+ObjectTemplate.create SeatObject BF109Seat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+
+rem *** lodBF109Propeller ***
+ObjectTemplate.create LodObject lodBF109Propeller
+rem -------------------------------------
+ObjectTemplate.addTemplate BF109PropellerStatic
+ObjectTemplate.addTemplate BF109PropellerBlurred
+rem -------------------------------------
+ObjectTemplate.lodSelector BF109PropSelector
+
+
+rem *** BF109PropellerStatic ***
+ObjectTemplate.create SimpleObject BF109PropellerStatic
+ObjectTemplate.geometry bf109_prp1
+
+
+rem *** BF109PropellerBlurred ***
+ObjectTemplate.create SimpleObject BF109PropellerBlurred
+ObjectTemplate.geometry bf109_prp2
+LodSelectorTemplate.create CompareSelector BF109PropSelector
+LodSelectorTemplate.addLodComparison 0.08
+
+
+rem *** BF109LandingGearR ***
+ObjectTemplate.create LandingGear BF109LandingGearR
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry BF109_Landinggear_right_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate BF109wheelR
+ObjectTemplate.setPosition 0.3/-1.25/0.2
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 27/0/87
+ObjectTemplate.setMaxSpeed 32/0/32
+ObjectTemplate.setAcceleration 80/0/80
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearDownEngineInput 0.55
+
+
+rem *** BF109LandingGearL ***
+ObjectTemplate.create LandingGear BF109LandingGearL
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry BF109_Landinggear_left_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate BF109wheelL
+ObjectTemplate.setPosition -0.299/-1.25/0.2
+rem -------------------------------------
+ObjectTemplate.setMinRotation -27/0/-87
+ObjectTemplate.setMaxSpeed 28/0/28
+ObjectTemplate.setAcceleration -90/0/-90
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearDownEngineInput 0.55
+
+
+rem *** BF109AirbreakRU ***
+ObjectTemplate.create RotationalBundle BF109AirbreakRU
+ObjectTemplate.setNetworkableInfo BF109Info
+ObjectTemplate.geometry BF109_Airbreak_right_upper_M1
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/150/100
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** BF109AirbreakLU ***
+ObjectTemplate.create RotationalBundle BF109AirbreakLU
+ObjectTemplate.setNetworkableInfo BF109Info
+ObjectTemplate.geometry BF109_Airbreak_left_upper_M1
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/150/100
+ObjectTemplate.setAcceleration 0/-150/0
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** BF109WheelBack ***
+ObjectTemplate.create RotationalBundle BF109WheelBack
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate BF109WheelBackSpring
+ObjectTemplate.setPosition 0/-0.7/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration -110/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** BF109Simple ***
+ObjectTemplate.create SimpleObject BF109Simple
+ObjectTemplate.geometry BF109_fus_L1
+
+
+rem *** BF109Wreck ***
+ObjectTemplate.create SimpleObject BF109Wreck
+ObjectTemplate.geometry Wreck_BF109_m1
+
+
+rem *** BF109LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 BF109LodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200

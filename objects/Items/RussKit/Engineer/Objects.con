@@ -1,0 +1,32 @@
+ObjectTemplate.create Kit Rus_Engineer
+ObjectTemplate.setType Engineer
+ObjectTemplate.setKitTeam 2
+ObjectTemplate.geometry Kit_simonov
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+ObjectTemplate.addTemplate Karvalakki_rus
+ObjectTemplate.addTemplate Russian_hippack
+ObjectTemplate.addTemplate BacpacBig_rus
+ObjectTemplate.addTemplate NoParachute
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_engineer_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_engineer_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_shovel.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_timebomb.tga"
+ObjectTemplate.addWeaponIcon "Weapon/icon_simonov.dds"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_landmine.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_binoculars.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_repairpack.tga"
+
+ObjectTemplate.setKitIcon 4 "kits/rus_m36simo.dds"
+ObjectTemplate.setKitName 4 ""
+ObjectTemplate.setKitActiveName 4 "In use/limit"
+
+ObjectTemplate.addTemplate Simonov
+ObjectTemplate.addTemplate shovel
+ObjectTemplate.addTemplate Exppack
+ObjectTemplate.addTemplate RepairPack
+ObjectTemplate.addTemplate Landmine
+ObjectTemplate.addTemplate Binoculars
+
+ObjectTemplate.aitemplate Engineer

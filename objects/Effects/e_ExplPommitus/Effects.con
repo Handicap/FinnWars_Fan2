@@ -1,0 +1,7 @@
+rem *** e_ExplGranade ***
+ObjectTemplate.create EffectBundle e_ExplPommitus
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/ExplPommitus.ssc
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+rem -------------------------------------

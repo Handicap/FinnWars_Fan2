@@ -1,0 +1,15 @@
+NetworkableInfo.createNewInfo OT-130TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo OT-130GunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo OT-130EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo OT-130Engine2Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo OT-130BodyInfo
+NetworkableInfo.setPredictionMode PMLinear

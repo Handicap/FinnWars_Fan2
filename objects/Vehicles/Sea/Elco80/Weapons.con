@@ -1,0 +1,224 @@
+rem *******************************
+rem ***     Elco80_Torpedos     ***
+rem *******************************
+
+rem *** Elco80_Torpedos ***
+ObjectTemplate.create FireArms Elco80_Torpedos
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate PTBoatTorpedo
+ObjectTemplate.projectilePosition 0/-1.5/3.55
+ObjectTemplate.visibleDummyProjectileTemplate PT_Dummy_Torpedo
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 30
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 3.5
+ObjectTemplate.fireOnce 1
+ObjectTemplate.setInputFire c_PIFire
+ObjectTemplate.AmmoType	9
+
+ObjectTemplate.addFirearmsPosition -2.999/2.935/0.4 0/0/0
+ObjectTemplate.addFirearmsPosition 3/2.935/0.4 0/0/0
+
+ObjectTemplate.loadSoundScript Sounds/PT_Torpedo_Left.ssc
+
+rem *** PT_Dummy_Torpedo ***
+ObjectTemplate.create SimpleObject PT_Dummy_Torpedo
+ObjectTemplate.geometry Torpedo_Sml_m1
+
+rem *******************************
+rem ***      PTBoatTorpedo      ***
+rem *******************************
+
+rem *** PTBoatTorpedo ***
+ObjectTemplate.create Projectile PTBoatTorpedo
+ObjectTemplate.geometry Torpedo_Sml_M1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/20/0/0
+ObjectTemplate.endEffectTemplate WaterExplosionTorpedo
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.DetonateOnWaterCollision 0
+ObjectTemplate.drag 0.04
+ObjectTemplate.mass 200
+ObjectTemplate.material 250
+ObjectTemplate.radius 30
+rem -------------------------------------------------
+ObjectTemplate.addTemplate e_WaterTorpedo 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Shallow_Torpedo_Floater
+ObjectTemplate.setPosition 0/3/-2
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Shallow_Torpedo_Floater
+ObjectTemplate.setPosition 0/3/2
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Shallow_Torpedo_Engine
+ObjectTemplate.setPosition 0/0/-3
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Torpedo_Wing
+ObjectTemplate.setPosition 0/0/-3
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Torpedo_Wing
+ObjectTemplate.setPosition 0/0/-3
+ObjectTemplate.setRotation 0/0/-90
+
+rem *** Shallow_Torpedo_Engine ***
+ObjectTemplate.create Engine Shallow_Torpedo_Engine
+ObjectTemplate.setPosition 0/0/90
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/15000
+ObjectTemplate.setMaxSpeed 0/0/17500
+ObjectTemplate.setAcceleration 0/0/25000
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setEngineType c_ETTorpedo
+ObjectTemplate.setTorque 12.5
+ObjectTemplate.setNoPropellerEffectAtSpeed 200
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.loadSoundScript Sounds/TorpedEngine.ssc
+
+rem *** Shallow_Torpedo_Floater ***
+ObjectTemplate.create FloatingBundle Shallow_Torpedo_Floater
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setHullHeight 6.3
+ObjectTemplate.setFloatMaxLift 7.9
+ObjectTemplate.setFloatMinLift 7.9
+ObjectTemplate.setDragModifier 8000.0     
+ObjectTemplate.setMinRotation 0/0.5/0
+ObjectTemplate.setMaxRotation 0/0.5/0
+ObjectTemplate.setMaxSpeed 0/0.1/0
+ObjectTemplate.setAcceleration 0/-0.1/0
+ObjectTemplate.setInputToPitch 1
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Shallow_Torpedo_Wing ***
+ObjectTemplate.create Wing Shallow_Torpedo_Wing
+ObjectTemplate.setWingLift 0.4
+
+
+rem *******************************
+rem *** Elco80_SideGunner Parts ***
+rem *******************************
+
+rem *** Elco80_SideGunner ***
+ObjectTemplate.create FireArms Elco80_SideGunner
+ObjectTemplate.setNetworkableInfo Vehicle_Browning_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.aiTemplate Browning 
+ObjectTemplate.projectileTemplate Ilyushin_Gun_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.magSize 500
+ObjectTemplate.numOfMag 999
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 8
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 9
+ObjectTemplate.autoReload 1
+ObjectTemplate.addDevFire 0
+ObjectTemplate.addFireArmsPosition -0.089/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0.09/0/0 0/0/0
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.velocity 1000
+ObjectTemplate.setFireDev 0.7 0.3 0.048
+ObjectTemplate.setMinDev 0.5
+
+ObjectTemplate.fireInCameraDof 1
+objectTemplate.heatAddWhenFire 0.005
+objectTemplate.coolDownPerSec 0.4
+objectTemplate.timeDelayOnOverHeat 2
+
+ObjectTemplate.addTemplate Attach_R_Hand
+ObjectTemplate.setPosition 0.22/-0.019/-0.399
+ObjectTemplate.setRotation 83.382/-0.34/142.417
+ObjectTemplate.addTemplate Attach_L_Hand
+ObjectTemplate.setPosition -0.209/0.01/-0.399
+ObjectTemplate.setRotation 86.37/-3.458/169.818
+
+ObjectTemplate.addTemplate Elco80_SideGunner_Gun
+ObjectTemplate.addTemplate e_MuzzHeavy
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition -0.099/0.01/1.3
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_MuzzHeavy
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0.1/0.01/1.3
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition -0.089/0.12/0.16
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0.09/0.12/0.16
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.loadSoundScript Sounds/Elco80_Oerlikon.ssc
+
+rem *** Elco80_SideGunner_Gun ***
+ObjectTemplate.create SimpleObject Elco80_SideGunner_Gun
+ObjectTemplate.geometry Elco80_SideGunner_Gun_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem *** MortarGunBarrel ***
+ObjectTemplate.create FireArms MortarGunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem ObjectTemplate.geometry Defgun_barrel_end_m1
+ObjectTemplate.loadSoundScript Sounds/Mortarfire.ssc
+ObjectTemplate.aiTemplate mortarGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzMortar
+ObjectTemplate.setPosition 0/0.5/0.5
+rem ObjectTemplate.setPosition 0/0/0.5
+ObjectTemplate.setRotation 0/185/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate mortar_Projectile
+ObjectTemplate.projectilePosition 0/0/1.3
+rem ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.autoReload 1
+ObjectTemplate.velocity 65
+ObjectTemplate.reloadtime 3.5
+ObjectTemplate.roundOfFire 0.75
+ObjectTemplate.recoilSpeed 0
+ObjectTemplate.recoilSize 0
+ObjectTemplate.fireingForce 0
+ObjectTemplate.setMinDev 1
+
+objectTemplate.heatAddWhenFire 0.20
+objectTemplate.coolDownPerSec 0.09
+objectTemplate.timeDelayOnOverHeat 9
+
+rem *** mortar_projectile ***
+ObjectTemplate.create projectile mortar_projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Bomb.ssc
+ObjectTemplate.geometry Projectile_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.TimeToLive CRD_NONE/10/0/0
+ObjectTemplate.endEffectTemplate e_MuzzMortar
+ObjectTemplate.damageType 1
+ObjectTemplate.material 237
+ObjectTemplate.material2 206
+ObjectTemplate.radius 30
+ObjectTemplate.hasCollisionEffect 1
+
+

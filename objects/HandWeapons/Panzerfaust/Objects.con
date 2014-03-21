@@ -1,0 +1,109 @@
+** rem Visible Projectile
+ObjectTemplate.create SimpleObject FaustDummy
+ObjectTemplate.geometry PanzerfaustRocket
+
+rem *** Panzerfaust ***
+ObjectTemplate.create HandFireArms Panzerfaust
+ObjectTemplate.itemIndex 4
+ObjectTemplate.networkableInfo HandFireArmsInfo
+rem *** added Dummy projectile
+ObjectTemplate.visibleDummyProjectileTemplate FaustDummy
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.projectileTemplate PanzerfaustProjectile
+ObjectTemplate.ForceOnExplosion 2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 5.6
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.aiTemplate PanzerschrekRPG
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.zoomFov 0.5
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.6
+ObjectTemplate.soldierZoomPosition -0.05/-0.02/0
+ObjectTemplate.AmmoType 16
+ObjectTemplate.loadSoundScript Sounds/panzershrek.ssc
+ObjectTemplate.GUIIndex 5
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setHasMag 1
+ObjectTemplate.velocity 35
+ObjectTemplate.minDamage 0.2
+ObjectTemplate.distToStartLoseDamage 30
+ObjectTemplate.distToMinDamage 50
+
+ObjectTemplate.setFireDev 0 0 0
+ObjectTemplate.setDevMod  6 1 2
+ObjectTemplate.setMinDev 2.5
+ObjectTemplate.setTurnDev 0.9 0.2 0.2 0.08
+ObjectTemplate.setSpeedDev 2.5 0.8 1.6 1.1
+ObjectTemplate.setMiscDev 2.5 2.5 0.9
+
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.createSkeleton animations/Panzershreck.ske
+ObjectTemplate.useSkeletonPartAsMain Panzershreck
+ObjectTemplate.addTemplate PanzerfaustLod
+
+ObjectTemplate.addTemplate e_faust
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.fireInCameraDof 1
+
+rem *** PanzerfaustRocket ***
+ObjectTemplate.create SimpleObject PanzerfaustRocket
+ObjectTemplate.geometry PanzerfaustRocket
+
+rem *** PanzerfaustSimple ***
+ObjectTemplate.create SimpleObject PanzerfaustSimple
+ObjectTemplate.geometry Shad_Panzerfaust
+
+ObjectTemplate.create SimpleObject PanzershreckTrigger1
+ObjectTemplate.geometry PanzershreckTrigger1
+
+ObjectTemplate.create SimpleObject PanzershreckTrigger2
+ObjectTemplate.geometry PanzershreckTrigger2
+
+rem *** PanzerfaustComplex ***
+ObjectTemplate.create AnimatedBundle PanzerfaustComplex
+ObjectTemplate.geometry Panzerfaust
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Panzershreck.ske
+rem ObjectTemplate.addTemplate PanzershreckTrigger1
+rem ObjectTemplate.bindToSkeletonPart Trigger1
+rem ObjectTemplate.addTemplate PanzershreckTrigger2
+rem ObjectTemplate.bindToSkeletonPart Trigger2
+rem ObjectTemplate.addTemplate PanzerfaustRocket
+rem ObjectTemplate.bindToSkeletonPart rocket
+
+rem *** PanzerfaustLod ***
+ObjectTemplate.create LodObject PanzerfaustLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate PanzerfaustComplex
+ObjectTemplate.addTemplate PanzerfaustSimple
+
+ObjectTemplate.create Projectile PanzerfaustProjectile 
+ObjectTemplate.geometry PanzerfaustRocket
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.endEffectTemplate e_ExplBazooka
+ObjectTemplate.timeOnEndEffect 0.5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 0.5
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.material 314
+ObjectTemplate.material2 315
+ObjectTemplate.radius 4
+ObjectTemplate.ForceOnExplosion 1
+ObjectTemplate.addTemplate e_ExplBazooka
+ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
+
+

@@ -1,0 +1,79 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/pak40fireST.wav
+stereo
+minDistance 3.8
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 45
+	param 1
+	param -1	
+endEffect
+
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.7
+	param 0
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param .9
+	param 0
+endEffect
+
+#################
+### Left side ###
+#################
+load @ROOT/Sound/@RTD/pak40fire.wav
+stereo
+minDistance 3.8
+volume .2
+dopplerOff
+priority 9
+relativePosition -0.8/0/-0.5
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 150
+	param 200
+	param 1
+	param -1	
+endEffect

@@ -1,0 +1,134 @@
+rem *** Elco80_Engine ***
+ObjectTemplate.create Engine Elco80_Engine
+ObjectTemplate.setNetworkableInfo Elco80EngineInfo
+ObjectTemplate.loadSoundScript Sounds/Elco80_Engine_Water.ssc
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 23
+ObjectTemplate.setDifferential .7
+ObjectTemplate.setNoPropellerEffectAtSpeed 150
+
+
+rem *** Elco80_Rudder_Stern ***
+ObjectTemplate.create Wing Elco80_Rudder_Stern
+ObjectTemplate.setNetworkableInfo Elco80WingInfo
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/6/0
+ObjectTemplate.setAcceleration 0/-15/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Elco80_Rudder_Aft ***
+ObjectTemplate.create Wing Elco80_Rudder_Aft
+ObjectTemplate.setNetworkableInfo Elco80WingInfo
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/6/0
+ObjectTemplate.setAcceleration 0/15/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Elco80_Floater ***
+ObjectTemplate.create FloatingBundle Elco80_Floater
+ObjectTemplate.setHullHeight 1
+ObjectTemplate.setFloatMaxLift 8
+ObjectTemplate.setFloatMinLift 8
+ObjectTemplate.setSinkingSpeedMod 3
+
+
+rem *** Elco80_MiddleFloater ***
+ObjectTemplate.create FloatingBundle Elco80_MiddleFloater
+ObjectTemplate.setHullHeight 1
+ObjectTemplate.setFloatMaxLift 9
+ObjectTemplate.setFloatMinLift 3
+ObjectTemplate.setSinkingSpeedMod 1
+
+
+rem ************************************************
+rem ** Common PTBoat Parts
+rem ************************************************
+
+rem *** PT_FrontLandEngine ***
+ObjectTemplate.create Engine PT_FrontLandEngine
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate PT_FrontWheel
+ObjectTemplate.setPosition 1.54/1.64/8.9
+ObjectTemplate.addTemplate PT_FrontWheel
+ObjectTemplate.setPosition -1.699/1.64/8.9
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/2500
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 8
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+
+rem *** PT_FrontWheel ***
+ObjectTemplate.create Spring PT_FrontWheel
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1
+
+rem *** PT_BackLandEngine ***
+ObjectTemplate.create Engine PT_BackLandEngine
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate PT_BackWheel
+ObjectTemplate.setPosition 8.5/1.25/1.45
+ObjectTemplate.addTemplate PT_BackWheel
+ObjectTemplate.setPosition 8.5/1.25/-1.449
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/55000
+ObjectTemplate.setAcceleration 0/0/2500
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 8
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+
+rem *** PT_BackWheel ***
+ObjectTemplate.create Spring PT_BackWheel
+ObjectTemplate.geometry Willy_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+ObjectTemplate.createInvisible 1
+

@@ -1,0 +1,15 @@
+NetworkableInfo.createNewInfo SB-2WingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SB-2EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SB-2BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SB-2DorsalTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SB-2NoseTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+

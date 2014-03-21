@@ -1,0 +1,2 @@
+NetworkableInfo.createNewInfo faustbox_ammo_spawnable_body
+NetworkableInfo.setPredictionMode PMLinear

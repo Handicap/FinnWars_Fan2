@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ChihaTrackL.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ChihaTrackL.ssc
+	
+#templateLevel LOW
+
+	#include Low/ChihaTrackL.ssc

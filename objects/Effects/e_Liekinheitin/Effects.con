@@ -1,0 +1,107 @@
+rem
+ObjectTemplate.create EffectBundle e_Liekinheitin
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript ../Common/Sounds/fire.ssc
+ObjectTemplate.timeToLive CRD_NONE/2/4/5
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_Liekinheitin
+ObjectTemplate.setPosition 0/0/-3.5
+ObjectTemplate.timeToLive CRD_NONE/2/2/2
+ObjectTemplate.addTemplate Em_Liekinheitin1
+ObjectTemplate.setPosition 0/0/-3.5
+ObjectTemplate.timeToLive CRD_NONE/2/1/1
+ObjectTemplate.addTemplate Em_koirankakkapussi
+ObjectTemplate.setPosition 0/2/-17.5
+rem -------------------------------------
+
+rem *** Em_Liekinheitin ***
+ObjectTemplate.create Emitter Em_Liekinheitin
+ObjectTemplate.template Fx_Liekinheitin
+ObjectTemplate.looping 0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 400
+ObjectTemplate.timeToLive CRD_NONE/0.2/2/4
+ObjectTemplate.intensity CRD_NONE/70/0/0
+
+
+
+rem *** Fx_Liekinheitin ***
+ObjectTemplate.create SpriteParticle Fx_Liekinheitin
+ObjectTemplate.timeToLive CRD_UNIFORM/1/1/1
+ObjectTemplate.size CRD_NONE/0.8/1.5/0
+ObjectTemplate.gravityModifier CRD_NONE/1/0/0
+ObjectTemplate.drag CRD_NONE/2/0/0
+ObjectTemplate.sizeOverTime 0/0.3|50/0.7100/1
+ObjectTemplate.texture e_muzs1_I
+rem ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.srcBlendMode BMone
+rem ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/90/50/50
+ObjectTemplate.rotationSpeed CRD_UNIFORM/100/50/50
+rem ObjectTemplate.colorRGBAOverTime 0/255/200/0/250|5/200/200/200/200|0
+rem ObjectTemplate.colorRGBAOverTime 0/200/200/200/250|5/255/200/0/200|30/255/200/0/0|90/167/39/9/100|0
+rem ObjectTemplate.colorRGBAOverTime 0/200/190/91/100|20/235/90/51/160
+ObjectTemplate.colorRGBAOverTime 0/200/190/91/60|20/235/90/51/100
+
+
+
+
+rem *** Em_Liekinheitin1 ***
+ObjectTemplate.create Emitter Em_Liekinheitin1
+ObjectTemplate.template Fx_Liekinheitin1
+ObjectTemplate.looping 0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 400
+ObjectTemplate.timeToLive CRD_NONE/0.2/2/4
+ObjectTemplate.intensity CRD_NONE/70/0/0
+
+
+
+rem *** Fx_Liekinheitin1 ***
+ObjectTemplate.create SpriteParticle Fx_Liekinheitin1
+ObjectTemplate.timeToLive CRD_UNIFORM/1/1/1
+ObjectTemplate.size CRD_NONE/1.5/1.5/0
+ObjectTemplate.gravityModifier CRD_NONE/1/0/0
+ObjectTemplate.drag CRD_NONE/2/0/0
+ObjectTemplate.sizeOverTime 0/0.4|100/0.9
+ObjectTemplate.texture e_Blood_subtl_g
+ObjectTemplate.initRotation CRD_UNIFORM/1/90/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/90/1
+ObjectTemplate.colorRGBAOverTime 0/200/190/91/60|20/235/90/51/100
+
+
+rem *** Em_koirankakkapussi ***
+ObjectTemplate.create Emitter Em_koirankakkapussi
+ObjectTemplate.template Fx_koirankakkapussi
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.looping 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 400
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/17/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/-0.5/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/-1.4/0/0
+
+
+rem *** Fx_koirankakkapussi ***
+ObjectTemplate.create SpriteParticle Fx_koirankakkapussi
+ObjectTemplate.timeToLive CRD_UNIFORM/1/0/0
+ObjectTemplate.size CRD_NONE/3/1/0
+ObjectTemplate.sizeOverTime 0/0.3|50/1|70/0|100/0
+ObjectTemplate.gravityModifier CRD_NONE/-1.5/0/0
+rem ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.initRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/50/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.colorRGBAOverTime 44/36/33/30/114|40/255/255/255/0|100/255/255/255/0
+ObjectTemplate.hasStaticColor 1
+

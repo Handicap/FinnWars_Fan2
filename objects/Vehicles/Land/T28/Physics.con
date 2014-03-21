@@ -1,0 +1,157 @@
+
+
+rem *** t28engine ***
+ObjectTemplate.create engine t28engine
+ObjectTemplate.setNetworkableInfo t28EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TigerEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 6.5
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate t28trackr
+ObjectTemplate.setPosition -0.0291247/-0.833485/-0.3
+
+rem *** t28engine2 ***
+ObjectTemplate.create engine t28engine2
+ObjectTemplate.setNetworkableInfo t28EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/TigerEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 6.5
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+ObjectTemplate.addTemplate t28trackl
+ObjectTemplate.setPosition 0.0384165/-0.833485/-0.3
+
+
+rem *** t28_pieniyla_l ***
+ObjectTemplate.create spring t28_pieniyla_l
+ObjectTemplate.geometry t28_pieniyla_l
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t28_etuiso_l ***
+ObjectTemplate.create spring t28_etuiso_l
+ObjectTemplate.geometry T28_etuiso_l
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t28_takaiso_l ***
+ObjectTemplate.create spring t28_takaiso_l
+ObjectTemplate.geometry T28_takaiso_l
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t28_pieniala_l ***
+ObjectTemplate.create spring t28_pieniala_l
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry t28_pieniala_l
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 3.5
+
+
+rem *** t28_pieniala_l_dummy ***
+ObjectTemplate.create spring t28_pieniala_l_dummy
+ObjectTemplate.geometry t28_pieniala_l
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t28_pieniyla_r ***
+ObjectTemplate.create spring t28_pieniyla_r
+ObjectTemplate.geometry t28_pieniyla_r
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t28_etuiso_r ***
+ObjectTemplate.create spring t28_etuiso_r
+ObjectTemplate.geometry T28_etuiso_r
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t28_takaiso_r ***
+ObjectTemplate.create spring t28_takaiso_r
+ObjectTemplate.geometry T28_takaiso_r
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** t28_pieniala_r ***
+ObjectTemplate.create spring t28_pieniala_r
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry t28_pieniala_r
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 3.5
+
+
+rem *** t28_pieniala_r_dummy ***
+ObjectTemplate.create spring t28_pieniala_r_dummy
+ObjectTemplate.geometry t28_pieniala_r
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0

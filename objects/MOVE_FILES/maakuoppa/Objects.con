@@ -1,0 +1,6 @@
+ObjectTemplate.create SimpleObject maakuoppa
+ObjectTemplate.geometry maakuoppa
+ObjectTemplate.setHasCollisionPhysics 1
+
+
+
