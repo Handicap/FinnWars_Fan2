@@ -1,0 +1,17 @@
+rem * *************************************************
+rem *		Infantry target
+rem * *************************************************
+MaterialManager.attGroup 306
+MaterialManager.defGroup 40
+MaterialManager.damageMod 0.1
+MaterialManager.setEffectTemplate e_blood01
+
+MaterialManager.attGroup 306
+MaterialManager.defGroup 41
+MaterialManager.damageMod 0.1
+MaterialManager.setEffectTemplate e_blood01
+
+MaterialManager.attGroup 306
+MaterialManager.defGroup 42
+MaterialManager.damageMod 0.1
+MaterialManager.setEffectTemplate e_blood01

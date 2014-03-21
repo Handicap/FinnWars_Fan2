@@ -1,0 +1,1529 @@
+MaterialManager.material 74
+MaterialManager.materialAttGroup 74
+MaterialManager.materialDefGroup 74
+MaterialManager.materialDamage 1.0
+
+
+rem *************************************************
+rem *************************************************
+rem *************************************************
+rem ***************** Raft Armor ********************
+rem *************************************************
+rem *************************************************
+rem *************************************************
+
+rem *************************************************
+rem		scout cars target
+rem *************************************************
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 43
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_Soldier
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 44
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_Soldier
+
+rem *************************************************
+rem		Heavy Vehicle target
+rem *************************************************
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 45
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 46
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 47
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 48
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 49
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+rem *************************************************
+rem		Heavy Vehicle target
+rem *************************************************
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 50
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 51
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 52
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 53
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 54
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+rem *************************************************
+rem		Ship target
+rem *************************************************
+
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 55
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_ship
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 56
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_ship
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 57
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_ship
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 58
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_ship
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 59
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_ship
+
+rem *************************************************
+rem		Planes target
+rem *************************************************
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 60
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 61
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 62
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+MaterialManager.attGroup 74
+MaterialManager.defGroup 63
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_collision_metal
+
+
+
+rem *************************************************
+rem		Other Materials
+rem *************************************************
+
+rem *** Default ***
+MaterialManager.attGroup 0
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Water ***
+MaterialManager.attGroup 1
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+
+rem *** Dry Grass ***
+MaterialManager.attGroup 2
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Juicy Grass ***
+MaterialManager.attGroup 3
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 4
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 5
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 6
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 7
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Gravel ***
+MaterialManager.attGroup 8
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Frozen Ground ***
+MaterialManager.attGroup 9
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Dry Sand ***
+MaterialManager.attGroup 10
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 11
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 12
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 13
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 14
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 15
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 16
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 17
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 18
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 19
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Dry Sand ***
+MaterialManager.attGroup 20
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 21
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 22
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 23
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 24
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 25
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 26
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 27
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 28
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 29
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Dry Sand ***
+MaterialManager.attGroup 30
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 31
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 32
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 33
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 34
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 35
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 36
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 37
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 38
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 39
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Soldier Head ***
+MaterialManager.attGroup 40
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+
+rem *** Soldier Torso ***
+MaterialManager.attGroup 41
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+
+rem *** Soldier Limbs ***
+MaterialManager.attGroup 42
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+
+MaterialManager.attGroup 43
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 44
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Light Armor 1 ***
+MaterialManager.attGroup 45
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Light Armor 2 ***
+MaterialManager.attGroup 46
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Light Armor 3 ***
+MaterialManager.attGroup 47
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Light Armor 4 ***
+MaterialManager.attGroup 48
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Light Armor 5 ***
+MaterialManager.attGroup 49
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 50
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 51
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 52
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 53
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 54
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 55
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 56
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 57
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 58
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 59
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 60
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 61
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 62
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 63
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 64
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 65
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 66
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 67
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 68
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 69
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 70
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Wet Sand ***
+MaterialManager.attGroup 71
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 72
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 73
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 75
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 76
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 77
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 78
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 79
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 80
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 81
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 82
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 83
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 84
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 85
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 86
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 87
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 88
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 89
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 90
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 91
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 92
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 93
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 94
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 95
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 96
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 97
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 98
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 99
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 100
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 101
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 102
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 103
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 104
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 105
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 106
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 107
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 108
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 109
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 110
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 111
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 112
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 113
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 114
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 115
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 116
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 117
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 118
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 119
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 120
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+
+MaterialManager.attGroup 121
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 122
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 123
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 124
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 125
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 126
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 127
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 128
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 129
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 130
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 131
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 132
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 133
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 134
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 135
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 136
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 137
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 138
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 139
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 140
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 141
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 142
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 143
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 144
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 145
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 146
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 147
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 148
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 149
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 150
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 151
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 152
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 153
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 154
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 155
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 156
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 157
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 158
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 159
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 160
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 161
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 162
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 163
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 164
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 165
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 166
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 167
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 168
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 169
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 170
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 171
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 172
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 173
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 174
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 175
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 176
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 177
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 178
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 179
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 180
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 181
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 182
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 183
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 184
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 185
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 186
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 187
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 188
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 189
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 190
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 191
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 192
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 193
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 194
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 195
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 196
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 197
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 198
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 199
+MaterialManager.defGroup 74
+MaterialManager.damageMod 0.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+
+rem ***********************************************
+rem *** Weapons ***
+rem ***********************************************
+rem *** Man-portable Rocket ***
+MaterialManager.attGroup 200
+MaterialManager.defGroup 74
+MaterialManager.damageMod 2.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Artillery ***
+MaterialManager.attGroup 201
+MaterialManager.defGroup 74
+MaterialManager.damageMod 2.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Light Bomb ***
+MaterialManager.attGroup 202
+MaterialManager.defGroup 74
+MaterialManager.damageMod 2.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Heavy Bomb ***
+MaterialManager.attGroup 203
+MaterialManager.defGroup 74
+MaterialManager.damageMod 3.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Demo Kit ***
+MaterialManager.attGroup 204
+MaterialManager.defGroup 74
+MaterialManager.damageMod 3.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Hand Grenade ***
+MaterialManager.attGroup 205
+MaterialManager.defGroup 74
+MaterialManager.damageMod 3.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Light Tank Gun ***
+MaterialManager.attGroup 206
+MaterialManager.defGroup 74
+MaterialManager.damageMod 3.5
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Heavy Tank Gun ***
+MaterialManager.attGroup 207
+MaterialManager.defGroup 74
+MaterialManager.damageMod 4.5
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Light Naval Gun ***
+MaterialManager.attGroup 208
+MaterialManager.defGroup 74
+MaterialManager.damageMod 4.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Heavy Naval Gun ***
+MaterialManager.attGroup 209
+MaterialManager.defGroup 74
+MaterialManager.damageMod 5.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Axis Bayonet ***
+MaterialManager.attGroup 210
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Allied Bayonet ***
+MaterialManager.attGroup 211
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Commando Knife ***
+MaterialManager.attGroup 212
+MaterialManager.defGroup 74
+MaterialManager.damageMod 2.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Planes MG ***
+MaterialManager.attGroup 213
+MaterialManager.defGroup 74
+MaterialManager.damageMod 3.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Colt ***
+MaterialManager.attGroup 214
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.5
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Walther P38 ***
+MaterialManager.attGroup 215
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.5
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Thompson ***
+MaterialManager.attGroup 216
+MaterialManager.defGroup 74
+MaterialManager.damageMod 2.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** MP40 ***
+MaterialManager.attGroup 217
+MaterialManager.defGroup 74
+MaterialManager.damageMod 2.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** No4 ***
+MaterialManager.attGroup 218
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** K98 ***
+MaterialManager.attGroup 219
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** M1 ***
+MaterialManager.attGroup 220
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem ***  ***
+MaterialManager.attGroup 221
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Bar ***
+MaterialManager.attGroup 222
+MaterialManager.defGroup 74
+MaterialManager.damageMod 2.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** SG44 ***
+MaterialManager.attGroup 223
+MaterialManager.defGroup 74
+MaterialManager.damageMod 2.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Browning ***
+MaterialManager.attGroup 224
+MaterialManager.defGroup 74
+MaterialManager.damageMod 3.5
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** MG42 ***
+MaterialManager.attGroup 225
+MaterialManager.defGroup 74
+MaterialManager.damageMod 3.5
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Bazooka ***
+MaterialManager.attGroup 226
+MaterialManager.defGroup 74
+MaterialManager.damageMod 5.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Panzerschreck ***
+MaterialManager.attGroup 227
+MaterialManager.defGroup 74
+MaterialManager.damageMod 5.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** M1 ***
+MaterialManager.attGroup 228
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+rem *** Flak 38 ***
+MaterialManager.attGroup 229
+MaterialManager.defGroup 74
+MaterialManager.damageMod 3.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 230
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 231
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 232
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 233
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 234
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 235
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 236
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 237
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 238
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 239
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 240
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 241
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 242
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 243
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 244
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 245
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 246
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 247
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 248
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 249
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 250
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 251
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 252
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 253
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 254
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 255
+MaterialManager.defGroup 74
+MaterialManager.damageMod 1.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 257
+MaterialManager.defGroup 74
+MaterialManager.damageMod 2.0
+MaterialManager.setEffectTemplate e_Collision_ship
+
+MaterialManager.attGroup 259
+MaterialManager.defGroup 74
+MaterialManager.damageMod 2.0
+MaterialManager.setEffectTemplate e_Collision_ship

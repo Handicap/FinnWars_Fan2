@@ -1,0 +1,27 @@
+rem *** Create Prerequisites ***
+
+rem run conditions
+
+aiStrategy.createPrerequisite test1
+aiStrategy.addCondition constTest 2.3
+
+
+aiStrategy.createPrerequisite overwhelmingPowerPrereq
+aiStrategy.addCondition overwhelmingPowerCond 1.0
+
+
+aiStrategy.createPrerequisite loosingPrereq
+aiStrategy.addCondition loosingCond   3.0
+aiStrategy.addCondition halfConstCond 2.0
+
+
+aiStrategy.createPrerequisite constPrereq
+aiStrategy.addCondition halfConstCond 1.0
+
+
+aiStrategy.createPrerequisite airToNavalPrereq
+aiStrategy.addCondition navalCond     1.5
+aiStrategy.addCondition airPlaneCond  2.0
+
+
+

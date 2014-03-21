@@ -1,0 +1,24 @@
+rem * *************************************************
+rem *		Infantry target
+rem * *************************************************
+MaterialManager.attGroup 248
+MaterialManager.defGroup 40
+MaterialManager.damageMod 0
+
+MaterialManager.attGroup 248
+MaterialManager.defGroup 41
+MaterialManager.damageMod 0
+
+MaterialManager.attGroup 248
+MaterialManager.defGroup 42
+MaterialManager.damageMod 0
+
+rem * *************************************************
+rem *		Submarine target
+rem * *************************************************
+
+MaterialManager.attGroup 248
+MaterialManager.defGroup 57
+MaterialManager.damageMod 10
+
+

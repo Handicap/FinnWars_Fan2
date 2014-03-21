@@ -1,0 +1,13 @@
+Game.setCrossHairRadius 5
+Game.setCrossHairSize 4
+Game.setCameraBlink 0.75 1.5
+Game.setPlayerBlink 1.0 2.0
+Game.setSonarRotationSpeed 0.025
+Game.setRadioTimeoutTime 25
+Game.setRadioFlashTime 7
+Game.setPlayerHitFlashTime 10
+Game.setNormalChatColor 0.7/0.7/0.7
+Game.setAxisChatColor 1/1/1
+Game.setAlliedChatColor 1/0.7/0.7
+Game.setAxisRadioColor 1/1/1
+Game.setAlliedRadioColor 1/0.35/0.35

@@ -1,0 +1,6 @@
+rem *** Play EA logo without interuption.
+rem renderer.playBink Movies/ea.bik 1000.0
+rem renderer.playBink Movies/Dice.bik 5.0
+renderer.playBink Movies/FWIntro.bik 1.0
+rem renderer.playBink Movies/legal.bik 3.0
+
